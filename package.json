@@ -1,0 +1,14 @@
+{
+  "name": "correr-a-prop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Carreres populars a menys de 50 km de Catarroja",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "npm run check && node scripts/build.mjs",
+    "test": "node --test",
+    "check": "node --check app.js && node --check lib/races.js && node scripts/validate-data.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

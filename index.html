@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ca-ES-valencia">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#204c3b">
+    <meta name="description" content="Troba la teua pròxima carrera popular a menys de 50 km de Catarroja. Dates publicades, distàncies i fonts per a córrer a prop de casa.">
+    <title>Córrer a prop · Carreres prop de Catarroja</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#agenda">Anar a les carreres</a>
+    <header class="site-header wrap">
+      <a class="brand" href="./" aria-label="Córrer a prop, inici"><img src="./assets/favicon.svg" width="38" height="38" alt=""><span>córrer<span class="brand-light"> a prop</span><span class="brand-dot">.</span></span></a>
+      <nav aria-label="Navegació principal"><a class="nav-active" href="#agenda">L’agenda</a><button class="nav-link" id="sources-open">Les fonts <span aria-hidden="true">↗</span></button></nav>
+      <button class="saved-nav" id="saved-nav" aria-pressed="false" aria-label="Mostrar carreres guardades"><span aria-hidden="true">♡</span> <span>Guardades</span> <span class="saved-count" id="saved-count">0</span></button>
+    </header>
+
+    <main>
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="location-dot"></span> DES DE CATARROJA, AMB GANES DE CÓRRER</p>
+          <h1 id="hero-title">La teua pròxima meta,<br><span>a prop de casa.</span></h1>
+          <p class="hero-description">Menys temps buscant. Més quilòmetres gaudint.<br>Descobrix les carreres populars que tens a tocar.</p>
+          <div class="hero-facts"><span><b>50 km</b> de radi</span><span><b>1 any</b> per davant</span><span><i class="green-dot"></i> Dates publicades</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-top"><span>EL TEU PUNT D’EIXIDA</span><span>39.402° N · 0.403° O</span></div>
+          <svg viewBox="0 0 470 270" fill="none"><defs><pattern id="dots" width="19" height="19" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#6b8b75" opacity=".4"/></pattern></defs><rect width="470" height="270" fill="url(#dots)"/><g stroke="#76937a" opacity=".32"><circle cx="240" cy="150" r="49"/><circle cx="240" cy="150" r="93"/><circle cx="240" cy="150" r="138"/><path d="M0 150h470M240 0v270" stroke-dasharray="3 7"/></g><path d="M74 227c52-25 15-77 65-93s50 24 90-9 29-81 74-75 26 47 72 34 48-46 67-67" stroke="#d5f477" stroke-width="3.5" stroke-linecap="round"/><path d="M74 227c52-25 15-77 65-93s50 24 90-9 29-81 74-75 26 47 72 34 48-46 67-67" stroke="#d5f477" stroke-width="15" opacity=".055"/><circle cx="240" cy="150" r="13" fill="#d5f477" opacity=".15"/><circle cx="240" cy="150" r="5" fill="#d5f477"/><circle cx="303" cy="50" r="5" fill="#e9eee1"/><circle cx="139" cy="134" r="5" fill="#e9eee1"/><circle cx="375" cy="84" r="5" fill="#e9eee1"/><rect x="255" y="157" width="107" height="30" rx="6" fill="#d5f477"/><text x="269" y="177" fill="#204c3b" font-size="13" font-family="Arial" font-weight="700">Catarroja ↗</text><text x="312" y="245" fill="#a6bca9" font-size="11" font-family="Arial">50 km de possibilitats</text></svg>
+          <div class="art-bottom"><span>Tot comença amb un primer pas.</span><span class="art-arrow">↗</span></div>
+        </div>
+      </section>
+
+      <div class="status-strip"><div class="wrap status-inner"><p><span class="green-dot"></span> <span id="data-status">Carregant el calendari…</span></p><button id="method-open">Com triem les carreres <span aria-hidden="true">↗</span></button></div></div>
+
+      <section class="agenda wrap" id="agenda" aria-labelledby="agenda-title">
+        <aside class="filters-panel">
+          <details open id="filter-details"><summary>Afina la teua cerca <span aria-hidden="true">⌄</span></summary>
+            <form id="filters">
+              <fieldset><legend>Distància des de Catarroja</legend><div class="radius-options"><label><input type="radio" name="radius" value="10"><span>10 km</span></label><label><input type="radio" name="radius" value="25"><span>25 km</span></label><label><input type="radio" name="radius" value="50" checked><span>50 km</span></label></div><p class="field-help">Radi aproximat en línia recta<br>fins al centre de cada població.</p></fieldset>
+              <label class="field-label" for="month">Quan vols córrer?</label><select id="month" name="month"><option value="">Els pròxims 12 mesos</option></select>
+              <fieldset class="distance-fieldset"><legend>Quants quilòmetres?</legend><label class="check-row"><input type="checkbox" name="distance" value="short"><span>Fins a 5 km</span></label><label class="check-row"><input type="checkbox" name="distance" value="medium"><span>Més de 5 a 10 km</span></label><label class="check-row"><input type="checkbox" name="distance" value="long"><span>Més de 10 a 15 km</span></label><label class="check-row"><input type="checkbox" name="distance" value="half"><span>Mitja marató</span></label><label class="check-row"><input type="checkbox" name="distance" value="marathon"><span>Marató</span></label></fieldset>
+              <label class="field-label" for="type">Tipus de carrera</label><select id="type" name="type"><option value="">Totes les carreres</option><option value="popular">Popular</option><option value="solidaria">Solidària</option><option value="dones">Categoria femenina</option></select>
+              <label class="field-label" for="source">Font del calendari</label><select id="source" name="source"><option value="">Totes les fonts</option></select>
+              <button type="reset" class="reset-button">Netejar filtres <span aria-hidden="true">↺</span></button>
+            </form>
+          </details>
+          <div class="sidebar-note"><span class="note-symbol" aria-hidden="true">↗</span><h3>El dorsal, a la font.</h3><p>Ací descobrixes la carrera. La inscripció i els últims detalls, sempre al web de l’organització.</p><button id="sidebar-sources">Consultar les fonts →</button></div>
+        </aside>
+
+        <div class="results-panel">
+          <div class="agenda-heading"><div><p class="eyebrow small">PREPARA LA TEUA PRÒXIMA EIXIDA</p><h2 id="agenda-title">Carreres a l’horitzó <span id="result-count">—</span></h2></div><button class="calendar-button" id="export" disabled><span aria-hidden="true">↓</span> Exportar agenda</button></div>
+          <div class="search-toolbar"><label class="search-box"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">Buscar per carrera o població</span><input id="search" type="search" placeholder="Busca una carrera o una població…" autocomplete="off"></label><label class="sort-label"><span class="sr-only">Ordenar per</span><select id="sort"><option value="date">Més pròximes en data</option><option value="near">Més prop de Catarroja</option></select></label></div>
+          <div class="results-meta"><p id="results-description" role="status" aria-live="polite">Buscant carreres amb data publicada…</p><button id="saved-filter" aria-pressed="false">♡ Només guardades</button></div>
+          <div id="race-list"><div class="loading-placeholder">Un moment, preparem l’eixida…</div></div>
+          <div class="coverage-note"><span aria-hidden="true">ⓘ</span><p><b>El calendari continua creixent.</b> Moltes proves de 2027 encara no han anunciat data. Afegim només convocatòries publicades i ocultem automàticament les dates passades.</p></div>
+        </div>
+      </section>
+      <section class="closing-band wrap"><span class="closing-mark" aria-hidden="true">↗</span><div><p class="eyebrow small">DE L’HORTA AL TEU SEGÜENT REPTE</p><h2>Hi ha una eixida esperant-te.</h2><p>Un 5K, una mitja o simplement les ganes de tornar a córrer.</p></div><a href="#agenda">Troba la teua carrera <span aria-hidden="true">↑</span></a></section>
+    </main>
+    <footer class="wrap"><a class="footer-brand" href="./">córrer a prop.</a><p>Fet des de Catarroja. Quilòmetre a quilòmetre.</p><button id="footer-method">Criteris i actualització</button></footer>
+    <dialog id="info-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow small">CÓRRER A PROP</span><button id="dialog-close" class="icon-button" aria-label="Tancar">×</button></div><div id="dialog-content"></div></dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <noscript><div class="noscript">Activa JavaScript per a consultar i filtrar l’agenda. Pots visitar <a href="https://inscripciones.cronorunner.com/eventos">Cronorunner</a> o <a href="https://sportmaniacs.com/es">Sportmaniacs</a> directament.</div></noscript>
+  </body>
+</html>
