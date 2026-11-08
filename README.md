@@ -1,6 +1,8 @@
 # Córrer a prop
 
-Agenda de carreres a peu a un màxim de **50 km de Catarroja**, en valencià. Versió revisada el **8 de novembre de 2026**, amb 18 cites publicades. Inclou Sagunt, Benifaió i Catarroja després de contrastar les fitxes directament en navegador.
+Agenda de carreres a peu a un màxim de **50 km de Catarroja**, en valencià. Versió revisada el **8 de novembre de 2026**, amb **46 cites publicades** de ruta, trail i infantils. La revisió de cobertura incorpora 28 cites i documenta també les exclusions i les discrepàncies.
+
+Consulta [REVISIO.md](REVISIO.md) per a veure l’abast exacte de cada calendari, les incorporacions i els casos pendents. L’inventari [research/review.json](research/review.json) vincula les entrades revisades amb el catàleg i permet comprovar-ne la cobertura.
 
 ## Posar-la en marxa
 
@@ -17,13 +19,13 @@ npm run check
 npm test
 ```
 
-`check` comprova sintaxi i integritat de les dades. Les proves cobreixen dates de Madrid, anys de traspàs, límit anual, radi, cerca sense accents, filtres, guardades i exportació iCalendar.
+`check` comprova sintaxi i integritat de les dades. Les 14 proves cobreixen dates de Madrid, anys de traspàs, límit anual, radi, cerca sense accents, filtres, guardades, exportació iCalendar, modalitats de caminada i cobertura de l’inventari de fonts.
 
 ## Què fa esta versió
 
 - Agenda per mesos, ordenada per data o proximitat.
 - Cerca per nom i població, sense necessitat d’escriure accents.
-- Filtres combinables de radi (10/25/50 km), mes, distància de carrera, tipus i font. Les distàncies seleccionades es combinen amb OR; els altres filtres, amb AND.
+- Filtres combinables de radi (10/25/50 km), mes, distància de carrera, tipus (incloent trail i infantil) i font. Les distàncies seleccionades es combinen amb OR; els altres filtres, amb AND. Les distàncies llargues diferents de mitja/marató tenen filtre propi: 20 km no es classifica com a mitja marató.
 - Fitxa amb horari, eixida, observacions, fonts i data de revisió.
 - Carreres guardades en `localStorage`, sense compte. Si l’emmagatzematge no està disponible, funcionen durant la sessió.
 - Exportació de les carreres visibles, o d’una carrera concreta, a `.ics`.
@@ -36,7 +38,7 @@ npm test
 
 **Proximitat:** fórmula de Haversine entre el centre aproximat de Catarroja (39.402, −0.403) i el centre aproximat de la població. No són quilòmetres per carretera ni la distància exacta fins a l’eixida. El màxim de 50 km s’aplica sempre, encara que es manipule la URL.
 
-**Convocatòries:** només edicions amb data publicada en una font primària o en la plataforma de la prova. No extrapolem l’any següent. Les cites amb diverses distàncies apareixen una vegada; els filtres comproven totes les variants. S’exclouen triatlons i modalitats de marxa. Una data publicada no implica que queden dorsals.
+**Convocatòries:** només edicions amb data publicada en una font primària o en la plataforma de la prova. No extrapolem l’any següent. Les cites amb diverses distàncies apareixen una vegada; els filtres comproven totes les variants. Incloem ruta, trail i proves infantils independents; s’exclouen triatlons, natació, ciclisme, caminades i competicions híbrides/OCR. Els abonaments de circuit no són carreres addicionals. Una data publicada no implica que queden dorsals.
 
 **Calendari descarregat:** esdeveniments de dia complet amb els horaris en la descripció. Això evita assignar un horari incorrecte quan un mateix esdeveniment té diferents modalitats. El fitxer és una còpia estàtica; no rep ajornaments automàticament.
 
@@ -46,16 +48,19 @@ Les fonts i els enllaços de cada carrera són dins de [data/races.json](data/ra
 
 | Font | Ús i límits en esta revisió |
 | --- | --- |
-| [Cronorunner](https://inscripciones.cronorunner.com/eventos) | Prioritària per indicació de l’usuari. Benifaió i Catarroja contrastades en navegador amb dates, distàncies i horaris. La càrrega amb JavaScript pot donar una lectura de text incompleta. |
-| [Sportmaniacs](https://sportmaniacs.com/es) | Prioritària per indicació de l’usuari. Sagunt contrastada directament en navegador: 15/11/2026, 08:30, proves de 10, 21 i 30 km. Un error 403 del lector de text no implica que la convocatòria siga inaccessible. |
+| [Cronorunner](https://inscripciones.cronorunner.com/eventos) | 17 fitxes i cinc circuits revisats en navegador: 13 cites admissibles incorporades, dos esdeveniments del dia actual i dos fora del radi. |
+| [Sportmaniacs](https://sportmaniacs.com/es) | València fins a les dates passades, abonaments de circuit i primera pàgina de Castelló fins a dates passades. 13 cites admissibles contrastades en navegador. |
 | [RunCáncer](https://runcancer.com/carreras/) | Convocatòries solidàries i actualització de l’ajornament de València al 22/11/2026. |
 | [Valencia Ciudad del Running](https://www.valenciaciudaddelrunning.com/calendario/) | Calendari, Breakfast Run, Marató, Ibercaja i 15K/7,5K. |
 | [Fundació Esportiva Municipal](https://carreras.fdmvalencia.es/es/otras-carreras/) | Contrast de dates, distàncies i horaris; 10KFem de 2027. |
 | [Runática](https://www.runatica.com/) | Sant Silvestre d’Alzira i Mitja Marató de 2027. |
+| [TopRun](https://www.toprun.es/), [Multiesport](https://multiesport.es/calendario/) i [Crono4Sports](https://crono4sports.com/eventos) | Revisió dels calendaris vigents; incorporacions de Calderona, Llíria, Bonrepòs, Xeraco i Xàtiva. |
+| [RockTheSport](https://web.rockthesport.com/) | Contrast individual de les mitges d’Algemesí i Paiporta–Picanya. |
+| [Trifitness31](https://trifitness31.eu/calendario/) i [UPV](https://www.upv.es/entidades/ad/eventos-deportivos/carreras-upv/) | Contrast de les etapes de trail publicades i del circuit universitari. Dos cites UPV pendents de completar les fitxes de l’edició actual. |
 | [Circuit Camp de Túria](https://circuitcampturia.com/) | Calendari i contrast de les proves de la comarca. |
 | [AIMS](https://aims-worldrunning.org/races/854.html) i [Pas Ras](https://www.pasras.es/reglamento/) | Data del 21K de València de 2027 i reglament vigent de Pas Ras. |
 
-**Correccions de la revisió:** Catarroja està ajornada del 03/10 al **14/11/2026**, amb eixida a les 08:30 i inscripció oberta en el moment de revisar-la (termini publicat: 11/11 a les 23:59). Benifaió confirma el **15/11/2026 a les 09:30**, amb 10K i mitja marató. Sagunt confirma el **15/11/2026 a les 08:30**, amb 10K, 21K i 30K. Les tres apareixen en l’agenda; ja no hi ha casos pendents d’esta revisió.
+**Correccions destacades:** Catarroja continua amb la nova data del **14/11/2026**, a les 08:30; Benifaió i Sagunt conserven les modalitats verificades. S’han confirmat hores de Marines, Bétera i Alzira; Llíria usa 11,3/20 km segons el reglament. Les discrepàncies de Mislata, Sot de Ferrer i Paiporta–Picanya es descriuen en cada fitxa. Els dos casos UPV estan en `pending`, fora de l’agenda.
 
 Si un lector retorna una fitxa buida, «no disponible» o HTTP 403, comprova la pàgina en navegador abans de descartar-la. En els ajornaments, preval la convocatòria actualitzada sobre el calendari antic del circuit. L’estat de les inscripcions es documenta amb la data de revisió, sense presentar-lo com una comprovació en temps real.
 
@@ -63,12 +68,12 @@ Si un lector retorna una fitxa buida, «no disponible» o HTTP 403, comprova la 
 
 Esta versió **no té un importador automàtic**: la recerca inicial s’ha fet manualment. Oculta les dates passades, però necessita noves revisions per a incorporar proves, canvis de data, cancel·lacions i convocatòries de 2027. Un avís apareix si la revisió té més de 30 dies.
 
-1. Revisa Cronorunner i Sportmaniacs, i després les fonts oficials de cada convocatòria.
+1. Enumera totes les entrades i la paginació de Cronorunner i Sportmaniacs, i després les altres fonts i convocatòries oficials. Segueix el protocol de `REVISIO.md` i registra també les exclusions.
 2. Afig o modifica una entrada a `data/races.json`. Usa un `id` estable per a l’edició; conserva els antics si encara tenen valor de traçabilitat.
 3. Inclou nom, dia ISO, hora `HH:mm` o `null`, població, coordenades aproximades del seu centre, distàncies de carrera en km, tipus, fonts, URL i notes.
 4. Actualitza `verifiedAt` de les entrades revisades i `updatedAt` del conjunt. No actualitzes les dates de revisió sense comprovar les fonts.
 5. Si hi ha una discrepància sense resoldre o cancel·lació, retira la prova de `races` i documenta-la a `pending`.
-6. Executa `npm run check` i `npm test`. La prova de recompte inicial s’haurà d’ajustar quan canvie la selecció de partida.
+6. Actualitza `research/review.json` i executa `npm run build` i `npm test`. Ajusta el recompte de la instantània juntament amb les seues dates; conserva les comprovacions de cobertura i les regressions.
 
 Els `sourceIds` corresponen a les fonts que aporten o contrasten la convocatòria. No s’ha de marcar Sportmaniacs com a font d’una prova que no s’hi ha pogut comprovar.
 
@@ -97,6 +102,8 @@ styles.css              Disseny i adaptació a mòbil
 app.js                  Agenda, filtres, guardades i diàlegs
 lib/races.js            Dates, geografia, selecció i iCalendar
 data/races.json         Convocatòries, fonts i casos pendents
+research/review.json    Inventari, decisions i abast de la revisió
+REVISIO.md              Resultat i protocol de revisió de fonts
 assets/favicon.svg      Identitat visual pròpia
 scripts/serve.mjs        Servidor local, sense dependències
 scripts/build.mjs        Prepara els fitxers públics de dist/

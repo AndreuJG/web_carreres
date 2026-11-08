@@ -1,0 +1,1111 @@
+{
+  "reviewedAt": "2026-11-08",
+  "window": {
+    "after": "2026-11-08",
+    "through": "2027-11-08",
+    "maxRadiusKm": 50
+  },
+  "scope": [
+    {
+      "source": "cronorunner",
+      "url": "https://inscripciones.cronorunner.com/eventos",
+      "coverage": "17 fitxes del catàleg vigent, llegides en navegador, i 5 circuits (55 entrades).",
+      "eligible": 13
+    },
+    {
+      "source": "sportmaniacs",
+      "url": "https://sportmaniacs.com/es/races/search/valencia?page=1",
+      "coverage": "València: pàgines 1 i 2 (24 entrades), continuació històrica i abonament VTR a la pàgina 3; Castelló: 12 entrades de la primera pàgina fins a dates passades; revisió dels dos abonaments de circuit.",
+      "eligible": 13
+    },
+    {
+      "source": "toprun",
+      "url": "https://www.toprun.es/",
+      "coverage": "3 pròximes proves publicades: Calderona incorporada; Tabernas i Arucas fora del radi."
+    },
+    {
+      "source": "runatica",
+      "url": "https://www.runatica.com/",
+      "coverage": "14 pròximes proves del calendari publicat. Alzira (Sant Silvestre i mitja) ja incorporades; les altres fora del radi."
+    },
+    {
+      "source": "multiesport",
+      "url": "https://multiesport.es/calendario-running/",
+      "coverage": "5 proves de running, 9 de trail i calendari de cross sense convocatòries. Quatre admissibles incorporades; resta fora del radi o dia actual."
+    },
+    {
+      "source": "crono4sports",
+      "url": "https://crono4sports.com/eventos",
+      "coverage": "23 entrades amb totes les tandes de «carregar més». Xeraco i mitja de Xàtiva incorporades."
+    },
+    {
+      "source": "runcancer",
+      "url": "https://runcancer.com/carreras/",
+      "coverage": "Calendari oficial contrastat: València, Picassent i Alcàsser futures; Alfafar el dia actual. Caminades excloses."
+    },
+    {
+      "source": "vcr",
+      "url": "https://www.valenciaciudaddelrunning.com/calendario/",
+      "coverage": "8 esdeveniments del calendari: carreres i Mini Marató incorporades; Ironman exclòs per triatló. Mitja de 2027 contrastada amb organització i AIMS."
+    },
+    {
+      "source": "fdm",
+      "url": "https://www.fdmvalencia.es/agenda/",
+      "coverage": "Agenda i fitxes municipals: Sant Silvestre, Mini Marató, Empreses i contrast de les cites de València. Circuit de 2026 acabat; sense dates extrapolades de 2027."
+    },
+    {
+      "source": "rockthesport",
+      "url": "https://web.rockthesport.com/",
+      "coverage": "Contrast individual de les convocatòries d’Algemesí i Paiporta–Picanya. No representa una enumeració de tot el catàleg internacional de la plataforma."
+    },
+    {
+      "source": "trifitness31",
+      "url": "https://trifitness31.eu/calendario/",
+      "coverage": "Calendari individual i circuit VTR 2026–2027. Navarrés i Barx incloses; Canals fora del radi; Montesa és ciclisme."
+    },
+    {
+      "source": "upv",
+      "url": "https://www.upv.es/entidades/ad/eventos-deportivos/carreras-upv/",
+      "coverage": "Dates del circuit 2026–2027 publicades; dos casos pendents perquè les fitxes detallades continuen en 2025–2026."
+    }
+  ],
+  "catalogs": {
+    "cronorunner": [
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/ii-8k-burjassot",
+        "name": "ii 8k burjassot",
+        "date": "2026-11-08",
+        "status": "excluded",
+        "reason": "Dia actual (08/11/2026), exclòs per la regla temporal."
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/i-10k-ciutat-de-xirivella",
+        "name": "i 10k ciutat de xirivella",
+        "date": "2026-11-08",
+        "status": "excluded",
+        "reason": "Dia actual (08/11/2026), exclòs per la regla temporal."
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/xli-10k-volta-a-peu-port-de-catarroja",
+        "name": "10K Volta a Peu Port de Catarroja",
+        "date": "2026-11-14",
+        "status": "included",
+        "raceId": "catarroja-2026"
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/xvii-mitja-marato-roquette-benifaio",
+        "name": "Mitja Marató Roquette Benifaió i 10K",
+        "date": "2026-11-15",
+        "status": "included",
+        "raceId": "benifaio-2026"
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/vii-10k-solidaria-marines",
+        "name": "10K Solidària de Marines",
+        "date": "2026-11-15",
+        "status": "included",
+        "raceId": "marines-2026"
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/45-10k-y-5k-mislata",
+        "name": "10K i 5K de Mislata",
+        "date": "2026-11-15",
+        "status": "included",
+        "raceId": "mislata-2026"
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/xi-10k-y-5k-dinosauris-moncada",
+        "name": "10K i 5K Dinosauris Moncada",
+        "date": "2026-11-22",
+        "status": "included",
+        "raceId": "moncada-2026"
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/7k-rotary-port-saplaya",
+        "name": "7K Rotary Port Saplaya",
+        "date": "2026-11-22",
+        "status": "included",
+        "raceId": "port-saplaya-2026"
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/carrera-popular-10k-dulces-de-casinos",
+        "name": "10K Dolços de Casinos",
+        "date": "2026-11-28",
+        "status": "included",
+        "raceId": "casinos-2026"
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/vii-gran-fons-i-carrera-trencant-barreres-per-la-salut-mental-de-sueca",
+        "name": "Gran Fons i Carrera Trencant Barreres per la Salut Mental",
+        "date": "2026-11-29",
+        "status": "included",
+        "raceId": "sueca-2026"
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/xi-san-silvestre-solidaria-pobla-de-farnals",
+        "name": "Sant Silvestre Solidària de la Pobla de Farnals",
+        "date": "2026-12-12",
+        "status": "included",
+        "raceId": "silvestre-farnals-2026"
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/xiv-cursa-de-nadal-de-betera",
+        "name": "Cursa de Nadal de Bétera",
+        "date": "2026-12-19",
+        "status": "included",
+        "raceId": "betera-nadal-2026"
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/ix-sant-silvestre-2026",
+        "name": "Sant Silvestre d’Almussafes",
+        "date": "2026-12-19",
+        "status": "included",
+        "raceId": "silvestre-almussafes-2026"
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/xiii-foios-per-fibrosi-quistica",
+        "name": "10K Arco Foios per la Fibrosi Quística",
+        "date": "2026-12-20",
+        "status": "included",
+        "raceId": "foios-2026"
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/xi-sansil-trail",
+        "name": "xi sansil trail",
+        "date": "2026-12-20",
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km (Calles o Benidorm)."
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/carrera-lusitania",
+        "name": "Carrera Regimiento Lusitania",
+        "date": "2027-02-07",
+        "status": "included",
+        "raceId": "lusitania-2027"
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/evento/carrera-vertical-gran-hotel-bali-2027",
+        "name": "carrera vertical gran hotel bali 2027",
+        "date": "2027-04-03",
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km (Calles o Benidorm)."
+      }
+    ],
+    "cronorunnerCircuits": [
+      {
+        "url": "https://inscripciones.cronorunner.com/circuito/circuit-horta-nord/circuit-horta-nord-2026",
+        "entries": [
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxvi-gran-fons-de-pucol",
+            "name": "xxvi gran fons de pucol",
+            "date": "2026-04-12",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/iv-5k-pobla-de-farnals",
+            "name": "iv 5k pobla de farnals",
+            "date": "2026-05-23",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/vi-6k-solidaria-massalfassar",
+            "name": "vi 6k solidaria massalfassar",
+            "date": "2026-06-14",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xii-5k-albalat-dels-sorells",
+            "name": "xii 5k albalat dels sorells",
+            "date": "2026-07-04",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xvi-volta-a-peu-albuixech",
+            "name": "xvi volta a peu albuixech",
+            "date": "2026-08-21",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxxiv-volta-a-peu-el-puig",
+            "name": "xxxiv volta a peu el puig",
+            "date": "2026-09-12",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/v-7k-museros",
+            "name": "v 7k museros",
+            "date": "2026-09-19",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/7k-rotary-port-saplaya",
+            "name": "7K Rotary Port Saplaya",
+            "date": "2026-11-22",
+            "status": "included",
+            "raceId": "port-saplaya-2026"
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/ii-8k-burjassot",
+            "name": "ii 8k burjassot",
+            "date": "2026-11-08",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxiii-15k-i-5k-vila-de-massamagrell",
+            "name": "xxiii 15k i 5k vila de massamagrell",
+            "date": "2026-05-16",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          }
+        ]
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/circuito/circuit-ribera-xuquer/circuit-ribera-xuquer-2026",
+        "entries": [
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxxvii-volta-a-peu-a-l-alcudia",
+            "name": "xxxvii volta a peu a l alcudia",
+            "date": "2026-02-08",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/10k-benimodo-2026",
+            "name": "10k benimodo 2026",
+            "date": "2026-02-21",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/voltaapeualenova-2026",
+            "name": "voltaapeualenova 2026",
+            "date": "2026-02-28",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xii-10k-alcantera-del-xuquer-2026",
+            "name": "xii 10k alcantera del xuquer 2026",
+            "date": "2026-03-08",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxiv-volta-a-peu-gavarda-2026",
+            "name": "xxiv volta a peu gavarda 2026",
+            "date": "2026-04-11",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxvii-volta-a-peu-alginet",
+            "name": "xxvii volta a peu alginet",
+            "date": "2026-04-25",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxxiii-volta-a-peu-ciutat-de-carlet",
+            "name": "xxxiii volta a peu ciutat de carlet",
+            "date": "2026-05-09",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxx-volta-a-peu-alberic-la-carrera-de-la-mona",
+            "name": "xxx volta a peu alberic la carrera de la mona",
+            "date": "2026-05-23",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xii-volta-a-peu-sant-joanet",
+            "name": "xii volta a peu sant joanet",
+            "date": "2026-06-13",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xvii-volta-a-peu-mareny-de-barraquetes",
+            "name": "xvii volta a peu mareny de barraquetes",
+            "date": "2026-07-04",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxviii-volta-a-peu-llauri",
+            "name": "xxviii volta a peu llauri",
+            "date": "2026-07-24",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxxiv-volta-a-peu-nocturna-a-manuel",
+            "name": "xxxiv volta a peu nocturna a manuel",
+            "date": "2026-08-28",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxiv-volta-a-peu-catadau",
+            "name": "xxiv volta a peu catadau",
+            "date": "2026-09-12",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xlvi-volta-a-peu-carcaixent",
+            "name": "xlvi volta a peu carcaixent",
+            "date": "2026-10-04",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          }
+        ]
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/circuito/circuit-camp-turia/circuit-camp-turia-2026",
+        "entries": [
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xiii-7k-sant-vicent-de-lliria-mu6n0d24",
+            "name": "xiii 7k sant vicent de lliria mu6n0d24",
+            "date": "2026-04-18",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/ii-volta-a-peu-ciutat-de-lliria",
+            "name": "ii volta a peu ciutat de lliria",
+            "date": "2026-06-06",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxii-volta-a-peu-nocturna-riba-roja-de-turia",
+            "name": "xxii volta a peu nocturna riba roja de turia",
+            "date": "2026-06-26",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxxix-volta-a-peu-nocturna-a-la-pobla-de-vallbona",
+            "name": "xxxix volta a peu nocturna a la pobla de vallbona",
+            "date": "2026-07-10",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/10k-l-eliana",
+            "name": "10k l eliana",
+            "date": "2026-07-25",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxvii-legua-san-antonio-de-benageber",
+            "name": "xxvii legua san antonio de benageber",
+            "date": "2026-08-08",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxii-volta-a-peu-loriguilla",
+            "name": "xxii volta a peu loriguilla",
+            "date": "2026-09-04",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xv-volta-a-peu-benissano",
+            "name": "xv volta a peu benissano",
+            "date": "2026-09-12",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxxvi-volta-a-peu-9-d-octubre-vilamarxant",
+            "name": "xxxvi volta a peu 9 d octubre vilamarxant",
+            "date": "2026-10-04",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/vii-10k-solidaria-marines",
+            "name": "10K Solidària de Marines",
+            "date": "2026-11-15",
+            "status": "included",
+            "raceId": "marines-2026"
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/carrera-popular-10k-dulces-de-casinos",
+            "name": "10K Dolços de Casinos",
+            "date": "2026-11-28",
+            "status": "included",
+            "raceId": "casinos-2026"
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xiv-cursa-de-nadal-de-betera",
+            "name": "Cursa de Nadal de Bétera",
+            "date": "2026-12-19",
+            "status": "included",
+            "raceId": "betera-nadal-2026"
+          }
+        ]
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/circuito/circuit-horta-sud/circuit-turia-2026",
+        "entries": [
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xliv-volta-a-peu-xirivella",
+            "name": "xliv volta a peu xirivella",
+            "date": "2026-03-29",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/ix-10k-manises",
+            "name": "ix 10k manises",
+            "date": "2026-05-03",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxxiii-volta-a-peu-benetusser",
+            "name": "xxxiii volta a peu benetusser",
+            "date": "2026-05-24",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxxvii-volta-a-peu-fibra-valencia-vila-d-alaquas",
+            "name": "xxxvii volta a peu fibra valencia vila d alaquas",
+            "date": "2026-06-13",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxxiv-volta-a-peu-albal",
+            "name": "xxxiv volta a peu albal",
+            "date": "2026-07-04",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xiv-10k-sense-limits-aldaia",
+            "name": "xiv 10k sense limits aldaia",
+            "date": "2026-07-18",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xi-10k-montserrat",
+            "name": "xi 10k montserrat",
+            "date": "2026-07-31",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/beniparell-2026",
+            "name": "beniparell 2026",
+            "date": "2026-09-20",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xi-10k-y-5k-dinosauris-moncada",
+            "name": "10K i 5K Dinosauris Moncada",
+            "date": "2026-11-22",
+            "status": "included",
+            "raceId": "moncada-2026"
+          }
+        ]
+      },
+      {
+        "url": "https://inscripciones.cronorunner.com/circuito/circuit-albufera/2026",
+        "entries": [
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/albal-sonrisa-10k",
+            "name": "albal sonrisa 10k",
+            "date": "2026-02-15",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/vii-picassent-2026",
+            "name": "vii picassent 2026",
+            "date": "2026-03-28",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/vi-10k-via-materal-ciutat-de-sueca",
+            "name": "vi 10k via materal ciutat de sueca",
+            "date": "2026-04-25",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/ii-10k-ciutat-de-silla",
+            "name": "ii 10k ciutat de silla",
+            "date": "2026-05-17",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/ii-volta-a-peu-el-perello",
+            "name": "ii volta a peu el perello",
+            "date": "2026-06-14",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxxvii-volta-a-peu-almussafes",
+            "name": "xxxvii volta a peu almussafes",
+            "date": "2026-06-20",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxxix-volta-a-peu-sollana",
+            "name": "xxxix volta a peu sollana",
+            "date": "2026-07-11",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xxiv-volta-a-peu-pel-xuquer-riola",
+            "name": "xxiv volta a peu pel xuquer riola",
+            "date": "2026-07-25",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xiii-gran-fons-alfafar",
+            "name": "xiii gran fons alfafar",
+            "date": "2026-09-13",
+            "status": "excluded",
+            "reason": "Data passada o dia actual."
+          },
+          {
+            "url": "https://inscripciones.cronorunner.com/evento/xli-10k-volta-a-peu-port-de-catarroja",
+            "name": "10K Volta a Peu Port de Catarroja",
+            "date": "2026-11-14",
+            "status": "included",
+            "raceId": "catarroja-2026"
+          }
+        ]
+      }
+    ],
+    "sportmaniacs": [
+      {
+        "url": "https://sportmaniacs.com/es/races/carrera-10kfem-2027---dia-de-la-mujeriexcldeportista",
+        "name": "Carrera 10KFem",
+        "date": "2027-02-21",
+        "status": "included",
+        "raceId": "10kfem-2027"
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/vii-picaio-cim-trail-2027",
+        "name": "Picaio CIM Trail",
+        "date": "2027-01-17",
+        "status": "included",
+        "raceId": "picaio-2027"
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/iv-trail-la-foguera-canals",
+        "name": "IV TRAIL LA FOGUERA (CANALS)",
+        "date": "2027-01-10",
+        "status": "excluded",
+        "reason": "Població fora del radi: Canals, Utiel o l’Olleria."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/vix-volta-a-peu-castell-2027",
+        "name": "Volta a Peu al Castell de Sagunt",
+        "date": "2027-01-10",
+        "status": "included",
+        "raceId": "castell-sagunt-2027"
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/circuit-vall-de-sego-carreres-populars-2026",
+        "name": "CIRCUIT VALL DE SEGO CARRERES POPULARS 2026",
+        "date": "2026-12-31",
+        "status": "excluded",
+        "reason": "Abonament de circuit: la prova futura individual de Quart de les Valls ja està incorporada."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/runcancer-alcasser-2026",
+        "name": "Alcàsser contra el Càncer",
+        "date": "2026-12-27",
+        "status": "included",
+        "raceId": "alcasser-cancer-2026"
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/v-san-silvestre-trail-barx",
+        "name": "Sant Silvestre Trail Barx",
+        "date": "2026-12-27",
+        "status": "included",
+        "raceId": "silvestre-barx-2026"
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/runcancer-picassent-2026",
+        "name": "Picassent contra el Càncer",
+        "date": "2026-12-13",
+        "status": "included",
+        "raceId": "picassent-cancer-2026"
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/iii-10k-la-vall-de-sego-2026-quart-de-les-valls",
+        "name": "10K la Vall de Segó – Quart de les Valls",
+        "date": "2026-12-13",
+        "status": "included",
+        "raceId": "vall-sego-2026"
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/vi-trail-algar-de-palancia-20k-iv-sprint-trail-11k-2026",
+        "name": "Trail i Sprint Trail Algar de Palància",
+        "date": "2026-12-13",
+        "status": "included",
+        "raceId": "algar-2026"
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/xxix-vuelta-a-pie-nocturna-tous",
+        "name": "Volta a Peu Nocturna de Tous",
+        "date": "2026-12-12",
+        "status": "included",
+        "raceId": "tous-2026"
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/runcancer-valencia-2026",
+        "name": "València contra el Càncer",
+        "date": "2026-11-22",
+        "status": "included",
+        "raceId": "valencia-cancer-2026"
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/evento-gordako-utiel-2026",
+        "name": "Evento Gordako Utiel 2026",
+        "date": "2026-11-21",
+        "status": "excluded",
+        "reason": "Població fora del radi: Canals, Utiel o l’Olleria."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/30k---21k---10k-ciutat-de-sagunt-2026",
+        "name": "RUN&PRO 30K, 21K i 10K Ciutat de Sagunt",
+        "date": "2026-11-15",
+        "status": "included",
+        "raceId": "sagunt-2026"
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/runcancer-lolleria-2026",
+        "name": "RunCáncer L'Olleria 2026",
+        "date": "2026-11-15",
+        "status": "excluded",
+        "reason": "Població fora del radi: Canals, Utiel o l’Olleria."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/xi-trail-navarres",
+        "name": "Trail Navarrés",
+        "date": "2026-11-15",
+        "status": "included",
+        "raceId": "navarres-2026"
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/runcancer-alfafar-2026",
+        "name": "RunCáncer Alfafar 2026",
+        "date": "2026-11-08",
+        "status": "excluded",
+        "reason": "Data passada o dia actual."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/v-marcha-ciclodeportiva-montesa",
+        "name": "V MARCHA CICLODEPORTIVA MONTESA",
+        "date": "2026-11-08",
+        "status": "excluded",
+        "reason": "Data passada o dia actual."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/ii-carrera-por-la-solidaridad-2026",
+        "name": "II CARRERA POR LA SOLIDARIDAD 2026",
+        "date": "2026-11-08",
+        "status": "excluded",
+        "reason": "Data passada o dia actual."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/trail-chera-2026---circuito-senda-de-gigantes",
+        "name": "TRAIL CHERA 2026 - CIRCUITO SENDA DE GIGANTES",
+        "date": "2026-11-08",
+        "status": "excluded",
+        "reason": "Data passada o dia actual."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/xii-carrera-solidaria-ldquocon-otra-miradardquo-2026",
+        "name": "XII CARRERA SOLIDARIA “CON OTRA MIRADA” 2026",
+        "date": "2026-11-07",
+        "status": "excluded",
+        "reason": "Data passada o dia actual."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/10k-popular-nquera-2026",
+        "name": "10k popular nquera 2026",
+        "date": "2026-11-07",
+        "status": "excluded",
+        "reason": "Data passada o dia actual."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/10k-virtual-test-2026",
+        "name": "10k virtual test 2026",
+        "date": "2026-11-03",
+        "status": "excluded",
+        "reason": "Data passada o dia actual."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/runcancer-gandia-2026",
+        "name": "RunCáncer Gandia 2026",
+        "date": "2026-10-25",
+        "status": "excluded",
+        "reason": "Data passada o dia actual."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/valencia-trail-race-2026-2027",
+        "name": "Valencia Trail Race 2026–2027",
+        "status": "excluded",
+        "reason": "Inscripció de temporada, no una prova addicional. Contrastat el calendari individual de Trifitness31: Navarrés i Barx incorporades, Canals fora del radi; sense dates inventades per a les etapes no publicades."
+      }
+    ],
+    "sportmaniacsCastellon": [
+      {
+        "url": "https://sportmaniacs.com/es/races/xv-san-silvestre-dorpesa",
+        "name": "XV SAN SILVESTRE D'ORPESA",
+        "date": "2026-12-27",
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/san-silvestre-benicassim-2026",
+        "name": "SAN SILVESTRE BENICASSIM 2026",
+        "date": "2026-12-26",
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/viii-san-silvestre-les-ferreries",
+        "name": "VIII TRAIL SAN SILVESTRE LES FERRERIES",
+        "date": "2026-12-20",
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/xiv-san-silvestre-de-montatildea-sot-de-ferrer",
+        "name": "Sant Silvestre de Muntanya de Sot de Ferrer",
+        "date": "2026-12-20",
+        "status": "included",
+        "raceId": "sot-ferrer-2026"
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/san-silvestre-2026-les-alqueries",
+        "name": "SAN SILVESTRE 2026-LES ALQUERIES",
+        "date": "2026-12-20",
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/campeonato-autonmico-de-mushing-sprint-tierra-barracas-middot-castelln-12-13-de-diciembre-de-2026",
+        "name": "Natural Greatness Wild Race Campeonato Autonomico Mushing Tierra Comunidad Valenciana 2026",
+        "date": "2026-12-12",
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/xxi-volta-a-peu-la-vall-dalba-3-pujades-a-lermita",
+        "name": "XXI VOLTA A PEU LA VALL D'ALBA (3 PUJADES A L'ERMITA)",
+        "date": "2026-12-05",
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/cmso-cursa-de-muntanya-serra-dorpesa-2026",
+        "name": "CMSO (CURSA DE MUNTANYA SERRA D'ORPESA 2026)",
+        "date": "2026-11-22",
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/scott-mediterranean-epic-gravel-2026",
+        "name": "SCOTT Mediterranean Epic Gravel 2026",
+        "date": "2026-11-14",
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/10k-nutrinovex",
+        "name": "10k nutrinovex",
+        "date": "2026-11-08",
+        "status": "excluded",
+        "reason": "Data passada o dia actual."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/montanejos-trail-2026",
+        "name": "MONTANEJOS TRAIL 2026",
+        "date": "2026-11-07",
+        "status": "excluded",
+        "reason": "Data passada o dia actual."
+      },
+      {
+        "url": "https://sportmaniacs.com/es/races/lrsquoalcalatn-trail---lrsquoalcora",
+        "name": "L’ALCALATÉN TRAIL - L’ALCORA 2026",
+        "date": "2026-10-25",
+        "status": "excluded",
+        "reason": "Data passada o dia actual."
+      }
+    ],
+    "crono4sports": [
+      {
+        "url": "https://crono4sports.com/evento/monster-race_26",
+        "name": "Monster Race",
+        "date": null,
+        "status": "excluded",
+        "reason": "Dia actual."
+      },
+      {
+        "url": "https://crono4sports.com/evento/vi-marxa-benefica-ador-palma-de-gandia",
+        "name": "VI Marxa Benèfica Ador - Palma de Gandia",
+        "date": null,
+        "status": "excluded",
+        "reason": "Dia actual."
+      },
+      {
+        "url": "https://crono4sports.com/evento/viii-gran-carrera-del-mediterraneo-sup-race",
+        "name": "VIII Gran carrera del Mediterráneo Sup Race",
+        "date": null,
+        "status": "excluded",
+        "reason": "Dia actual."
+      },
+      {
+        "url": "https://crono4sports.com/evento/iia-travesia-a-nado-solidaria-unidos-frente-al-cancer-infantil-playa-de-la-patacona-alboraya",
+        "name": "IIª Travesía a nado Solidaria “Unidos Frente al Cancer Infantil” Playa de la Patacona Alboraya",
+        "date": null,
+        "status": "excluded",
+        "reason": "Natació; no és una carrera a peu."
+      },
+      {
+        "url": "https://crono4sports.com/evento/vii-cursa-de-les-empreses-de-la-safor-cajamar",
+        "name": "VII Cursa de les Empreses de la Safor Cajamar",
+        "date": null,
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://crono4sports.com/evento/desafio-vega-baja-redovan-by-medieval",
+        "name": "Desafio Vega Baja Redován By Medieval",
+        "date": null,
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://crono4sports.com/evento/xii-cursa-mascota-running",
+        "name": "XII Cursa-Mascota Running",
+        "date": null,
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://crono4sports.com/evento/xi-volta-a-peu-benifla",
+        "name": "XI Volta a peu Beniflà",
+        "date": null,
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://crono4sports.com/evento/xiv-cursa-popular-solidaria-beniarjo",
+        "name": "XIV Cursa popular solidaria Beniarjo",
+        "date": null,
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://crono4sports.com/evento/marsilvestre-solidaria-2026",
+        "name": "VII MARSILVESTRE SOLIDARIA",
+        "date": null,
+        "status": "excluded",
+        "reason": "Natació; no és una carrera a peu."
+      },
+      {
+        "url": "https://crono4sports.com/evento/iv-medieval-xtrem-race-peniscola",
+        "name": "IV Medieval Xtrem Race Peñíscola",
+        "date": null,
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://crono4sports.com/evento/travesia-de-navidad-alicante-2026",
+        "name": "Travesía de Navidad Alicante 2026",
+        "date": null,
+        "status": "excluded",
+        "reason": "Natació; no és una carrera a peu."
+      },
+      {
+        "url": "https://crono4sports.com/evento/cnab-primer-bany-de-lany-solidari-2027",
+        "name": "CNAB. Primer Bany de l'any solidari 2027",
+        "date": null,
+        "status": "excluded",
+        "reason": "Natació; no és una carrera a peu."
+      },
+      {
+        "url": "https://crono4sports.com/evento/xxvi-volta-a-peu-xeraco-gran-fons-manolo-pardo",
+        "name": "Volta a Peu Xeraco – Gran Fons Manolo Pardo",
+        "date": "2027-01-06",
+        "status": "included",
+        "raceId": "xeraco-2027"
+      },
+      {
+        "url": "https://crono4sports.com/evento/xxv-travessia-dhivern-al-port-de-gandia",
+        "name": "XXV Travessia d'hivern al Port de Gandia",
+        "date": null,
+        "status": "excluded",
+        "reason": "Natació; no és una carrera a peu."
+      },
+      {
+        "url": "https://crono4sports.com/evento/km-vertical-gandia-2027",
+        "name": "KM Vertical Gandia 2027",
+        "date": null,
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://crono4sports.com/evento/ix-medieval-xtrem-race-polop",
+        "name": "IX Medieval Xtrem Race Polop",
+        "date": null,
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://crono4sports.com/evento/i-mitja-marato-i-5k-de-les-platges-del-sud",
+        "name": "I Mitja Marató i 5K de les platges del sud",
+        "date": null,
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://crono4sports.com/evento/xxii-media-maraton-de-xativa",
+        "name": "Mitja Marató de Xàtiva",
+        "date": "2027-02-28",
+        "status": "included",
+        "raceId": "mitja-xativa-2027"
+      },
+      {
+        "url": "https://crono4sports.com/evento/talents-hybrid-games-26",
+        "name": "Talents Hybrid Games",
+        "date": null,
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://crono4sports.com/evento/iii-medieval-xtrem-race-alginet",
+        "name": "III Medieval Xtrem Race Alginet",
+        "date": null,
+        "status": "excluded",
+        "reason": "OCR amb obstacles, fora de l’abast de ruta, trail i cross."
+      },
+      {
+        "url": "https://crono4sports.com/evento/olympus-race-andorra",
+        "name": "Olympus Race Andorra",
+        "date": null,
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      },
+      {
+        "url": "https://crono4sports.com/evento/iv-qualis-games",
+        "name": "IV Qualis Games",
+        "date": null,
+        "status": "excluded",
+        "reason": "Població fora del radi de 50 km."
+      }
+    ]
+  },
+  "boundaryExclusions": [
+    {
+      "town": "Calles",
+      "lat": 39.725,
+      "lon": -0.973,
+      "distanceKm": 60.64,
+      "reason": "Fora del radi entre centres aproximats de població."
+    },
+    {
+      "town": "Canals",
+      "lat": 38.962,
+      "lon": -0.585,
+      "distanceKm": 51.38,
+      "reason": "Fora del radi entre centres aproximats de població."
+    },
+    {
+      "town": "L’Olleria",
+      "lat": 38.914,
+      "lon": -0.55,
+      "distanceKm": 55.72,
+      "reason": "Fora del radi entre centres aproximats de població."
+    },
+    {
+      "town": "Almedíjar",
+      "lat": 39.866,
+      "lon": -0.413,
+      "distanceKm": 51.6,
+      "reason": "Fora del radi entre centres aproximats de població."
+    },
+    {
+      "town": "Benigànim",
+      "lat": 38.944,
+      "lon": -0.443,
+      "distanceKm": 51.04,
+      "reason": "Fora del radi entre centres aproximats de població."
+    },
+    {
+      "town": "Gandia",
+      "lat": 38.969,
+      "lon": -0.18,
+      "distanceKm": 51.84,
+      "reason": "Fora del radi entre centres aproximats de població."
+    }
+  ],
+  "limitations": [
+    "Instantània manual dels calendaris consultats el 08/11/2026. No hi ha importador automàtic ni garantia de convocatòries encara no publicades.",
+    "Dates i modalitats verificades no impliquen inscripció oberta. Les discrepàncies es descriuen en cada fitxa.",
+    "Radi calculat entre centres aproximats de població, també al sud de Castelló; no per carretera."
+  ],
+  "newRaceIds": [
+    "miguel-rubio-2026",
+    "navarres-2026",
+    "mislata-2026",
+    "pujada-xativa-2026",
+    "lliria-2026",
+    "port-saplaya-2026",
+    "moncada-2026",
+    "samaruc-2026",
+    "sueca-2026",
+    "mini-marato-2026",
+    "tous-2026",
+    "silvestre-farnals-2026",
+    "algar-2026",
+    "vall-sego-2026",
+    "silvestre-almussafes-2026",
+    "paiporta-picanya-2026",
+    "foios-2026",
+    "sot-ferrer-2026",
+    "silvestre-barx-2026",
+    "silvestre-valencia-2026",
+    "xeraco-2027",
+    "castell-sagunt-2027",
+    "picaio-2027",
+    "bombers-xativa-2027",
+    "lusitania-2027",
+    "calderona-2027",
+    "mitja-xativa-2027",
+    "empreses-valencia-2027"
+  ]
+}

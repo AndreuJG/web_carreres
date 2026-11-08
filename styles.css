@@ -6,3 +6,5 @@
 @media(max-width:390px){.wrap{padding-inline:16px}.brand{font-size:19px}.site-header nav{gap:11px}.hero h1{font-size:36px}.hero .eyebrow{font-size:8px}.hero-facts{gap:10px;font-size:10px}.hero-facts>span+span{padding-left:10px}.race-card{grid-template-columns:43px minmax(0,1fr) 63px 20px;gap:8px;padding-inline:10px}.race-distance{font-size:11px}.race-info{gap:3px}.verified-tag{display:none}.agenda h2{font-size:21px}.sort-label select{width:123px}.calendar-button{padding:8px;font-size:8px}.search-box input{font-size:10px}.art-top{font-size:7px}}
 @media(max-width:480px){.brand{white-space:nowrap}.site-header nav{margin-left:auto}.site-header .nav-active{display:none}.nav-link{white-space:nowrap}.hero-facts{font-size:10px}.hero-facts b{font-size:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+.tag-trail{background:#e9ede1;color:#4b6236}.tag-infantil{background:#eee8f4;color:#71548b}.review-summary{padding:12px;border-left:3px solid var(--orange,#e97447);background:#faf6ef}.race-distance{overflow-wrap:anywhere}
