@@ -80,8 +80,7 @@ function render({ updateUrl = true } = {}) {
   $('#results-description').textContent = `${visible.length} ${visible.length === 1 ? 'carrera' : 'carreres'} · fins al ${longDate(oneYearAfter(today))}`;
   $('#export').disabled = !visible.length;
   if (!visible.length) {
-    const sportmaniacs = $('#source').value === 'sportmaniacs';
-    $('#race-list').innerHTML = `<div class="empty-state"><div class="empty-icon" aria-hidden="true">${savedOnly ? '♡' : '⌕'}</div><h3>${savedOnly ? 'La teua pròxima meta encara no està guardada' : 'Cap carrera amb estos filtres'}</h3><p>${sportmaniacs ? 'Sportmaniacs ha bloquejat la consulta automatitzada (HTTP 403). Pots consultar el seu calendari directament des de Les fonts.' : savedOnly ? 'Toca el cor d’una carrera per a tindre-la ací. Només es mostren les que continuen dins del període i dels filtres.' : 'Prova a ampliar el radi o a canviar la distància i el mes. Només mostrem carreres futures amb data publicada.'}</p><button class="primary-button" data-reset>Veure totes les carreres →</button></div>`;
+    $('#race-list').innerHTML = `<div class="empty-state"><div class="empty-icon" aria-hidden="true">${savedOnly ? '♡' : '⌕'}</div><h3>${savedOnly ? 'La teua pròxima meta encara no està guardada' : 'Cap carrera amb estos filtres'}</h3><p>${savedOnly ? 'Toca el cor d’una carrera per a tindre-la ací. Només es mostren les que continuen dins del període i dels filtres.' : 'Prova a ampliar el radi o a canviar la distància i el mes. Només mostrem carreres futures amb data publicada.'}</p><button class="primary-button" data-reset>Veure totes les carreres →</button></div>`;
   } else if ($('#sort').value === 'near') {
     $('#race-list').innerHTML = visible.map(card).join('');
   } else {
@@ -142,7 +141,7 @@ function raceDetails(id, show = true) {
 
 function showSources() {
   if (!data) return;
-  openDialog(`<h2 id="dialog-title">Una agenda amb fonts.</h2><p>Prioritzem Cronorunner i Sportmaniacs, i contrastem les convocatòries amb els webs dels organitzadors. Última revisió: ${h(longDate(data.updatedAt))}.</p>${data.sources.map(source => `<div class="source-item"><h3><a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.name)} ↗</a></h3><p>${h(source.description)}</p>${source.note ? `<small>${h(source.note)}</small>` : ''}</div>`).join('')}<h3>Pendents de verificació · fora de l’agenda</h3>${data.pending.map(item => `<div class="source-item"><h3>${h(item.name)}</h3><p>${h(item.reason)}</p><p>${item.sources.map(source => `<a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.label)} ↗</a>`).join(' · ')}</p></div>`).join('')}`);
+  openDialog(`<h2 id="dialog-title">Una agenda amb fonts.</h2><p>Prioritzem Cronorunner i Sportmaniacs, i contrastem les convocatòries amb els webs dels organitzadors. Última revisió: ${h(longDate(data.updatedAt))}.</p>${data.sources.map(source => `<div class="source-item"><h3><a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.name)} ↗</a></h3><p>${h(source.description)}</p>${source.note ? `<small>${h(source.note)}</small>` : ''}</div>`).join('')}${data.pending.length ? '<h3>Pendents de verificació · fora de l’agenda</h3>' : ''}${data.pending.map(item => `<div class="source-item"><h3>${h(item.name)}</h3><p>${h(item.reason)}</p><p>${item.sources.map(source => `<a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.label)} ↗</a>`).join(' · ')}</p></div>`).join('')}`);
 }
 
 function showMethod() {

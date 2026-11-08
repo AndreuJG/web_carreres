@@ -8,21 +8,21 @@ Trobar ràpidament carreres a peu a menys de 50 km de Catarroja i dins dels prò
 
 - [x] Repositori revisat: buit, sense tecnologia ni instruccions prèvies.
 - [x] Fonts prioritàries: Cronorunner i Sportmaniacs. Contrast amb organitzadors, circuits, FDM, RunCáncer, Runática i AIMS.
-- [x] Selecció inicial de 15 cites, revisada el 08/11/2026.
+- [x] Selecció revisada de 18 cites el 08/11/2026, incloent Sagunt, Benifaió i Catarroja.
 - [x] Dates discordants o sense convocatòria primària separades com a pendents.
 - [x] Web en valencià, estàtica i sense dependències.
 - [x] Agenda, filtres combinables, ordre per proximitat, fitxes amb fonts.
 - [x] Guardades locals, enllaços amb filtres i exportació iCalendar.
 - [x] Regles de data de Madrid, radi real amb Haversine i validació de dades.
-- [x] 8 proves automatitzades correctes i validació de les 15 fitxes.
+- [x] 10 proves automatitzades i validació de les 18 fitxes, amb regressions de Sagunt, Benifaió i l’ajornament de Catarroja.
 - [x] Verificació en navegador: cerca sense accents, radi de 10 km, combinació de filtres, guardades, fitxa, fonts i estat buit.
 - [x] Descàrrega real d’un fitxer iCalendar i comprovació de mòbil sense desbordament horitzontal.
 - [x] Vista d’escriptori revisada i consola sense errors durant les comprovacions.
 
 ## Fase 2 · Cobertura i revisió de les fonts
 
-1. Resoldre la data de Catarroja amb una convocatòria vigent de l’organització.
-2. Revisar Sportmaniacs directament: l’accés automatitzat inicial retorna 403. No bloqueja el funcionament de la v1.
+1. Catarroja resolta: ajornament del 3 d’octubre al 14 de novembre; convocatòria i inscripció contrastades en navegador.
+2. Sportmaniacs revisada directament: Sagunt incorporada. Si el lector de text retorna 403 o dades buides, contrastar en navegador abans de descartar una convocatòria. Benifaió també resolta amb la fitxa de Cronorunner.
 3. Ampliar la cerca a l’Horta Sud, Ribera, Camp de Túria i Camp de Morvedre, incloent trail amb convocatòria publicada.
 4. Revisar setmanalment els ajornaments de les proves pròximes i les noves convocatòries de 2027.
 5. Afegir estat de convocatòria i d’inscripció quan es puguen comprovar, sense confondre «data publicada» amb «dorsals disponibles».

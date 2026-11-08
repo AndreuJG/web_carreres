@@ -43,8 +43,35 @@ test('el calendari usa dies complets, límits exclusius, escapament i plegat UTF
   assert.equal((calendar.match(/BEGIN:VEVENT/g) || []).length, 1);
   assert(calendar.split('\r\n').every(line => new TextEncoder().encode(line).length <= 75));
 });
-test('la selecció inicial conté 15 cites futures, amb exclusió automàtica posterior', async () => {
+test('el catàleg revisat conté 18 cites futures, amb exclusió automàtica posterior', async () => {
   const data = JSON.parse(await readFile(new URL('../data/races.json', import.meta.url), 'utf8'));
-  assert.equal(selectRaces(data.races, data.origin, {}, '2026-11-08').length, 15);
+  assert.equal(selectRaces(data.races, data.origin, {}, '2026-11-08').length, 18);
   assert.equal(selectRaces(data.races, data.origin, {}, '2027-11-08').length, 0);
+});
+
+test('Sagunt i Benifaió apareixen amb la seua font, modalitats i radi correctes', async () => {
+  const data = JSON.parse(await readFile(new URL('../data/races.json', import.meta.url), 'utf8'));
+  for (const [query, source, expectedId, distances] of [
+    ['sagunt', 'sportmaniacs', 'sagunt-2026', [10, 21, 30]],
+    ['benifaio', 'cronorunner', 'benifaio-2026', [10, 21.1]]
+  ]) {
+    const races = selectRaces(data.races, data.origin, { query, source }, '2026-11-08');
+    assert.equal(races.length, 1);
+    assert.equal(races[0].id, expectedId);
+    assert.equal(races[0].date, '2026-11-15');
+    assert.deepEqual(races[0].distances, distances);
+    assert(races[0].proximity < 50);
+  }
+});
+
+test('Catarroja usa la nova data i no queda duplicada com a pendent ni exclosa per la data antiga', async () => {
+  const data = JSON.parse(await readFile(new URL('../data/races.json', import.meta.url), 'utf8'));
+  const races = selectRaces(data.races, data.origin, { query: 'catarroja', source: 'cronorunner', radius: 10 }, '2026-11-08');
+  assert.equal(races.length, 1);
+  assert.equal(races[0].date, '2026-11-14');
+  assert.equal(races[0].time, '08:30');
+  assert(races[0].note.includes('Ajornada del 3 d’octubre'));
+  assert(races[0].sources.some(source => source.url.includes('ref=156-2172')));
+  assert(!data.pending.some(item => /Catarroja|Benifaió/.test(item.name)));
+  assert.equal(selectRaces(data.races, data.origin, { query: 'catarroja' }, '2026-11-14').length, 0);
 });

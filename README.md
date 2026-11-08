@@ -1,6 +1,6 @@
 # Córrer a prop
 
-Agenda de carreres a peu a un màxim de **50 km de Catarroja**, en valencià. Primera versió preparada el **8 de novembre de 2026**, amb 15 cites publicades i dos casos pendents de verificació.
+Agenda de carreres a peu a un màxim de **50 km de Catarroja**, en valencià. Versió revisada el **8 de novembre de 2026**, amb 18 cites publicades. Inclou Sagunt, Benifaió i Catarroja després de contrastar les fitxes directament en navegador.
 
 ## Posar-la en marxa
 
@@ -46,8 +46,8 @@ Les fonts i els enllaços de cada carrera són dins de [data/races.json](data/ra
 
 | Font | Ús i límits en esta revisió |
 | --- | --- |
-| [Cronorunner](https://inscripciones.cronorunner.com/eventos) | Prioritària per indicació de l’usuari. Calendaris indexats del Camp de Túria contrastats amb el circuit i anuncis. Algunes fitxes directes retornen «no disponible». |
-| [Sportmaniacs](https://sportmaniacs.com/es) | Prioritària per indicació de l’usuari. Retorna HTTP 403 a la consulta automatitzada; no s’han importat dades ni inventat una API. Queda enllaçada per a consulta directa. |
+| [Cronorunner](https://inscripciones.cronorunner.com/eventos) | Prioritària per indicació de l’usuari. Benifaió i Catarroja contrastades en navegador amb dates, distàncies i horaris. La càrrega amb JavaScript pot donar una lectura de text incompleta. |
+| [Sportmaniacs](https://sportmaniacs.com/es) | Prioritària per indicació de l’usuari. Sagunt contrastada directament en navegador: 15/11/2026, 08:30, proves de 10, 21 i 30 km. Un error 403 del lector de text no implica que la convocatòria siga inaccessible. |
 | [RunCáncer](https://runcancer.com/carreras/) | Convocatòries solidàries i actualització de l’ajornament de València al 22/11/2026. |
 | [Valencia Ciudad del Running](https://www.valenciaciudaddelrunning.com/calendario/) | Calendari, Breakfast Run, Marató, Ibercaja i 15K/7,5K. |
 | [Fundació Esportiva Municipal](https://carreras.fdmvalencia.es/es/otras-carreras/) | Contrast de dates, distàncies i horaris; 10KFem de 2027. |
@@ -55,7 +55,9 @@ Les fonts i els enllaços de cada carrera són dins de [data/races.json](data/ra
 | [Circuit Camp de Túria](https://circuitcampturia.com/) | Calendari i contrast de les proves de la comarca. |
 | [AIMS](https://aims-worldrunning.org/races/854.html) i [Pas Ras](https://www.pasras.es/reglamento/) | Data del 21K de València de 2027 i reglament vigent de Pas Ras. |
 
-**Pendents, fora de l’agenda:** Volta a Peu Port de Catarroja (14/11 a Cronorunner, 03/10 al web del Circuit Albufera; fitxa directa no disponible) i Mitja Marató Roquette Benifaió (sense convocatòria primària vigent localitzada). Es mostren amb explicació i fonts en el diàleg de fonts.
+**Correccions de la revisió:** Catarroja està ajornada del 03/10 al **14/11/2026**, amb eixida a les 08:30 i inscripció oberta en el moment de revisar-la (termini publicat: 11/11 a les 23:59). Benifaió confirma el **15/11/2026 a les 09:30**, amb 10K i mitja marató. Sagunt confirma el **15/11/2026 a les 08:30**, amb 10K, 21K i 30K. Les tres apareixen en l’agenda; ja no hi ha casos pendents d’esta revisió.
+
+Si un lector retorna una fitxa buida, «no disponible» o HTTP 403, comprova la pàgina en navegador abans de descartar-la. En els ajornaments, preval la convocatòria actualitzada sobre el calendari antic del circuit. L’estat de les inscripcions es documenta amb la data de revisió, sense presentar-lo com una comprovació en temps real.
 
 ## Actualitzar les carreres
 
