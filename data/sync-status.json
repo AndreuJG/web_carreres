@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-09T20:42:50.281Z",
+  "checkedAt": "2026-11-09T20:54:34.896Z",
   "today": "2026-11-09",
   "status": "ok",
   "window": {
@@ -8,22 +8,7 @@
     "through": "2027-11-09",
     "radiusKm": 50
   },
-  "changes": [
-    {
-      "kind": "added",
-      "id": "auto-mychip-5f2547ce7984",
-      "name": "Mou-te per la MPOC, 2026",
-      "url": "https://www.mychip.es/e/mou-te-per-la-mpoc-2026",
-      "source": "mychip"
-    },
-    {
-      "kind": "added",
-      "id": "auto-mychip-37c7b46040db",
-      "name": "10e Trail Senglars, La Mola Extrem, Favara, LMVS. 26/27",
-      "url": "https://www.mychip.es/e/10e-trail-senglars-la-mola-extrem-favara-lmvs-2627",
-      "source": "mychip"
-    }
-  ],
+  "changes": [],
   "pending": [
     {
       "name": "2027 1ª CURSA D´EMPRESES DE LA VALL D´ALBAIDA",
@@ -80,7 +65,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-09T20:42:50.281Z",
+      "checkedAt": "2026-11-09T20:54:34.896Z",
       "status": "ok",
       "catalogEntries": 15,
       "read": 13,
@@ -259,7 +244,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-09T20:42:50.281Z",
+      "checkedAt": "2026-11-09T20:54:34.896Z",
       "status": "ok",
       "catalogEntries": 25,
       "read": 16,
@@ -515,7 +500,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-09T20:42:50.281Z",
+      "checkedAt": "2026-11-09T20:54:34.896Z",
       "status": "ok",
       "catalogEntries": 10,
       "read": 8,
@@ -643,7 +628,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-09T20:42:50.281Z",
+      "checkedAt": "2026-11-09T20:54:34.896Z",
       "status": "ok",
       "catalogEntries": 16,
       "read": 16,
@@ -840,7 +825,7 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-09T20:42:50.281Z",
+      "checkedAt": "2026-11-09T20:54:34.896Z",
       "status": "ok",
       "catalogEntries": 21,
       "read": 19,
@@ -1057,7 +1042,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-09T20:42:50.281Z",
+      "checkedAt": "2026-11-09T20:54:34.896Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 1,
@@ -1093,47 +1078,13 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-09T20:42:50.281Z",
+      "checkedAt": "2026-11-09T20:54:34.896Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
       "eligible": 7,
       "errors": [],
       "decisions": [
-        {
-          "url": "https://www.valenciaciudaddelrunning.com/evento/bimbo-valencia-breakfast-run/",
-          "name": "Bimbo Valencia Breakfast Run",
-          "date": "2026-12-05",
-          "town": "València",
-          "distances": [
-            5
-          ],
-          "time": "09:00",
-          "status": "eligible"
-        },
-        {
-          "url": "https://www.valenciaciudaddelrunning.com/evento/maraton-valencia/",
-          "name": "Maratón Valencia 2026",
-          "date": "2026-12-06",
-          "town": "València",
-          "distances": [
-            42.195
-          ],
-          "time": "08:15",
-          "status": "eligible"
-        },
-        {
-          "url": "https://www.valenciaciudaddelrunning.com/evento/15k-abierta-al-mar-y-7-5k/",
-          "name": "15K Abierta al Mar y 7.5K",
-          "date": "2027-04-25",
-          "town": "València",
-          "distances": [
-            7.5,
-            15
-          ],
-          "time": "09:00",
-          "status": "eligible"
-        },
         {
           "url": "https://www.valenciaciudaddelrunning.com/evento/valencia-contra-el-cancer/",
           "name": "Valencia Contra el Cáncer",
@@ -1143,6 +1094,17 @@
             6
           ],
           "time": "08:30",
+          "status": "eligible"
+        },
+        {
+          "url": "https://www.valenciaciudaddelrunning.com/evento/bimbo-valencia-breakfast-run/",
+          "name": "Bimbo Valencia Breakfast Run",
+          "date": "2026-12-05",
+          "town": "València",
+          "distances": [
+            5
+          ],
+          "time": "09:00",
           "status": "eligible"
         },
         {
@@ -1156,6 +1118,17 @@
             1.2
           ],
           "time": "11:00",
+          "status": "eligible"
+        },
+        {
+          "url": "https://www.valenciaciudaddelrunning.com/evento/maraton-valencia/",
+          "name": "Maratón Valencia 2026",
+          "date": "2026-12-06",
+          "town": "València",
+          "distances": [
+            42.195
+          ],
+          "time": "08:15",
           "status": "eligible"
         },
         {
@@ -1181,6 +1154,18 @@
           "status": "eligible"
         },
         {
+          "url": "https://www.valenciaciudaddelrunning.com/evento/15k-abierta-al-mar-y-7-5k/",
+          "name": "15K Abierta al Mar y 7.5K",
+          "date": "2027-04-25",
+          "town": "València",
+          "distances": [
+            7.5,
+            15
+          ],
+          "time": "09:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://www.valenciaciudaddelrunning.com/evento/ironman-valencia/",
           "name": "IRONMAN 70.3 Valencia 2027",
           "status": "excluded",
@@ -1191,13 +1176,24 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-09T20:42:50.281Z",
+      "checkedAt": "2026-11-09T20:54:34.896Z",
       "status": "ok",
       "catalogEntries": 11,
       "read": 12,
       "eligible": 9,
       "errors": [],
       "decisions": [
+        {
+          "url": "https://www.fdmvalencia.es/eventos/bimbo-valencia-breakfast-run-2026/",
+          "name": "Bimbo València Breakfast Run 2026",
+          "date": "2026-12-05",
+          "town": "València",
+          "distances": [
+            42.195
+          ],
+          "time": "09:00",
+          "status": "eligible"
+        },
         {
           "url": "https://www.fdmvalencia.es/eventos/mini-maraton-valencia-msc-2026/",
           "name": "Mini Maratón València MSC 2026",
@@ -1209,6 +1205,17 @@
             1.2
           ],
           "time": "11:00",
+          "status": "eligible"
+        },
+        {
+          "url": "https://www.fdmvalencia.es/eventos/maraton-valencia-trinidad-alfonso-zurich-2026/",
+          "name": "Maratón Valencia Trinidad Alfonso Zurich 2026",
+          "date": "2026-12-06",
+          "town": "València",
+          "distances": [
+            42
+          ],
+          "time": "08:15",
           "status": "eligible"
         },
         {
@@ -1258,60 +1265,6 @@
           "status": "eligible"
         },
         {
-          "url": "https://www.fdmvalencia.es/eventos/carrera-de-empresas-valencia-2027/",
-          "name": "Carrera d’Empreses València 2027",
-          "date": "2027-05-02",
-          "town": "València",
-          "distances": [
-            5,
-            10
-          ],
-          "time": "09:00",
-          "status": "eligible"
-        },
-        {
-          "url": "https://www.fdmvalencia.es/eventos/carrera-por-la-solidaridad-2026/",
-          "name": "Carrera per la Solidaritat 2026",
-          "date": "2026-11-08",
-          "town": "València",
-          "distances": [],
-          "time": "09:00",
-          "status": "excluded",
-          "reason": "Fora del període"
-        },
-        {
-          "url": "https://www.fdmvalencia.es/eventos/bimbo-valencia-breakfast-run-2026/",
-          "name": "Bimbo València Breakfast Run 2026",
-          "date": "2026-12-05",
-          "town": "València",
-          "distances": [
-            42.195
-          ],
-          "time": "09:00",
-          "status": "eligible"
-        },
-        {
-          "url": "https://www.fdmvalencia.es/eventos/maraton-valencia-trinidad-alfonso-zurich-2026/",
-          "name": "Maratón Valencia Trinidad Alfonso Zurich 2026",
-          "date": "2026-12-06",
-          "town": "València",
-          "distances": [
-            42
-          ],
-          "time": "08:15",
-          "status": "eligible"
-        },
-        {
-          "url": "https://www.fdmvalencia.es/eventos/gran-premio-internacional-de-atletismo-ciudad-de-valencia-2027/",
-          "name": "Meeting Maratón València 2027",
-          "date": "2027-01-28",
-          "town": "València",
-          "distances": [],
-          "time": "17:00",
-          "status": "excluded",
-          "reason": "Distància de carrera sense confirmar"
-        },
-        {
           "url": "https://www.fdmvalencia.es/eventos/15k-y-7-5k-abierta-al-mar-2027/",
           "name": "15K i 7.5K Abierta al Mar 2027",
           "date": "2027-04-25",
@@ -1319,6 +1272,18 @@
           "distances": [
             7.5,
             15
+          ],
+          "time": "09:00",
+          "status": "eligible"
+        },
+        {
+          "url": "https://www.fdmvalencia.es/eventos/carrera-de-empresas-valencia-2027/",
+          "name": "Carrera d’Empreses València 2027",
+          "date": "2027-05-02",
+          "town": "València",
+          "distances": [
+            5,
+            10
           ],
           "time": "09:00",
           "status": "eligible"
@@ -1333,13 +1298,33 @@
           ],
           "time": "08:25",
           "status": "eligible"
+        },
+        {
+          "url": "https://www.fdmvalencia.es/eventos/carrera-por-la-solidaridad-2026/",
+          "name": "Carrera per la Solidaritat 2026",
+          "date": "2026-11-08",
+          "town": "València",
+          "distances": [],
+          "time": "09:00",
+          "status": "excluded",
+          "reason": "Fora del període"
+        },
+        {
+          "url": "https://www.fdmvalencia.es/eventos/gran-premio-internacional-de-atletismo-ciudad-de-valencia-2027/",
+          "name": "Meeting Maratón València 2027",
+          "date": "2027-01-28",
+          "town": "València",
+          "distances": [],
+          "time": "17:00",
+          "status": "excluded",
+          "reason": "Distància de carrera sense confirmar"
         }
       ]
     },
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-09T20:42:50.281Z",
+      "checkedAt": "2026-11-09T20:54:34.896Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1384,7 +1369,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-09T20:42:50.281Z",
+      "checkedAt": "2026-11-09T20:54:34.896Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1418,13 +1403,46 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-09T20:42:50.281Z",
+      "checkedAt": "2026-11-09T20:54:34.896Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 4,
       "eligible": 3,
       "errors": [],
       "decisions": [
+        {
+          "url": "https://www.mychip.es/e/mou-te-per-la-mpoc-2026",
+          "name": "Mou-te per la MPOC, 2026",
+          "date": "2026-11-15",
+          "town": "Sueca",
+          "distances": [
+            5
+          ],
+          "time": "10:00",
+          "status": "eligible"
+        },
+        {
+          "url": "https://www.mychip.es/e/xxv-mitja-marato-samaruc-2026-algemesi",
+          "name": "XXIV MITJA MARATÓ SAMARUC, 2026, Algemesí",
+          "date": "2026-11-22",
+          "town": "Algemesí",
+          "distances": [
+            21.097
+          ],
+          "time": "10:00",
+          "status": "eligible"
+        },
+        {
+          "url": "https://www.mychip.es/e/10e-trail-senglars-la-mola-extrem-favara-lmvs-2627",
+          "name": "10e Trail Senglars, La Mola Extrem, Favara, LMVS. 26/27",
+          "date": "2026-11-29",
+          "town": "Favara",
+          "distances": [
+            15
+          ],
+          "time": "09:00",
+          "status": "eligible"
+        },
         {
           "url": "https://www.mychip.es/e/carrera-solidaria-corre-sin-resistencias-ceu-cardenal-herrera-alfara-del-patriarca",
           "name": "Carrera Solidaria CORRE SIN RESISTENCIAS, CEU Cardenal Herrera, Alfara del Patriarca",
@@ -1454,43 +1472,10 @@
           "reason": "Fora del radi"
         },
         {
-          "url": "https://www.mychip.es/e/mou-te-per-la-mpoc-2026",
-          "name": "Mou-te per la MPOC, 2026",
-          "date": "2026-11-15",
-          "town": "Sueca",
-          "distances": [
-            5
-          ],
-          "time": "10:00",
-          "status": "eligible"
-        },
-        {
           "url": "https://www.mychip.es/e/valldigna-extrem-2026-marxa-senderista",
           "name": "VALLDIGNA EXTREM, 2026 Marxa senderista",
           "status": "excluded",
           "reason": "Modalitat o abonament exclòs"
-        },
-        {
-          "url": "https://www.mychip.es/e/xxv-mitja-marato-samaruc-2026-algemesi",
-          "name": "XXIV MITJA MARATÓ SAMARUC, 2026, Algemesí",
-          "date": "2026-11-22",
-          "town": "Algemesí",
-          "distances": [
-            21.097
-          ],
-          "time": "10:00",
-          "status": "eligible"
-        },
-        {
-          "url": "https://www.mychip.es/e/10e-trail-senglars-la-mola-extrem-favara-lmvs-2627",
-          "name": "10e Trail Senglars, La Mola Extrem, Favara, LMVS. 26/27",
-          "date": "2026-11-29",
-          "town": "Favara",
-          "distances": [
-            15
-          ],
-          "time": "09:00",
-          "status": "eligible"
         }
       ]
     }
