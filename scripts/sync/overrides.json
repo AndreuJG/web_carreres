@@ -1,0 +1,14 @@
+{
+  "description": "Correccions d’una edició contrastades amb reglament. Només s’apliquen mentre la plataforma conserve exactament els valors indicats.",
+  "rules": [
+    {
+      "sourceId": "multiesport",
+      "url": "https://multiesport.es/event/2026-vii-trail-de-lliria/",
+      "field": "distances",
+      "when": [11, 21],
+      "value": [11.3, 20],
+      "reason": "El reglament de 2026 especifica 11,3 i 20 km; el calendari arrodoneix a 11 i 21.",
+      "evidence": "https://multiesport.es/wp-content/Json_files/2026/REGLAMENTOS/REGLAMENT%20VII%20TRAIL%20SANDRA%20VIDRIER%202026.pdf"
+    }
+  ]
+}

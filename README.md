@@ -1,14 +1,15 @@
 # Córrer a prop
 
-Agenda de carreres a peu a un màxim de **50 km de Catarroja**, en valencià. Versió revisada el **8 de novembre de 2026**, amb **46 cites publicades** de ruta, trail i infantils. La revisió de cobertura incorpora 28 cites i documenta també les exclusions i les discrepàncies.
+Agenda de carreres a peu a un màxim de **50 km de Catarroja**, en valencià. Catàleg de partida revisat el **8 de novembre de 2026**, amb 46 cites de ruta, trail i infantils. La primera consulta automàtica del **9 de novembre** l’ha ampliat a **48 cites**.
 
 Consulta [REVISIO.md](REVISIO.md) per a veure l’abast exacte de cada calendari, les incorporacions i els casos pendents. L’inventari [research/review.json](research/review.json) vincula les entrades revisades amb el catàleg i permet comprovar-ne la cobertura.
 
 ## Posar-la en marxa
 
-Cal Node.js 22 o superior. No hi ha dependències ni pas de compilació.
+Cal Node.js 22 o superior. La web publicada és estàtica; els lectors de calendaris usen una dependència de desenvolupament amb versió fixada.
 
 ```sh
+npm ci
 npm run dev
 ```
 
@@ -19,7 +20,7 @@ npm run check
 npm test
 ```
 
-`check` comprova sintaxi i integritat de les dades. Les 14 proves cobreixen dates de Madrid, anys de traspàs, límit anual, radi, cerca sense accents, filtres, guardades, exportació iCalendar, modalitats de caminada i cobertura de l’inventari de fonts.
+`check` comprova sintaxi i integritat de les dades. Les 31 proves cobreixen dates de Madrid, anys de traspàs, límit anual, radi, cerca sense accents, filtres, guardades, exportació iCalendar, modalitats de caminada i cobertura de l’inventari de fonts.
 
 ## Què fa esta versió
 
@@ -66,16 +67,19 @@ Si un lector retorna una fitxa buida, «no disponible» o HTTP 403, comprova la 
 
 ## Actualitzar les carreres
 
-Esta versió **no té un importador automàtic**: la recerca inicial s’ha fet manualment. Oculta les dates passades, però necessita noves revisions per a incorporar proves, canvis de data, cancel·lacions i convocatòries de 2027. Un avís apareix si la revisió té més de 30 dies.
+La consulta és **automàtica i diària** amb GitHub Actions, a les 05:17 UTC (06:17 a l’hivern / 07:17 a l’estiu en Europe/Madrid). No necessita l’ordinador encés ni credencials de Vercel. Consulta [AUTOMATITZACIO.md](AUTOMATITZACIO.md) per a veure el funcionament, els límits de cada font i el tractament de fallades.
 
-1. Enumera totes les entrades i la paginació de Cronorunner i Sportmaniacs, i després les altres fonts i convocatòries oficials. Segueix el protocol de `REVISIO.md` i registra també les exclusions.
-2. Afig o modifica una entrada a `data/races.json`. Usa un `id` estable per a l’edició; conserva els antics si encara tenen valor de traçabilitat.
-3. Inclou nom, dia ISO, hora `HH:mm` o `null`, població, coordenades aproximades del seu centre, distàncies de carrera en km, tipus, fonts, URL i notes.
-4. Actualitza `verifiedAt` de les entrades revisades i `updatedAt` del conjunt. No actualitzes les dates de revisió sense comprovar les fonts.
-5. Si hi ha una discrepància sense resoldre o cancel·lació, retira la prova de `races` i documenta-la a `pending`.
-6. Actualitza `research/review.json` i executa `npm run build` i `npm test`. Ajusta el recompte de la instantània juntament amb les seues dates; conserva les comprovacions de cobertura i les regressions.
+La web llig el catàleg públic actualitzat de GitHub i conserva una còpia de reserva. En localhost usa el JSON local. Cada consulta publica un resum de salut de les fonts; una font fallida no esborra les seues carreres. Les dades ambigües queden pendents i no es publiquen com a verificades.
 
-Els `sourceIds` corresponen a les fonts que aporten o contrasten la convocatòria. No s’ha de marcar Sportmaniacs com a font d’una prova que no s’hi ha pogut comprovar.
+Per a provar els lectors sense canviar dades:
+
+```sh
+npm run sync:preview
+```
+
+Per a actualitzar localment: `npm run sync`. L’informe és `reports/sync.json`; els fitxers públics són `data/races.json` i `data/sync-status.json`. Abans de publicar s’executen la compilació i les proves.
+
+La selecció manual original es conserva com a instantània en `tests/fixtures/`. Els recomptes històrics no impedixen incorporar proves noves. Les correccions de reglament condicionals són en `scripts/sync/overrides.json`.
 
 ## Publicació en GitHub Pages
 
@@ -88,7 +92,7 @@ L’estructura és estàtica i usa rutes relatives compatibles amb `/web_carrere
 1. Els fitxers han d’estar en un commit pujat a GitHub. Tindre’ls només en la carpeta local no els fa accessibles a Vercel.
 2. Importa el repositori `AndreuJG/web_carreres` a Vercel i selecciona la branca `main`.
 3. Usa l’arrel del repositori com a **Root Directory**. La configuració indica **Framework Preset: Other**, **Build Command: npm run build** i **Output Directory: dist**.
-4. No calen variables d’entorn ni un servidor Node en producció.
+4. No calen variables d’entorn ni un servidor Node en producció. L’actualització diària de dades es publica des de GitHub Actions i la web llig el catàleg viu de GitHub; Vercel només necessita desplegar els canvis de codi.
 
 Si la importació anterior indicava «repositori buit», torna a intentar-la després de pujar el primer commit. Si el projecte ja està creat, inicia un nou desplegament del commit de `main`.
 
@@ -108,6 +112,10 @@ assets/favicon.svg      Identitat visual pròpia
 scripts/serve.mjs        Servidor local, sense dependències
 scripts/build.mjs        Prepara els fitxers públics de dist/
 scripts/validate-data.mjs Validació del catàleg
+scripts/sync-races.mjs   Consulta i fusió dels calendaris
+scripts/sync/           Adaptadors, nomenclàtor i correccions
+.github/workflows/      Actualització programada i publicació
+AUTOMATITZACIO.md        Funcionament i límits del procés diari
 vercel.json              Configuració del desplegament estàtic
 tests/races.test.js      Proves de les regles de negoci
 PLAN.md                 Fases següents i decisions de la v1

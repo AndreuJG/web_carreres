@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-09",
   "origin": {
     "name": "Catarroja",
     "lat": 39.402,
@@ -75,6 +75,12 @@
       "name": "Crono4Sports",
       "url": "https://crono4sports.com/eventos",
       "description": "Calendari de proves i inscripcions de Xeraco i Xàtiva."
+    },
+    {
+      "id": "mychip",
+      "name": "Mychip",
+      "url": "https://www.mychip.es",
+      "description": "Pròximes convocatòries de la portada i fitxes conegudes, incloent proves inscrites en RockTheSport."
     }
   ],
   "races": [
@@ -106,7 +112,20 @@
       ],
       "url": "https://inscripciones.cronorunner.com/evento/xli-10k-volta-a-peu-port-de-catarroja",
       "note": "Ajornada del 3 d’octubre al 14 de novembre de 2026. La fitxa actualitzada publica l’eixida a les 08:30. Inscripcions obertes en la revisió del 08/11/2026, amb termini publicat fins a l’11/11/2026 a les 23:59, subjectes a disponibilitat.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "cronorunner": {
+            "date": "2026-11-14",
+            "time": "08:30",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "miguel-rubio-2026",
@@ -132,7 +151,20 @@
       ],
       "url": "https://multiesport.es/event/2026-ii-5k-miguel-rubio/",
       "note": "5 km segons la convocatòria, amb eixida a les 09:30.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "multiesport": {
+            "date": "2026-11-14",
+            "time": "09:30",
+            "distances": [
+              5
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "navarres-2026",
@@ -160,7 +192,22 @@
       ],
       "url": "https://sportmaniacs.com/es/races/xi-trail-navarres",
       "note": "Marató de 40 km a les 08:00, Trail de 19 km a les 09:00 i Sprinttrail de 12 km a les 09:02. La marxa de 12 km queda exclosa. La denominació comercial «marató» no converteix els 40 km en 42,195 km.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "sportmaniacs": {
+            "date": "2026-11-15",
+            "time": "08:00",
+            "distances": [
+              12,
+              19,
+              40
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "sagunt-2026",
@@ -188,7 +235,22 @@
       ],
       "url": "https://sportmaniacs.com/es/services/inscription/30k---21k---10k-ciutat-de-sagunt-2026",
       "note": "Tres distàncies publicades: 10, 21 i 30 km, amb eixida simultània a les 08:30. Inscripcions disponibles en la revisió del 08/11/2026; el reglament publica el termini de l’11/11/2026 a les 23:59, subjecte a disponibilitat.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "sportmaniacs": {
+            "date": "2026-11-15",
+            "time": "08:30",
+            "distances": [
+              10,
+              21,
+              30
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "marines-2026",
@@ -223,7 +285,20 @@
       ],
       "url": "https://inscripciones.cronorunner.com/evento/vii-10k-solidaria-marines",
       "note": "La fitxa de Cronorunner publica 10 km amb eixida a les 09:00. El dorsal zero és una aportació solidària i no una modalitat de carrera.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "cronorunner": {
+            "date": "2026-11-15",
+            "time": "09:00",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "benifaio-2026",
@@ -254,7 +329,61 @@
       ],
       "url": "https://inscripciones.cronorunner.com/evento/xvii-mitja-marato-roquette-benifaio",
       "note": "La fitxa vigent de Cronorunner confirma el 15 de novembre i les dos modalitats: 10 km i mitja marató de 21,1 km. Les dos ixen a les 09:30. Inscripcions obertes en la revisió del 08/11/2026.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "cronorunner": {
+            "date": "2026-11-15",
+            "time": "09:30",
+            "distances": [
+              10,
+              21.097
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
+    },
+    {
+      "id": "auto-mychip-5f2547ce7984",
+      "name": "Mou-te per la MPOC, 2026",
+      "date": "2026-11-15",
+      "time": "10:00",
+      "town": "Sueca",
+      "lat": 39.202,
+      "lon": -0.311,
+      "location": "Calle Ciutat De Pamplona",
+      "distances": [
+        5
+      ],
+      "type": "popular",
+      "sourceIds": [
+        "mychip"
+      ],
+      "sources": [
+        {
+          "label": "mychip · convocatòria",
+          "url": "https://www.mychip.es/e/mou-te-per-la-mpoc-2026"
+        }
+      ],
+      "url": "https://www.mychip.es/e/mou-te-per-la-mpoc-2026",
+      "note": "Data i modalitats de carrera publicades per Mychip. S’exclouen caminades, dorsals zero i altres esports. Consulta els horaris i les condicions de cada modalitat en la convocatòria.",
+      "verifiedAt": "2026-11-09",
+      "verification": "automatic",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "mychip": {
+            "date": "2026-11-15",
+            "time": "10:00",
+            "distances": [
+              5
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "mislata-2026",
@@ -281,7 +410,21 @@
       ],
       "url": "https://inscripciones.cronorunner.com/evento/45-10k-y-5k-mislata",
       "note": "Les dos modalitats publiquen eixida a les 10:00. La fitxa presenta un termini d’obertura incongruent per al 10K; consulta la disponibilitat de cada modalitat abans d’inscriure’t.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "cronorunner": {
+            "date": "2026-11-15",
+            "time": "10:00",
+            "distances": [
+              5,
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "pujada-xativa-2026",
@@ -307,7 +450,20 @@
       ],
       "url": "https://multiesport.es/event/2026-xxxx-pujada-al-castell-volta-a-peu-xativa/",
       "note": "Prova principal de 10 km a les 10:00. Les inscripcions infantils tenen categories pròpies. Xàtiva entra dins del radi en línia recta, encara que el trajecte per carretera siga més llarg.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "multiesport": {
+            "date": "2026-11-15",
+            "time": "10:00",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "valencia-cancer-2026",
@@ -335,11 +491,48 @@
         {
           "label": "Sportmaniacs · convocatòria",
           "url": "https://sportmaniacs.com/es/races/runcancer-valencia-2026"
+        },
+        {
+          "label": "vcr · lectura automàtica",
+          "url": "https://www.valenciaciudaddelrunning.com/evento/valencia-contra-el-cancer/"
+        },
+        {
+          "label": "runcancer · lectura automàtica",
+          "url": "https://runcancer.com/events/valencia-2026/"
         }
       ],
       "url": "https://runcancer.com/valencia-contra-el-cancer/",
       "note": "Ajornada al 22 de novembre. La carrera competitiva ix a les 08:30; les caminades tenen altres horaris.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "sportmaniacs": {
+            "date": "2026-11-22",
+            "time": "08:30",
+            "distances": [
+              6
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          },
+          "vcr": {
+            "date": "2026-11-22",
+            "time": "08:30",
+            "distances": [
+              6
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          },
+          "runcancer": {
+            "date": "2026-11-22",
+            "time": "08:30",
+            "distances": [
+              6
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "lliria-2026",
@@ -370,7 +563,21 @@
       ],
       "url": "https://multiesport.es/event/2026-vii-trail-de-lliria/",
       "note": "El reglament de 2026 concreta 11,3 km (Curt Trail) i 20 km (Trail Reina), amb eixida a les 09:00. Preval sobre les xifres arrodonides 11/21 del calendari.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "multiesport": {
+            "date": "2026-11-22",
+            "time": "09:00",
+            "distances": [
+              11.3,
+              20
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "port-saplaya-2026",
@@ -396,7 +603,20 @@
       ],
       "url": "https://inscripciones.cronorunner.com/evento/7k-rotary-port-saplaya",
       "note": "Carrera principal de 7 km a les 09:00. La prova infantil i el dorsal zero tenen condicions diferenciades.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "cronorunner": {
+            "date": "2026-11-22",
+            "time": "09:00",
+            "distances": [
+              7
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "moncada-2026",
@@ -423,7 +643,21 @@
       ],
       "url": "https://inscripciones.cronorunner.com/evento/xi-10k-y-5k-dinosauris-moncada",
       "note": "10K a les 10:00 i 5K a les 10:15, segons les modalitats de la plataforma.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "cronorunner": {
+            "date": "2026-11-22",
+            "time": "10:00",
+            "distances": [
+              5,
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "samaruc-2026",
@@ -439,17 +673,43 @@
       ],
       "type": "popular",
       "sourceIds": [
-        "rockthesport"
+        "rockthesport",
+        "mychip"
       ],
       "sources": [
         {
           "label": "RockTheSport · convocatòria",
           "url": "https://web.rockthesport.com/es/event/xxv-mitja-marato-samaruc-2026-algemesi"
+        },
+        {
+          "label": "mychip · lectura automàtica",
+          "url": "https://www.mychip.es/e/xxv-mitja-marato-samaruc-2026-algemesi"
         }
       ],
       "url": "https://web.rockthesport.com/es/event/xxv-mitja-marato-samaruc-2026-algemesi",
       "note": "La plataforma confirma mitja marató el 22 de novembre a les 10:00. Consulta el recorregut i les condicions de l’edició.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "rockthesport": {
+            "date": "2026-11-22",
+            "time": "10:00",
+            "distances": [
+              21.0975
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          },
+          "mychip": {
+            "date": "2026-11-22",
+            "time": "10:00",
+            "distances": [
+              21.097
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "casinos-2026",
@@ -484,7 +744,60 @@
       ],
       "url": "https://inscripciones.cronorunner.com/evento/carrera-popular-10k-dulces-de-casinos",
       "note": "Prova del Circuit Camp de Túria. Eixida i meta a l’avinguda de València.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "cronorunner": {
+            "date": "2026-11-28",
+            "time": "09:00",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
+    },
+    {
+      "id": "auto-mychip-37c7b46040db",
+      "name": "10e Trail Senglars, La Mola Extrem, Favara, LMVS. 26/27",
+      "date": "2026-11-29",
+      "time": "09:00",
+      "town": "Favara",
+      "lat": 39.11667,
+      "lon": -0.28333,
+      "location": "Favara; consulta el punt d’eixida en la convocatòria",
+      "distances": [
+        15
+      ],
+      "type": "trail",
+      "sourceIds": [
+        "mychip"
+      ],
+      "sources": [
+        {
+          "label": "mychip · convocatòria",
+          "url": "https://www.mychip.es/e/10e-trail-senglars-la-mola-extrem-favara-lmvs-2627"
+        }
+      ],
+      "url": "https://www.mychip.es/e/10e-trail-senglars-la-mola-extrem-favara-lmvs-2627",
+      "note": "Data i modalitats de carrera publicades per Mychip. S’exclouen caminades, dorsals zero i altres esports. Consulta els horaris i les condicions de cada modalitat en la convocatòria.",
+      "verifiedAt": "2026-11-09",
+      "verification": "automatic",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "mychip": {
+            "date": "2026-11-29",
+            "time": "09:00",
+            "distances": [
+              15
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "sueca-2026",
@@ -511,7 +824,21 @@
       ],
       "url": "https://inscripciones.cronorunner.com/evento/vii-gran-fons-i-carrera-trencant-barreres-per-la-salut-mental-de-sueca",
       "note": "Carreres de 8,5 i 15 km a les 09:30. La caminada de 5,5 km no es compta com a carrera.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "cronorunner": {
+            "date": "2026-11-29",
+            "time": "09:30",
+            "distances": [
+              8.5,
+              15
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "breakfast-2026",
@@ -527,17 +854,43 @@
       ],
       "type": "popular",
       "sourceIds": [
-        "vcr"
+        "vcr",
+        "fdm"
       ],
       "sources": [
         {
           "label": "Valencia Ciudad del Running · fitxa oficial",
           "url": "https://www.valenciaciudaddelrunning.com/evento/bimbo-valencia-breakfast-run/"
+        },
+        {
+          "label": "fdm · lectura automàtica",
+          "url": "https://www.fdmvalencia.es/eventos/bimbo-valencia-breakfast-run-2026/"
         }
       ],
       "url": "https://www.valenciaciudaddelrunning.com/evento/bimbo-valencia-breakfast-run/",
       "note": "Activitat prèvia al marató. Distància aproximada de 5 km.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "vcr": {
+            "date": "2026-12-05",
+            "time": "09:00",
+            "distances": [
+              5
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          },
+          "fdm": {
+            "date": "2026-12-05",
+            "time": "09:00",
+            "distances": [
+              42.195
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "mini-marato-2026",
@@ -566,11 +919,40 @@
         {
           "label": "Organització · Mini Marató",
           "url": "https://www.valenciaciudaddelrunning.com/maraton/eventos-paralelos-maraton/mini-maraton-valencia/"
+        },
+        {
+          "label": "vcr · lectura automàtica",
+          "url": "https://www.valenciaciudaddelrunning.com/evento/mini-maraton-valencia-msc/"
         }
       ],
       "url": "https://www.fdmvalencia.es/es/eventos/mini-maraton-valencia-msc-2026/",
       "note": "Proves infantils no competitives, amb distàncies de 300, 600 i 1.200 m segons edat. Eixides escalonades de les 11:00 a les 12:00; consulta la categoria.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "vcr": {
+            "date": "2026-12-05",
+            "time": "11:00",
+            "distances": [
+              0.3,
+              0.6,
+              1.2
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          },
+          "fdm": {
+            "date": "2026-12-05",
+            "time": "11:00",
+            "distances": [
+              0.3,
+              0.6,
+              1.2
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "marato-valencia-2026",
@@ -597,11 +979,36 @@
         {
           "label": "FDM · calendari",
           "url": "https://carreras.fdmvalencia.es/es/otras-carreras/"
+        },
+        {
+          "label": "fdm · lectura automàtica",
+          "url": "https://www.fdmvalencia.es/eventos/maraton-valencia-trinidad-alfonso-zurich-2026/"
         }
       ],
       "url": "https://www.valenciaciudaddelrunning.com/maraton/",
       "note": "La data està publicada. La disponibilitat de dorsals i les eixides per calaixos s’han de consultar amb l’organització.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "vcr": {
+            "date": "2026-12-06",
+            "time": "08:15",
+            "distances": [
+              42.195
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          },
+          "fdm": {
+            "date": "2026-12-06",
+            "time": "08:15",
+            "distances": [
+              42
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "tous-2026",
@@ -627,7 +1034,20 @@
       ],
       "url": "https://sportmaniacs.com/es/races/xxix-vuelta-a-pie-nocturna-tous",
       "note": "Carrera de 8 km a les 18:30. L’opció reservada a participants del circuit és la mateixa prova, no una distància addicional.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "sportmaniacs": {
+            "date": "2026-12-12",
+            "time": "18:30",
+            "distances": [
+              8
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "silvestre-farnals-2026",
@@ -653,7 +1073,20 @@
       ],
       "url": "https://inscripciones.cronorunner.com/evento/xi-san-silvestre-solidaria-pobla-de-farnals",
       "note": "Carrera principal de 5 km a les 20:00. Les proves infantils comencen a les 17:00 amb distàncies segons edat.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "cronorunner": {
+            "date": "2026-12-12",
+            "time": "20:00",
+            "distances": [
+              5
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "algar-2026",
@@ -680,7 +1113,21 @@
       ],
       "url": "https://sportmaniacs.com/es/races/vi-trail-algar-de-palancia-20k-iv-sprint-trail-11k-2026",
       "note": "Trail de 20 km i Sprint Trail d’11 km, amb eixida publicada a les 09:00.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "sportmaniacs": {
+            "date": "2026-12-13",
+            "time": "09:00",
+            "distances": [
+              11,
+              20
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "pas-ras-2026",
@@ -707,11 +1154,36 @@
         {
           "label": "FDM · agenda",
           "url": "https://www.fdmvalencia.es/es/eventos/pas-ras-al-port-de-valencia-2026/"
+        },
+        {
+          "label": "vcr · lectura automàtica",
+          "url": "https://www.valenciaciudaddelrunning.com/evento/10k-pas-ras-port-de-valencia/"
         }
       ],
       "url": "https://www.pasras.es/",
       "note": "10 km homologats. El reglament deixa el punt exacte d’eixida pendent d’aprovació; consulta’l abans de desplaçar-te.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "vcr": {
+            "date": "2026-12-13",
+            "time": "09:00",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          },
+          "fdm": {
+            "date": "2026-12-13",
+            "time": "09:00",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "vall-sego-2026",
@@ -737,7 +1209,20 @@
       ],
       "url": "https://sportmaniacs.com/es/races/iii-10k-la-vall-de-sego-2026-quart-de-les-valls",
       "note": "Prova de 10 km del Circuit Vall de Segó. L’abonament del circuit no es compta com una altra carrera.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "sportmaniacs": {
+            "date": "2026-12-13",
+            "time": "09:00",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "picassent-cancer-2026",
@@ -764,11 +1249,36 @@
         {
           "label": "Sportmaniacs · convocatòria",
           "url": "https://sportmaniacs.com/es/races/runcancer-picassent-2026"
+        },
+        {
+          "label": "runcancer · lectura automàtica",
+          "url": "https://runcancer.com/events/picassent-2026/"
         }
       ],
       "url": "https://runcancer.com/carreras/",
       "note": "Carrera de 10 km. La marxa de 7,2 km és una modalitat diferenciada i no es compta com a carrera.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "sportmaniacs": {
+            "date": "2026-12-13",
+            "time": "10:30",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          },
+          "runcancer": {
+            "date": "2026-12-13",
+            "time": "10:30",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "silvestre-almussafes-2026",
@@ -794,7 +1304,20 @@
       ],
       "url": "https://inscripciones.cronorunner.com/evento/ix-sant-silvestre-2026",
       "note": "Carrera principal de 5 km a les 18:00. Infantils de 0,5 i 1 km a les 17:30.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "cronorunner": {
+            "date": "2026-12-19",
+            "time": "18:00",
+            "distances": [
+              5
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "betera-nadal-2026",
@@ -829,7 +1352,24 @@
       ],
       "url": "https://inscripciones.cronorunner.com/evento/xiv-cursa-de-nadal-de-betera",
       "note": "Prova principal de 5 km a les 18:30. Les categories infantils tenen distàncies i horaris propis.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "cronorunner": {
+            "date": "2026-12-19",
+            "time": "17:00",
+            "distances": [
+              0.1,
+              0.2,
+              0.4,
+              0.8,
+              5
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "paiporta-picanya-2026",
@@ -856,7 +1396,20 @@
       ],
       "url": "https://web.rockthesport.com/es/event/quarta-i-mitja-marato-paiporta-picanya-2026",
       "note": "La fitxa publica les 09:30 i categories Quarta (etiquetada 10KM) i Mitja. Consulta la distància exacta de la Quarta i els horaris de cada modalitat amb l’organització.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "rockthesport": {
+            "date": "2026-12-20",
+            "time": "09:30",
+            "distances": [
+              21.0975
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "foios-2026",
@@ -882,7 +1435,22 @@
       ],
       "url": "https://inscripciones.cronorunner.com/evento/xiii-foios-per-fibrosi-quistica",
       "note": "10K a les 10:00. Les categories infantils i el dorsal zero són opcions diferenciades de la prova principal.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "cronorunner": {
+            "date": "2026-12-20",
+            "time": "10:00",
+            "distances": [
+              0.001,
+              0.05,
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "sot-ferrer-2026",
@@ -908,7 +1476,20 @@
       ],
       "url": "https://sportmaniacs.com/es/races/xiv-san-silvestre-de-montatildea-sot-de-ferrer",
       "note": "14 km de muntanya. La informació general publica les 10:00 i una tarifa mostra les 10:10: confirma l’horari amb l’organització.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "sportmaniacs": {
+            "date": "2026-12-20",
+            "time": "10:00",
+            "distances": [
+              14
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "silvestre-alzira-2026",
@@ -938,7 +1519,20 @@
       ],
       "url": "https://www.runatica.com/event/vii-san-silvestre-alzira-2026",
       "note": "La fitxa de Runática confirma 5 km i eixida a les 10:30.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "runatica": {
+            "date": "2026-12-20",
+            "time": "10:30",
+            "distances": [
+              5
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "alcasser-cancer-2026",
@@ -965,11 +1559,36 @@
         {
           "label": "Sportmaniacs · convocatòria",
           "url": "https://sportmaniacs.com/es/races/runcancer-alcasser-2026"
+        },
+        {
+          "label": "runcancer · lectura automàtica",
+          "url": "https://runcancer.com/events/alcasser-2026/"
         }
       ],
       "url": "https://runcancer.com/carreras/",
       "note": "Carrera de 10 km a les 09:00. La marxa de 3 km ix a les 10:00.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "sportmaniacs": {
+            "date": "2026-12-27",
+            "time": "09:00",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          },
+          "runcancer": {
+            "date": "2026-12-27",
+            "time": "09:00",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "silvestre-barx-2026",
@@ -996,7 +1615,21 @@
       ],
       "url": "https://sportmaniacs.com/es/races/v-san-silvestre-trail-barx",
       "note": "Carreres de 10 i 20 km a les 09:00. S’exclou la caminada de 10 km de les 09:02.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "sportmaniacs": {
+            "date": "2026-12-27",
+            "time": "09:00",
+            "distances": [
+              10,
+              20
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "silvestre-valencia-2026",
@@ -1049,7 +1682,21 @@
       ],
       "url": "https://crono4sports.com/evento/xxvi-volta-a-peu-xeraco-gran-fons-manolo-pardo",
       "note": "Modalitats de 7 i 15 km a les 10:00. Xeraco es troba dins dels 50 km en línia recta des de Catarroja.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "crono4sports": {
+            "date": "2027-01-06",
+            "time": "10:00",
+            "distances": [
+              7,
+              15
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "castell-sagunt-2027",
@@ -1075,7 +1722,21 @@
       ],
       "url": "https://sportmaniacs.com/es/races/vix-volta-a-peu-castell-2027",
       "note": "Carrera de muntanya de 10,6 km a les 09:30. Els 5 km corresponen a una caminada, que no s’inclou entre les distàncies de carrera.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "sportmaniacs": {
+            "date": "2027-01-10",
+            "time": "09:30",
+            "distances": [
+              5,
+              10.6
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "ibercaja-2027",
@@ -1103,11 +1764,37 @@
         {
           "label": "FDM · 10K i 5K de 2027",
           "url": "https://www.fdmvalencia.es/es/eventos/10k-valencia-ibercaja-by-kiprun-2027-5k-valencia-ibercaja-2027/"
+        },
+        {
+          "label": "vcr · lectura automàtica",
+          "url": "https://www.valenciaciudaddelrunning.com/evento/10k-valencia/"
         }
       ],
       "url": "https://10kvalencia.com/",
       "note": "Horaris diferents: 5K a les 08:15 i 10K a les 09:30. El calendari descarregat inclou els dos horaris en la descripció.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "vcr": {
+            "date": "2027-01-10",
+            "time": "09:30",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          },
+          "fdm": {
+            "date": "2027-01-10",
+            "time": "08:15",
+            "distances": [
+              5,
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "picaio-2027",
@@ -1134,7 +1821,21 @@
       ],
       "url": "https://sportmaniacs.com/es/races/vii-picaio-cim-trail-2027",
       "note": "Rodeno Sky de 25 km a les 09:00 i Arrels d’11 km a les 09:30.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "sportmaniacs": {
+            "date": "2027-01-17",
+            "time": "09:00",
+            "distances": [
+              11,
+              25
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "mitja-alzira-2027",
@@ -1160,7 +1861,20 @@
       ],
       "url": "https://www.runatica.com/event/xxviii-mitja-marato-ciutat-alzira-2027",
       "note": "XXVIII edició. La plataforma publica data, modalitat 21K i eixida a les 09:30.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "runatica": {
+            "date": "2027-01-31",
+            "time": "09:30",
+            "distances": [
+              21
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "bombers-xativa-2027",
@@ -1186,7 +1900,20 @@
       ],
       "url": "https://multiesport.es/event/2027-ii-10k-bombers-xativa/",
       "note": "10 km amb eixida publicada a les 10:00.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "multiesport": {
+            "date": "2027-01-31",
+            "time": "10:00",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "lusitania-2027",
@@ -1218,7 +1945,22 @@
       ],
       "url": "https://inscripciones.cronorunner.com/evento/carrera-lusitania",
       "note": "Trail de 21 km a les 09:00, Sprinttrail de 15 km a les 09:15 i iniciació de 10,5 km a les 09:30. S’exclou la marxa de 10,5 km. Consulta l’accés a la base i el reglament de l’edició.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "cronorunner": {
+            "date": "2027-02-07",
+            "time": "09:00",
+            "distances": [
+              10.5,
+              15,
+              21
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "10kfem-2027",
@@ -1249,7 +1991,28 @@
       ],
       "url": "https://www.carrera10kfem.com/",
       "note": "Carrera de categoria femenina amb 10 km homologats. L’edició de 2027 es trasllada al mes de febrer.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "sportmaniacs": {
+            "date": "2027-02-21",
+            "time": "09:00",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          },
+          "fdm": {
+            "date": "2027-02-21",
+            "time": "09:00",
+            "distances": [
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "calderona-2027",
@@ -1280,7 +2043,21 @@
       ],
       "url": "https://www.toprun.es/eventos/marato-de-la-calderona-2027",
       "note": "Modalitats de 21 i 42 km, amb eixida publicada a les 07:00. Confirma els detalls de cada recorregut en el reglament.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "toprun": {
+            "date": "2027-02-28",
+            "time": "07:00",
+            "distances": [
+              21,
+              42
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "mitja-xativa-2027",
@@ -1306,7 +2083,20 @@
       ],
       "url": "https://crono4sports.com/evento/xxii-media-maraton-de-xativa",
       "note": "La fitxa publica 21.097 metres i eixida a les 10:00.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "crono4sports": {
+            "date": "2027-02-28",
+            "time": "10:00",
+            "distances": [
+              21.097
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "oberta-mar-2027",
@@ -1323,17 +2113,45 @@
       ],
       "type": "popular",
       "sourceIds": [
-        "vcr"
+        "vcr",
+        "fdm"
       ],
       "sources": [
         {
           "label": "Valencia Ciudad del Running · fitxa de 2027",
           "url": "https://www.valenciaciudaddelrunning.com/evento/15k-abierta-al-mar-y-7-5k/"
+        },
+        {
+          "label": "fdm · lectura automàtica",
+          "url": "https://www.fdmvalencia.es/eventos/15k-y-7-5k-abierta-al-mar-2027/"
         }
       ],
       "url": "https://www.15kvalencia.es/",
       "note": "Dos recorreguts publicats: 15 km homologats i 7,5 km.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "vcr": {
+            "date": "2027-04-25",
+            "time": "09:00",
+            "distances": [
+              7.5,
+              15
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          },
+          "fdm": {
+            "date": "2027-04-25",
+            "time": "09:00",
+            "distances": [
+              7.5,
+              15
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "empreses-valencia-2027",
@@ -1364,7 +2182,21 @@
       ],
       "url": "https://www.fdmvalencia.es/eventos/carrera-de-empresas-valencia-2027/",
       "note": "Modalitats de 5 i 10 km. Participació per equips d’empresa subjecta a les condicions de l’organització; consulta els requisits i l’eixida de 2027.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "fdm": {
+            "date": "2027-05-02",
+            "time": "09:00",
+            "distances": [
+              5,
+              10
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     },
     {
       "id": "mitja-valencia-2027",
@@ -1380,7 +2212,8 @@
       ],
       "type": "popular",
       "sourceIds": [
-        "vcr"
+        "vcr",
+        "fdm"
       ],
       "sources": [
         {
@@ -1390,11 +2223,28 @@
         {
           "label": "Organització · inscripcions de 2027",
           "url": "https://www.valenciaciudaddelrunning.com/medio/inscripciones-medio-maraton-valencia/"
+        },
+        {
+          "label": "fdm · lectura automàtica",
+          "url": "https://www.fdmvalencia.es/eventos/medio-maraton-valencia-trinidad-alfonso-wizz-air-2027/"
         }
       ],
       "url": "https://www.valenciaciudaddelrunning.com/medio/medio-maraton/",
       "note": "Data publicada per AIMS. Accés a dorsals amb període de fidelitat i sorteig. Hora pendent de verificar.",
-      "verifiedAt": "2026-11-08"
+      "verifiedAt": "2026-11-08",
+      "automation": {
+        "checkedAt": "2026-11-09T20:42:50.281Z",
+        "observations": {
+          "fdm": {
+            "date": "2027-10-24",
+            "time": "08:25",
+            "distances": [
+              21.0975
+            ],
+            "checkedAt": "2026-11-09T20:42:50.281Z"
+          }
+        }
+      }
     }
   ],
   "pending": [
@@ -1422,5 +2272,155 @@
   "review": {
     "date": "2026-11-08",
     "summary": "Revisió dels 17 esdeveniments i cinc circuits de Cronorunner: 13 cites admissibles incorporades. Ampliada a Sportmaniacs (València i Castelló), TopRun, Runática, Multiesport, Crono4Sports, RunCáncer, FDM i organitzadors. El catàleg continua necessitant revisions per a noves convocatòries."
-  }
+  },
+  "manualReviewAt": "2026-11-08",
+  "sync": {
+    "checkedAt": "2026-11-09T20:42:50.281Z",
+    "status": "ok",
+    "lastSuccessfulAt": "2026-11-09T20:42:50.281Z",
+    "sources": [
+      {
+        "id": "cronorunner",
+        "name": "Cronorunner",
+        "status": "ok",
+        "read": 13,
+        "eligible": 13,
+        "errors": 0
+      },
+      {
+        "id": "sportmaniacs",
+        "name": "Sportmaniacs",
+        "status": "ok",
+        "read": 16,
+        "eligible": 13,
+        "errors": 0
+      },
+      {
+        "id": "runatica",
+        "name": "Runática",
+        "status": "ok",
+        "read": 8,
+        "eligible": 2,
+        "errors": 0
+      },
+      {
+        "id": "multiesport",
+        "name": "Multiesport",
+        "status": "ok",
+        "read": 16,
+        "eligible": 4,
+        "errors": 0
+      },
+      {
+        "id": "crono4sports",
+        "name": "Crono4Sports",
+        "status": "ok",
+        "read": 19,
+        "eligible": 2,
+        "errors": 0
+      },
+      {
+        "id": "toprun",
+        "name": "TopRun",
+        "status": "ok",
+        "read": 1,
+        "eligible": 1,
+        "errors": 0
+      },
+      {
+        "id": "vcr",
+        "name": "Valencia Ciudad del Running",
+        "status": "ok",
+        "read": 7,
+        "eligible": 7,
+        "errors": 0
+      },
+      {
+        "id": "fdm",
+        "name": "Fundació Esportiva Municipal",
+        "status": "ok",
+        "read": 12,
+        "eligible": 9,
+        "errors": 0
+      },
+      {
+        "id": "runcancer",
+        "name": "RunCáncer",
+        "status": "ok",
+        "read": 3,
+        "eligible": 3,
+        "errors": 0
+      },
+      {
+        "id": "rockthesport",
+        "name": "RockTheSport",
+        "status": "ok",
+        "read": 2,
+        "eligible": 2,
+        "errors": 0
+      },
+      {
+        "id": "mychip",
+        "name": "Mychip",
+        "status": "ok",
+        "read": 4,
+        "eligible": 3,
+        "errors": 0
+      }
+    ],
+    "changes": 2,
+    "pending": 5
+  },
+  "automaticPending": [
+    {
+      "name": "2027 1ª CURSA D´EMPRESES DE LA VALL D´ALBAIDA",
+      "reason": "Població sense coordenades inequívoces",
+      "sources": [
+        {
+          "label": "multiesport",
+          "url": "https://multiesport.es/event/2027-1a-cursa-dempreses-de-la-vall-dalbaida/"
+        }
+      ]
+    },
+    {
+      "name": "BACKYARD BORJA´S EXTREME XATIVA 2027",
+      "reason": "Distància de carrera sense confirmar",
+      "sources": [
+        {
+          "label": "multiesport",
+          "url": "https://multiesport.es/event/backyard-borjas-extreme-xativa-2027/"
+        }
+      ]
+    },
+    {
+      "name": "XII Cursa-Mascota Running",
+      "reason": "Població sense coordenades inequívoces",
+      "sources": [
+        {
+          "label": "crono4sports",
+          "url": "https://crono4sports.com/evento/xii-cursa-mascota-running"
+        }
+      ]
+    },
+    {
+      "name": "Meeting Maratón València 2027",
+      "reason": "Distància de carrera sense confirmar",
+      "sources": [
+        {
+          "label": "fdm",
+          "url": "https://www.fdmvalencia.es/eventos/gran-premio-internacional-de-atletismo-ciudad-de-valencia-2027/"
+        }
+      ]
+    },
+    {
+      "name": "Carrera Solidaria CORRE SIN RESISTENCIAS, CEU Cardenal Herrera, Alfara del Patriarca",
+      "reason": "Distància de carrera sense confirmar",
+      "sources": [
+        {
+          "label": "mychip",
+          "url": "https://www.mychip.es/e/carrera-solidaria-corre-sin-resistencias-ceu-cardenal-herrera-alfara-del-patriarca"
+        }
+      ]
+    }
+  ]
 }

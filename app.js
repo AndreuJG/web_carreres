@@ -1,4 +1,5 @@
 import { selectRaces, madridToday, oneYearAfter, matchesDistance, formatDistance, escapeHtml as h, makeCalendar, TYPE_LABELS } from './lib/races.js';
+import { loadCatalog, LIVE_CATALOG_URL } from './lib/catalog.js';
 
 const $ = selector => document.querySelector(selector);
 const form = $('#filters');
@@ -12,6 +13,7 @@ try {
 const date = day => new Date(`${day}T12:00:00Z`);
 const displayDate = (day, options) => date(day).toLocaleDateString('ca-ES', { timeZone: 'Europe/Madrid', ...options });
 const longDate = day => displayDate(day, { day: 'numeric', month: 'long', year: 'numeric' });
+const checkedDate = timestamp => new Date(timestamp).toLocaleString('ca-ES', { timeZone: 'Europe/Madrid', dateStyle: 'short', timeStyle: 'short' });
 
 function toast(message) {
   clearTimeout(toastTimer);
@@ -135,18 +137,25 @@ function raceDetails(id, show = true) {
   if (!race) return;
   openDialog(`<h2 id="dialog-title">${h(race.name)}</h2><span class="tag tag-${race.type}">${TYPE_LABELS[race.type]}</span>
     <div class="dialog-detail-grid"><div><span>Data</span>${h(longDate(race.date))}</div><div><span>Distància</span>${distanceLabel(race)} km</div><div><span>Hora publicada</span>${race.time || 'Pendent de confirmar'}</div><div><span>Població</span>${h(race.town)}</div></div>
-    <p><b>Eixida:</b> ${h(race.location)}</p><p>${h(race.note)}</p><h3>Fonts d’esta convocatòria</h3><ul>${race.sources.map(source => `<li><a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.label)} ↗</a></li>`).join('')}</ul><p>Revisat el ${h(longDate(race.verifiedAt))}. Confirma les condicions i els dorsals disponibles a la font.</p>
+    <p><b>Eixida:</b> ${h(race.location)}</p>${race.automaticNote ? `<p class="review-summary">${h(race.automaticNote)}</p>` : ''}<p>${h(race.note)}</p><h3>Fonts d’esta convocatòria</h3><ul>${race.sources.map(source => `<li><a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.label)} ↗</a></li>`).join('')}</ul><p>${race.verification === 'automatic' ? 'Incorporada automàticament' : 'Revisada manualment'} el ${h(longDate(race.verifiedAt))}.${race.automation?.checkedAt ? ` Última consulta automàtica: ${h(checkedDate(race.automation.checkedAt))}.` : ''} Confirma les condicions i els dorsals disponibles a la font.</p>
     <div class="dialog-actions"><a class="primary-button" href="${h(race.url)}" target="_blank" rel="noopener noreferrer">Consultar la convocatòria ↗</a><button class="secondary-button" data-calendar="${h(race.id)}">↓ Afegir al calendari</button><button class="secondary-button" data-save="${h(race.id)}" aria-pressed="${saved.includes(id)}">${saved.includes(id) ? '♥ Guardada' : '♡ Guardar'}</button></div><p style="font-size:10px">El fitxer de calendari guarda el dia complet; els horaris publicats apareixen en la descripció.</p>`, id, show);
 }
 
 function showSources() {
   if (!data) return;
-  openDialog(`<h2 id="dialog-title">Una agenda amb fonts.</h2><p>Prioritzem Cronorunner i Sportmaniacs, i contrastem les convocatòries amb els webs dels organitzadors. Última revisió: ${h(longDate(data.updatedAt))}.</p>${data.review ? `<p class="review-summary">${h(data.review.summary)}</p>` : ''}${data.sources.map(source => `<div class="source-item"><h3><a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.name)} ↗</a></h3><p>${h(source.description)}</p>${source.note ? `<small>${h(source.note)}</small>` : ''}</div>`).join('')}${data.pending.length ? '<h3>Pendents de verificació · fora de l’agenda</h3>' : ''}${data.pending.map(item => `<div class="source-item"><h3>${h(item.name)}</h3><p>${h(item.reason)}</p><p>${item.sources.map(source => `<a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.label)} ↗</a>`).join(' · ')}</p></div>`).join('')}`);
+  const pending = [...data.pending, ...(data.automaticPending || [])];
+  const health = source => {
+    const check = data.sync?.sources.find(item => item.id === source.id);
+    if (!check) return '';
+    const label = {ok:'Consulta automàtica correcta',partial:'Consulta parcial: algunes fitxes conserven les dades anteriors',error:'Consulta fallida: conservem les últimes dades bones'}[check.status];
+    return `<p class="source-health ${check.status === 'ok' ? '' : 'stale'}">${h(label)} · ${check.read} fitxes llegides</p>`;
+  };
+  openDialog(`<h2 id="dialog-title">Una agenda amb fonts.</h2><p>Prioritzem Cronorunner i Sportmaniacs. Revisió manual de partida: ${h(longDate(data.manualReviewAt || data.updatedAt))}.${data.sync ? ` Última consulta automàtica: ${h(checkedDate(data.sync.checkedAt))}.` : ''}</p>${data.review ? `<p class="review-summary">${h(data.review.summary)}</p>` : ''}${data.sources.map(source => `<div class="source-item"><h3><a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.name)} ↗</a></h3><p>${h(source.description)}</p>${health(source)}${source.note ? `<small>${h(source.note)}</small>` : ''}</div>`).join('')}${pending.length ? '<h3>Pendents de verificació · fora de l’agenda</h3>' : ''}${pending.map(item => `<div class="source-item"><h3>${h(item.name)}</h3><p>${h(item.reason)}</p><p>${item.sources.map(source => `<a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.label)} ↗</a>`).join(' · ')}</p></div>`).join('')}<p>Coordenades de noves poblacions: <a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames · CC BY ↗</a>, contrastades amb les coordenades ja revisades del catàleg.</p>`);
 }
 
 function showMethod() {
   if (!data) return;
-  openDialog(`<h2 id="dialog-title">A prop, i encara per córrer.</h2><p>Una selecció de carreres a peu amb convocatòria publicada. No és un calendari exhaustiu de totes les proves de la província.</p><h3>Què vol dir «a prop»?</h3><p>Un màxim de 50 km en línia recta des del centre de Catarroja (39,402; −0,403) fins a unes coordenades aproximades del centre de cada població. Calculem el radi amb la fórmula de Haversine. No és la distància per carretera ni fins a l’arc d’eixida.</p><h3>Quin període cobrim?</h3><p>Des de demà fins a un any després de hui, segons l’hora d’Europe/Madrid. Excloem tot el dia actual per a no mostrar proves que ja hagen acabat. El límit es mou cada dia.</p><h3>Com es revisen les dades?</h3><p>Esta primera versió és una selecció revisada manualment el ${h(longDate(data.updatedAt))}. Les dates passades s’oculten automàticament; les noves convocatòries i els ajornaments necessiten una nova revisió de les fonts. No s’han inventat dates de 2027 a partir d’edicions anteriors.</p><p>Els esdeveniments amb diverses distàncies compten com una cita. Incloem ruta, trail i proves infantils identificades com a tals. Mostrem les distàncies de carrera, excloent marxes, triatlons, natació i competicions híbrides amb obstacles. Els abonaments de circuit no compten com una carrera addicional. Les hores desconegudes es marquen com a pendents.</p><h3>I les carreres guardades?</h3><p>Es guarden només en este navegador, sense compte ni servidor. Pots exportar les carreres visibles a un fitxer .ics. Es creen esdeveniments de dia complet per a evitar confusions entre modalitats i horaris.</p>`);
+  openDialog(`<h2 id="dialog-title">A prop, i encara per córrer.</h2><p>Una selecció de carreres a peu amb convocatòria publicada. No és un calendari exhaustiu de totes les proves de la província.</p><h3>Què vol dir «a prop»?</h3><p>Un màxim de 50 km en línia recta des del centre de Catarroja (39,402; −0,403) fins a unes coordenades aproximades del centre de cada població. Calculem el radi amb la fórmula de Haversine. No és la distància per carretera ni fins a l’arc d’eixida.</p><h3>Quin període cobrim?</h3><p>Des de demà fins a un any després de hui, segons l’hora d’Europe/Madrid. Excloem tot el dia actual per a no mostrar proves que ja hagen acabat. El límit es mou cada dia.</p><h3>Com es revisen les dades?</h3><p>La selecció de partida es va revisar manualment el ${h(longDate(data.manualReviewAt || data.updatedAt))}. Consultem diàriament els calendaris i les fitxes per a incorporar convocatòries i detectar canvis. Les dates passades s’oculten automàticament. Si una font falla o una dada és ambigua, conservem les dades bones i deixem el cas pendent. No s’han inventat dates de 2027 a partir d’edicions anteriors.</p><p>Els esdeveniments amb diverses distàncies compten com una cita. Incloem ruta, trail i proves infantils identificades com a tals. Mostrem les distàncies de carrera, excloent marxes, triatlons, natació i competicions híbrides amb obstacles. Els abonaments de circuit no compten com una carrera addicional. Les hores desconegudes es marquen com a pendents. Els ajustos manuals de reglament es conserven davant de xifres arrodonides del calendari.</p><h3>I les carreres guardades?</h3><p>Es guarden només en este navegador, sense compte ni servidor. Pots exportar les carreres visibles a un fitxer .ics. Es creen esdeveniments de dia complet per a evitar confusions entre modalitats i horaris.</p>`);
 }
 
 function downloadCalendar(races) {
@@ -184,17 +193,28 @@ window.addEventListener('popstate', () => { if (data) { restoreUrl(); render({ u
 
 async function init() {
   try {
-    const response = await fetch(new URL('./data/races.json', import.meta.url));
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    data = await response.json();
+    let storage;
+    try { storage = localStorage; } catch { /* Browser storage is optional. */ }
+    const local = ['localhost', '127.0.0.1', '::1'].includes(location.hostname);
+    const loaded = await loadCatalog({ localUrl: new URL('./data/races.json', import.meta.url), remoteUrl: local ? null : LIVE_CATALOG_URL, storage });
+    data = loaded.data;
     const knownIds = new Set(data.races.map(race => race.id));
     saved = [...new Set(saved)].filter(id => knownIds.has(id));
     const upcoming = selectRaces(data.races, data.origin);
     const months = [...new Set(upcoming.map(race => race.date.slice(0, 7)))];
     for (const month of months) $('#month').add(new Option(displayDate(`${month}-01`, { month: 'long', year: 'numeric' }), month));
     for (const source of data.sources) $('#source').add(new Option(source.name, source.id));
-    $('#data-status').textContent = `${upcoming.length} cites amb data publicada · Revisat el ${longDate(data.updatedAt)}`;
-    if ((date(madridToday()) - date(data.updatedAt)) / 86400000 > 30) {
+    const latestCheck = data.sync?.checkedAt;
+    $('#data-status').textContent = `${upcoming.length} cites amb data publicada · ${latestCheck ? `Consulta diària: ${checkedDate(latestCheck)}` : `Revisat el ${longDate(data.updatedAt)}`}`;
+    if (data.sync && data.sync.status !== 'ok') {
+      $('#data-status').classList.add('stale');
+      $('#data-status').textContent += data.sync.status === 'error' ? ' · Consulta fallida: conservem les dades anteriors' : ' · Algunes fonts conserven dades anteriors';
+    }
+    if (['cached', 'bundled'].includes(loaded.mode)) {
+      $('#data-status').classList.add('stale');
+      $('#data-status').textContent += ' · Còpia de reserva: actualització no disponible';
+    }
+    if (latestCheck ? Date.now() - Date.parse(latestCheck) > 3 * 86400000 : (date(madridToday()) - date(data.updatedAt)) / 86400000 > 30) {
       $('#data-status').classList.add('stale');
       $('#data-status').textContent += ' · Cal revisar les fonts';
     }

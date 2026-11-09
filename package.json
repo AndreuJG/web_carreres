@@ -8,7 +8,14 @@
     "dev": "node scripts/serve.mjs",
     "build": "npm run check && node scripts/build.mjs",
     "test": "node --test",
-    "check": "node --check app.js && node --check lib/races.js && node scripts/validate-data.mjs"
+    "check": "node --check app.js && node --check lib/races.js && node --check lib/catalog.js && node --check scripts/sync-races.mjs && node scripts/validate-data.mjs",
+    "sync": "node scripts/sync-races.mjs",
+    "sync:preview": "node scripts/sync-races.mjs --dry-run"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "cheerio": "1.2.0"
+  }
 }

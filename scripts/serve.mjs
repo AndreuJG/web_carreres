@@ -11,7 +11,7 @@ const server = createServer(async (req, res) => {
     if (!['GET', 'HEAD'].includes(req.method)) { res.writeHead(405); return res.end(); }
     const path = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
     const relative = path === '/' ? 'index.html' : path.slice(1);
-    if (!/^(index\.html|styles\.css|app\.js|assets\/[\w.-]+|data\/races\.json|lib\/races\.js)$/.test(relative)) { res.writeHead(404); return res.end('Not found'); }
+    if (!/^(index\.html|styles\.css|app\.js|assets\/[\w.-]+|data\/(races|sync-status)\.json|lib\/(races|catalog)\.js)$/.test(relative)) { res.writeHead(404); return res.end('Not found'); }
     const target = resolve(root, relative);
     if (!target.startsWith(root.endsWith(sep) ? root : root + sep)) { res.writeHead(403); return res.end(); }
     const body = await readFile(target);

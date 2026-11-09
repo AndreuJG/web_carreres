@@ -44,13 +44,13 @@ test('el calendari usa dies complets, límits exclusius, escapament i plegat UTF
   assert(calendar.split('\r\n').every(line => new TextEncoder().encode(line).length <= 75));
 });
 test('el catàleg revisat conté 46 cites futures, amb exclusió automàtica posterior', async () => {
-  const data = JSON.parse(await readFile(new URL('../data/races.json', import.meta.url), 'utf8'));
+  const data = JSON.parse(await readFile(new URL('./fixtures/catalog-2026-11-08.json', import.meta.url), 'utf8'));
   assert.equal(selectRaces(data.races, data.origin, {}, '2026-11-08').length, 46);
   assert.equal(selectRaces(data.races, data.origin, {}, '2027-11-08').length, 0);
 });
 
 test('Sagunt i Benifaió apareixen amb la seua font, modalitats i radi correctes', async () => {
-  const data = JSON.parse(await readFile(new URL('../data/races.json', import.meta.url), 'utf8'));
+  const data = JSON.parse(await readFile(new URL('./fixtures/catalog-2026-11-08.json', import.meta.url), 'utf8'));
   for (const [query, source, expectedId, distances] of [
     ['sagunt', 'sportmaniacs', 'sagunt-2026', [10, 21, 30]],
     ['benifaio', 'cronorunner', 'benifaio-2026', [10, 21.1]]
@@ -79,7 +79,7 @@ test('els filtres separen 20 km, mitja marató, 30/40 km i marató', () => {
 });
 
 test('totes les fitxes i circuits de Cronorunner tenen decisió i cobertura', async () => {
-  const data = JSON.parse(await readFile(new URL('../data/races.json', import.meta.url), 'utf8'));
+  const data = JSON.parse(await readFile(new URL('./fixtures/catalog-2026-11-08.json', import.meta.url), 'utf8'));
   const review = JSON.parse(await readFile(new URL('../research/review.json', import.meta.url), 'utf8'));
   const records = review.catalogs.cronorunner;
   assert.equal(records.length, 17);
@@ -105,7 +105,7 @@ test('totes les fitxes i circuits de Cronorunner tenen decisió i cobertura', as
 });
 
 test('l’inventari de les altres fonts referencia fitxes reals i exclusions explícites', async () => {
-  const data = JSON.parse(await readFile(new URL('../data/races.json', import.meta.url), 'utf8'));
+  const data = JSON.parse(await readFile(new URL('./fixtures/catalog-2026-11-08.json', import.meta.url), 'utf8'));
   const review = JSON.parse(await readFile(new URL('../research/review.json', import.meta.url), 'utf8'));
   for (const record of [...review.catalogs.sportmaniacs, ...review.catalogs.sportmaniacsCastellon, ...review.catalogs.crono4sports]) {
     if (record.status === 'included') {
@@ -122,7 +122,7 @@ test('l’inventari de les altres fonts referencia fitxes reals i exclusions exp
 });
 
 test('les modalitats de caminada no contaminen les distàncies de carrera', async () => {
-  const data = JSON.parse(await readFile(new URL('../data/races.json', import.meta.url), 'utf8'));
+  const data = JSON.parse(await readFile(new URL('./fixtures/catalog-2026-11-08.json', import.meta.url), 'utf8'));
   for (const [id, distances] of [['castell-sagunt-2027', [10.6]], ['sueca-2026', [8.5, 15]], ['lliria-2026', [11.3, 20]], ['navarres-2026', [12, 19, 40]]]) {
     assert.deepEqual(data.races.find(r => r.id === id).distances, distances);
   }
@@ -130,7 +130,7 @@ test('les modalitats de caminada no contaminen les distàncies de carrera', asyn
 });
 
 test('Catarroja usa la nova data i no queda duplicada com a pendent ni exclosa per la data antiga', async () => {
-  const data = JSON.parse(await readFile(new URL('../data/races.json', import.meta.url), 'utf8'));
+  const data = JSON.parse(await readFile(new URL('./fixtures/catalog-2026-11-08.json', import.meta.url), 'utf8'));
   const races = selectRaces(data.races, data.origin, { query: 'catarroja', source: 'cronorunner', radius: 10 }, '2026-11-08');
   assert.equal(races.length, 1);
   assert.equal(races[0].date, '2026-11-14');

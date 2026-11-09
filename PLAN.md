@@ -28,13 +28,17 @@ Trobar ràpidament carreres a peu a menys de 50 km de Catarroja i dins dels prò
 5. Afegir estat de convocatòria i d’inscripció quan es puguen comprovar, sense confondre «data publicada» amb «dorsals disponibles».
 6. Completar les dos fitxes pendents del circuit UPV 2026–2027 quan es publiquen les distàncies i els horaris de l’edició actual.
 
-## Fase 3 · Actualització assistida
+## Fase 3 · Actualització diària implementada
 
-1. Comprovar si les fonts ofereixen un canal oficial reutilitzable (API, calendari o exportació). No es pressuposa que existisca.
-2. Implementar adaptadors per font amb dades d’entrada guardades per a provar l’extracció, errors visibles i deduplicació per prova/edició.
-3. Separar candidats detectats de convocatòries verificades. Els errors d’extracció no han d’esborrar el catàleg revisat.
-4. Produir un canvi revisable al JSON, amb data de consulta i URL, abans d’incorporar-lo a l’agenda.
-5. Afegir execució periòdica quan l’importador siga estable i s’haja decidit com revisar els resultats.
+- [x] Onze lectors amb consultes públiques i paginació de les fonts principals.
+- [x] Deduplicació, control de dates, radi, caminades, dorsals zero i abonaments.
+- [x] Conservació de dades bones davant de fallades i casos incomplets separats com a pendents.
+- [x] Correccions condicionals de reglament, dates de consulta separades i detecció de canvis.
+- [x] GitHub Actions diari, validació abans de publicar i informes de salut.
+- [x] Catàleg viu en la web, amb còpia de reserva i avís de dades no actualitzades.
+- [x] 31 proves, amb instantània històrica i validació del catàleg viu.
+
+La primera sincronització del 09/11/2026 llig 101 fitxes sense errors i incorpora dos cites: total 48. Cobertura i límits exactes en `AUTOMATITZACIO.md`.
 
 ## Fase 4 · Publicació i millores
 
