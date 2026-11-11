@@ -1,14 +1,29 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-10T13:26:44.035Z",
-  "today": "2026-11-10",
+  "checkedAt": "2026-11-11T12:42:19.138Z",
+  "today": "2026-11-11",
   "status": "ok",
   "window": {
-    "after": "2026-11-10",
-    "through": "2027-11-10",
+    "after": "2026-11-11",
+    "through": "2027-11-11",
     "radiusKm": 50
   },
-  "changes": [],
+  "changes": [
+    {
+      "kind": "added",
+      "id": "auto-cronorunner-08c1bdbba341",
+      "name": "XVII San Silvetre Solidària Ciutat de Torrent",
+      "url": "https://inscripciones.cronorunner.com/evento/xvii-san-silvetre-solidaria-ciutat-de-torrent",
+      "source": "cronorunner"
+    },
+    {
+      "kind": "added",
+      "id": "auto-sportmaniacs-2ca492ca780c",
+      "name": "CARRERA SOLIDARIA POR LOS DERECHOS DE LA INFANCIA 2,5K Y 5K 2026",
+      "url": "https://sportmaniacs.com/es/races/carrera-solidaria-por-los-derechos-de-la-infancia-25k-y-5k-2026",
+      "source": "sportmaniacs"
+    }
+  ],
   "pending": [
     {
       "name": "2027 1ª CURSA D´EMPRESES DE LA VALL D´ALBAIDA",
@@ -65,11 +80,11 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-10T13:26:44.035Z",
+      "checkedAt": "2026-11-11T12:42:19.138Z",
       "status": "ok",
-      "catalogEntries": 15,
-      "read": 13,
-      "eligible": 13,
+      "catalogEntries": 16,
+      "read": 14,
+      "eligible": 14,
       "errors": [],
       "decisions": [
         {
@@ -234,6 +249,17 @@
           "reason": "Fora del radi"
         },
         {
+          "url": "https://inscripciones.cronorunner.com/evento/xvii-san-silvetre-solidaria-ciutat-de-torrent",
+          "name": "XVII San Silvetre Solidària Ciutat de Torrent",
+          "date": "2026-12-29",
+          "town": "Torrent",
+          "distances": [
+            3.08
+          ],
+          "time": "20:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://inscripciones.cronorunner.com/evento/carrera-vertical-gran-hotel-bali-2027",
           "name": "Subida Vertical Gran Hotel Bali 2027",
           "status": "excluded",
@@ -244,11 +270,11 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-10T13:26:44.035Z",
+      "checkedAt": "2026-11-11T12:42:19.138Z",
       "status": "ok",
-      "catalogEntries": 25,
-      "read": 16,
-      "eligible": 13,
+      "catalogEntries": 26,
+      "read": 17,
+      "eligible": 14,
       "errors": [],
       "decisions": [
         {
@@ -415,6 +441,18 @@
           "reason": "Modalitat o abonament exclòs"
         },
         {
+          "url": "https://sportmaniacs.com/es/races/carrera-solidaria-por-los-derechos-de-la-infancia-25k-y-5k-2026",
+          "name": "CARRERA SOLIDARIA POR LOS DERECHOS DE LA INFANCIA 2,5K Y 5K 2026",
+          "date": "2026-11-22",
+          "town": "Sagunt",
+          "distances": [
+            2.5,
+            5
+          ],
+          "time": "11:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://sportmaniacs.com/es/races/evento-gordako-utiel-2026",
           "name": "Evento Gordako Utiel 2026",
           "date": "2026-11-21",
@@ -500,7 +538,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-10T13:26:44.035Z",
+      "checkedAt": "2026-11-11T12:42:19.138Z",
       "status": "ok",
       "catalogEntries": 10,
       "read": 8,
@@ -628,7 +666,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-10T13:26:44.035Z",
+      "checkedAt": "2026-11-11T12:42:19.138Z",
       "status": "ok",
       "catalogEntries": 16,
       "read": 16,
@@ -825,10 +863,10 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-10T13:26:44.035Z",
+      "checkedAt": "2026-11-11T12:42:19.138Z",
       "status": "ok",
-      "catalogEntries": 20,
-      "read": 18,
+      "catalogEntries": 21,
+      "read": 19,
       "eligible": 2,
       "errors": [],
       "decisions": [
@@ -1008,6 +1046,16 @@
           "reason": "Modalitat exclosa o abonament de circuit"
         },
         {
+          "url": "https://crono4sports.com/evento/valhalla-games",
+          "name": "Valhalla Games",
+          "date": "2027-04-17",
+          "town": "Vila-real",
+          "distances": [],
+          "time": "09:00",
+          "status": "excluded",
+          "reason": "Modalitat exclosa o abonament de circuit"
+        },
+        {
           "url": "https://crono4sports.com/evento/olympus-race-andorra",
           "name": "Olympus Race Andorra",
           "date": "2027-05-01",
@@ -1032,7 +1080,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-10T13:26:44.035Z",
+      "checkedAt": "2026-11-11T12:42:19.138Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 1,
@@ -1068,7 +1116,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-10T13:26:44.035Z",
+      "checkedAt": "2026-11-11T12:42:19.138Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1166,7 +1214,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-10T13:26:44.035Z",
+      "checkedAt": "2026-11-11T12:42:19.138Z",
       "status": "ok",
       "catalogEntries": 11,
       "read": 12,
@@ -1314,7 +1362,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-10T13:26:44.035Z",
+      "checkedAt": "2026-11-11T12:42:19.138Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1359,7 +1407,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-10T13:26:44.035Z",
+      "checkedAt": "2026-11-11T12:42:19.138Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1393,7 +1441,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-10T13:26:44.035Z",
+      "checkedAt": "2026-11-11T12:42:19.138Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 4,
