@@ -20,7 +20,7 @@ if (mode !== 'preview' && (!/^@[a-zA-Z0-9_]{5,32}$/.test(channel || '') || !/^\d
 }
 
 if (mode === 'test') {
-  const message = '<b>Missatge de prova · Córrer a prop</b>\nEl canal ja pot rebre els avisos de l’agenda. Quan hi haja novetats, publicarem el resum a partir de les 10.00, hora de València.\n\n<a href="https://webcarreres.vercel.app/">Consulta l’agenda</a>';
+  const message = '<b>Missatge de prova · Córrer a prop</b>\nEl canal ja pot rebre els avisos de l’agenda. Quan hi haja novetats, publicarem el resum a partir de les 10.00, hora de València.\n\n<a href="https://carreresprop.vercel.app/">Consulta l’agenda</a>';
   const result = await sendMessage({token, channel, message});
   if (result.status === 'rejected') throw Error(`Telegram ha rebutjat la prova (HTTP ${result.code}).`);
   if (result.status === 'uncertain') throw Error('Lliurament incert. Comprova el canal abans de repetir la prova.');

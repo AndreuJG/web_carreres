@@ -2,5 +2,13 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "webcarreres.vercel.app" }],
+      "destination": "https://carreresprop.vercel.app/:path*",
+      "permanent": true
+    }
+  ]
 }
