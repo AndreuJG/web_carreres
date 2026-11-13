@@ -76,7 +76,7 @@ El nomenclàtor és una còpia local de [GeoNames](https://www.geonames.org/expo
 
 1. Crea un canal públic en Telegram i crea el bot amb [BotFather](https://t.me/BotFather). Afig-lo com a administrador del canal amb permís per publicar missatges.
 2. En **Settings → Secrets and variables → Actions** de GitHub, crea el secret `TELEGRAM_BOT_TOKEN` i la variable `TELEGRAM_CHAT_ID` amb el nom públic del canal, inclosa l’arrova. Introduïx el token directament en GitHub.
-3. Executa **Novetats de carreres en Telegram → Run workflow → send** una vegada per fixar el catàleg de partida. Després, el workflow comprova les novetats a les 10.00 d’Europe/Madrid. El mode `preview` mostra el resum en el registre.
+3. Executa **Novetats de carreres en Telegram → Run workflow → send** una vegada per fixar el catàleg de partida. Després, el workflow comprova les novetats a les 10.00 d’Europe/Madrid. El mode `test` publica un missatge de prova al canal. El mode `preview` mostra el resum en el registre.
 4. Per mostrar l’enllaç en el peu de la web, afegix la mateixa variable pública `TELEGRAM_CHAT_ID` al projecte de Vercel i redesplega.
 
 El resum inclou les altes, les cancel·lacions confirmades i els canvis de data, hora i distàncies. L’estat es conserva en la branca `telegram-state`. Un rebuig explícit de Telegram conserva els fragments pendents per al següent intent. Davant d’un lliurament incert, revisa el canal i executa `confirm-delivery` si el missatge hi apareix o `retry-delivery` si hi falta. Després executa `send` per reprendre l’enviament.

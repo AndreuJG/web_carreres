@@ -9,13 +9,23 @@ if (process.env.GITHUB_ACTIONS !== 'true' || process.env.GITHUB_REPOSITORY !== '
     || process.env.GITHUB_REF !== 'refs/heads/main' || !GITHUB_TOKEN) {
   throw Error('Executa este script des de GitHub Actions en la branca main.');
 }
-if (!['preview', 'send', 'confirm-delivery', 'retry-delivery'].includes(mode)) throw Error('Mode de Telegram desconegut.');
+if (!['preview', 'test', 'send', 'confirm-delivery', 'retry-delivery'].includes(mode)) throw Error('Mode de Telegram desconegut.');
 if (mode !== 'preview' && !channel && !token) {
+  if (mode === 'test') throw Error('Canal de Telegram pendent de configuració.');
   console.log('Canal de Telegram pendent de configuració.');
   process.exit(0);
 }
 if (mode !== 'preview' && (!/^@[a-zA-Z0-9_]{5,32}$/.test(channel || '') || !/^\d+:[\w-]+$/.test(token || ''))) {
   throw Error('Comprova TELEGRAM_CHAT_ID i TELEGRAM_BOT_TOKEN en GitHub.');
+}
+
+if (mode === 'test') {
+  const message = '<b>Missatge de prova · Córrer a prop</b>\nEl canal ja pot rebre els avisos de l’agenda. Quan hi haja novetats, publicarem el resum a partir de les 10.00, hora de València.\n\n<a href="https://webcarreres.vercel.app/">Consulta l’agenda</a>';
+  const result = await sendMessage({token, channel, message});
+  if (result.status === 'rejected') throw Error(`Telegram ha rebutjat la prova (HTTP ${result.code}).`);
+  if (result.status === 'uncertain') throw Error('Lliurament incert. Comprova el canal abans de repetir la prova.');
+  console.log(`Missatge de prova publicat en https://t.me/${channel.slice(1)}/${result.messageId}`);
+  process.exit(0);
 }
 
 const auth = {

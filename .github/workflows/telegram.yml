@@ -12,6 +12,7 @@ on:
         default: preview
         options:
           - preview
+          - test
           - send
           - confirm-delivery
           - retry-delivery
