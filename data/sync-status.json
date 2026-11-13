@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-13T11:33:08.407Z",
+  "checkedAt": "2026-11-13T13:04:07.125Z",
   "today": "2026-11-13",
   "status": "ok",
   "window": {
@@ -85,7 +85,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-13T11:33:08.407Z",
+      "checkedAt": "2026-11-13T13:04:07.125Z",
       "status": "ok",
       "catalogEntries": 19,
       "read": 17,
@@ -311,7 +311,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-13T11:33:08.407Z",
+      "checkedAt": "2026-11-13T13:04:07.125Z",
       "status": "ok",
       "catalogEntries": 28,
       "read": 18,
@@ -596,7 +596,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-13T11:33:08.407Z",
+      "checkedAt": "2026-11-13T13:04:07.125Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 10,
@@ -749,7 +749,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-13T11:33:08.407Z",
+      "checkedAt": "2026-11-13T13:04:07.125Z",
       "status": "ok",
       "catalogEntries": 16,
       "read": 16,
@@ -946,10 +946,10 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-13T11:33:08.407Z",
+      "checkedAt": "2026-11-13T13:04:07.125Z",
       "status": "ok",
-      "catalogEntries": 21,
-      "read": 18,
+      "catalogEntries": 22,
+      "read": 19,
       "eligible": 2,
       "errors": [],
       "decisions": [
@@ -1135,6 +1135,16 @@
           "reason": "Modalitat exclosa o abonament de circuit"
         },
         {
+          "url": "https://crono4sports.com/evento/valhalla-games",
+          "name": "Valhalla Games",
+          "date": "2027-04-17",
+          "town": "Vila-real",
+          "distances": [],
+          "time": "09:00",
+          "status": "excluded",
+          "reason": "Modalitat exclosa o abonament de circuit"
+        },
+        {
           "url": "https://crono4sports.com/evento/olympus-race-andorra",
           "name": "Olympus Race Andorra",
           "date": "2027-05-01",
@@ -1159,7 +1169,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-13T11:33:08.407Z",
+      "checkedAt": "2026-11-13T13:04:07.125Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 1,
@@ -1195,7 +1205,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-13T11:33:08.407Z",
+      "checkedAt": "2026-11-13T13:04:07.125Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1293,7 +1303,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-13T11:33:08.407Z",
+      "checkedAt": "2026-11-13T13:04:07.125Z",
       "status": "ok",
       "catalogEntries": 11,
       "read": 12,
@@ -1441,7 +1451,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-13T11:33:08.407Z",
+      "checkedAt": "2026-11-13T13:04:07.125Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1486,7 +1496,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-13T11:33:08.407Z",
+      "checkedAt": "2026-11-13T13:04:07.125Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1520,7 +1530,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-13T11:33:08.407Z",
+      "checkedAt": "2026-11-13T13:04:07.125Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 4,
