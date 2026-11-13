@@ -69,7 +69,7 @@ const candidates=results.flatMap(r=>r.candidates);
 const merged=mergeCandidates(catalog,candidates,today,checkedAt);
 const successful=results.filter(r=>r.status==='ok').length,usable=successful>0||results.some(r=>r.read>0);
 const status=successful===definitions.length?'ok':usable?'partial':'error';
-const report={schemaVersion:1,checkedAt,today,status,window:{after:today,through:oneYearAfter(today),radiusKm:50},changes:merged.changes,pending:merged.pending,sources:results.map(({candidates,...rest})=>rest)};
+const report={schemaVersion:1,checkedAt,today,status,window:{after:today,through:oneYearAfter(today),radiusKm:50},changes:merged.changes,pending:merged.pending,routePending:merged.routePending,sources:results.map(({candidates,...rest})=>rest)};
 merged.data.manualReviewAt ||= catalog.updatedAt;
 const sourceHealth=results.map(({id,name,status,read,eligible,errors})=>({id,name,status,checkedAt,read,eligible,errors:errors.length}));
 if(selected)sourceHealth.push(...(catalog.sync?.sources||[]).filter(s=>!selected.includes(s.id)));

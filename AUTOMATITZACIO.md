@@ -49,7 +49,7 @@ La primera consulta completa del **09/11/2026** ha llegit **101 fitxes en onze f
 
 ## Fallades i manteniment excepcional
 
-Una fallada parcial deixa funcionant les altres fonts i és visible en «Les fonts». Una fallada total conserva les carreres i marca l’execució de GitHub com a fallida. La web avisa si passen més de tres dies sense una consulta recent. No s’envien correus ni missatges des del codi: les notificacions d’execucions fallides depenen de les preferències habituals de GitHub.
+Una fallada parcial deixa funcionant les altres fonts i és visible en «Les fonts». Una fallada total conserva les carreres i marca l’execució de GitHub com a fallida. La web avisa si passen més de tres dies sense una consulta recent. Les notificacions d’execucions fallides depenen de les preferències de GitHub.
 
 La consulta diària deixa un commit real del catàleg i de la seua salut encara que no canvien les carreres. Això manté activitat al repositori i traçabilitat de les comprovacions. No requerix revisions diàries teues; si una plataforma canvia l’estructura, pot caldre reparar el seu lector.
 
@@ -71,6 +71,23 @@ npm run sync
 `--sources=cronorunner,sportmaniacs` limita una consulta a fonts concretes; `--dry-run` evita modificar els fitxers públics. No s’han de confondre les consultes parcials amb una revisió completa.
 
 El nomenclàtor és una còpia local de [GeoNames](https://www.geonames.org/export/), amb atribució CC BY. Inclou nuclis de la zona i poblacions d’altres punts d’Espanya per a detectar homònims i excloure llocs llunyans. La web acredita la font. Per a renovar-lo excepcionalment, descarrega `ES.zip` del servidor oficial i executa `python scripts/build-gazetteer.py ruta/ES.zip`.
+
+## Canal públic de Telegram
+
+1. Crea un canal públic en Telegram i crea el bot amb [BotFather](https://t.me/BotFather). Afig-lo com a administrador del canal amb permís per publicar missatges.
+2. En **Settings → Secrets and variables → Actions** de GitHub, crea el secret `TELEGRAM_BOT_TOKEN` i la variable `TELEGRAM_CHAT_ID` amb el nom públic del canal, inclosa l’arrova. Introduïx el token directament en GitHub.
+3. Executa **Novetats de carreres en Telegram → Run workflow → send** una vegada per fixar el catàleg de partida. Després, el workflow comprova les novetats a les 10.00 d’Europe/Madrid. El mode `preview` mostra el resum en el registre.
+4. Per mostrar l’enllaç en el peu de la web, afegix la mateixa variable pública `TELEGRAM_CHAT_ID` al projecte de Vercel i redesplega.
+
+El resum inclou les altes, les cancel·lacions confirmades i els canvis de data, hora i distàncies. L’estat es conserva en la branca `telegram-state`. Un rebuig explícit de Telegram conserva els fragments pendents per al següent intent. Davant d’un lliurament incert, revisa el canal i executa `confirm-delivery` si el missatge hi apareix o `retry-delivery` si hi falta. Després executa `send` per reprendre l’enviament.
+
+## Vercel Web Analytics
+
+Obri **Analytics** en el projecte de la web pública, prem **Enable** i redesplega producció. El build usa `VERCEL_ENV` per carregar el script en producció. Si Vercel indica un camí personalitzat per al script, posa’l en la variable de producció `VERCEL_ANALYTICS_SCRIPT_PATH`. Obri la web i comprova una petició a l’endpoint de vistes i la visita en el panell. [Guia de Vercel Web Analytics](https://vercel.com/docs/analytics/quickstart)
+
+## Recorreguts
+
+Les fitxes poden tindre una llista opcional `routes` amb modalitat, edició, tipus d’enllaç i font. L’actualització incorpora els enllaços amb edició i modalitat identificades i deixa els dubtes en `routePending` dins de l’informe diari. Els enllaços verificats manualment es poden afegir al catàleg i es conserven en les actualitzacions. Els GPX, TCX i FIT s’enllacen a l’origen i es poden importar com a trajecte des de Garmin Connect.
 
 ## Canvi de repositori
 

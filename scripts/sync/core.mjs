@@ -83,8 +83,36 @@ export function sameRace(a,b) {
   const identical=common.length===aw.size&&common.length===bw.size;
   return common.length>=2 && common.length/Math.min(aw.size,bw.size)>=0.7 && (identical || !a.distances?.length || !b.distances?.length || a.distances.some(x=>b.distances.some(y=>Math.abs(x-y)<0.2)));
 }
+export function mergeRouteLinks(race, candidate) {
+  const pending = [];
+  const edition = Number(candidate.date.slice(0, 4));
+  if (Number(race.date.slice(0, 4)) !== edition) return pending;
+  const routes = new Map((race.routes || []).map(route => [route.url, route]));
+  for (const link of candidate.routeLinks || []) {
+    if (routes.has(link.url)) continue;
+    const distances = distancesFrom(link.label);
+    const matching = candidate.distances.filter(km => distances.some(distance => Math.abs(distance - km) < 0.15));
+    const km = matching.length === 1 && distances.length === 1 ? matching[0]
+      : !distances.length && candidate.distances.length === 1 ? candidate.distances[0] : null;
+    const editionMatches = link.years.length === 1 && Number(link.years[0]) === edition;
+    const direct = ['gpx', 'tcx', 'fit'].includes(link.kind);
+    if (km !== null && link.marked && (direct || link.kind === 'wikiloc' || link.kind === 'pdf')
+        && editionMatches) {
+      routes.set(link.url, {
+        url: link.url, sourceUrl: link.sourceUrl, source: 'convocatòria', kind: link.kind,
+        year: edition, modality: `${String(km).replace('.', ',')} km`
+      });
+    } else {
+      pending.push({raceId: race.id, name: race.name, source: candidate.sourceId, url: link.url,
+        label: link.label, sourceUrl: link.sourceUrl, reason: 'Cal confirmar l’edició, la modalitat o el tipus de recorregut'});
+    }
+  }
+  if (routes.size) race.routes = [...routes.values()];
+  return pending;
+}
+
 export function mergeCandidates(data, candidates, today, checkedAt) {
-  const next=structuredClone(data), changes=[], pending=[];
+  const next=structuredClone(data), changes=[], pending=[], routePending=[];
   for (const candidate of candidates) {
     const urls=[candidate.url,...(candidate.aliasUrls||[])].map(canonical);
     const linked=next.races.filter(r=>[r.url,...r.sources.map(s=>s.url)].some(u=>urls.includes(canonical(u))));
@@ -125,13 +153,15 @@ export function mergeCandidates(data, candidates, today, checkedAt) {
       existing.automation={...existing.automation,checkedAt,observations:{...existing.automation?.observations,[candidate.sourceId]:observation}};
       if(!existing.sourceIds.includes(candidate.sourceId))existing.sourceIds.push(candidate.sourceId);
       if(!existing.sources.some(s=>canonical(s.url)===canonical(candidate.url)))existing.sources.push({label:`${candidate.sourceId} · lectura automàtica`,url:candidate.url});
+      routePending.push(...mergeRouteLinks(existing, candidate));
     } else {
       const id=`auto-${candidate.sourceId}-${createHash('sha256').update(`${canonical(candidate.url)} ${candidate.date}`).digest('hex').slice(0,12)}`;
       next.races.push({id,name:candidate.name,date:candidate.date,time:candidate.time||null,town:candidate.town,lat:candidate.lat,lon:candidate.lon,location:candidate.location||`${candidate.town}; consulta l’eixida en la convocatòria`,distances:candidate.distances,type:candidate.type||raceType(candidate.name),sourceIds:[candidate.sourceId],sources:[{label:`${candidate.sourceId} · convocatòria`,url:candidate.url}],url:candidate.url,note:candidate.note||'Convocatòria incorporada automàticament des de la plataforma. Confirma les modalitats, els horaris i els dorsals a la font.',verifiedAt:today,verification:'automatic',automation:{checkedAt,observations:{[candidate.sourceId]:observation}}});
       changes.push({kind:'added',id,name:candidate.name,url:candidate.url,source:candidate.sourceId});
+      routePending.push(...mergeRouteLinks(next.races.at(-1), candidate));
     }
   }
   next.races.sort((a,b)=>a.date.localeCompare(b.date)||(a.time||'23:59').localeCompare(b.time||'23:59')||a.id.localeCompare(b.id));
   next.updatedAt=[next.updatedAt,...next.races.map(r=>r.verifiedAt)].sort().at(-1);
-  return {data:next,changes,pending};
+  return {data:next,changes,pending,routePending};
 }

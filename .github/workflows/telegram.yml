@@ -1,0 +1,48 @@
+name: Novetats de carreres en Telegram
+
+on:
+  schedule:
+    - cron: '0 10 * * *'
+      timezone: Europe/Madrid
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Acció de Telegram
+        type: choice
+        default: preview
+        options:
+          - preview
+          - send
+          - confirm-delivery
+          - retry-delivery
+
+permissions:
+  contents: read
+
+concurrency:
+  group: telegram-race-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    if: github.repository == 'AndreuJG/web_carreres' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: '24'
+      - name: Preparar i publicar les novetats
+        run: node scripts/telegram/send.mjs "$TELEGRAM_MODE"
+        env:
+          TELEGRAM_MODE: ${{ inputs.mode || 'send' }}
+          GITHUB_TOKEN: ${{ github.token }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}

@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import {distanceKm,TYPE_LABELS} from '../../lib/races.js';
+import {isRoute} from '../../lib/catalog.js';
 import {validDay} from './core.mjs';
 export function validateCatalog(data){
  assert(validDay(data.updatedAt),'Data de revisió invàlida');
@@ -19,6 +20,10 @@ export function validateCatalog(data){
   assert(race.sourceIds?.length&&race.sourceIds.every(s=>sources.has(s)),`Font desconeguda: ${race.id}`);
   assert(race.sources?.length&&race.sources.every(s=>s.label),`Sense fonts: ${race.id}`);
   https(race.url);race.sources.forEach(s=>https(s.url));
+  if (race.routes !== undefined) {
+   assert(Array.isArray(race.routes)&&race.routes.every(isRoute),`Recorreguts invàlids: ${race.id}`);
+   assert(new Set(race.routes.map(route=>route.url)).size===race.routes.length,`Recorregut duplicat: ${race.id}`);
+  }
  }
  data.sources.forEach(s=>https(s.url));return data;
 }

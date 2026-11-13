@@ -126,7 +126,17 @@
             "checkedAt": "2026-11-12T13:44:12.474Z"
           }
         }
-      }
+      },
+      "routes": [
+        {
+          "kind": "gpx",
+          "year": 2025,
+          "modality": "10 km",
+          "url": "https://atloseventos.com/wp-content/uploads/gpx/track_10k_volta-port-catarroja_2025.gpx",
+          "sourceUrl": "https://atloseventos.com/xl-volta-a-peu-port-de-catarroja/",
+          "source": "organització"
+        }
+      ]
     },
     {
       "id": "miguel-rubio-2026",
@@ -210,7 +220,41 @@
             "checkedAt": "2026-11-12T13:44:12.474Z"
           }
         }
-      }
+      },
+      "routes": [
+        {
+          "kind": "wikiloc",
+          "year": 2026,
+          "modality": "Marató · 39 km",
+          "url": "https://es.wikiloc.com/rutas-carrera-por-montana/maraton-navarres-2026-286377285",
+          "sourceUrl": "https://trifitness31.eu/ix-trail-navarres/",
+          "source": "organització"
+        },
+        {
+          "kind": "wikiloc",
+          "year": 2026,
+          "modality": "Trail · 19 km",
+          "url": "https://es.wikiloc.com/rutas-carrera-por-montana/trail-navarres-2026-286376359",
+          "sourceUrl": "https://trifitness31.eu/ix-trail-navarres/",
+          "source": "organització"
+        },
+        {
+          "kind": "wikiloc",
+          "year": 2026,
+          "modality": "Sprint · 13 km",
+          "url": "https://es.wikiloc.com/rutas-carrera-por-montana/sprint-trail-navarres-2026-286379056",
+          "sourceUrl": "https://trifitness31.eu/ix-trail-navarres/",
+          "source": "organització"
+        },
+        {
+          "kind": "wikiloc",
+          "year": 2025,
+          "modality": "Marató",
+          "url": "https://es.wikiloc.com/rutas-carrera-por-montana/maraton-navarres-219849309",
+          "sourceUrl": "https://trifitness31.eu/wp-content/uploads/2025/08/REGLAMENTO-X-TRAIL-NAVARRES-2025.pdf",
+          "source": "organització"
+        }
+      ]
     },
     {
       "id": "sagunt-2026",
@@ -590,7 +634,25 @@
             "checkedAt": "2026-11-12T13:44:12.474Z"
           }
         }
-      }
+      },
+      "routes": [
+        {
+          "kind": "gpx",
+          "year": 2026,
+          "modality": "Curt Trail · 11,3 km",
+          "url": "https://multiesport.es/wp-content/Json_files/2026/TRACKS/Trail%20curt%20Lli%CC%81ria%201126%20.gpx",
+          "sourceUrl": "https://multiesport.es/event/2026-vii-trail-de-lliria/",
+          "source": "convocatòria"
+        },
+        {
+          "kind": "gpx",
+          "year": 2026,
+          "modality": "Trail Reina · 20 km",
+          "url": "https://multiesport.es/wp-content/Json_files/2026/TRACKS/entrene-reina-2026.gpx",
+          "sourceUrl": "https://multiesport.es/event/2026-vii-trail-de-lliria/",
+          "source": "convocatòria"
+        }
+      ]
     },
     {
       "id": "port-saplaya-2026",
@@ -1077,7 +1139,17 @@
             "checkedAt": "2026-11-12T13:44:12.474Z"
           }
         }
-      }
+      },
+      "routes": [
+        {
+          "kind": "pdf",
+          "year": 2026,
+          "modality": "42,195 km",
+          "url": "https://cdn1.valenciaciudaddelrunning.com/wp-content/uploads/2019/04/recorrido-42k-valencia-2026.pdf",
+          "sourceUrl": "https://www.valenciaciudaddelrunning.com/va/marato/recorrido-maraton/",
+          "source": "organització"
+        }
+      ]
     },
     {
       "id": "silvestre-farnals-2026",
@@ -1928,7 +2000,17 @@
             "checkedAt": "2026-11-12T13:44:12.474Z"
           }
         }
-      }
+      },
+      "routes": [
+        {
+          "kind": "pdf",
+          "year": 2026,
+          "modality": "10 km",
+          "url": "https://10kvalencia.com/wp-content/uploads/2026/01/Datos-2026.pdf",
+          "sourceUrl": "https://10kvalencia.com/wp-content/uploads/2026/01/Datos-2026.pdf",
+          "source": "organització"
+        }
+      ]
     },
     {
       "id": "picaio-2027",
@@ -1970,7 +2052,17 @@
             "checkedAt": "2026-11-12T13:44:12.474Z"
           }
         }
-      }
+      },
+      "routes": [
+        {
+          "kind": "wikiloc",
+          "year": 2026,
+          "modality": "24 km",
+          "url": "https://www.wikiloc.com/trail-running-trails/picaio-cim-trail-2026-247483949",
+          "sourceUrl": "https://utmb.world/utmb-index/races/48850.picaiocimtrail24kpicaiocimtrail.2026",
+          "source": "comunitat"
+        }
+      ]
     },
     {
       "id": "mitja-alzira-2027",

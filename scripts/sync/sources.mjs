@@ -1,5 +1,6 @@
 import {page,eventsLd,sportList,cronoEdition,sportDetail,multiDetail,runaticaDetail,crono4Detail,fdmDetail,rockDetail,toprunDetail,ldCandidate,textOf} from './parsers.mjs';
 import {clean,canonical,norm,parseDay,distancesFrom,circuitPass,notRunning,raceType} from './core.mjs';
+import {findRouteLinks} from './routes.mjs';
 
 export const SOURCE_DEFINITIONS=[
   {id:'cronorunner',name:'Cronorunner',base:'https://inscripciones.cronorunner.com',catalogs:['https://inscripciones.cronorunner.com/api/public/events'],path:/\/evento\/[^/]+$/},
@@ -104,29 +105,50 @@ export async function readItem(def,item,request){
   const rows=event.modalities.filter(m=>!notRunning(m.name)&&['running','trail_running','cross'].includes(m.sport));
   const registration=event.slug_rts?`https://web.rockthesport.com/es/event/${encodeURIComponent(event.slug_rts)}`:null;
   let time=null;
+  let routeLinks=[];
   // Mongo date fields in this source do not establish whether the time is local or UTC.
   // Use the registration page's explicitly published local time rather than guessing.
-  if(registration){try{time=rockDetail((await request(registration)).text,registration).time;}catch{/* Date/distance can still be verified without inventing the hour. */}}
-  return {url:item.url,aliasUrls:registration?[registration]:[],name:clean(event.name),date:parseDay(event.date_start?.$date),time,town:event.location?.city,location:clean(event.location?.street),distances:[...new Set(rows.map(m=>Number(m.distance)/1000).filter(km=>km>0&&km<=300))].sort((a,b)=>a-b),type:raceType(`${event.name} ${rows.map(m=>m.sport).join(' ')}`),excluded:!rows.length,cancelled:event.status==='cancelled',note:'Data i modalitats de carrera publicades per Mychip. S’exclouen caminades, dorsals zero i altres esports. Consulta els horaris i les condicions de cada modalitat en la convocatòria.'};
+  if(registration){
+   try{
+    const response = await request(registration);
+    time = rockDetail(response.text, registration).time;
+    routeLinks = findRouteLinks(response.text, response.url || registration);
+   }catch{/* Date/distance can still be verified without inventing the hour. */}
+  }
+  return {url:item.url,aliasUrls:registration?[registration]:[],routeLinks,name:clean(event.name),date:parseDay(event.date_start?.$date),time,town:event.location?.city,location:clean(event.location?.street),distances:[...new Set(rows.map(m=>Number(m.distance)/1000).filter(km=>km>0&&km<=300))].sort((a,b)=>a-b),type:raceType(`${event.name} ${rows.map(m=>m.sport).join(' ')}`),excluded:!rows.length,cancelled:event.status==='cancelled',note:'Data i modalitats de carrera publicades per Mychip. S’exclouen caminades, dorsals zero i altres esports. Consulta els horaris i les condicions de cada modalitat en la convocatòria.'};
  }
  if(def.id==='cronorunner'){
   const slug=new URL(item.url).pathname.split('/').filter(Boolean).at(-1);
-  return {url:item.url,...cronoEdition((await request(`${def.base}/api/public/editions/${encodeURIComponent(slug)}`)).json().edition)};
+  const edition = (await request(`${def.base}/api/public/editions/${encodeURIComponent(slug)}`)).json().edition;
+  const candidate = cronoEdition(edition);
+  const routeLinks = findRouteLinks(edition.description, item.url);
+  for (const file of Array.isArray(edition.files) ? edition.files : []) {
+   const url = file.url || file.fileUrl;
+   if (typeof url !== 'string') continue;
+   const $ = page('<a></a>');
+   $('a').attr('href', url).text(file.title || file.name || file.fileName || '');
+   routeLinks.push(...findRouteLinks($.html(), item.url));
+  }
+  return {url:item.url, ...candidate, routeLinks};
  }
  if(item.structured){
   const c=ldCandidate(item.structured,def.id);
   if(!c.distances.length){
-   const $=page((await request(item.url)).text);
+   const response = await request(item.url);
+   const $=page(response.text);
+   c.routeLinks = findRouteLinks(response.text, response.url || item.url);
    const body=def.id==='runcancer'?textOf($,'.eventon_desc_in,.evcal_eventcard,.entry-content'):textOf($,'.tribe-events-single-event-description');
    const sentences=body.split(/[;]|(?<=[.!?])\s/).filter(s=>/carrera|recorr|distancia|prueba/i.test(s)&&!notRunning(s));
    c.distances=distancesFrom(sentences.join(' '));
   }
   return c;
  }
- const html=(await request(item.url)).text;
+ const response=await request(item.url);
+ const html=response.text;
+ const routeLinks = findRouteLinks(html, response.url || item.url);
  const parser={sportmaniacs:sportDetail,runatica:runaticaDetail,multiesport:multiDetail,crono4sports:crono4Detail,fdm:fdmDetail,rockthesport:rockDetail,toprun:toprunDetail}[def.id];
- if(parser)return parser(html,item.url,item);
+ if(parser)return {...parser(html,item.url,item), routeLinks};
  const $=page(html),event=eventsLd($).find(e=>e.startDate);
  if(!event)throw Error('Fitxa sense dades estructurades de carrera');
- return ldCandidate(event,def.id);
+ return {...ldCandidate(event,def.id), routeLinks};
 }

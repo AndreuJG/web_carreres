@@ -132,11 +132,30 @@ function openDialog(content, raceId = '', show = true) {
   if (show && !dialog.open) dialog.showModal();
 }
 
+function raceRoutes(race) {
+  if (!race.routes?.length) return '';
+  const edition = Number(race.date.slice(0, 4));
+  const formats = {gpx: 'Descarregar GPX', tcx: 'Descarregar TCX', fit: 'Descarregar FIT',
+    pdf: 'Veure el plànol en PDF', map: 'Veure el mapa', wikiloc: 'Obrir en Wikiloc'};
+  const routes = [...race.routes].sort((a, b) => (b.year === edition) - (a.year === edition) || b.year - a.year);
+  const items = routes.map(route => {
+    const label = route.year < edition ? 'Edició anterior · el recorregut pot haver canviat'
+      : route.year === edition ? 'Edició actual' : 'Confirma l’edició amb l’organització';
+    return `<li><strong>${h(route.modality)} · ${route.year}</strong> · ${label}<br>
+      <a href="${h(route.url)}" target="_blank" rel="noopener noreferrer">${formats[route.kind]} ↗</a>
+      · <a href="${h(route.sourceUrl)}" target="_blank" rel="noopener noreferrer">Font de ${h(route.source)} ↗</a></li>`;
+  });
+  const guide = routes.some(route => ['gpx', 'tcx', 'fit', 'wikiloc'].includes(route.kind))
+    ? '<p>Si tens el fitxer del track, pots <a href="https://support.garmin.com/es-ES/?faq=wKuZXCaZRP4mWPX5aRz5h5" target="_blank" rel="noopener noreferrer">importar-lo a Garmin Connect ↗</a> i enviar-lo al rellotge.</p>' : '';
+  return `<h3>Recorreguts</h3><ul>${items.join('')}</ul>${guide}`;
+}
+
 function raceDetails(id, show = true) {
   const race = data.races.find(item => item.id === id);
   if (!race) return;
   openDialog(`<h2 id="dialog-title">${h(race.name)}</h2><span class="tag tag-${race.type}">${TYPE_LABELS[race.type]}</span>
     <div class="dialog-detail-grid"><div><span>Data</span>${h(longDate(race.date))}</div><div><span>Distància</span>${distanceLabel(race)} km</div><div><span>Hora publicada</span>${race.time || 'Pendent de confirmar'}</div><div><span>Població</span>${h(race.town)}</div></div>
+    ${raceRoutes(race)}
     <p><b>Eixida:</b> ${h(race.location)}</p>${race.automaticNote ? `<p class="review-summary">${h(race.automaticNote)}</p>` : ''}<p>${h(race.note)}</p><h3>Fonts d’esta convocatòria</h3><ul>${race.sources.map(source => `<li><a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.label)} ↗</a></li>`).join('')}</ul><p>${race.verification === 'automatic' ? 'Incorporada automàticament' : 'Revisada manualment'} el ${h(longDate(race.verifiedAt))}.${race.automation?.checkedAt ? ` Última consulta automàtica: ${h(checkedDate(race.automation.checkedAt))}.` : ''} Confirma les condicions i els dorsals disponibles a la font.</p>
     <div class="dialog-actions"><a class="primary-button" href="${h(race.url)}" target="_blank" rel="noopener noreferrer">Consultar la convocatòria ↗</a><button class="secondary-button" data-calendar="${h(race.id)}">↓ Afegir al calendari</button><button class="secondary-button" data-save="${h(race.id)}" aria-pressed="${saved.includes(id)}">${saved.includes(id) ? '♥ Guardada' : '♡ Guardar'}</button></div><p style="font-size:10px">El fitxer de calendari guarda el dia complet; els horaris publicats apareixen en la descripció.</p>`, id, show);
 }
