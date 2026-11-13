@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-13T10:45:02.179Z",
+  "checkedAt": "2026-11-13T11:20:32.662Z",
   "today": "2026-11-13",
   "status": "ok",
   "window": {
@@ -8,43 +8,7 @@
     "through": "2027-11-13",
     "radiusKm": 50
   },
-  "changes": [
-    {
-      "kind": "added",
-      "id": "auto-cronorunner-25d4f8ccfe45",
-      "name": "Sant Roquense 2027",
-      "url": "https://inscripciones.cronorunner.com/evento/sant-roquense-2027",
-      "source": "cronorunner"
-    },
-    {
-      "kind": "added",
-      "id": "auto-cronorunner-160c285ffa3c",
-      "name": "XXII Trail 3 Pics les Rodanes",
-      "url": "https://inscripciones.cronorunner.com/evento/xxii-trail-3-pics-les-rodanes",
-      "source": "cronorunner"
-    },
-    {
-      "kind": "added",
-      "id": "auto-sportmaniacs-992f660dd4b4",
-      "name": "IX SAN SILVESTRE SOLIDARIA DE ALBUIXECH",
-      "url": "https://sportmaniacs.com/es/races/ix-san-silvestre-solidaria-de-albuixech",
-      "source": "sportmaniacs"
-    },
-    {
-      "kind": "added",
-      "id": "auto-runatica-21032d73b87e",
-      "name": "37º Cross Escolar d'Alzira",
-      "url": "https://www.runatica.com/event/xxxvii-cross-escolar-alzira-2026",
-      "source": "runatica"
-    },
-    {
-      "kind": "added",
-      "id": "auto-runatica-90d97607e4f9",
-      "name": "40ª Sant Silvestre Albalat de la Ribera",
-      "url": "https://www.runatica.com/event/40-san-silvestre-albalat-de-la-ribera-2026",
-      "source": "runatica"
-    }
-  ],
+  "changes": [],
   "pending": [
     {
       "name": "2027 1ª CURSA D´EMPRESES DE LA VALL D´ALBAIDA",
@@ -121,10 +85,10 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-13T10:45:02.179Z",
+      "checkedAt": "2026-11-13T11:20:32.662Z",
       "status": "ok",
-      "catalogEntries": 18,
-      "read": 16,
+      "catalogEntries": 19,
+      "read": 17,
       "eligible": 16,
       "errors": [],
       "decisions": [
@@ -283,25 +247,6 @@
           "status": "eligible"
         },
         {
-          "url": "https://inscripciones.cronorunner.com/evento/carrera-lusitania",
-          "name": "XVI Carrera Regimiento \"Lusitania\"",
-          "date": "2027-02-07",
-          "town": "Marines",
-          "distances": [
-            10.5,
-            15,
-            21
-          ],
-          "time": "09:00",
-          "status": "eligible"
-        },
-        {
-          "url": "https://inscripciones.cronorunner.com/evento/xi-sansil-trail",
-          "name": "XI Sansil Trail",
-          "status": "excluded",
-          "reason": "Fora del radi"
-        },
-        {
           "url": "https://inscripciones.cronorunner.com/evento/sant-roquense-2027",
           "name": "Sant Roquense 2027",
           "date": "2027-01-16",
@@ -327,6 +272,35 @@
           "status": "eligible"
         },
         {
+          "url": "https://inscripciones.cronorunner.com/evento/carrera-lusitania",
+          "name": "XVI Carrera Regimiento \"Lusitania\"",
+          "date": "2027-02-07",
+          "town": "Marines",
+          "distances": [
+            10.5,
+            15,
+            21
+          ],
+          "time": "09:00",
+          "status": "eligible"
+        },
+        {
+          "url": "https://inscripciones.cronorunner.com/evento/xi-sansil-trail",
+          "name": "XI Sansil Trail",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://inscripciones.cronorunner.com/evento/ii-8k-sant-antoni-de-fortaleny",
+          "name": "II 8K Sant Antoni de Fortaleny",
+          "date": "2027-01-24",
+          "town": "Fortaleny",
+          "distances": [],
+          "time": null,
+          "status": "excluded",
+          "reason": "Modalitat exclosa o abonament de circuit"
+        },
+        {
           "url": "https://inscripciones.cronorunner.com/evento/carrera-vertical-gran-hotel-bali-2027",
           "name": "Subida Vertical Gran Hotel Bali 2027",
           "status": "excluded",
@@ -337,7 +311,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-13T10:45:02.179Z",
+      "checkedAt": "2026-11-13T11:20:32.662Z",
       "status": "ok",
       "catalogEntries": 28,
       "read": 18,
@@ -473,6 +447,17 @@
           "status": "eligible"
         },
         {
+          "url": "https://sportmaniacs.com/es/races/ix-san-silvestre-solidaria-de-albuixech",
+          "name": "IX SAN SILVESTRE SOLIDARIA DE ALBUIXECH",
+          "date": "2026-12-28",
+          "town": "Albuixech",
+          "distances": [
+            5
+          ],
+          "time": "19:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://sportmaniacs.com/es/races/vix-volta-a-peu-castell-2027",
           "name": "IX VOLTA A PEU CASTELL 2027",
           "date": "2027-01-10",
@@ -518,17 +503,6 @@
           "name": "CIRCUIT VALL DE SEGO CARRERES POPULARS 2026",
           "status": "excluded",
           "reason": "Modalitat o abonament exclòs"
-        },
-        {
-          "url": "https://sportmaniacs.com/es/races/ix-san-silvestre-solidaria-de-albuixech",
-          "name": "IX SAN SILVESTRE SOLIDARIA DE ALBUIXECH",
-          "date": "2026-12-28",
-          "town": "Albuixech",
-          "distances": [
-            5
-          ],
-          "time": "19:00",
-          "status": "eligible"
         },
         {
           "url": "https://sportmaniacs.com/es/races/evento-gordako-utiel-2026",
@@ -622,13 +596,25 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-13T10:45:02.179Z",
+      "checkedAt": "2026-11-13T11:20:32.662Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 10,
       "eligible": 4,
       "errors": [],
       "decisions": [
+        {
+          "url": "https://www.runatica.com/event/xxxvii-cross-escolar-alzira-2026",
+          "name": "37º Cross Escolar d'Alzira",
+          "date": "2026-11-21",
+          "town": "Alzira",
+          "distances": [
+            0.3,
+            1.4
+          ],
+          "time": "10:00",
+          "status": "eligible"
+        },
         {
           "url": "https://www.runatica.com/event/vii-san-silvestre-alzira-2026",
           "name": "VII San Silvestre Solidaria Alzira",
@@ -638,6 +624,19 @@
             5
           ],
           "time": "10:30",
+          "status": "eligible"
+        },
+        {
+          "url": "https://www.runatica.com/event/40-san-silvestre-albalat-de-la-ribera-2026",
+          "name": "40ª Sant Silvestre Albalat de la Ribera",
+          "date": "2026-12-31",
+          "town": "Albalat de la Ribera",
+          "distances": [
+            0.3,
+            0.8,
+            6
+          ],
+          "time": "17:00",
           "status": "eligible"
         },
         {
@@ -656,18 +655,6 @@
           "name": "Montsant Bike LIVE!",
           "status": "excluded",
           "reason": "Modalitat o abonament exclòs"
-        },
-        {
-          "url": "https://www.runatica.com/event/xxxvii-cross-escolar-alzira-2026",
-          "name": "37º Cross Escolar d'Alzira",
-          "date": "2026-11-21",
-          "town": "Alzira",
-          "distances": [
-            0.3,
-            1.4
-          ],
-          "time": "10:00",
-          "status": "eligible"
         },
         {
           "url": "https://www.runatica.com/event/trailseries-les-ermites-ulldemolins-2026",
@@ -731,19 +718,6 @@
           "reason": "Fora del radi"
         },
         {
-          "url": "https://www.runatica.com/event/40-san-silvestre-albalat-de-la-ribera-2026",
-          "name": "40ª Sant Silvestre Albalat de la Ribera",
-          "date": "2026-12-31",
-          "town": "Albalat de la Ribera",
-          "distances": [
-            0.3,
-            0.8,
-            6
-          ],
-          "time": "17:00",
-          "status": "eligible"
-        },
-        {
           "url": "https://www.runatica.com/event/xiii-trail-almedijar-2027",
           "name": "XIII Trail de Almedijar",
           "date": "2027-02-21",
@@ -775,7 +749,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-13T10:45:02.179Z",
+      "checkedAt": "2026-11-13T11:20:32.662Z",
       "status": "ok",
       "catalogEntries": 16,
       "read": 16,
@@ -972,7 +946,7 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-13T10:45:02.179Z",
+      "checkedAt": "2026-11-13T11:20:32.662Z",
       "status": "ok",
       "catalogEntries": 21,
       "read": 18,
@@ -1185,7 +1159,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-13T10:45:02.179Z",
+      "checkedAt": "2026-11-13T11:20:32.662Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 1,
@@ -1221,7 +1195,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-13T10:45:02.179Z",
+      "checkedAt": "2026-11-13T11:20:32.662Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1319,7 +1293,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-13T10:45:02.179Z",
+      "checkedAt": "2026-11-13T11:20:32.662Z",
       "status": "ok",
       "catalogEntries": 11,
       "read": 12,
@@ -1467,7 +1441,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-13T10:45:02.179Z",
+      "checkedAt": "2026-11-13T11:20:32.662Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1512,7 +1486,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-13T10:45:02.179Z",
+      "checkedAt": "2026-11-13T11:20:32.662Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1546,7 +1520,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-13T10:45:02.179Z",
+      "checkedAt": "2026-11-13T11:20:32.662Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 4,
