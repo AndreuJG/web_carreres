@@ -1,22 +1,48 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-12T13:44:12.474Z",
-  "today": "2026-11-12",
+  "checkedAt": "2026-11-13T10:45:02.179Z",
+  "today": "2026-11-13",
   "status": "ok",
   "window": {
-    "after": "2026-11-12",
-    "through": "2027-11-12",
+    "after": "2026-11-13",
+    "through": "2027-11-13",
     "radiusKm": 50
   },
   "changes": [
     {
-      "kind": "updated",
-      "id": "silvestre-farnals-2026",
-      "fields": [
-        "time",
-        "distances"
-      ],
+      "kind": "added",
+      "id": "auto-cronorunner-25d4f8ccfe45",
+      "name": "Sant Roquense 2027",
+      "url": "https://inscripciones.cronorunner.com/evento/sant-roquense-2027",
       "source": "cronorunner"
+    },
+    {
+      "kind": "added",
+      "id": "auto-cronorunner-160c285ffa3c",
+      "name": "XXII Trail 3 Pics les Rodanes",
+      "url": "https://inscripciones.cronorunner.com/evento/xxii-trail-3-pics-les-rodanes",
+      "source": "cronorunner"
+    },
+    {
+      "kind": "added",
+      "id": "auto-sportmaniacs-992f660dd4b4",
+      "name": "IX SAN SILVESTRE SOLIDARIA DE ALBUIXECH",
+      "url": "https://sportmaniacs.com/es/races/ix-san-silvestre-solidaria-de-albuixech",
+      "source": "sportmaniacs"
+    },
+    {
+      "kind": "added",
+      "id": "auto-runatica-21032d73b87e",
+      "name": "37º Cross Escolar d'Alzira",
+      "url": "https://www.runatica.com/event/xxxvii-cross-escolar-alzira-2026",
+      "source": "runatica"
+    },
+    {
+      "kind": "added",
+      "id": "auto-runatica-90d97607e4f9",
+      "name": "40ª Sant Silvestre Albalat de la Ribera",
+      "url": "https://www.runatica.com/event/40-san-silvestre-albalat-de-la-ribera-2026",
+      "source": "runatica"
     }
   ],
   "pending": [
@@ -71,15 +97,35 @@
       ]
     }
   ],
+  "routePending": [
+    {
+      "raceId": "xeraco-2027",
+      "name": "Volta a Peu Xeraco – Gran Fons Manolo Pardo",
+      "source": "crono4sports",
+      "url": "https://es.wikiloc.com/rutas-carrera/volta-a-peu-xeraco-2020-45219613",
+      "label": "",
+      "sourceUrl": "https://crono4sports.com/evento/xxvi-volta-a-peu-xeraco-gran-fons-manolo-pardo",
+      "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
+    },
+    {
+      "raceId": "mini-marato-2026",
+      "name": "Mini Marató València MSC",
+      "source": "vcr",
+      "url": "https://www.valenciaciudaddelrunning.com/maraton/recorrido-maraton/",
+      "label": "consulta el circuito",
+      "sourceUrl": "https://www.valenciaciudaddelrunning.com/maraton/maraton/",
+      "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
+    }
+  ],
   "sources": [
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-12T13:44:12.474Z",
+      "checkedAt": "2026-11-13T10:45:02.179Z",
       "status": "ok",
-      "catalogEntries": 16,
-      "read": 14,
-      "eligible": 14,
+      "catalogEntries": 18,
+      "read": 16,
+      "eligible": 16,
       "errors": [],
       "decisions": [
         {
@@ -256,6 +302,31 @@
           "reason": "Fora del radi"
         },
         {
+          "url": "https://inscripciones.cronorunner.com/evento/sant-roquense-2027",
+          "name": "Sant Roquense 2027",
+          "date": "2027-01-16",
+          "town": "Museros",
+          "distances": [
+            5
+          ],
+          "time": "17:00",
+          "status": "eligible"
+        },
+        {
+          "url": "https://inscripciones.cronorunner.com/evento/xxii-trail-3-pics-les-rodanes",
+          "name": "XXII Trail 3 Pics les Rodanes",
+          "date": "2027-01-24",
+          "town": "Vilamarxant",
+          "distances": [
+            0.001,
+            8,
+            14,
+            28
+          ],
+          "time": "00:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://inscripciones.cronorunner.com/evento/carrera-vertical-gran-hotel-bali-2027",
           "name": "Subida Vertical Gran Hotel Bali 2027",
           "status": "excluded",
@@ -266,11 +337,11 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-12T13:44:12.474Z",
+      "checkedAt": "2026-11-13T10:45:02.179Z",
       "status": "ok",
-      "catalogEntries": 26,
-      "read": 17,
-      "eligible": 14,
+      "catalogEntries": 28,
+      "read": 18,
+      "eligible": 15,
       "errors": [],
       "decisions": [
         {
@@ -403,7 +474,7 @@
         },
         {
           "url": "https://sportmaniacs.com/es/races/vix-volta-a-peu-castell-2027",
-          "name": "VIX VOLTA A PEU CASTELL 2027",
+          "name": "IX VOLTA A PEU CASTELL 2027",
           "date": "2027-01-10",
           "town": "Sagunt",
           "distances": [
@@ -449,6 +520,17 @@
           "reason": "Modalitat o abonament exclòs"
         },
         {
+          "url": "https://sportmaniacs.com/es/races/ix-san-silvestre-solidaria-de-albuixech",
+          "name": "IX SAN SILVESTRE SOLIDARIA DE ALBUIXECH",
+          "date": "2026-12-28",
+          "town": "Albuixech",
+          "distances": [
+            5
+          ],
+          "time": "19:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://sportmaniacs.com/es/races/evento-gordako-utiel-2026",
           "name": "Evento Gordako Utiel 2026",
           "date": "2026-11-21",
@@ -475,6 +557,12 @@
         {
           "url": "https://sportmaniacs.com/es/races/san-silvestre-benicassim-2026",
           "name": "SAN SILVESTRE BENICASSIM 2026",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://sportmaniacs.com/es/races/i-sant-silvestre-les-useres-2026",
+          "name": "I SANT SILVESTRE LES USERES 2026",
           "status": "excluded",
           "reason": "Fora del radi"
         },
@@ -534,11 +622,11 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-12T13:44:12.474Z",
+      "checkedAt": "2026-11-13T10:45:02.179Z",
       "status": "ok",
-      "catalogEntries": 10,
-      "read": 8,
-      "eligible": 2,
+      "catalogEntries": 12,
+      "read": 10,
+      "eligible": 4,
       "errors": [],
       "decisions": [
         {
@@ -565,9 +653,21 @@
         },
         {
           "url": "https://www.runatica.com/event/gran-fons-montsant-bike-2026",
-          "name": "Montsant Bike",
+          "name": "Montsant Bike LIVE!",
           "status": "excluded",
           "reason": "Modalitat o abonament exclòs"
+        },
+        {
+          "url": "https://www.runatica.com/event/xxxvii-cross-escolar-alzira-2026",
+          "name": "37º Cross Escolar d'Alzira",
+          "date": "2026-11-21",
+          "town": "Alzira",
+          "distances": [
+            0.3,
+            1.4
+          ],
+          "time": "10:00",
+          "status": "eligible"
         },
         {
           "url": "https://www.runatica.com/event/trailseries-les-ermites-ulldemolins-2026",
@@ -631,6 +731,19 @@
           "reason": "Fora del radi"
         },
         {
+          "url": "https://www.runatica.com/event/40-san-silvestre-albalat-de-la-ribera-2026",
+          "name": "40ª Sant Silvestre Albalat de la Ribera",
+          "date": "2026-12-31",
+          "town": "Albalat de la Ribera",
+          "distances": [
+            0.3,
+            0.8,
+            6
+          ],
+          "time": "17:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://www.runatica.com/event/xiii-trail-almedijar-2027",
           "name": "XIII Trail de Almedijar",
           "date": "2027-02-21",
@@ -662,7 +775,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-12T13:44:12.474Z",
+      "checkedAt": "2026-11-13T10:45:02.179Z",
       "status": "ok",
       "catalogEntries": 16,
       "read": 16,
@@ -859,9 +972,9 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-12T13:44:12.474Z",
+      "checkedAt": "2026-11-13T10:45:02.179Z",
       "status": "ok",
-      "catalogEntries": 20,
+      "catalogEntries": 21,
       "read": 18,
       "eligible": 2,
       "errors": [],
@@ -936,6 +1049,12 @@
           "town": "Beniflá",
           "distances": [],
           "time": "09:30",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://crono4sports.com/evento/xix-volta-a-peu-lalqueria-de-la-comtessa",
+          "name": "XIX Volta a Peu L'Alqueria de la Comtessa",
           "status": "excluded",
           "reason": "Fora del radi"
         },
@@ -1066,7 +1185,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-12T13:44:12.474Z",
+      "checkedAt": "2026-11-13T10:45:02.179Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 1,
@@ -1102,7 +1221,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-12T13:44:12.474Z",
+      "checkedAt": "2026-11-13T10:45:02.179Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1200,7 +1319,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-12T13:44:12.474Z",
+      "checkedAt": "2026-11-13T10:45:02.179Z",
       "status": "ok",
       "catalogEntries": 11,
       "read": 12,
@@ -1348,7 +1467,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-12T13:44:12.474Z",
+      "checkedAt": "2026-11-13T10:45:02.179Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1393,7 +1512,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-12T13:44:12.474Z",
+      "checkedAt": "2026-11-13T10:45:02.179Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1427,7 +1546,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-12T13:44:12.474Z",
+      "checkedAt": "2026-11-13T10:45:02.179Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 4,
