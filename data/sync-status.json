@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-13T13:04:07.125Z",
-  "today": "2026-11-13",
+  "checkedAt": "2026-11-14T12:08:39.749Z",
+  "today": "2026-11-14",
   "status": "ok",
   "window": {
-    "after": "2026-11-13",
-    "through": "2027-11-13",
+    "after": "2026-11-14",
+    "through": "2027-11-14",
     "radiusKm": 50
   },
   "changes": [],
@@ -49,16 +49,6 @@
           "url": "https://www.fdmvalencia.es/eventos/gran-premio-internacional-de-atletismo-ciudad-de-valencia-2027/"
         }
       ]
-    },
-    {
-      "name": "Carrera Solidaria CORRE SIN RESISTENCIAS, CEU Cardenal Herrera, Alfara del Patriarca",
-      "reason": "Distància de carrera sense confirmar",
-      "sources": [
-        {
-          "label": "mychip",
-          "url": "https://www.mychip.es/e/carrera-solidaria-corre-sin-resistencias-ceu-cardenal-herrera-alfara-del-patriarca"
-        }
-      ]
     }
   ],
   "routePending": [
@@ -85,11 +75,11 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-13T13:04:07.125Z",
+      "checkedAt": "2026-11-14T12:08:39.749Z",
       "status": "ok",
       "catalogEntries": 19,
       "read": 17,
-      "eligible": 16,
+      "eligible": 15,
       "errors": [],
       "decisions": [
         {
@@ -101,7 +91,8 @@
             10
           ],
           "time": "08:30",
-          "status": "eligible"
+          "status": "excluded",
+          "reason": "Fora del període"
         },
         {
           "url": "https://inscripciones.cronorunner.com/evento/vii-10k-solidaria-marines",
@@ -311,9 +302,9 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-13T13:04:07.125Z",
+      "checkedAt": "2026-11-14T12:08:39.749Z",
       "status": "ok",
-      "catalogEntries": 28,
+      "catalogEntries": 27,
       "read": 18,
       "eligible": 15,
       "errors": [],
@@ -584,19 +575,13 @@
           "time": "08:30",
           "status": "excluded",
           "reason": "Fora del radi"
-        },
-        {
-          "url": "https://sportmaniacs.com/es/races/scott-mediterranean-epic-gravel-2026",
-          "name": "SCOTT Mediterranean Epic Gravel 2026",
-          "status": "excluded",
-          "reason": "Modalitat o abonament exclòs"
         }
       ]
     },
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-13T13:04:07.125Z",
+      "checkedAt": "2026-11-14T12:08:39.749Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 10,
@@ -749,11 +734,11 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-13T13:04:07.125Z",
+      "checkedAt": "2026-11-14T12:08:39.749Z",
       "status": "ok",
-      "catalogEntries": 16,
+      "catalogEntries": 15,
       "read": 16,
-      "eligible": 4,
+      "eligible": 3,
       "errors": [],
       "decisions": [
         {
@@ -765,7 +750,8 @@
             5
           ],
           "time": "09:30",
-          "status": "eligible"
+          "status": "excluded",
+          "reason": "Fora del període"
         },
         {
           "url": "https://multiesport.es/event/2026-xxxx-pujada-al-castell-volta-a-peu-xativa/",
@@ -946,10 +932,10 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-13T13:04:07.125Z",
+      "checkedAt": "2026-11-14T12:08:39.749Z",
       "status": "ok",
       "catalogEntries": 22,
-      "read": 19,
+      "read": 18,
       "eligible": 2,
       "errors": [],
       "decisions": [
@@ -979,12 +965,8 @@
         {
           "url": "https://crono4sports.com/evento/iia-travesia-a-nado-solidaria-unidos-frente-al-cancer-infantil-playa-de-la-patacona-alboraya",
           "name": "IIª Travesía a nado Solidaria “Unidos Frente al Cancer Infantil” Playa de la Patacona Alboraya",
-          "date": "2026-11-14",
-          "town": "Alboraia",
-          "distances": [],
-          "time": "09:00",
           "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
+          "reason": "Modalitat o abonament exclòs"
         },
         {
           "url": "https://crono4sports.com/evento/vii-cursa-de-les-empreses-de-la-safor-cajamar",
@@ -1169,7 +1151,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-13T13:04:07.125Z",
+      "checkedAt": "2026-11-14T12:08:39.749Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 1,
@@ -1205,7 +1187,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-13T13:04:07.125Z",
+      "checkedAt": "2026-11-14T12:08:39.749Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1303,7 +1285,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-13T13:04:07.125Z",
+      "checkedAt": "2026-11-14T12:08:39.749Z",
       "status": "ok",
       "catalogEntries": 11,
       "read": 12,
@@ -1451,7 +1433,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-13T13:04:07.125Z",
+      "checkedAt": "2026-11-14T12:08:39.749Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1496,7 +1478,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-13T13:04:07.125Z",
+      "checkedAt": "2026-11-14T12:08:39.749Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1530,10 +1512,10 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-13T13:04:07.125Z",
+      "checkedAt": "2026-11-14T12:08:39.749Z",
       "status": "ok",
-      "catalogEntries": 8,
-      "read": 4,
+      "catalogEntries": 7,
+      "read": 3,
       "eligible": 3,
       "errors": [],
       "decisions": [
@@ -1569,16 +1551,6 @@
           ],
           "time": "09:00",
           "status": "eligible"
-        },
-        {
-          "url": "https://www.mychip.es/e/carrera-solidaria-corre-sin-resistencias-ceu-cardenal-herrera-alfara-del-patriarca",
-          "name": "Carrera Solidaria CORRE SIN RESISTENCIAS, CEU Cardenal Herrera, Alfara del Patriarca",
-          "date": "2026-11-14",
-          "town": "Alfara del Patriarca",
-          "distances": [],
-          "time": "10:00",
-          "status": "excluded",
-          "reason": "Distància de carrera sense confirmar"
         },
         {
           "url": "https://www.mychip.es/e/open-de-larga-distancia-de-marcha-nordica-femecv-2026",
