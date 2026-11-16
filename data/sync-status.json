@@ -1,15 +1,43 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-15T12:42:17.824Z",
-  "today": "2026-11-15",
+  "checkedAt": "2026-11-16T13:36:13.745Z",
+  "today": "2026-11-16",
   "status": "partial",
   "window": {
-    "after": "2026-11-15",
-    "through": "2027-11-15",
+    "after": "2026-11-16",
+    "through": "2027-11-16",
     "radiusKm": 50
   },
-  "changes": [],
+  "changes": [
+    {
+      "kind": "added",
+      "id": "auto-mychip-8f53b6d5a290",
+      "name": "XV Carrera por Montaña Sierra de Chiva.",
+      "url": "https://www.mychip.es/e/xv-carrera-por-montana-sierra-de-chiva",
+      "source": "mychip"
+    }
+  ],
   "pending": [
+    {
+      "name": "2027 1ª CURSA D´EMPRESES DE LA VALL D´ALBAIDA",
+      "reason": "Població sense coordenades inequívoces",
+      "sources": [
+        {
+          "label": "multiesport",
+          "url": "https://multiesport.es/event/2027-1a-cursa-dempreses-de-la-vall-dalbaida/"
+        }
+      ]
+    },
+    {
+      "name": "BACKYARD BORJA´S EXTREME XATIVA 2027",
+      "reason": "Distància de carrera sense confirmar",
+      "sources": [
+        {
+          "label": "multiesport",
+          "url": "https://multiesport.es/event/backyard-borjas-extreme-xativa-2027/"
+        }
+      ]
+    },
     {
       "name": "XII Cursa-Mascota Running",
       "reason": "Població sense coordenades inequívoces",
@@ -29,6 +57,16 @@
           "url": "https://www.fdmvalencia.es/eventos/gran-premio-internacional-de-atletismo-ciudad-de-valencia-2027/"
         }
       ]
+    },
+    {
+      "name": "Volta a Peu València 2027",
+      "reason": "Distància de carrera sense confirmar",
+      "sources": [
+        {
+          "label": "fdm",
+          "url": "https://www.fdmvalencia.es/eventos/volta-a-peu-valencia-2027/"
+        }
+      ]
     }
   ],
   "routePending": [
@@ -39,6 +77,15 @@
       "url": "https://es.wikiloc.com/rutas-carrera/volta-a-peu-xeraco-2020-45219613",
       "label": "",
       "sourceUrl": "https://crono4sports.com/evento/xxvi-volta-a-peu-xeraco-gran-fons-manolo-pardo",
+      "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
+    },
+    {
+      "raceId": "valencia-cancer-2026",
+      "name": "València contra el Càncer",
+      "source": "vcr",
+      "url": "https://www.valenciaciudaddelrunning.com/maraton/recorrido-maraton/",
+      "label": "Recorrido",
+      "sourceUrl": "https://www.valenciaciudaddelrunning.com/evento/valencia-contra-el-cancer/",
       "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
     },
     {
@@ -55,9 +102,9 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-15T12:42:17.824Z",
+      "checkedAt": "2026-11-16T13:36:13.745Z",
       "status": "ok",
-      "catalogEntries": 18,
+      "catalogEntries": 15,
       "read": 17,
       "eligible": 12,
       "errors": [],
@@ -285,7 +332,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-15T12:42:17.824Z",
+      "checkedAt": "2026-11-16T13:36:13.745Z",
       "status": "ok",
       "catalogEntries": 24,
       "read": 18,
@@ -560,7 +607,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-15T12:42:17.824Z",
+      "checkedAt": "2026-11-16T13:36:13.745Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 11,
@@ -722,51 +769,199 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-15T12:42:17.824Z",
+      "checkedAt": "2026-11-16T13:36:13.745Z",
       "status": "partial",
-      "catalogEntries": 0,
-      "read": 1,
-      "eligible": 0,
+      "catalogEntries": 14,
+      "read": 15,
+      "eligible": 2,
       "errors": [
         {
-          "stage": "catalog",
-          "message": "The operation was aborted due to timeout"
-        },
-        {
-          "url": "https://multiesport.es/event/2026-ii-5k-miguel-rubio/",
-          "message": "The operation was aborted due to timeout"
-        },
-        {
-          "url": "https://multiesport.es/event/2026-vii-trail-de-lliria/",
-          "message": "The operation was aborted due to timeout"
-        },
-        {
-          "url": "https://multiesport.es/event/2027-ii-10k-bombers-xativa/",
-          "message": "The operation was aborted due to timeout"
+          "url": "https://multiesport.es/event/2026-xxxx-pujada-al-castell-volta-a-peu-xativa/",
+          "message": "Resposta massa gran"
         }
       ],
       "decisions": [
         {
-          "url": "https://multiesport.es/event/2026-xxxx-pujada-al-castell-volta-a-peu-xativa/",
-          "name": "2026 – XL PUJADA AL CASTELL (VOLTA A PEU XATIVA)",
-          "date": "2026-11-15",
+          "url": "https://multiesport.es/event/2026-ii-5k-miguel-rubio/",
+          "name": "2026 – II 5K MIGUEL RUBIO",
+          "date": "2026-11-14",
+          "town": "Bonrepòs i Mirambell",
+          "distances": [
+            5
+          ],
+          "time": "09:30",
+          "status": "excluded",
+          "reason": "Fora del període"
+        },
+        {
+          "url": "https://multiesport.es/event/2026-vii-trail-de-lliria/",
+          "name": "2026 VII TRAIL DE LLIRIA",
+          "date": "2026-11-22",
+          "town": "Llíria",
+          "distances": [
+            11.3,
+            20
+          ],
+          "time": "09:00",
+          "status": "eligible"
+        },
+        {
+          "url": "https://multiesport.es/event/2027-ii-10k-bombers-xativa/",
+          "name": "2027 – II 10K BOMBERS XÁTIVA",
+          "date": "2027-01-31",
           "town": "Xàtiva",
           "distances": [
             10
           ],
           "time": "10:00",
+          "status": "eligible"
+        },
+        {
+          "url": "https://multiesport.es/event/gala-final-circuit-vall-albaida-2026/",
+          "name": "GALA FINAL CIRCUIT VALL ALBAIDA 2026",
+          "date": "2026-11-27",
+          "town": "Atzeneta d'Albaida",
+          "distances": [],
+          "time": "19:30",
           "status": "excluded",
-          "reason": "Fora del període"
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://multiesport.es/event/ix-carrera-de-papa-noel-asociacion-de-comerciantes-la-florida/",
+          "name": "IX CARRERA DE PAPA NOEL ASOCIACION DE COMERCIANTES LA FLORIDA",
+          "date": "2026-11-28",
+          "town": "Alicante",
+          "distances": [],
+          "time": "10:00",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://multiesport.es/event/2026-xx-san-silvestre-villenera-2026/",
+          "name": "2026- XX SAN SILVESTRE VILLENERA 2026",
+          "date": "2026-12-26",
+          "town": "Villena",
+          "distances": [
+            6.87
+          ],
+          "time": "17:30",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://multiesport.es/event/2027-1a-cursa-dempreses-de-la-vall-dalbaida/",
+          "name": "2027 1ª CURSA D´EMPRESES DE LA VALL D´ALBAIDA",
+          "date": "2027-02-13",
+          "town": "Atzaneta d´Albaida",
+          "distances": [],
+          "time": "10:00",
+          "status": "excluded",
+          "reason": "Població sense coordenades inequívoces"
+        },
+        {
+          "url": "https://multiesport.es/event/2027-v-edicio-corre-en-familia-beniarres/",
+          "name": "2027 V EDICIÓ CORRE EN FAMÍLIA BENIARRÉS",
+          "date": "2027-04-10",
+          "town": "Beniarrés",
+          "distances": [
+            9.5
+          ],
+          "time": "08:30",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://multiesport.es/event/backyard-borjas-extreme-xativa-2027/",
+          "name": "BACKYARD BORJA´S EXTREME XATIVA 2027",
+          "date": "2027-05-01",
+          "town": "Xàtiva",
+          "distances": [],
+          "time": "08:00",
+          "status": "excluded",
+          "reason": "Distància de carrera sense confirmar"
+        },
+        {
+          "url": "https://multiesport.es/event/ix-trail-sendes-de-romaguera-2026/",
+          "name": "IX TRAIL SENDES DE ROMAGUERA 2026",
+          "date": "2026-11-28",
+          "town": "Benigànim",
+          "distances": [
+            20
+          ],
+          "time": "09:00",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://multiesport.es/event/trail-benissoda-2027/",
+          "name": "TRAIL BENISSODA 2027",
+          "date": "2027-02-07",
+          "town": "Benissoda",
+          "distances": [
+            13.5
+          ],
+          "time": "09:00",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://multiesport.es/event/2027-invernal-confrides-aitana/",
+          "name": "2027 – INVERNAL CONFRIDES – AITANA",
+          "date": "2027-02-14",
+          "town": "Confrides",
+          "distances": [
+            14,
+            20
+          ],
+          "time": "08:00",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://multiesport.es/event/xi-trail-gegants-i-cabuts-de-la-font-de-la-figuera-trail/",
+          "name": "XI TRAIL GEGANTS I CABUTS DE LA FONT DE LA FIGUERA TRAIL",
+          "date": "2027-03-07",
+          "town": "La Font de la Figuera",
+          "distances": [
+            20.5
+          ],
+          "time": "08:30",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://multiesport.es/event/apiarium-reconco-trail-5km-vertical-sabado/",
+          "name": "APIARIUM RECONCO TRAIL 5KM VERTICAL (SÁBADO)",
+          "date": "2027-04-17",
+          "town": "Biar",
+          "distances": [
+            5
+          ],
+          "time": "17:00",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://multiesport.es/event/apiarium-reconco-trail-domingo-2/",
+          "name": "APIARIUM RECONCO TRAIL (DOMINGO)",
+          "date": "2027-04-18",
+          "town": "Biar",
+          "distances": [
+            15.23
+          ],
+          "time": "09:00",
+          "status": "excluded",
+          "reason": "Fora del radi"
         }
       ]
     },
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-15T12:42:17.824Z",
+      "checkedAt": "2026-11-16T13:36:13.745Z",
       "status": "ok",
-      "catalogEntries": 21,
-      "read": 18,
+      "catalogEntries": 20,
+      "read": 17,
       "eligible": 2,
       "errors": [],
       "decisions": [
@@ -792,16 +987,6 @@
           ],
           "time": "10:00",
           "status": "eligible"
-        },
-        {
-          "url": "https://crono4sports.com/evento/vii-cursa-de-les-empreses-de-la-safor-cajamar",
-          "name": "VII Cursa de les Empreses de la Safor Cajamar",
-          "date": "2026-11-15",
-          "town": "Gandia",
-          "distances": [],
-          "time": "09:30",
-          "status": "excluded",
-          "reason": "Fora del període"
         },
         {
           "url": "https://crono4sports.com/evento/desafio-vega-baja-redovan-by-medieval",
@@ -976,9 +1161,9 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-15T12:42:17.824Z",
+      "checkedAt": "2026-11-16T13:36:13.745Z",
       "status": "ok",
-      "catalogEntries": 3,
+      "catalogEntries": 2,
       "read": 1,
       "eligible": 1,
       "errors": [],
@@ -996,12 +1181,6 @@
           "status": "eligible"
         },
         {
-          "url": "https://www.toprun.es/eventos/carrera-del-desierto-de-tabernas-2026",
-          "name": "XVIII Carrera del desierto de Tabernas",
-          "status": "excluded",
-          "reason": "Fora del radi"
-        },
-        {
           "url": "https://www.toprun.es/eventos/carrera-tolerancia-cero-2026",
           "name": "Carrera Tolerancia Cero, Contra la violencia de género",
           "status": "excluded",
@@ -1012,7 +1191,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-15T12:42:17.824Z",
+      "checkedAt": "2026-11-16T13:36:13.745Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1110,10 +1289,10 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-15T12:42:17.824Z",
+      "checkedAt": "2026-11-16T13:36:13.745Z",
       "status": "ok",
-      "catalogEntries": 11,
-      "read": 12,
+      "catalogEntries": 12,
+      "read": 13,
       "eligible": 9,
       "errors": [],
       "decisions": [
@@ -1252,13 +1431,23 @@
           "time": "17:00",
           "status": "excluded",
           "reason": "Distància de carrera sense confirmar"
+        },
+        {
+          "url": "https://www.fdmvalencia.es/eventos/volta-a-peu-valencia-2027/",
+          "name": "Volta a Peu València 2027",
+          "date": "2027-05-16",
+          "town": "València",
+          "distances": [],
+          "time": "10:00",
+          "status": "excluded",
+          "reason": "Distància de carrera sense confirmar"
         }
       ]
     },
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-15T12:42:17.824Z",
+      "checkedAt": "2026-11-16T13:36:13.745Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1303,7 +1492,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-15T12:42:17.824Z",
+      "checkedAt": "2026-11-16T13:36:13.745Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1337,11 +1526,11 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-15T12:42:17.824Z",
+      "checkedAt": "2026-11-16T13:36:13.745Z",
       "status": "ok",
       "catalogEntries": 5,
-      "read": 3,
-      "eligible": 2,
+      "read": 4,
+      "eligible": 3,
       "errors": [],
       "decisions": [
         {
@@ -1379,16 +1568,29 @@
           "status": "eligible"
         },
         {
-          "url": "https://www.mychip.es/e/open-de-larga-distancia-de-marcha-nordica-femecv-2026",
-          "name": "Open de Larga Distancia de Marcha Nórdica FEMECV 2026",
-          "status": "excluded",
-          "reason": "Modalitat o abonament exclòs"
-        },
-        {
           "url": "https://www.mychip.es/e/valldigna-extrem-2026-marxa-senderista",
           "name": "VALLDIGNA EXTREM, 2026 Marxa senderista",
           "status": "excluded",
           "reason": "Modalitat o abonament exclòs"
+        },
+        {
+          "url": "https://www.mychip.es/e/iii-trail-nocturno-cabeco-dor-busot",
+          "name": "III Trail Nocturno Cabeço D'Or, Busot",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://www.mychip.es/e/xv-carrera-por-montana-sierra-de-chiva",
+          "name": "XV Carrera por Montaña Sierra de Chiva.",
+          "date": "2026-12-06",
+          "town": "Chiva",
+          "distances": [
+            14,
+            35,
+            61
+          ],
+          "time": "07:00",
+          "status": "eligible"
         }
       ]
     }
