@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-16T13:36:13.745Z",
+  "checkedAt": "2026-11-16T19:34:51.172Z",
   "today": "2026-11-16",
   "status": "partial",
   "window": {
@@ -8,15 +8,7 @@
     "through": "2027-11-16",
     "radiusKm": 50
   },
-  "changes": [
-    {
-      "kind": "added",
-      "id": "auto-mychip-8f53b6d5a290",
-      "name": "XV Carrera por Montaña Sierra de Chiva.",
-      "url": "https://www.mychip.es/e/xv-carrera-por-montana-sierra-de-chiva",
-      "source": "mychip"
-    }
-  ],
+  "changes": [],
   "pending": [
     {
       "name": "2027 1ª CURSA D´EMPRESES DE LA VALL D´ALBAIDA",
@@ -45,6 +37,16 @@
         {
           "label": "crono4sports",
           "url": "https://crono4sports.com/evento/xii-cursa-mascota-running"
+        }
+      ]
+    },
+    {
+      "name": "XIX Volta a Peu L'Alqueria de la Comtessa",
+      "reason": "Població sense coordenades inequívoces",
+      "sources": [
+        {
+          "label": "crono4sports",
+          "url": "https://crono4sports.com/evento/xix-volta-a-peu-lalqueria-de-la-comtessa"
         }
       ]
     },
@@ -80,15 +82,6 @@
       "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
     },
     {
-      "raceId": "valencia-cancer-2026",
-      "name": "València contra el Càncer",
-      "source": "vcr",
-      "url": "https://www.valenciaciudaddelrunning.com/maraton/recorrido-maraton/",
-      "label": "Recorrido",
-      "sourceUrl": "https://www.valenciaciudaddelrunning.com/evento/valencia-contra-el-cancer/",
-      "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
-    },
-    {
       "raceId": "mini-marato-2026",
       "name": "Mini Marató València MSC",
       "source": "vcr",
@@ -102,7 +95,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-16T13:36:13.745Z",
+      "checkedAt": "2026-11-16T19:34:51.172Z",
       "status": "ok",
       "catalogEntries": 15,
       "read": 17,
@@ -332,7 +325,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-16T13:36:13.745Z",
+      "checkedAt": "2026-11-16T19:34:51.172Z",
       "status": "ok",
       "catalogEntries": 24,
       "read": 18,
@@ -607,7 +600,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-16T13:36:13.745Z",
+      "checkedAt": "2026-11-16T19:34:51.172Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 11,
@@ -769,7 +762,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-16T13:36:13.745Z",
+      "checkedAt": "2026-11-16T19:34:51.172Z",
       "status": "partial",
       "catalogEntries": 14,
       "read": 15,
@@ -958,10 +951,10 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-16T13:36:13.745Z",
+      "checkedAt": "2026-11-16T19:34:51.172Z",
       "status": "ok",
       "catalogEntries": 20,
-      "read": 17,
+      "read": 18,
       "eligible": 2,
       "errors": [],
       "decisions": [
@@ -1021,8 +1014,12 @@
         {
           "url": "https://crono4sports.com/evento/xix-volta-a-peu-lalqueria-de-la-comtessa",
           "name": "XIX Volta a Peu L'Alqueria de la Comtessa",
+          "date": "2026-12-06",
+          "town": "L’ Alqueria de la Comtessa, Valencia",
+          "distances": [],
+          "time": "09:30",
           "status": "excluded",
-          "reason": "Fora del radi"
+          "reason": "Població sense coordenades inequívoces"
         },
         {
           "url": "https://crono4sports.com/evento/xiv-cursa-popular-solidaria-beniarjo",
@@ -1161,7 +1158,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-16T13:36:13.745Z",
+      "checkedAt": "2026-11-16T19:34:51.172Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 1,
@@ -1191,7 +1188,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-16T13:36:13.745Z",
+      "checkedAt": "2026-11-16T19:34:51.172Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1289,7 +1286,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-16T13:36:13.745Z",
+      "checkedAt": "2026-11-16T19:34:51.172Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1447,7 +1444,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-16T13:36:13.745Z",
+      "checkedAt": "2026-11-16T19:34:51.172Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1492,7 +1489,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-16T13:36:13.745Z",
+      "checkedAt": "2026-11-16T19:34:51.172Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1526,7 +1523,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-16T13:36:13.745Z",
+      "checkedAt": "2026-11-16T19:34:51.172Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 4,
@@ -1568,18 +1565,6 @@
           "status": "eligible"
         },
         {
-          "url": "https://www.mychip.es/e/valldigna-extrem-2026-marxa-senderista",
-          "name": "VALLDIGNA EXTREM, 2026 Marxa senderista",
-          "status": "excluded",
-          "reason": "Modalitat o abonament exclòs"
-        },
-        {
-          "url": "https://www.mychip.es/e/iii-trail-nocturno-cabeco-dor-busot",
-          "name": "III Trail Nocturno Cabeço D'Or, Busot",
-          "status": "excluded",
-          "reason": "Fora del radi"
-        },
-        {
           "url": "https://www.mychip.es/e/xv-carrera-por-montana-sierra-de-chiva",
           "name": "XV Carrera por Montaña Sierra de Chiva.",
           "date": "2026-12-06",
@@ -1591,6 +1576,18 @@
           ],
           "time": "07:00",
           "status": "eligible"
+        },
+        {
+          "url": "https://www.mychip.es/e/valldigna-extrem-2026-marxa-senderista",
+          "name": "VALLDIGNA EXTREM, 2026 Marxa senderista",
+          "status": "excluded",
+          "reason": "Modalitat o abonament exclòs"
+        },
+        {
+          "url": "https://www.mychip.es/e/iii-trail-nocturno-cabeco-dor-busot",
+          "name": "III Trail Nocturno Cabeço D'Or, Busot",
+          "status": "excluded",
+          "reason": "Fora del radi"
         }
       ]
     }
