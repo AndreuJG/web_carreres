@@ -2,11 +2,33 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {mergeRouteLinks} from '../scripts/sync/core.mjs';
 import {findRouteLinks} from '../scripts/sync/routes.mjs';
-import {deliverDigest, digestMessages, raceNews, sendMessage} from '../scripts/telegram/digest.mjs';
+import {deliverDigest, digestMessages, isDigestHour, raceNews, sendMessage} from '../scripts/telegram/digest.mjs';
 
 const date = '2026-11-13';
 const race = {id: 'a', name: 'Cursa A & B', town: 'Catarroja', date: '2026-12-01', time: '09:00',
   distances: [5, 10], url: 'https://example.org/carrera?a=1&b=2'};
+
+test('els avisos automàtics només ixen entre les 10 i les 11 de València, a l’hivern i a l’estiu', () => {
+  const allowed = iso => isDigestHour(new Date(iso));
+  assert.equal(allowed('2026-11-16T08:59:59Z'), false);
+  assert.equal(allowed('2026-11-16T09:00:00Z'), true);
+  assert.equal(allowed('2026-11-16T09:59:59Z'), true);
+  assert.equal(allowed('2026-11-16T10:00:00Z'), false);
+  assert.equal(allowed('2026-11-16T19:28:36Z'), false);
+  assert.equal(allowed('2026-07-16T08:23:00Z'), true);
+});
+
+test('Telegram conserva els fragments pendents quan s’acaba l’hora de publicació', async () => {
+  const pending = {catalog: 'new', parts: [{text: 'primer'}, {text: 'segon'}]};
+  const state = {catalog: 'old', pending};
+  const done = await deliverDigest(state, date, () => {}, async text => {
+    assert.equal(text, 'primer');
+    return {status: 'sent', messageId: 1};
+  }, () => pending.parts[0].messageId === undefined);
+  assert.equal(done, false);
+  assert.equal(state.catalog, 'old');
+  assert.deepEqual(state.pending.parts, [{text: 'primer', messageId: 1}, {text: 'segon'}]);
+});
 
 test('Telegram envia canvis de carrera i cancel·lacions explícites i ignora actualitzacions tècniques', () => {
   const cancelled = {...race, id: 'cancelled'};

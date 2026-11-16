@@ -5,6 +5,13 @@ const html = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&l
 const dayLabel = day => day.split('-').reverse().join('/');
 const distanceLabel = distances => distances.map(formatDistance).join(' / ') + ' km';
 const distanceKey = distances => [...distances].sort((a, b) => a - b).join(',');
+const madridHour = new Intl.DateTimeFormat('en-GB', {
+  timeZone: 'Europe/Madrid', hour: '2-digit', hourCycle: 'h23'
+});
+
+export function isDigestHour(now = new Date()) {
+  return madridHour.format(now) === '10';
+}
 
 export function raceNews(before, after, cancelledIds, today) {
   const previous = new Map(before.races.map(race => [race.id, race]));
@@ -79,9 +86,10 @@ export async function sendMessage({token, channel, message, fetchImpl = fetch}) 
   return {status: 'uncertain'};
 }
 
-export async function deliverDigest(state, today, save, send) {
+export async function deliverDigest(state, today, save, send, canSend = () => true) {
   for (const part of state.pending.parts) {
     if (part.messageId !== undefined) continue;
+    if (!canSend()) return false;
     part.inFlight = true;
     save(state);
     const result = await send(part.text);
@@ -95,4 +103,5 @@ export async function deliverDigest(state, today, save, send) {
   state.lastSentDay = today;
   delete state.pending;
   save(state);
+  return true;
 }
