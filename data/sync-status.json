@@ -1,14 +1,22 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-16T19:34:51.172Z",
-  "today": "2026-11-16",
+  "checkedAt": "2026-11-17T14:20:52.137Z",
+  "today": "2026-11-17",
   "status": "partial",
   "window": {
-    "after": "2026-11-16",
-    "through": "2027-11-16",
+    "after": "2026-11-17",
+    "through": "2027-11-17",
     "radiusKm": 50
   },
-  "changes": [],
+  "changes": [
+    {
+      "kind": "added",
+      "id": "auto-cronorunner-a4d1a5c3d2ed",
+      "name": "VII Carrera Solidaria Falla el Rabal",
+      "url": "https://inscripciones.cronorunner.com/evento/vii-carrera-solidaria-falla-el-rabal",
+      "source": "cronorunner"
+    }
+  ],
   "pending": [
     {
       "name": "2027 1ª CURSA D´EMPRESES DE LA VALL D´ALBAIDA",
@@ -95,11 +103,11 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-16T19:34:51.172Z",
+      "checkedAt": "2026-11-17T14:20:52.137Z",
       "status": "ok",
-      "catalogEntries": 15,
-      "read": 17,
-      "eligible": 12,
+      "catalogEntries": 16,
+      "read": 18,
+      "eligible": 13,
       "errors": [],
       "decisions": [
         {
@@ -305,6 +313,18 @@
           "reason": "Fora del radi"
         },
         {
+          "url": "https://inscripciones.cronorunner.com/evento/vii-carrera-solidaria-falla-el-rabal",
+          "name": "VII Carrera Solidaria Falla el Rabal",
+          "date": "2027-01-17",
+          "town": "Catarroja",
+          "distances": [
+            0.001,
+            5.8
+          ],
+          "time": "09:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://inscripciones.cronorunner.com/evento/ii-8k-sant-antoni-de-fortaleny",
           "name": "II 8K Sant Antoni de Fortaleny",
           "date": "2027-01-24",
@@ -325,7 +345,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-16T19:34:51.172Z",
+      "checkedAt": "2026-11-17T14:20:52.137Z",
       "status": "ok",
       "catalogEntries": 24,
       "read": 18,
@@ -600,7 +620,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-16T19:34:51.172Z",
+      "checkedAt": "2026-11-17T14:20:52.137Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 11,
@@ -762,7 +782,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-16T19:34:51.172Z",
+      "checkedAt": "2026-11-17T14:20:52.137Z",
       "status": "partial",
       "catalogEntries": 14,
       "read": 15,
@@ -951,7 +971,7 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-16T19:34:51.172Z",
+      "checkedAt": "2026-11-17T14:20:52.137Z",
       "status": "ok",
       "catalogEntries": 20,
       "read": 18,
@@ -1158,7 +1178,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-16T19:34:51.172Z",
+      "checkedAt": "2026-11-17T14:20:52.137Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 1,
@@ -1188,7 +1208,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-16T19:34:51.172Z",
+      "checkedAt": "2026-11-17T14:20:52.137Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1286,7 +1306,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-16T19:34:51.172Z",
+      "checkedAt": "2026-11-17T14:20:52.137Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1444,7 +1464,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-16T19:34:51.172Z",
+      "checkedAt": "2026-11-17T14:20:52.137Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1489,7 +1509,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-16T19:34:51.172Z",
+      "checkedAt": "2026-11-17T14:20:52.137Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1523,7 +1543,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-16T19:34:51.172Z",
+      "checkedAt": "2026-11-17T14:20:52.137Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 4,
