@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-18T13:54:56.375Z",
+  "checkedAt": "2026-11-18T18:42:17.084Z",
   "today": "2026-11-18",
   "status": "partial",
   "window": {
@@ -105,7 +105,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-18T13:54:56.375Z",
+      "checkedAt": "2026-11-18T18:42:17.084Z",
       "status": "ok",
       "catalogEntries": 17,
       "read": 19,
@@ -357,7 +357,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-18T13:54:56.375Z",
+      "checkedAt": "2026-11-18T18:42:17.084Z",
       "status": "ok",
       "catalogEntries": 24,
       "read": 18,
@@ -601,8 +601,8 @@
           "town": "Barracas",
           "distances": [
             1.2,
-            2.6,
-            4.5
+            3.1,
+            5.9
           ],
           "time": "08:00",
           "status": "excluded",
@@ -632,7 +632,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-18T13:54:56.375Z",
+      "checkedAt": "2026-11-18T18:42:17.084Z",
       "status": "ok",
       "catalogEntries": 13,
       "read": 12,
@@ -807,7 +807,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-18T13:54:56.375Z",
+      "checkedAt": "2026-11-18T18:42:17.084Z",
       "status": "partial",
       "catalogEntries": 14,
       "read": 15,
@@ -996,7 +996,7 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-18T13:54:56.375Z",
+      "checkedAt": "2026-11-18T18:42:17.084Z",
       "status": "ok",
       "catalogEntries": 22,
       "read": 19,
@@ -1219,7 +1219,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-18T13:54:56.375Z",
+      "checkedAt": "2026-11-18T18:42:17.084Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 1,
@@ -1249,7 +1249,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-18T13:54:56.375Z",
+      "checkedAt": "2026-11-18T18:42:17.084Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1347,7 +1347,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-18T13:54:56.375Z",
+      "checkedAt": "2026-11-18T18:42:17.084Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1505,7 +1505,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-18T13:54:56.375Z",
+      "checkedAt": "2026-11-18T18:42:17.084Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1550,7 +1550,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-18T13:54:56.375Z",
+      "checkedAt": "2026-11-18T18:42:17.084Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1584,7 +1584,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-18T13:54:56.375Z",
+      "checkedAt": "2026-11-18T18:42:17.084Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 4,
