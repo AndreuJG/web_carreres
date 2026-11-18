@@ -1,22 +1,14 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-17T14:20:52.137Z",
-  "today": "2026-11-17",
+  "checkedAt": "2026-11-18T13:54:56.375Z",
+  "today": "2026-11-18",
   "status": "partial",
   "window": {
-    "after": "2026-11-17",
-    "through": "2027-11-17",
+    "after": "2026-11-18",
+    "through": "2027-11-18",
     "radiusKm": 50
   },
-  "changes": [
-    {
-      "kind": "added",
-      "id": "auto-cronorunner-a4d1a5c3d2ed",
-      "name": "VII Carrera Solidaria Falla el Rabal",
-      "url": "https://inscripciones.cronorunner.com/evento/vii-carrera-solidaria-falla-el-rabal",
-      "source": "cronorunner"
-    }
-  ],
+  "changes": [],
   "pending": [
     {
       "name": "2027 1ª CURSA D´EMPRESES DE LA VALL D´ALBAIDA",
@@ -55,6 +47,16 @@
         {
           "label": "crono4sports",
           "url": "https://crono4sports.com/evento/xix-volta-a-peu-lalqueria-de-la-comtessa"
+        }
+      ]
+    },
+    {
+      "name": "XXIII Cursa popular Penya Real",
+      "reason": "Població sense coordenades inequívoces",
+      "sources": [
+        {
+          "label": "crono4sports",
+          "url": "https://crono4sports.com/evento/xxiii-cursa-popular-penya-real"
         }
       ]
     },
@@ -103,10 +105,10 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-17T14:20:52.137Z",
+      "checkedAt": "2026-11-18T13:54:56.375Z",
       "status": "ok",
-      "catalogEntries": 16,
-      "read": 18,
+      "catalogEntries": 17,
+      "read": 19,
       "eligible": 13,
       "errors": [],
       "decisions": [
@@ -280,6 +282,18 @@
           "status": "eligible"
         },
         {
+          "url": "https://inscripciones.cronorunner.com/evento/vii-carrera-solidaria-falla-el-rabal",
+          "name": "VII Carrera Solidaria Falla el Rabal",
+          "date": "2027-01-17",
+          "town": "Catarroja",
+          "distances": [
+            0.001,
+            5.8
+          ],
+          "time": "09:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://inscripciones.cronorunner.com/evento/xxii-trail-3-pics-les-rodanes",
           "name": "XXII Trail 3 Pics les Rodanes",
           "date": "2027-01-24",
@@ -313,16 +327,14 @@
           "reason": "Fora del radi"
         },
         {
-          "url": "https://inscripciones.cronorunner.com/evento/vii-carrera-solidaria-falla-el-rabal",
-          "name": "VII Carrera Solidaria Falla el Rabal",
-          "date": "2027-01-17",
-          "town": "Catarroja",
-          "distances": [
-            0.001,
-            5.8
-          ],
-          "time": "09:00",
-          "status": "eligible"
+          "url": "https://inscripciones.cronorunner.com/evento/x-sant-silvestre-ciutat-de-carlet",
+          "name": "X Sant Silvestre Ciutat de Carlet",
+          "date": "2026-12-28",
+          "town": "Carlet",
+          "distances": [],
+          "time": null,
+          "status": "excluded",
+          "reason": "Modalitat exclosa o abonament de circuit"
         },
         {
           "url": "https://inscripciones.cronorunner.com/evento/ii-8k-sant-antoni-de-fortaleny",
@@ -345,7 +357,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-17T14:20:52.137Z",
+      "checkedAt": "2026-11-18T13:54:56.375Z",
       "status": "ok",
       "catalogEntries": 24,
       "read": 18,
@@ -620,10 +632,10 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-17T14:20:52.137Z",
+      "checkedAt": "2026-11-18T13:54:56.375Z",
       "status": "ok",
-      "catalogEntries": 12,
-      "read": 11,
+      "catalogEntries": 13,
+      "read": 12,
       "eligible": 4,
       "errors": [],
       "decisions": [
@@ -776,13 +788,26 @@
           "time": "09:00",
           "status": "excluded",
           "reason": "Fora del radi"
+        },
+        {
+          "url": "https://www.runatica.com/event/penyagolosa-trails-2027",
+          "name": "FUGA Penyagolosa Trails",
+          "date": "2027-04-24",
+          "town": "Castelló de la Plana",
+          "distances": [
+            60,
+            106
+          ],
+          "time": "00:00",
+          "status": "excluded",
+          "reason": "Fora del radi"
         }
       ]
     },
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-17T14:20:52.137Z",
+      "checkedAt": "2026-11-18T13:54:56.375Z",
       "status": "partial",
       "catalogEntries": 14,
       "read": 15,
@@ -971,10 +996,10 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-17T14:20:52.137Z",
+      "checkedAt": "2026-11-18T13:54:56.375Z",
       "status": "ok",
-      "catalogEntries": 20,
-      "read": 18,
+      "catalogEntries": 22,
+      "read": 19,
       "eligible": 2,
       "errors": [],
       "decisions": [
@@ -1004,12 +1029,8 @@
         {
           "url": "https://crono4sports.com/evento/desafio-vega-baja-redovan-by-medieval",
           "name": "Desafio Vega Baja Redován By Medieval",
-          "date": "2026-11-22",
-          "town": "Redován",
-          "distances": [],
-          "time": "10:00",
           "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
+          "reason": "Fora del radi"
         },
         {
           "url": "https://crono4sports.com/evento/xii-cursa-mascota-running",
@@ -1066,6 +1087,16 @@
           "name": "IV Medieval Xtrem Race Peñíscola",
           "status": "excluded",
           "reason": "Fora del radi"
+        },
+        {
+          "url": "https://crono4sports.com/evento/xxiii-cursa-popular-penya-real",
+          "name": "XXIII Cursa popular Penya Real",
+          "date": "2026-12-13",
+          "town": "El Real de Gandia, Valencia",
+          "distances": [],
+          "time": "09:30",
+          "status": "excluded",
+          "reason": "Població sense coordenades inequívoces"
         },
         {
           "url": "https://crono4sports.com/evento/travesia-de-navidad-alicante-2026",
@@ -1134,6 +1165,16 @@
           "reason": "Modalitat exclosa o abonament de circuit"
         },
         {
+          "url": "https://crono4sports.com/evento/monster-race-60",
+          "name": "Monster Race 6.0",
+          "date": "2027-03-14",
+          "town": "Girona",
+          "distances": [],
+          "time": "09:30",
+          "status": "excluded",
+          "reason": "Modalitat exclosa o abonament de circuit"
+        },
+        {
           "url": "https://crono4sports.com/evento/iii-medieval-xtrem-race-alginet",
           "name": "III Medieval Xtrem Race Alginet",
           "date": "2027-04-11",
@@ -1178,7 +1219,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-17T14:20:52.137Z",
+      "checkedAt": "2026-11-18T13:54:56.375Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 1,
@@ -1208,7 +1249,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-17T14:20:52.137Z",
+      "checkedAt": "2026-11-18T13:54:56.375Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1306,7 +1347,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-17T14:20:52.137Z",
+      "checkedAt": "2026-11-18T13:54:56.375Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1464,7 +1505,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-17T14:20:52.137Z",
+      "checkedAt": "2026-11-18T13:54:56.375Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1509,7 +1550,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-17T14:20:52.137Z",
+      "checkedAt": "2026-11-18T13:54:56.375Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1543,7 +1584,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-17T14:20:52.137Z",
+      "checkedAt": "2026-11-18T13:54:56.375Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 4,
