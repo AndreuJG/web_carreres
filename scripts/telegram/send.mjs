@@ -1,6 +1,6 @@
 import {execFileSync} from 'node:child_process';
 import {madridToday} from '../../lib/races.js';
-import {deliverDigest, digestMessages, isDigestHour, raceNews, sendMessage} from './digest.mjs';
+import {deliverDigest, digestMessages, raceNews, sendMessage} from './digest.mjs';
 
 const mode = process.argv[2] || 'preview';
 const branch = 'refs/heads/telegram-state';
@@ -10,11 +10,6 @@ if (process.env.GITHUB_ACTIONS !== 'true' || process.env.GITHUB_REPOSITORY !== '
   throw Error('Executa este script des de GitHub Actions en la branca main.');
 }
 if (!['preview', 'test', 'send', 'confirm-delivery', 'retry-delivery'].includes(mode)) throw Error('Mode de Telegram desconegut.');
-const scheduled = process.env.GITHUB_EVENT_NAME === 'schedule';
-if (scheduled && !isDigestHour()) {
-  console.log('Execució fora de les 10.00–11.00 a València. Les novetats queden pendents.');
-  process.exit(0);
-}
 if (mode !== 'preview' && !channel && !token) {
   if (mode === 'test') throw Error('Canal de Telegram pendent de configuració.');
   console.log('Canal de Telegram pendent de configuració.');
@@ -25,7 +20,7 @@ if (mode !== 'preview' && (!/^@[a-zA-Z0-9_]{5,32}$/.test(channel || '') || !/^\d
 }
 
 if (mode === 'test') {
-  const message = '<b>Missatge de prova · Córrer a prop</b>\nEl canal ja pot rebre els avisos de l’agenda. Quan hi haja novetats, publicarem el resum a partir de les 10.00, hora de València.\n\n<a href="https://carreresprop.vercel.app/">Consulta l’agenda</a>';
+  const message = '<b>Missatge de prova · Córrer a prop</b>\nEl canal ja pot rebre els avisos de l’agenda. Quan hi haja novetats, publicarem el resum per la vesprada.\n\n<a href="https://carreresprop.vercel.app/">Consulta l’agenda</a>';
   const result = await sendMessage({token, channel, message});
   if (result.status === 'rejected') throw Error(`Telegram ha rebutjat la prova (HTTP ${result.code}).`);
   if (result.status === 'uncertain') throw Error('Lliurament incert. Comprova el canal abans de repetir la prova.');
@@ -110,8 +105,6 @@ if (mode === 'preview') {
     }
   }
   if (state.pending) {
-    const done = await deliverDigest(state, today, save, message => sendMessage({token, channel, message}),
-      () => !scheduled || isDigestHour());
-    if (!done) console.log('S’ha acabat l’hora de publicació. Els fragments que falten queden pendents.');
+    await deliverDigest(state, today, save, message => sendMessage({token, channel, message}));
   } else console.log('Sense novetats per publicar.');
 }

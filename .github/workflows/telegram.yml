@@ -2,7 +2,7 @@ name: Novetats de carreres en Telegram
 
 on:
   schedule:
-    - cron: '7,23,43 10 * * *'
+    - cron: '7 16,19 * * *'
       timezone: Europe/Madrid
   workflow_dispatch:
     inputs:

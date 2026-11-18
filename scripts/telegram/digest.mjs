@@ -5,14 +5,6 @@ const html = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&l
 const dayLabel = day => day.split('-').reverse().join('/');
 const distanceLabel = distances => distances.map(formatDistance).join(' / ') + ' km';
 const distanceKey = distances => [...distances].sort((a, b) => a - b).join(',');
-const madridHour = new Intl.DateTimeFormat('en-GB', {
-  timeZone: 'Europe/Madrid', hour: '2-digit', hourCycle: 'h23'
-});
-
-export function isDigestHour(now = new Date()) {
-  return madridHour.format(now) === '10';
-}
-
 export function raceNews(before, after, cancelledIds, today) {
   const previous = new Map(before.races.map(race => [race.id, race]));
   const current = new Map(after.races.map(race => [race.id, race]));
