@@ -1,4 +1,12 @@
 {
   "catalog": "dd8b12dd1af12fff508acc2cf959bd3f200b78c4",
-  "lastSentDay": "2026-11-16"
+  "lastSentDay": "2026-11-16",
+  "pending": {
+    "catalog": "387b78c137bde27270233c27ff7065add8844b5a",
+    "parts": [
+      {
+        "text": "<b>Novetats de Córrer a prop · 18/11/2026</b>\n\n<b>Nova carrera</b> · <a href=\"https://inscripciones.cronorunner.com/evento/vii-carrera-solidaria-falla-el-rabal\">VII Carrera Solidaria Falla el Rabal</a>\nCatarroja · 17/01/2027 · 0 / 5,8 km"
+      }
+    ]
+  }
 }
