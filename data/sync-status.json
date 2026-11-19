@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-19T14:23:41.522Z",
+  "checkedAt": "2026-11-19T19:11:00.847Z",
   "today": "2026-11-19",
   "status": "partial",
   "window": {
@@ -10,11 +10,12 @@
   },
   "changes": [
     {
-      "kind": "added",
-      "id": "auto-toprun-df6c17898415",
-      "name": "XXVI San Silvestre a Rocafort",
-      "url": "https://www.toprun.es/eventos/san-silvestre-rocafort-2026",
-      "source": "toprun"
+      "kind": "updated",
+      "id": "auto-mychip-37c7b46040db",
+      "fields": [
+        "date"
+      ],
+      "source": "mychip"
     }
   ],
   "pending": [
@@ -167,7 +168,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-19T14:23:41.522Z",
+      "checkedAt": "2026-11-19T19:11:00.847Z",
       "status": "ok",
       "catalogEntries": 17,
       "read": 19,
@@ -419,7 +420,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-19T14:23:41.522Z",
+      "checkedAt": "2026-11-19T19:11:00.847Z",
       "status": "ok",
       "catalogEntries": 24,
       "read": 18,
@@ -694,7 +695,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-19T14:23:41.522Z",
+      "checkedAt": "2026-11-19T19:11:00.847Z",
       "status": "ok",
       "catalogEntries": 13,
       "read": 12,
@@ -869,7 +870,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-19T14:23:41.522Z",
+      "checkedAt": "2026-11-19T19:11:00.847Z",
       "status": "partial",
       "catalogEntries": 15,
       "read": 16,
@@ -937,18 +938,6 @@
           "reason": "Fora del radi"
         },
         {
-          "url": "https://multiesport.es/event/2026-iv-sant-silvestre-canals/",
-          "name": "2026 – IV SANT SILVESTRE CANALS",
-          "date": "2026-12-26",
-          "town": "Canals",
-          "distances": [
-            3.3
-          ],
-          "time": "18:30",
-          "status": "excluded",
-          "reason": "Fora del radi"
-        },
-        {
           "url": "https://multiesport.es/event/2026-xx-san-silvestre-villenera-2026/",
           "name": "2026- XX SAN SILVESTRE VILLENERA 2026",
           "date": "2026-12-26",
@@ -957,6 +946,18 @@
             6.87
           ],
           "time": "17:30",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://multiesport.es/event/2026-iv-sant-silvestre-canals/",
+          "name": "2026 – IV SANT SILVESTRE CANALS",
+          "date": "2026-12-26",
+          "town": "Canals",
+          "distances": [
+            3.3
+          ],
+          "time": "18:30",
           "status": "excluded",
           "reason": "Fora del radi"
         },
@@ -1070,9 +1071,9 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-19T14:23:41.522Z",
+      "checkedAt": "2026-11-19T19:11:00.847Z",
       "status": "ok",
-      "catalogEntries": 22,
+      "catalogEntries": 23,
       "read": 19,
       "eligible": 2,
       "errors": [],
@@ -1249,6 +1250,12 @@
           "reason": "Modalitat exclosa o abonament de circuit"
         },
         {
+          "url": "https://crono4sports.com/evento/tarraco-hybrid-series",
+          "name": "Tarraco Hybrid Series",
+          "status": "excluded",
+          "reason": "Modalitat o abonament exclòs"
+        },
+        {
           "url": "https://crono4sports.com/evento/iii-medieval-xtrem-race-alginet",
           "name": "III Medieval Xtrem Race Alginet",
           "date": "2027-04-11",
@@ -1293,13 +1300,24 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-19T14:23:41.522Z",
+      "checkedAt": "2026-11-19T19:11:00.847Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 2,
       "eligible": 2,
       "errors": [],
       "decisions": [
+        {
+          "url": "https://www.toprun.es/eventos/san-silvestre-rocafort-2026",
+          "name": "XXVI San Silvestre a Rocafort",
+          "date": "2026-12-28",
+          "town": "Rocafort",
+          "distances": [
+            5
+          ],
+          "time": "20:00",
+          "status": "eligible"
+        },
         {
           "url": "https://www.toprun.es/eventos/marato-de-la-calderona-2027",
           "name": "XII MARATÓ DE LA CALDERONA",
@@ -1317,24 +1335,13 @@
           "name": "Carrera Tolerancia Cero, Contra la violencia de género",
           "status": "excluded",
           "reason": "Fora del radi"
-        },
-        {
-          "url": "https://www.toprun.es/eventos/san-silvestre-rocafort-2026",
-          "name": "XXVI San Silvestre a Rocafort",
-          "date": "2026-12-28",
-          "town": "Rocafort",
-          "distances": [
-            5
-          ],
-          "time": "20:00",
-          "status": "eligible"
         }
       ]
     },
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-19T14:23:41.522Z",
+      "checkedAt": "2026-11-19T19:11:00.847Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1432,7 +1439,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-19T14:23:41.522Z",
+      "checkedAt": "2026-11-19T19:11:00.847Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1590,7 +1597,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-19T14:23:41.522Z",
+      "checkedAt": "2026-11-19T19:11:00.847Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1635,7 +1642,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-19T14:23:41.522Z",
+      "checkedAt": "2026-11-19T19:11:00.847Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1669,7 +1676,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-19T14:23:41.522Z",
+      "checkedAt": "2026-11-19T19:11:00.847Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 4,
@@ -1702,7 +1709,7 @@
         {
           "url": "https://www.mychip.es/e/10e-trail-senglars-la-mola-extrem-favara-lmvs-2627",
           "name": "10e Trail Senglars, La Mola Extrem, Favara, LMVS. 26/27",
-          "date": "2026-11-29",
+          "date": "2026-11-28",
           "town": "Favara",
           "distances": [
             15
