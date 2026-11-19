@@ -1,4 +1,4 @@
-import {formatDistance, oneYearAfter} from '../../lib/races.js';
+import {formatDistance, madridToday, oneYearAfter} from '../../lib/races.js';
 
 const html = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;')
   .replaceAll('>', '&gt;').replaceAll('"', '&quot;');
@@ -51,6 +51,30 @@ export function digestMessages(news, today) {
     message += entry;
   }
   if (message !== heading) messages.push(message);
+  return messages;
+}
+
+export function dailyMessages(news, today, sync) {
+  const messages = digestMessages(news, today);
+  const checked = new Date(sync?.checkedAt || '');
+  const valid = Number.isFinite(checked.getTime());
+  const current = valid && madridToday(checked) === today;
+  const status = {ok: 'Consulta completada', partial: 'Consulta parcial', error: 'Consulta fallida'}[sync?.status]
+    || 'Estat de consulta desconegut';
+  const details = [status];
+  if (valid) details.push(new Intl.DateTimeFormat('ca-ES', {
+    timeZone: 'Europe/Madrid', dateStyle: 'short', timeStyle: 'short'
+  }).format(checked) + ' · hora de València');
+  if (!current) details.push('Pendent d’una consulta de hui.');
+  const failures = (sync?.sources || []).filter(source => source.status !== 'ok').map(source => source.name);
+  if (failures.length) details.push('Fonts amb incidències · ' + failures.join(', '));
+  const heading = messages.length ? '<b>Estat de l’actualització</b>'
+    : `<b>Resum diari de Córrer a prop · ${dayLabel(today)}</b>\n\nHui no hi ha novetats detectades en l’agenda.`;
+  const summary = heading + '\n\n' + html(details.join('\n'))
+    + '\n\n<a href="https://carreresprop.vercel.app/">Consulta l’agenda</a>';
+  if (messages.length && messages.at(-1).length + summary.length + 2 <= 4000) {
+    messages[messages.length - 1] += '\n\n' + summary;
+  } else messages.push(summary);
   return messages;
 }
 

@@ -2,11 +2,24 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {mergeRouteLinks} from '../scripts/sync/core.mjs';
 import {findRouteLinks} from '../scripts/sync/routes.mjs';
-import {deliverDigest, digestMessages, raceNews, sendMessage} from '../scripts/telegram/digest.mjs';
+import {dailyMessages, deliverDigest, digestMessages, raceNews, sendMessage} from '../scripts/telegram/digest.mjs';
 
 const date = '2026-11-13';
 const race = {id: 'a', name: 'Cursa A & B', town: 'Catarroja', date: '2026-12-01', time: '09:00',
   distances: [5, 10], url: 'https://example.org/carrera?a=1&b=2'};
+
+test('el resum diari confirma els dies sense novetats i indica consultes parcials o antigues', () => {
+  const sync = {checkedAt: '2026-11-13T09:00:00Z', status: 'ok'};
+  const [message] = dailyMessages([], date, sync);
+  assert.match(message, /Hui no hi ha novetats/);
+  assert.match(message, /Consulta completada/);
+  assert.doesNotMatch(message, /Pendent d’una consulta/);
+  const [partial] = dailyMessages([], date, {...sync, status: 'partial', sources: [{name: 'Multiesport', status: 'partial'}]});
+  assert.match(partial, /Consulta parcial/);
+  assert.match(partial, /Multiesport/);
+  assert.match(dailyMessages([], '2026-11-14', sync)[0], /Pendent d’una consulta de hui/);
+  assert.match(dailyMessages([], date, undefined)[0], /Estat de consulta desconegut/);
+});
 
 test('Telegram conserva els fragments pendents quan s’acaba l’hora de publicació', async () => {
   const pending = {catalog: 'new', parts: [{text: 'primer'}, {text: 'segon'}]};

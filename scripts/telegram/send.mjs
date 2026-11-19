@@ -1,6 +1,6 @@
 import {execFileSync} from 'node:child_process';
 import {madridToday} from '../../lib/races.js';
-import {deliverDigest, digestMessages, raceNews, sendMessage} from './digest.mjs';
+import {dailyMessages, deliverDigest, raceNews, sendMessage} from './digest.mjs';
 
 const mode = process.argv[2] || 'preview';
 const branch = 'refs/heads/telegram-state';
@@ -73,7 +73,7 @@ function prepareMessages() {
   }
   const before = readJson(state.catalog, 'data/races.json');
   const after = readJson(latest, 'data/races.json');
-  return digestMessages(raceNews(before, after, cancelledIds, today), today);
+  return dailyMessages(raceNews(before, after, cancelledIds, today), today, after.sync);
 }
 
 if (mode === 'preview') {
@@ -86,9 +86,6 @@ if (mode === 'preview') {
   if (mode === 'confirm-delivery') part.messageId = null;
   save(state);
   console.log('Estat actualitzat. Executa el mode send per reprendre el resum.');
-} else if (!stateCommit) {
-  save(state);
-  console.log('Catàleg de partida guardat. Els canvis posteriors es publicaran al canal.');
 } else if (state.pending?.parts.some(part => part.inFlight)) {
   throw Error('Lliurament incert. Revisa el canal i executa confirm-delivery o retry-delivery.');
 } else if (state.lastSentDay === today && !state.pending) {
