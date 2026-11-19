@@ -1,14 +1,22 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-18T18:42:17.084Z",
-  "today": "2026-11-18",
+  "checkedAt": "2026-11-19T14:23:41.522Z",
+  "today": "2026-11-19",
   "status": "partial",
   "window": {
-    "after": "2026-11-18",
-    "through": "2027-11-18",
+    "after": "2026-11-19",
+    "through": "2027-11-19",
     "radiusKm": 50
   },
-  "changes": [],
+  "changes": [
+    {
+      "kind": "added",
+      "id": "auto-toprun-df6c17898415",
+      "name": "XXVI San Silvestre a Rocafort",
+      "url": "https://www.toprun.es/eventos/san-silvestre-rocafort-2026",
+      "source": "toprun"
+    }
+  ],
   "pending": [
     {
       "name": "2027 1ª CURSA D´EMPRESES DE LA VALL D´ALBAIDA",
@@ -92,6 +100,60 @@
       "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
     },
     {
+      "raceId": "auto-toprun-df6c17898415",
+      "name": "XXVI San Silvestre a Rocafort",
+      "source": "toprun",
+      "url": "https://www.toprun.es/eventos/11231198",
+      "label": "Ver recorrido",
+      "sourceUrl": "https://www.toprun.es/eventos/san-silvestre-rocafort-2026",
+      "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
+    },
+    {
+      "raceId": "auto-toprun-df6c17898415",
+      "name": "XXVI San Silvestre a Rocafort",
+      "source": "toprun",
+      "url": "https://www.toprun.es/eventos/undefined",
+      "label": "Ver recorrido",
+      "sourceUrl": "https://www.toprun.es/eventos/san-silvestre-rocafort-2026",
+      "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
+    },
+    {
+      "raceId": "auto-toprun-df6c17898415",
+      "name": "XXVI San Silvestre a Rocafort",
+      "source": "toprun",
+      "url": "https://www.toprun.es/eventos/11231198",
+      "label": "Ver recorrido",
+      "sourceUrl": "https://www.toprun.es/eventos/san-silvestre-rocafort-2026",
+      "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
+    },
+    {
+      "raceId": "auto-toprun-df6c17898415",
+      "name": "XXVI San Silvestre a Rocafort",
+      "source": "toprun",
+      "url": "https://www.toprun.es/eventos/11231198",
+      "label": "Ver recorrido",
+      "sourceUrl": "https://www.toprun.es/eventos/san-silvestre-rocafort-2026",
+      "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
+    },
+    {
+      "raceId": "auto-toprun-df6c17898415",
+      "name": "XXVI San Silvestre a Rocafort",
+      "source": "toprun",
+      "url": "https://www.toprun.es/eventos/undefined",
+      "label": "Ver recorrido",
+      "sourceUrl": "https://www.toprun.es/eventos/san-silvestre-rocafort-2026",
+      "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
+    },
+    {
+      "raceId": "auto-toprun-df6c17898415",
+      "name": "XXVI San Silvestre a Rocafort",
+      "source": "toprun",
+      "url": "https://www.toprun.es/eventos/11231198",
+      "label": "Ver recorrido",
+      "sourceUrl": "https://www.toprun.es/eventos/san-silvestre-rocafort-2026",
+      "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
+    },
+    {
       "raceId": "mini-marato-2026",
       "name": "Mini Marató València MSC",
       "source": "vcr",
@@ -105,7 +167,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-18T18:42:17.084Z",
+      "checkedAt": "2026-11-19T14:23:41.522Z",
       "status": "ok",
       "catalogEntries": 17,
       "read": 19,
@@ -357,7 +419,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-18T18:42:17.084Z",
+      "checkedAt": "2026-11-19T14:23:41.522Z",
       "status": "ok",
       "catalogEntries": 24,
       "read": 18,
@@ -632,7 +694,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-18T18:42:17.084Z",
+      "checkedAt": "2026-11-19T14:23:41.522Z",
       "status": "ok",
       "catalogEntries": 13,
       "read": 12,
@@ -807,10 +869,10 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-18T18:42:17.084Z",
+      "checkedAt": "2026-11-19T14:23:41.522Z",
       "status": "partial",
-      "catalogEntries": 14,
-      "read": 15,
+      "catalogEntries": 15,
+      "read": 16,
       "eligible": 2,
       "errors": [
         {
@@ -871,6 +933,18 @@
           "town": "Alicante",
           "distances": [],
           "time": "10:00",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://multiesport.es/event/2026-iv-sant-silvestre-canals/",
+          "name": "2026 – IV SANT SILVESTRE CANALS",
+          "date": "2026-12-26",
+          "town": "Canals",
+          "distances": [
+            3.3
+          ],
+          "time": "18:30",
           "status": "excluded",
           "reason": "Fora del radi"
         },
@@ -996,7 +1070,7 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-18T18:42:17.084Z",
+      "checkedAt": "2026-11-19T14:23:41.522Z",
       "status": "ok",
       "catalogEntries": 22,
       "read": 19,
@@ -1219,11 +1293,11 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-18T18:42:17.084Z",
+      "checkedAt": "2026-11-19T14:23:41.522Z",
       "status": "ok",
-      "catalogEntries": 2,
-      "read": 1,
-      "eligible": 1,
+      "catalogEntries": 3,
+      "read": 2,
+      "eligible": 2,
       "errors": [],
       "decisions": [
         {
@@ -1243,13 +1317,24 @@
           "name": "Carrera Tolerancia Cero, Contra la violencia de género",
           "status": "excluded",
           "reason": "Fora del radi"
+        },
+        {
+          "url": "https://www.toprun.es/eventos/san-silvestre-rocafort-2026",
+          "name": "XXVI San Silvestre a Rocafort",
+          "date": "2026-12-28",
+          "town": "Rocafort",
+          "distances": [
+            5
+          ],
+          "time": "20:00",
+          "status": "eligible"
         }
       ]
     },
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-18T18:42:17.084Z",
+      "checkedAt": "2026-11-19T14:23:41.522Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1347,7 +1432,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-18T18:42:17.084Z",
+      "checkedAt": "2026-11-19T14:23:41.522Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1505,7 +1590,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-18T18:42:17.084Z",
+      "checkedAt": "2026-11-19T14:23:41.522Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1550,7 +1635,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-18T18:42:17.084Z",
+      "checkedAt": "2026-11-19T14:23:41.522Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1584,7 +1669,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-18T18:42:17.084Z",
+      "checkedAt": "2026-11-19T14:23:41.522Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 4,
