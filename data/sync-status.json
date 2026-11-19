@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-19T19:11:00.847Z",
+  "checkedAt": "2026-11-19T19:18:22.720Z",
   "today": "2026-11-19",
   "status": "partial",
   "window": {
@@ -8,16 +8,7 @@
     "through": "2027-11-19",
     "radiusKm": 50
   },
-  "changes": [
-    {
-      "kind": "updated",
-      "id": "auto-mychip-37c7b46040db",
-      "fields": [
-        "date"
-      ],
-      "source": "mychip"
-    }
-  ],
+  "changes": [],
   "pending": [
     {
       "name": "2027 1ª CURSA D´EMPRESES DE LA VALL D´ALBAIDA",
@@ -168,7 +159,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-19T19:11:00.847Z",
+      "checkedAt": "2026-11-19T19:18:22.720Z",
       "status": "ok",
       "catalogEntries": 17,
       "read": 19,
@@ -420,7 +411,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-19T19:11:00.847Z",
+      "checkedAt": "2026-11-19T19:18:22.720Z",
       "status": "ok",
       "catalogEntries": 24,
       "read": 18,
@@ -695,7 +686,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-19T19:11:00.847Z",
+      "checkedAt": "2026-11-19T19:18:22.720Z",
       "status": "ok",
       "catalogEntries": 13,
       "read": 12,
@@ -870,7 +861,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-19T19:11:00.847Z",
+      "checkedAt": "2026-11-19T19:18:22.720Z",
       "status": "partial",
       "catalogEntries": 15,
       "read": 16,
@@ -1071,7 +1062,7 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-19T19:11:00.847Z",
+      "checkedAt": "2026-11-19T19:18:22.720Z",
       "status": "ok",
       "catalogEntries": 23,
       "read": 19,
@@ -1300,7 +1291,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-19T19:11:00.847Z",
+      "checkedAt": "2026-11-19T19:18:22.720Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 2,
@@ -1341,7 +1332,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-19T19:11:00.847Z",
+      "checkedAt": "2026-11-19T19:18:22.720Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1439,7 +1430,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-19T19:11:00.847Z",
+      "checkedAt": "2026-11-19T19:18:22.720Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1597,7 +1588,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-19T19:11:00.847Z",
+      "checkedAt": "2026-11-19T19:18:22.720Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1642,7 +1633,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-19T19:11:00.847Z",
+      "checkedAt": "2026-11-19T19:18:22.720Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1676,7 +1667,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-19T19:11:00.847Z",
+      "checkedAt": "2026-11-19T19:18:22.720Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 4,
