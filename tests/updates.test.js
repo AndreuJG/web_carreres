@@ -2,11 +2,24 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {mergeRouteLinks} from '../scripts/sync/core.mjs';
 import {findRouteLinks} from '../scripts/sync/routes.mjs';
-import {dailyMessages, deliverDigest, digestMessages, raceNews, sendMessage} from '../scripts/telegram/digest.mjs';
+import {dailyDeliveryDecision, dailyMessages, deliverDigest, digestMessages, raceNews, sendMessage} from '../scripts/telegram/digest.mjs';
 
 const date = '2026-11-13';
 const race = {id: 'a', name: 'Cursa A & B', town: 'Catarroja', date: '2026-12-01', time: '09:00',
   distances: [5, 10], url: 'https://example.org/carrera?a=1&b=2'};
+
+test('prioritza el matí, recupera els retards i evita repetir el resum del dia local', () => {
+  const at = (iso, state = {}, scheduled = true) => dailyDeliveryDecision(state, new Date(iso), scheduled);
+  assert.equal(at('2026-11-19T08:59:00Z'), 'waiting');
+  assert.equal(at('2026-11-19T09:17:00Z'), 'send');
+  assert.equal(at('2026-07-19T08:17:00Z'), 'send');
+  assert.equal(at('2026-11-19T18:26:00Z'), 'send');
+  assert.equal(at('2026-11-19T21:00:00Z'), 'waiting');
+  assert.equal(at('2026-11-19T18:26:00Z', {lastSentDay: '2026-11-19'}), 'already-sent');
+  assert.equal(at('2026-11-20T09:17:00Z', {lastSentDay: '2026-11-19'}), 'send');
+  assert.equal(at('2026-11-19T07:00:00Z', {}, false), 'send');
+  assert.equal(at('2026-11-19T09:17:00Z', {lastSentDay: '2026-11-19', pending: {}}), 'send');
+});
 
 test('el resum diari confirma els dies sense novetats i indica consultes parcials o antigues', () => {
   const sync = {checkedAt: '2026-11-13T09:00:00Z', status: 'ok'};

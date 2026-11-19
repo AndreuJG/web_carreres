@@ -5,6 +5,17 @@ const html = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&l
 const dayLabel = day => day.split('-').reverse().join('/');
 const distanceLabel = distances => distances.map(formatDistance).join(' / ') + ' km';
 const distanceKey = distances => [...distances].sort((a, b) => a - b).join(',');
+
+export function dailyDeliveryDecision(state, now = new Date(), scheduled = true) {
+  const today = madridToday(now);
+  if (state.lastSentDay === today && !state.pending) return 'already-sent';
+  const hour = Number(new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/Madrid', hour: '2-digit', hourCycle: 'h23'
+  }).format(now));
+  if (scheduled && (hour < 10 || hour >= 22)) return 'waiting';
+  return 'send';
+}
+
 export function raceNews(before, after, cancelledIds, today) {
   const previous = new Map(before.races.map(race => [race.id, race]));
   const current = new Map(after.races.map(race => [race.id, race]));

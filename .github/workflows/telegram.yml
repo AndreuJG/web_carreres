@@ -2,8 +2,9 @@ name: Novetats de carreres en Telegram
 
 on:
   schedule:
-    - cron: '7 16,19 * * *'
-      timezone: Europe/Madrid
+    # Hourly wake-ups avoid depending on a single delayed daily trigger.
+    # The sender uses Europe/Madrid to publish from 10:00 until 21:59.
+    - cron: '17 * * * *'
   workflow_dispatch:
     inputs:
       mode:

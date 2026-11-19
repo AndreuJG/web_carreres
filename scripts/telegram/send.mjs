@@ -1,6 +1,7 @@
 import {execFileSync} from 'node:child_process';
+import {appendFileSync} from 'node:fs';
 import {madridToday} from '../../lib/races.js';
-import {dailyMessages, deliverDigest, raceNews, sendMessage} from './digest.mjs';
+import {dailyDeliveryDecision, dailyMessages, deliverDigest, raceNews, sendMessage} from './digest.mjs';
 
 const mode = process.argv[2] || 'preview';
 const branch = 'refs/heads/telegram-state';
@@ -11,16 +12,14 @@ if (process.env.GITHUB_ACTIONS !== 'true' || process.env.GITHUB_REPOSITORY !== '
 }
 if (!['preview', 'test', 'send', 'confirm-delivery', 'retry-delivery'].includes(mode)) throw Error('Mode de Telegram desconegut.');
 if (mode !== 'preview' && !channel && !token) {
-  if (mode === 'test') throw Error('Canal de Telegram pendent de configuració.');
-  console.log('Canal de Telegram pendent de configuració.');
-  process.exit(0);
+  throw Error('Canal de Telegram pendent de configuració.');
 }
 if (mode !== 'preview' && (!/^@[a-zA-Z0-9_]{5,32}$/.test(channel || '') || !/^\d+:[\w-]+$/.test(token || ''))) {
   throw Error('Comprova TELEGRAM_CHAT_ID i TELEGRAM_BOT_TOKEN en GitHub.');
 }
 
 if (mode === 'test') {
-  const message = '<b>Missatge de prova · Córrer a prop</b>\nEl canal ja pot rebre els avisos de l’agenda. Quan hi haja novetats, publicarem el resum per la vesprada.\n\n<a href="https://carreresprop.vercel.app/">Consulta l’agenda</a>';
+  const message = '<b>Missatge de prova · Córrer a prop</b>\nEl canal ja pot rebre el resum diari de l’agenda, programat a partir de les 10.00, hora de València.\n\n<a href="https://carreresprop.vercel.app/">Consulta l’agenda</a>';
   const result = await sendMessage({token, channel, message});
   if (result.status === 'rejected') throw Error(`Telegram ha rebutjat la prova (HTTP ${result.code}).`);
   if (result.status === 'uncertain') throw Error('Lliurament incert. Comprova el canal abans de repetir la prova.');
@@ -50,6 +49,13 @@ const today = madridToday();
 let stateCommit = remote(['ls-remote', 'origin', branch]).split(/\s/)[0];
 if (stateCommit) remote(['fetch', '--no-tags', 'origin', branch]);
 const state = stateCommit ? readJson(stateCommit, 'state.json') : {catalog: latest};
+const decision = dailyDeliveryDecision(state, new Date(), process.env.GITHUB_EVENT_NAME === 'schedule');
+function report(message) {
+  console.log(message);
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    appendFileSync(process.env.GITHUB_STEP_SUMMARY, message + '\n\n');
+  }
+}
 
 function save(value) {
   const blob = git(['hash-object', '-w', '--stdin'], {input: JSON.stringify(value, null, 2) + '\n'});
@@ -88,8 +94,10 @@ if (mode === 'preview') {
   console.log('Estat actualitzat. Executa el mode send per reprendre el resum.');
 } else if (state.pending?.parts.some(part => part.inFlight)) {
   throw Error('Lliurament incert. Revisa el canal i executa confirm-delivery o retry-delivery.');
-} else if (state.lastSentDay === today && !state.pending) {
-  console.log('El resum de hui ja està publicat.');
+} else if (decision === 'already-sent') {
+  report('El resum de hui ja està publicat. Pròxima comprovació automàtica en l’execució següent.');
+} else if (decision === 'waiting') {
+  report('En espera de l’horari de publicació, de 10.00 a 21.59 en Europe/Madrid. Es conserva l’estat pendent.');
 } else {
   if (!state.pending) {
     const messages = prepareMessages();
@@ -102,6 +110,11 @@ if (mode === 'preview') {
     }
   }
   if (state.pending) {
-    await deliverDigest(state, today, save, message => sendMessage({token, channel, message}));
+    await deliverDigest(state, today, save, async message => {
+      const result = await sendMessage({token, channel, message});
+      if (result.status === 'sent') report(`Missatge lliurat · https://t.me/${channel.slice(1)}/${result.messageId}`);
+      return result;
+    });
+    report(`Resum de ${today} completat i estat guardat.`);
   } else console.log('Sense novetats per publicar.');
 }
