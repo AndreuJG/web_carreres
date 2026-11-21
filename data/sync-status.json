@@ -1,15 +1,33 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-20T13:58:50.029Z",
-  "today": "2026-11-20",
+  "checkedAt": "2026-11-21T13:27:02.950Z",
+  "today": "2026-11-21",
   "status": "partial",
   "window": {
-    "after": "2026-11-20",
-    "through": "2027-11-20",
+    "after": "2026-11-21",
+    "through": "2027-11-21",
     "radiusKm": 50
   },
-  "changes": [],
+  "changes": [
+    {
+      "kind": "added",
+      "id": "auto-sportmaniacs-056766e4f719",
+      "name": "3º MEMORANDUM ALINA SANFELIX",
+      "url": "https://sportmaniacs.com/es/races/3ordm-memorandum-alina-sanfelix",
+      "source": "sportmaniacs"
+    }
+  ],
   "pending": [
+    {
+      "name": "SAN SILVESTRE GILET 2026",
+      "reason": "Distància de carrera sense confirmar",
+      "sources": [
+        {
+          "label": "sportmaniacs",
+          "url": "https://sportmaniacs.com/es/races/san-silvestre-gilet-2026"
+        }
+      ]
+    },
     {
       "name": "2027 1ª CURSA D´EMPRESES DE LA VALL D´ALBAIDA",
       "reason": "Població sense coordenades inequívoces",
@@ -159,7 +177,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-20T13:58:50.029Z",
+      "checkedAt": "2026-11-21T13:27:02.950Z",
       "status": "ok",
       "catalogEntries": 17,
       "read": 19,
@@ -411,11 +429,11 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-20T13:58:50.029Z",
+      "checkedAt": "2026-11-21T13:27:02.950Z",
       "status": "ok",
-      "catalogEntries": 24,
-      "read": 18,
-      "eligible": 13,
+      "catalogEntries": 25,
+      "read": 19,
+      "eligible": 14,
       "errors": [],
       "decisions": [
         {
@@ -595,6 +613,18 @@
           "status": "eligible"
         },
         {
+          "url": "https://sportmaniacs.com/es/races/3ordm-memorandum-alina-sanfelix",
+          "name": "3º MEMORANDUM ALINA SANFELIX",
+          "date": "2027-05-01",
+          "town": "Museros",
+          "distances": [
+            1,
+            10
+          ],
+          "time": "16:30",
+          "status": "eligible"
+        },
+        {
           "url": "https://sportmaniacs.com/es/races/iv-trail-la-foguera-canals",
           "name": "IV TRAIL LA FOGUERA (CANALS)",
           "status": "excluded",
@@ -607,16 +637,14 @@
           "reason": "Modalitat o abonament exclòs"
         },
         {
-          "url": "https://sportmaniacs.com/es/races/evento-gordako-utiel-2026",
-          "name": "Evento Gordako Utiel 2026",
-          "date": "2026-11-21",
-          "town": "Utiel",
-          "distances": [
-            1
-          ],
-          "time": "09:00",
+          "url": "https://sportmaniacs.com/es/races/san-silvestre-gilet-2026",
+          "name": "SAN SILVESTRE GILET 2026",
+          "date": "2026-12-31",
+          "town": "Gilet",
+          "distances": [],
+          "time": null,
           "status": "excluded",
-          "reason": "Fora del radi"
+          "reason": "Distància de carrera sense confirmar"
         },
         {
           "url": "https://sportmaniacs.com/es/races/xv-san-silvestre-dorpesa",
@@ -686,11 +714,11 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-20T13:58:50.029Z",
+      "checkedAt": "2026-11-21T13:27:02.950Z",
       "status": "ok",
-      "catalogEntries": 13,
+      "catalogEntries": 12,
       "read": 12,
-      "eligible": 4,
+      "eligible": 3,
       "errors": [],
       "decisions": [
         {
@@ -703,7 +731,8 @@
             1.4
           ],
           "time": "10:00",
-          "status": "eligible"
+          "status": "excluded",
+          "reason": "Fora del període"
         },
         {
           "url": "https://www.runatica.com/event/vii-san-silvestre-alzira-2026",
@@ -861,10 +890,10 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-20T13:58:50.029Z",
+      "checkedAt": "2026-11-21T13:27:02.950Z",
       "status": "partial",
-      "catalogEntries": 15,
-      "read": 16,
+      "catalogEntries": 14,
+      "read": 15,
       "eligible": 2,
       "errors": [
         {
@@ -930,7 +959,7 @@
         },
         {
           "url": "https://multiesport.es/event/2026-xx-san-silvestre-villenera-2026/",
-          "name": "2026- XX SAN SILVESTRE VILLENERA 2026",
+          "name": "2026- XX SAN SILVESTRE VILLENERA",
           "date": "2026-12-26",
           "town": "Villena",
           "distances": [
@@ -1034,24 +1063,12 @@
           "reason": "Fora del radi"
         },
         {
-          "url": "https://multiesport.es/event/apiarium-reconco-trail-5km-vertical-sabado/",
-          "name": "APIARIUM RECONCO TRAIL 5KM VERTICAL (SÁBADO)",
-          "date": "2027-04-17",
-          "town": "Biar",
-          "distances": [
-            5
-          ],
-          "time": "17:00",
-          "status": "excluded",
-          "reason": "Fora del radi"
-        },
-        {
           "url": "https://multiesport.es/event/apiarium-reconco-trail-domingo-2/",
-          "name": "APIARIUM RECONCO TRAIL (DOMINGO)",
+          "name": "APIARIUM RECONCO TRAIL SÁBADO + DOMINGO",
           "date": "2027-04-18",
           "town": "Biar",
           "distances": [
-            15.23
+            15.25
           ],
           "time": "09:00",
           "status": "excluded",
@@ -1062,10 +1079,10 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-20T13:58:50.029Z",
+      "checkedAt": "2026-11-21T13:27:02.950Z",
       "status": "ok",
       "catalogEntries": 23,
-      "read": 19,
+      "read": 18,
       "eligible": 2,
       "errors": [],
       "decisions": [
@@ -1111,10 +1128,6 @@
         {
           "url": "https://crono4sports.com/evento/xi-volta-a-peu-benifla",
           "name": "XI Volta a peu Beniflà",
-          "date": "2026-11-22",
-          "town": "Beniflá",
-          "distances": [],
-          "time": "09:30",
           "status": "excluded",
           "reason": "Fora del radi"
         },
@@ -1291,7 +1304,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-20T13:58:50.029Z",
+      "checkedAt": "2026-11-21T13:27:02.950Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 2,
@@ -1332,7 +1345,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-20T13:58:50.029Z",
+      "checkedAt": "2026-11-21T13:27:02.950Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
@@ -1430,7 +1443,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-20T13:58:50.029Z",
+      "checkedAt": "2026-11-21T13:27:02.950Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1588,7 +1601,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-20T13:58:50.029Z",
+      "checkedAt": "2026-11-21T13:27:02.950Z",
       "status": "ok",
       "catalogEntries": 3,
       "read": 3,
@@ -1633,7 +1646,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-20T13:58:50.029Z",
+      "checkedAt": "2026-11-21T13:27:02.950Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1667,9 +1680,9 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-20T13:58:50.029Z",
+      "checkedAt": "2026-11-21T13:27:02.950Z",
       "status": "ok",
-      "catalogEntries": 5,
+      "catalogEntries": 4,
       "read": 4,
       "eligible": 3,
       "errors": [],
@@ -1720,12 +1733,6 @@
           ],
           "time": "07:00",
           "status": "eligible"
-        },
-        {
-          "url": "https://www.mychip.es/e/valldigna-extrem-2026-marxa-senderista",
-          "name": "VALLDIGNA EXTREM, 2026 Marxa senderista",
-          "status": "excluded",
-          "reason": "Modalitat o abonament exclòs"
         },
         {
           "url": "https://www.mychip.es/e/iii-trail-nocturno-cabeco-dor-busot",
