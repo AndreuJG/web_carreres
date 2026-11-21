@@ -17,6 +17,10 @@ on:
           - send
           - confirm-delivery
           - retry-delivery
+  workflow_run:
+    workflows: ['Actualitzar carreres']
+    types: [completed]
+    branches: [main]
 
 permissions:
   contents: read
@@ -27,7 +31,12 @@ concurrency:
 
 jobs:
   digest:
-    if: github.repository == 'AndreuJG/web_carreres' && github.ref == 'refs/heads/main'
+    if: >-
+      github.repository == 'AndreuJG/web_carreres' &&
+      github.ref == 'refs/heads/main' &&
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.head_repository.full_name == 'AndreuJG/web_carreres'))
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:

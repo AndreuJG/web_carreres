@@ -49,7 +49,8 @@ const today = madridToday();
 let stateCommit = remote(['ls-remote', 'origin', branch]).split(/\s/)[0];
 if (stateCommit) remote(['fetch', '--no-tags', 'origin', branch]);
 const state = stateCommit ? readJson(stateCommit, 'state.json') : {catalog: latest};
-const decision = dailyDeliveryDecision(state, new Date(), process.env.GITHUB_EVENT_NAME === 'schedule');
+const automatic = ['schedule', 'workflow_run'].includes(process.env.GITHUB_EVENT_NAME);
+const decision = dailyDeliveryDecision(state, new Date(), automatic);
 function report(message) {
   console.log(message);
   if (process.env.GITHUB_STEP_SUMMARY) {
