@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-21T15:51:24.978Z",
-  "today": "2026-11-21",
+  "checkedAt": "2026-11-22T13:18:26.388Z",
+  "today": "2026-11-22",
   "status": "partial",
   "window": {
-    "after": "2026-11-21",
-    "through": "2027-11-21",
+    "after": "2026-11-22",
+    "through": "2027-11-22",
     "radiusKm": 50
   },
   "changes": [],
@@ -37,16 +37,6 @@
         {
           "label": "multiesport",
           "url": "https://multiesport.es/event/backyard-borjas-extreme-xativa-2027/"
-        }
-      ]
-    },
-    {
-      "name": "XII Cursa-Mascota Running",
-      "reason": "Població sense coordenades inequívoces",
-      "sources": [
-        {
-          "label": "crono4sports",
-          "url": "https://crono4sports.com/evento/xii-cursa-mascota-running"
         }
       ]
     },
@@ -169,11 +159,11 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-21T15:51:24.978Z",
+      "checkedAt": "2026-11-22T13:18:26.388Z",
       "status": "ok",
       "catalogEntries": 17,
       "read": 19,
-      "eligible": 13,
+      "eligible": 11,
       "errors": [],
       "decisions": [
         {
@@ -235,11 +225,12 @@
             7
           ],
           "time": "09:00",
-          "status": "eligible"
+          "status": "excluded",
+          "reason": "Fora del període"
         },
         {
           "url": "https://inscripciones.cronorunner.com/evento/xi-10k-y-5k-dinosauris-moncada",
-          "name": "XI 10K y 5K Dinosauris Moncada",
+          "name": "XI 10K y 5K Dinosauris Moncadak",
           "date": "2026-11-22",
           "town": "Moncada",
           "distances": [
@@ -247,7 +238,8 @@
             10
           ],
           "time": "10:00",
-          "status": "eligible"
+          "status": "excluded",
+          "reason": "Fora del període"
         },
         {
           "url": "https://inscripciones.cronorunner.com/evento/carrera-popular-10k-dulces-de-casinos",
@@ -421,11 +413,11 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-21T15:51:24.978Z",
+      "checkedAt": "2026-11-22T13:18:26.388Z",
       "status": "ok",
-      "catalogEntries": 25,
-      "read": 19,
-      "eligible": 14,
+      "catalogEntries": 22,
+      "read": 18,
+      "eligible": 12,
       "errors": [],
       "decisions": [
         {
@@ -465,7 +457,8 @@
             6
           ],
           "time": "08:30",
-          "status": "eligible"
+          "status": "excluded",
+          "reason": "Fora del període"
         },
         {
           "url": "https://sportmaniacs.com/es/races/carrera-solidaria-por-los-derechos-de-la-infancia-25k-y-5k-2026",
@@ -477,7 +470,8 @@
             5
           ],
           "time": "11:00",
-          "status": "eligible"
+          "status": "excluded",
+          "reason": "Fora del període"
         },
         {
           "url": "https://sportmaniacs.com/es/races/xxix-vuelta-a-pie-nocturna-tous",
@@ -687,26 +681,13 @@
           "name": "XXI VOLTA A PEU LA VALL D'ALBA (3 PUJADES A L'ERMITA)",
           "status": "excluded",
           "reason": "Fora del radi"
-        },
-        {
-          "url": "https://sportmaniacs.com/es/races/cmso-cursa-de-muntanya-serra-dorpesa-2026",
-          "name": "CMSO (CURSA DE MUNTANYA SERRA D&#039;ORPESA 2026)",
-          "date": "2026-11-22",
-          "town": "Oropesa del Mar",
-          "distances": [
-            12,
-            20
-          ],
-          "time": "08:30",
-          "status": "excluded",
-          "reason": "Fora del radi"
         }
       ]
     },
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-21T15:51:24.978Z",
+      "checkedAt": "2026-11-22T13:18:26.388Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 12,
@@ -882,11 +863,11 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-21T15:51:24.978Z",
+      "checkedAt": "2026-11-22T13:18:26.388Z",
       "status": "partial",
-      "catalogEntries": 14,
+      "catalogEntries": 13,
       "read": 15,
-      "eligible": 2,
+      "eligible": 1,
       "errors": [
         {
           "url": "https://multiesport.es/event/2026-xxxx-pujada-al-castell-volta-a-peu-xativa/",
@@ -916,7 +897,8 @@
             20
           ],
           "time": "09:00",
-          "status": "eligible"
+          "status": "excluded",
+          "reason": "Fora del període"
         },
         {
           "url": "https://multiesport.es/event/2027-ii-10k-bombers-xativa/",
@@ -1071,10 +1053,10 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-21T15:51:24.978Z",
+      "checkedAt": "2026-11-22T13:18:26.388Z",
       "status": "ok",
       "catalogEntries": 23,
-      "read": 18,
+      "read": 19,
       "eligible": 2,
       "errors": [],
       "decisions": [
@@ -1115,7 +1097,7 @@
           "distances": [],
           "time": "11:00",
           "status": "excluded",
-          "reason": "Població sense coordenades inequívoces"
+          "reason": "Fora del període"
         },
         {
           "url": "https://crono4sports.com/evento/xi-volta-a-peu-benifla",
@@ -1248,8 +1230,12 @@
         {
           "url": "https://crono4sports.com/evento/tarraco-hybrid-series",
           "name": "Tarraco Hybrid Series",
+          "date": "2027-04-03",
+          "town": "Tarragona",
+          "distances": [],
+          "time": "08:00",
           "status": "excluded",
-          "reason": "Modalitat o abonament exclòs"
+          "reason": "Modalitat exclosa o abonament de circuit"
         },
         {
           "url": "https://crono4sports.com/evento/iii-medieval-xtrem-race-alginet",
@@ -1296,9 +1282,9 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-21T15:51:24.978Z",
+      "checkedAt": "2026-11-22T13:18:26.388Z",
       "status": "ok",
-      "catalogEntries": 3,
+      "catalogEntries": 2,
       "read": 2,
       "eligible": 2,
       "errors": [],
@@ -1325,23 +1311,17 @@
           ],
           "time": "07:00",
           "status": "eligible"
-        },
-        {
-          "url": "https://www.toprun.es/eventos/carrera-tolerancia-cero-2026",
-          "name": "Carrera Tolerancia Cero, Contra la violencia de género",
-          "status": "excluded",
-          "reason": "Fora del radi"
         }
       ]
     },
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-21T15:51:24.978Z",
+      "checkedAt": "2026-11-22T13:18:26.388Z",
       "status": "ok",
       "catalogEntries": 8,
       "read": 7,
-      "eligible": 7,
+      "eligible": 6,
       "errors": [],
       "decisions": [
         {
@@ -1353,7 +1333,8 @@
             6
           ],
           "time": "08:30",
-          "status": "eligible"
+          "status": "excluded",
+          "reason": "Fora del període"
         },
         {
           "url": "https://www.valenciaciudaddelrunning.com/evento/bimbo-valencia-breakfast-run/",
@@ -1435,7 +1416,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-21T15:51:24.978Z",
+      "checkedAt": "2026-11-22T13:18:26.388Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1593,11 +1574,11 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-21T15:51:24.978Z",
+      "checkedAt": "2026-11-22T13:18:26.388Z",
       "status": "ok",
-      "catalogEntries": 3,
+      "catalogEntries": 2,
       "read": 3,
-      "eligible": 3,
+      "eligible": 2,
       "errors": [],
       "decisions": [
         {
@@ -1609,7 +1590,8 @@
             6
           ],
           "time": "08:30",
-          "status": "eligible"
+          "status": "excluded",
+          "reason": "Fora del període"
         },
         {
           "url": "https://runcancer.com/events/picassent-2026/",
@@ -1638,11 +1620,11 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-21T15:51:24.978Z",
+      "checkedAt": "2026-11-22T13:18:26.388Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
-      "eligible": 2,
+      "eligible": 1,
       "errors": [],
       "decisions": [
         {
@@ -1654,7 +1636,8 @@
             21.0975
           ],
           "time": "10:00",
-          "status": "eligible"
+          "status": "excluded",
+          "reason": "Fora del període"
         },
         {
           "url": "https://web.rockthesport.com/es/event/quarta-i-mitja-marato-paiporta-picanya-2026",
@@ -1672,11 +1655,11 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-21T15:51:24.978Z",
+      "checkedAt": "2026-11-22T13:18:26.388Z",
       "status": "ok",
-      "catalogEntries": 5,
+      "catalogEntries": 3,
       "read": 4,
-      "eligible": 3,
+      "eligible": 2,
       "errors": [],
       "decisions": [
         {
@@ -1700,7 +1683,8 @@
             21.097
           ],
           "time": "10:00",
-          "status": "eligible"
+          "status": "excluded",
+          "reason": "Fora del període"
         },
         {
           "url": "https://www.mychip.es/e/10e-trail-senglars-la-mola-extrem-favara-lmvs-2627",
@@ -1725,12 +1709,6 @@
           ],
           "time": "07:00",
           "status": "eligible"
-        },
-        {
-          "url": "https://www.mychip.es/e/valldigna-extrem-2026-marxa-senderista",
-          "name": "VALLDIGNA EXTREM, 2026 Marxa senderista",
-          "status": "excluded",
-          "reason": "Modalitat o abonament exclòs"
         },
         {
           "url": "https://www.mychip.es/e/iii-trail-nocturno-cabeco-dor-busot",
