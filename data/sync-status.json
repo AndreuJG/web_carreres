@@ -1,14 +1,22 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-22T13:18:26.388Z",
-  "today": "2026-11-22",
+  "checkedAt": "2026-11-23T13:52:24.974Z",
+  "today": "2026-11-23",
   "status": "partial",
   "window": {
-    "after": "2026-11-22",
-    "through": "2027-11-22",
+    "after": "2026-11-23",
+    "through": "2027-11-23",
     "radiusKm": 50
   },
-  "changes": [],
+  "changes": [
+    {
+      "kind": "added",
+      "id": "auto-mychip-746386bf2b53",
+      "name": "XI Modúver trail, Xeresa, LMVS. 26/27",
+      "url": "https://www.mychip.es/e/xi-moduvert-trail-xeresa-lmvs-2627",
+      "source": "mychip"
+    }
+  ],
   "pending": [
     {
       "name": "SAN SILVESTRE GILET 2026",
@@ -159,9 +167,9 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-22T13:18:26.388Z",
+      "checkedAt": "2026-11-23T13:52:24.974Z",
       "status": "ok",
-      "catalogEntries": 17,
+      "catalogEntries": 15,
       "read": 19,
       "eligible": 11,
       "errors": [],
@@ -230,7 +238,7 @@
         },
         {
           "url": "https://inscripciones.cronorunner.com/evento/xi-10k-y-5k-dinosauris-moncada",
-          "name": "XI 10K y 5K Dinosauris Moncadak",
+          "name": "XI 10K y 5K Dinosauris Moncada",
           "date": "2026-11-22",
           "town": "Moncada",
           "distances": [
@@ -413,7 +421,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-22T13:18:26.388Z",
+      "checkedAt": "2026-11-23T13:52:24.974Z",
       "status": "ok",
       "catalogEntries": 22,
       "read": 18,
@@ -687,10 +695,10 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-22T13:18:26.388Z",
+      "checkedAt": "2026-11-23T13:52:24.974Z",
       "status": "ok",
-      "catalogEntries": 12,
-      "read": 12,
+      "catalogEntries": 13,
+      "read": 13,
       "eligible": 3,
       "errors": [],
       "decisions": [
@@ -819,6 +827,18 @@
           "reason": "Fora del radi"
         },
         {
+          "url": "https://www.runatica.com/event/xiii-carrera-roscon-reyes-denia-2027",
+          "name": "XIII Carrera Roscón de Reyes Denia",
+          "date": "2027-01-03",
+          "town": "Denia",
+          "distances": [
+            5
+          ],
+          "time": "11:00",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
           "url": "https://www.runatica.com/event/xiii-trail-almedijar-2027",
           "name": "XIII Trail de Almedijar",
           "date": "2027-02-21",
@@ -863,7 +883,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-22T13:18:26.388Z",
+      "checkedAt": "2026-11-23T13:52:24.974Z",
       "status": "partial",
       "catalogEntries": 13,
       "read": 15,
@@ -932,18 +952,6 @@
           "reason": "Fora del radi"
         },
         {
-          "url": "https://multiesport.es/event/2026-iv-sant-silvestre-canals/",
-          "name": "2026 – IV SANT SILVESTRE CANALS",
-          "date": "2026-12-26",
-          "town": "Canals",
-          "distances": [
-            3.3
-          ],
-          "time": "18:30",
-          "status": "excluded",
-          "reason": "Fora del radi"
-        },
-        {
           "url": "https://multiesport.es/event/2026-xx-san-silvestre-villenera-2026/",
           "name": "2026- XX SAN SILVESTRE VILLENERA",
           "date": "2026-12-26",
@@ -952,6 +960,18 @@
             6.87
           ],
           "time": "17:30",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://multiesport.es/event/2026-iv-sant-silvestre-canals/",
+          "name": "2026 – IV SANT SILVESTRE CANALS",
+          "date": "2026-12-26",
+          "town": "Canals",
+          "distances": [
+            3.3
+          ],
+          "time": "18:30",
           "status": "excluded",
           "reason": "Fora del radi"
         },
@@ -1053,10 +1073,10 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-22T13:18:26.388Z",
+      "checkedAt": "2026-11-23T13:52:24.974Z",
       "status": "ok",
-      "catalogEntries": 23,
-      "read": 19,
+      "catalogEntries": 20,
+      "read": 18,
       "eligible": 2,
       "errors": [],
       "decisions": [
@@ -1082,28 +1102,6 @@
           ],
           "time": "10:00",
           "status": "eligible"
-        },
-        {
-          "url": "https://crono4sports.com/evento/desafio-vega-baja-redovan-by-medieval",
-          "name": "Desafio Vega Baja Redován By Medieval",
-          "status": "excluded",
-          "reason": "Fora del radi"
-        },
-        {
-          "url": "https://crono4sports.com/evento/xii-cursa-mascota-running",
-          "name": "XII Cursa-Mascota Running",
-          "date": "2026-11-22",
-          "town": "Alqueria de la Comtessa, Valencia",
-          "distances": [],
-          "time": "11:00",
-          "status": "excluded",
-          "reason": "Fora del període"
-        },
-        {
-          "url": "https://crono4sports.com/evento/xi-volta-a-peu-benifla",
-          "name": "XI Volta a peu Beniflà",
-          "status": "excluded",
-          "reason": "Fora del radi"
         },
         {
           "url": "https://crono4sports.com/evento/xix-volta-a-peu-lalqueria-de-la-comtessa",
@@ -1282,7 +1280,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-22T13:18:26.388Z",
+      "checkedAt": "2026-11-23T13:52:24.974Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 2,
@@ -1317,9 +1315,9 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-22T13:18:26.388Z",
+      "checkedAt": "2026-11-23T13:52:24.974Z",
       "status": "ok",
-      "catalogEntries": 8,
+      "catalogEntries": 7,
       "read": 7,
       "eligible": 6,
       "errors": [],
@@ -1416,7 +1414,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-22T13:18:26.388Z",
+      "checkedAt": "2026-11-23T13:52:24.974Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1574,7 +1572,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-22T13:18:26.388Z",
+      "checkedAt": "2026-11-23T13:52:24.974Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 3,
@@ -1620,7 +1618,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-22T13:18:26.388Z",
+      "checkedAt": "2026-11-23T13:52:24.974Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1655,11 +1653,11 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-22T13:18:26.388Z",
+      "checkedAt": "2026-11-23T13:52:24.974Z",
       "status": "ok",
-      "catalogEntries": 3,
-      "read": 4,
-      "eligible": 2,
+      "catalogEntries": 5,
+      "read": 5,
+      "eligible": 3,
       "errors": [],
       "decisions": [
         {
@@ -1715,6 +1713,24 @@
           "name": "III Trail Nocturno Cabeço D'Or, Busot",
           "status": "excluded",
           "reason": "Fora del radi"
+        },
+        {
+          "url": "https://www.mychip.es/e/sprint-trail-la-mola-calp-9e-circuit-trail-marina-2627",
+          "name": "XXII TRAIL SERRA D'OLTÀ ‐ CALP, 9e. Circuit Trail Marina 26/27",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://www.mychip.es/e/xi-moduvert-trail-xeresa-lmvs-2627",
+          "name": "XI Modúver trail, Xeresa, LMVS. 26/27",
+          "date": "2026-12-13",
+          "town": "Xeresa",
+          "distances": [
+            14.8,
+            21.64
+          ],
+          "time": "08:00",
+          "status": "eligible"
         }
       ]
     }
