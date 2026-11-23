@@ -53,7 +53,7 @@ function restoreUrl() {
   const origin = params.get('origin') || preference.origin || '46094';
   $('#origin').value = municipalities.some(town => town.id === origin) ? origin : '46094';
   const radius = params.get('radius') || preference.radius || '50';
-  $('#radius').value = ['all', '10', '25', '50', '100', '150', '200'].includes(String(radius)) ? radius : '50';
+  $('#radius').value = ['all', '10', '25', '50'].includes(String(radius)) ? radius : '50';
   for (const input of form.querySelectorAll('[name="distance"]')) input.checked = params.getAll('distance').includes(input.value);
   savedOnly = params.get('saved') === '1';
 }

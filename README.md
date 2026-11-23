@@ -26,7 +26,7 @@ npm test
 
 - Agenda per mesos, ordenada per data o proximitat.
 - Cerca per nom i població, sense necessitat d’escriure accents.
-- Filtres combinables de municipi d’origen (266 opcions), tota la província o radi (10/25/50/100/150/200 km), mes, distància de carrera, tipus (incloent trail i infantil) i font. Les distàncies seleccionades es combinen amb OR; els altres filtres, amb AND. Les distàncies llargues diferents de mitja/marató tenen filtre propi: 20 km no es classifica com a mitja marató.
+- Filtres combinables de municipi d’origen (266 opcions), tota la província o radi (10/25/50 km), mes, distància de carrera, tipus (incloent trail i infantil) i font. Les distàncies seleccionades es combinen amb OR; els altres filtres, amb AND. Les distàncies llargues diferents de mitja/marató tenen filtre propi: 20 km no es classifica com a mitja marató.
 - Fitxa amb horari, eixida, observacions, fonts i data de revisió.
 - Carreres guardades en `localStorage`, sense compte. Si l’emmagatzematge no està disponible, funcionen durant la sessió.
 - Exportació de les carreres visibles, o d’una carrera concreta, a `.ics`.
@@ -37,7 +37,7 @@ npm test
 
 **Temps:** des de demà fins a un any després del dia actual, amb data local d’`Europe/Madrid`. S’exclou tot el dia actual de manera conservadora per a no incloure carreres ja acabades. En la revisió inicial, el període és **09/11/2026–08/11/2027**. Es recalcula en carregar la pàgina i en aplicar filtres.
 
-**Proximitat:** fórmula de Haversine entre el centre aproximat del municipi d’origen seleccionat i el centre aproximat de la població. No són quilòmetres per carretera ni la distància exacta fins a l’eixida. El catàleg inclou només municipis de la província. El filtre permet tota la província o un radi de fins a 200 km. Catarroja i 50 km són els valors inicials. Els paràmetres de l’enllaç prevalen sobre les preferències locals.
+**Proximitat:** fórmula de Haversine entre el centre aproximat del municipi d’origen seleccionat i el centre aproximat de la població. No són quilòmetres per carretera ni la distància exacta fins a l’eixida. El catàleg inclou només municipis de la província. El filtre permet tota la província o un radi de fins a 50 km. Catarroja i 50 km són els valors inicials. Els paràmetres de l’enllaç prevalen sobre les preferències locals.
 
 **Convocatòries:** només edicions amb data publicada en una font primària o en la plataforma de la prova. No extrapolem l’any següent. Les cites amb diverses distàncies apareixen una vegada; els filtres comproven totes les variants. Incloem ruta, trail i proves infantils independents; s’exclouen triatlons, natació, ciclisme, caminades i competicions híbrides/OCR. Els abonaments de circuit no són carreres addicionals. Una data publicada no implica que queden dorsals.
 

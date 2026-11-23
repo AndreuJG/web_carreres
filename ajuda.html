@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ca-ES-valencia">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#204c3b">
+    <meta name="description" content="Aprén a buscar carreres, triar el teu poble, guardar les teues favorites i exportar l’agenda.">
+    <title>Com utilitzar la web · Córrer a prop</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#ajuda">Anar a l’ajuda</a>
+    <header class="site-header wrap">
+      <a class="brand" href="./"><img src="./assets/favicon.svg" width="38" height="38" alt=""><span>córrer<span class="brand-light"> a prop</span><span class="brand-dot">.</span></span></a>
+      <nav aria-label="Navegació principal"><a href="./#agenda">Tornar a l’agenda</a><a href="./ajuda.html" aria-current="page">Ajuda</a></nav>
+    </header>
+    <main id="ajuda" class="wrap help-content">
+      <p class="eyebrow">PREPARA LA TEUA PRÒXIMA EIXIDA</p>
+      <h1>Com utilitzar la web</h1>
+      <p>Troba carreres a peu de la província de València amb convocatòria publicada, des de demà fins a un any avant.</p>
+      <section aria-labelledby="buscar"><h2 id="buscar">Tria on vols córrer</h2>
+        <ol><li>Obri <strong>Afina la teua cerca</strong>, especialment si visites la web des del mòbil.</li>
+        <li>Selecciona el teu <strong>poble d’origen</strong> entre els 266 municipis.</li>
+        <li>Tria <strong>10, 25 o 50 km</strong> per veure les carreres pròximes, o <strong>Tota la província</strong> per veure-les sense aplicar cap límit de proximitat.</li></ol>
+        <p>Les distàncies es calculen en línia recta entre centres aproximats de poblacions. En «Tota la província», el poble d’origen servix per mostrar la proximitat i ordenar les carreres.</p>
+      </section>
+      <section aria-labelledby="recordar"><h2 id="recordar">Recupera la teua selecció</h2>
+        <p>El poble i el radi es guarden automàticament en este navegador. En tornar a la web els trobaràs seleccionats, sempre que el navegador permeta l’emmagatzematge local.</p>
+        <p>Si canvies de dispositiu o esborres les dades del navegador, hauràs de tornar a triar-los. En obrir un enllaç compartit, s’aplica la selecció que porta l’enllaç.</p>
+      </section>
+      <section aria-labelledby="filtres"><h2 id="filtres">Afina la cerca</h2>
+        <p>Pots combinar el mes, els quilòmetres de carrera, el tipus de prova i la font. El camp de cerca permet buscar pel nom de la carrera o de la població.</p>
+        <p>Si marques diverses distàncies de carrera, apareixen les proves que coincidixen amb qualsevol d’elles. Els altres filtres s’apliquen alhora. Tria l’ordre per data o per proximitat al teu poble.</p>
+        <p><strong>Netejar filtres</strong> lleva la cerca i els filtres de mes, modalitat i font, i conserva el poble i el radi que has triat.</p>
+      </section>
+      <section aria-labelledby="fitxa"><h2 id="fitxa">Consulta la fitxa i la inscripció</h2>
+        <p>Toca el nom de la carrera o <strong>Veure carrera</strong> per consultar la data, les distàncies, l’horari publicat i les fonts. El botó <strong>Consultar la convocatòria</strong> et porta a la web on pots comprovar els dorsals i les condicions de participació.</p>
+        <p>Quan trobem un recorregut verificat, apareix amb la modalitat, la font i l’any. Els tracks d’edicions anteriors porten un avís perquè el traçat pot haver canviat. Els fitxers GPX, TCX i FIT es poden importar com a trajectes en Garmin Connect.</p>
+      </section>
+      <section aria-labelledby="guardar"><h2 id="guardar">Guarda carreres i exporta l’agenda</h2>
+        <p>Toca el cor d’una carrera per guardar-la. Després prem <strong>Guardades</strong> o <strong>Només guardades</strong>. La selecció es conserva en este navegador i continua respectant els filtres i el període de carreres futures.</p>
+        <p><strong>Exportar agenda</strong> descarrega un fitxer de calendari amb les carreres visibles. També pots afegir una sola carrera des de la seua fitxa. Els esdeveniments són de dia complet; els horaris publicats apareixen en la descripció.</p>
+        <p>Per compartir una cerca, copia l’adreça de la pàgina després d’aplicar els filtres.</p>
+      </section>
+      <section aria-labelledby="actualitzacio"><h2 id="actualitzacio">Consulta les actualitzacions</h2>
+        <p>La franja de l’agenda indica l’última consulta i si alguna font té incidències. En <strong>Les fonts</strong> pots veure els calendaris consultats i les convocatòries pendents de verificar.</p>
+        <p>Les fonts es consulten diàriament. La cobertura creix amb les convocatòries que publiquen i les dates passades s’oculten automàticament.</p>
+        <p>En el <a href="https://t.me/correr_a_prop" target="_blank" rel="noopener noreferrer">canal públic de Telegram</a> publiquem el resum diari de la província, també quan no s’han detectat novetats.</p>
+      </section>
+      <p><a class="primary-button" href="./#agenda">Buscar la meua pròxima carrera →</a></p>
+    </main>
+    <footer class="wrap"><a class="footer-brand" href="./">córrer a prop.</a><p>Fet des de Catarroja. Quilòmetre a quilòmetre.</p><a href="./#agenda">Tornar a l’agenda</a></footer>
+  </body>
+</html>

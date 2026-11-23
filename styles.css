@@ -8,3 +8,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
 .tag-trail{background:#e9ede1;color:#4b6236}.tag-infantil{background:#eee8f4;color:#71548b}.review-summary{padding:12px;border-left:3px solid var(--orange,#e97447);background:#faf6ef}.race-distance{overflow-wrap:anywhere}
+
+.help-content{max-width:850px;padding-top:38px;padding-bottom:50px}.help-content h1{font-size:clamp(30px,5vw,46px);line-height:1.15;color:var(--green,#204c3b)}.help-content section{margin-top:32px}.help-content h2{font-size:23px;margin-bottom:12px}.help-content p,.help-content li{font-size:15px;line-height:1.85}.help-content li{margin-bottom:9px}.help-content a:not(.primary-button){text-decoration:underline;text-underline-offset:3px}@media(max-width:480px){.site-header{flex-wrap:wrap;height:auto;min-height:78px;padding-block:14px}.site-header nav{gap:10px}.help-content h2{font-size:21px}}
