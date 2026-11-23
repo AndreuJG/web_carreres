@@ -1,3 +1,4 @@
+import {municipalities} from './lib/municipalities.js';
 import { selectRaces, madridToday, oneYearAfter, matchesDistance, formatDistance, escapeHtml as h, makeCalendar, TYPE_LABELS } from './lib/races.js';
 import { loadCatalog, LIVE_CATALOG_URL } from './lib/catalog.js';
 
@@ -24,14 +25,15 @@ function toast(message) {
 
 function filters() {
   const values = new FormData(form);
-  return { query: $('#search').value.trim(), radius: Number(values.get('radius')), month: values.get('month'), type: values.get('type'), source: values.get('source'), sort: $('#sort').value, savedOnly, savedIds: saved };
+  return { query: $('#search').value.trim(), province: true, origin: values.get('origin'), radius: values.get('radius') === 'all' ? 'all' : Number(values.get('radius')), month: values.get('month'), type: values.get('type'), source: values.get('source'), sort: $('#sort').value, savedOnly, savedIds: saved };
 }
 
 function syncUrl() {
   const state = filters();
   const params = new URLSearchParams();
   for (const key of ['query', 'month', 'type', 'source']) if (state[key]) params.set(key, state[key]);
-  if (state.radius !== 50) params.set('radius', state.radius);
+  params.set('origin', state.origin);
+  params.set('radius', state.radius);
   if (state.sort !== 'date') params.set('sort', state.sort);
   if (savedOnly) params.set('saved', '1');
   for (const distance of new FormData(form).getAll('distance')) params.append('distance', distance);
@@ -46,8 +48,12 @@ function restoreUrl() {
     const control = $(`#${key}`), value = params.get(key);
     if (value && [...control.options].some(option => option.value === value)) control.value = value;
   }
-  const radius = params.get('radius');
-  if (['10', '25', '50'].includes(radius)) form.querySelector(`input[name="radius"][value="${radius}"]`).checked = true;
+  let preference = {};
+  try { preference = JSON.parse(localStorage.getItem('correr-a-prop:location') || '{}') || {}; } catch {}
+  const origin = params.get('origin') || preference.origin || '46094';
+  $('#origin').value = municipalities.some(town => town.id === origin) ? origin : '46094';
+  const radius = params.get('radius') || preference.radius || '50';
+  $('#radius').value = ['all', '10', '25', '50', '100', '150', '200'].includes(String(radius)) ? radius : '50';
   for (const input of form.querySelectorAll('[name="distance"]')) input.checked = params.getAll('distance').includes(input.value);
   savedOnly = params.get('saved') === '1';
 }
@@ -61,7 +67,7 @@ function card(race) {
   return `<article class="race-card" aria-labelledby="title-${h(race.id)}">
     <time class="date-tile" datetime="${race.date}" aria-label="${h(longDate(race.date))}"><span class="weekday">${h(displayDate(race.date, { weekday: 'short' }).replace('.', ''))}</span><strong>${race.date.slice(8)}</strong><span class="month">${h(displayDate(race.date, { month: 'short' }).replace('.', ''))}</span></time>
     <div><h3 style="margin:0"><button class="race-title" id="title-${h(race.id)}" data-detail="${h(race.id)}">${h(race.name)}</button></h3>
-      <div class="race-info"><span>⌖ ${h(race.town)}</span><span>~${formatDistance(race.proximity)} km de casa</span></div>
+      <div class="race-info"><span>⌖ ${h(race.town)}</span><span>~${formatDistance(race.proximity)} km de ${h(municipalities.find(town => town.id === $('#origin').value)?.name || 'Catarroja')}</span></div>
       <div class="race-tags"><span class="tag tag-${race.type}">${TYPE_LABELS[race.type]}</span><span class="tag verified-tag">✓ Data publicada</span></div></div>
     <div class="race-right"><div class="race-distance">${distanceLabel(race)} <small>km</small></div><button class="detail-link" data-detail="${h(race.id)}" aria-label="Veure detalls de ${h(race.name)}">Veure carrera <span aria-hidden="true">↗</span></button></div>
     <button class="save-button" data-save="${h(race.id)}" aria-label="${isSaved ? 'Llevar de guardades' : 'Guardar'}: ${h(race.name)}" aria-pressed="${isSaved}"><span aria-hidden="true">${isSaved ? '♥' : '♡'}</span></button>
@@ -71,7 +77,7 @@ function card(race) {
 function render({ updateUrl = true } = {}) {
   if (!data) return;
   const selectedDistances = new FormData(form).getAll('distance');
-  visible = selectRaces(data.races, data.origin, filters()).filter(race => !selectedDistances.length || selectedDistances.some(distance => matchesDistance(race.distances, distance)));
+  visible = selectRaces(data.races, municipalities.find(town => town.id === $('#origin').value) || data.origin, filters()).filter(race => !selectedDistances.length || selectedDistances.some(distance => matchesDistance(race.distances, distance)));
   $('#saved-count').textContent = saved.length;
   $('#saved-nav').setAttribute('aria-pressed', String(savedOnly));
   $('#saved-filter').setAttribute('aria-pressed', String(savedOnly));
@@ -98,6 +104,11 @@ function render({ updateUrl = true } = {}) {
       return heading + card(race);
     }).join('');
   }
+  const origin = municipalities.find(town => town.id === $('#origin').value);
+  $('#origin-coordinates').textContent = origin.name;
+  $('#art-origin').textContent = origin.name + ' ↗';
+  $('#sort').options[1].textContent = 'Més prop de ' + origin.name;
+  try { localStorage.setItem('correr-a-prop:location', JSON.stringify({origin: origin.id, radius: $('#radius').value})); } catch {}
   if (updateUrl) syncUrl();
 }
 
@@ -108,7 +119,7 @@ function resetFilters() {
 
 function clearControls() {
   for (const control of form.querySelectorAll('input')) control.checked = control.defaultChecked;
-  for (const control of form.querySelectorAll('select')) control.selectedIndex = 0;
+  for (const control of form.querySelectorAll('select')) if (!['origin', 'radius'].includes(control.id)) control.selectedIndex = 0;
   $('#search').value = '';
   $('#sort').value = 'date';
   savedOnly = false;
@@ -174,7 +185,7 @@ function showSources() {
 
 function showMethod() {
   if (!data) return;
-  openDialog(`<h2 id="dialog-title">A prop, i encara per córrer.</h2><p>Una selecció de carreres a peu amb convocatòria publicada. No és un calendari exhaustiu de totes les proves de la província.</p><h3>Què vol dir «a prop»?</h3><p>Un màxim de 50 km en línia recta des del centre de Catarroja (39,402; −0,403) fins a unes coordenades aproximades del centre de cada població. Calculem el radi amb la fórmula de Haversine. No és la distància per carretera ni fins a l’arc d’eixida.</p><h3>Quin període cobrim?</h3><p>Des de demà fins a un any després de hui, segons l’hora d’Europe/Madrid. Excloem tot el dia actual per a no mostrar proves que ja hagen acabat. El límit es mou cada dia.</p><h3>Com es revisen les dades?</h3><p>La selecció de partida es va revisar manualment el ${h(longDate(data.manualReviewAt || data.updatedAt))}. Consultem diàriament els calendaris i les fitxes per a incorporar convocatòries i detectar canvis. Les dates passades s’oculten automàticament. Si una font falla o una dada és ambigua, conservem les dades bones i deixem el cas pendent. No s’han inventat dates de 2027 a partir d’edicions anteriors.</p><p>Els esdeveniments amb diverses distàncies compten com una cita. Incloem ruta, trail i proves infantils identificades com a tals. Mostrem les distàncies de carrera, excloent marxes, triatlons, natació i competicions híbrides amb obstacles. Els abonaments de circuit no compten com una carrera addicional. Les hores desconegudes es marquen com a pendents. Els ajustos manuals de reglament es conserven davant de xifres arrodonides del calendari.</p><h3>I les carreres guardades?</h3><p>Es guarden només en este navegador, sense compte ni servidor. Pots exportar les carreres visibles a un fitxer .ics. Es creen esdeveniments de dia complet per a evitar confusions entre modalitats i horaris.</p>`);
+  openDialog(`<h2 id="dialog-title">A prop, i encara per córrer.</h2><p>Una selecció de carreres a peu amb convocatòria publicada. No és un calendari exhaustiu de totes les proves de la província.</p><h3>Què vol dir «a prop»?</h3><p>Carreres amb convocatòria publicada als municipis de la província de València. Pots veure tota la província o aplicar un radi des del poble que tries. El radi es calcula en línia recta entre centres aproximats de poblacions amb la fórmula de Haversine. La llista inclou els 266 municipis i les coordenades provenen de GeoNames (CC BY 4.0). El poble i el radi es recorden en este navegador.</p><h3>Quin període cobrim?</h3><p>Des de demà fins a un any després de hui, segons l’hora d’Europe/Madrid. Excloem tot el dia actual per a no mostrar proves que ja hagen acabat. El límit es mou cada dia.</p><h3>Com es revisen les dades?</h3><p>La selecció de partida es va revisar manualment el ${h(longDate(data.manualReviewAt || data.updatedAt))}. Consultem diàriament els calendaris i les fitxes per a incorporar convocatòries i detectar canvis. Les dates passades s’oculten automàticament. Si una font falla o una dada és ambigua, conservem les dades bones i deixem el cas pendent. No s’han inventat dates de 2027 a partir d’edicions anteriors.</p><p>Els esdeveniments amb diverses distàncies compten com una cita. Incloem ruta, trail i proves infantils identificades com a tals. Mostrem les distàncies de carrera, excloent marxes, triatlons, natació i competicions híbrides amb obstacles. Els abonaments de circuit no compten com una carrera addicional. Les hores desconegudes es marquen com a pendents. Els ajustos manuals de reglament es conserven davant de xifres arrodonides del calendari.</p><h3>I les carreres guardades?</h3><p>Es guarden només en este navegador, sense compte ni servidor. Pots exportar les carreres visibles a un fitxer .ics. Es creen esdeveniments de dia complet per a evitar confusions entre modalitats i horaris.</p>`);
 }
 
 function downloadCalendar(races) {
@@ -219,7 +230,7 @@ async function init() {
     data = loaded.data;
     const knownIds = new Set(data.races.map(race => race.id));
     saved = [...new Set(saved)].filter(id => knownIds.has(id));
-    const upcoming = selectRaces(data.races, data.origin);
+    const upcoming = selectRaces(data.races, data.origin, {province: true, radius: 'all'});
     const months = [...new Set(upcoming.map(race => race.date.slice(0, 7)))];
     for (const month of months) $('#month').add(new Option(displayDate(`${month}-01`, { month: 'long', year: 'numeric' }), month));
     for (const source of data.sources) $('#source').add(new Option(source.name, source.id));
@@ -238,6 +249,7 @@ async function init() {
       $('#data-status').textContent += ' · Cal revisar les fonts';
     }
     if (matchMedia('(max-width: 760px)').matches) $('#filter-details').open = false;
+    for (const town of [...municipalities].sort((a,b) => a.name.localeCompare(b.name, 'ca'))) $('#origin').add(new Option(town.name, town.id));
     restoreUrl(); render({ updateUrl: false });
   } catch (error) {
     console.error('No s’ha pogut carregar el calendari', error);

@@ -1,3 +1,4 @@
+import {provinceMunicipality} from '../lib/municipalities.js';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { TYPE_LABELS, distanceKm } from '../lib/races.js';
@@ -17,7 +18,7 @@ for (const race of data.races) {
   assert(Object.hasOwn(TYPE_LABELS, race.type), `Tipus desconegut: ${race.id}`);
   assert(race.distances.length && race.distances.every(km => Number.isFinite(km) && km > 0), `Distància invàlida: ${race.id}`);
   assert(Number.isFinite(race.lat) && Number.isFinite(race.lon) && Math.abs(race.lat) <= 90 && Math.abs(race.lon) <= 180, `Coordenades invàlides: ${race.id}`);
-  assert(distanceKm(data.origin, race) <= 50, `Fora del radi: ${race.id}`);
+  assert(data.origin.province === '46' ? Boolean(provinceMunicipality(race)) : distanceKm(data.origin, race) <= 50, `Fora del radi: ${race.id}`);
   assert(race.sourceIds.length && race.sourceIds.every(id => sourceIds.has(id)), `Font desconeguda: ${race.id}`);
   assert(race.sources.length && race.sources.every(source => source.label), `Falten fonts: ${race.id}`);
   https(race.url); race.sources.forEach(source => https(source.url));

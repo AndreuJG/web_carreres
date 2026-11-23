@@ -1,3 +1,4 @@
+import {provinceMunicipality} from '../lib/municipalities.js';
 import {readFile,writeFile,mkdir,rename} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {createClient} from './sync/http.mjs';
@@ -27,7 +28,7 @@ async function runSource(def){
  for(const item of items.values()){
   if(circuitPass(item.name)||notRunning(item.name)){result.decisions.push({url:item.url,name:item.name,status:'excluded',reason:'Modalitat o abonament exclòs'});continue;}
   const town=resolveTown(item.town,item.name);
-  if(!item.existingId && town && distanceKm(catalog.origin,town)>50){result.decisions.push({url:item.url,name:item.name,status:'excluded',reason:'Fora del radi'});continue;}
+  if(!item.existingId && town && (catalog.origin.province === '46' ? !provinceMunicipality({town:town.name,...town}) : distanceKm(catalog.origin,town)>50)){result.decisions.push({url:item.url,name:item.name,status:'excluded',reason:catalog.origin.province === '46' ? 'Fora de la província' : 'Fora del radi'});continue;}
   if(item.date && (item.date>oneYearAfter(today)||Date.parse(item.date)<Date.parse(today)-120*86400000))continue;
   try{
    const candidate=await readItem(def,item,request);
@@ -69,7 +70,7 @@ const candidates=results.flatMap(r=>r.candidates);
 const merged=mergeCandidates(catalog,candidates,today,checkedAt);
 const successful=results.filter(r=>r.status==='ok').length,usable=successful>0||results.some(r=>r.read>0);
 const status=successful===definitions.length?'ok':usable?'partial':'error';
-const report={schemaVersion:1,checkedAt,today,status,window:{after:today,through:oneYearAfter(today),radiusKm:50},changes:merged.changes,pending:merged.pending,routePending:merged.routePending,sources:results.map(({candidates,...rest})=>rest)};
+const report={schemaVersion:1,checkedAt,today,status,window:{after:today,through:oneYearAfter(today),province:catalog.origin.province||null,radiusKm:catalog.origin.province?null:50},changes:merged.changes,pending:merged.pending,routePending:merged.routePending,sources:results.map(({candidates,...rest})=>rest)};
 merged.data.manualReviewAt ||= catalog.updatedAt;
 const sourceHealth=results.map(({id,name,status,read,eligible,errors})=>({id,name,status,checkedAt,read,eligible,errors:errors.length}));
 if(selected)sourceHealth.push(...(catalog.sync?.sources||[]).filter(s=>!selected.includes(s.id)));

@@ -20,7 +20,7 @@ const author=['-c','user.name=github-actions[bot]','-c','user.email=41898282+git
 git([...author,'commit','-m','Update race calendar and daily source health']);
 // Use the temporary token only for authenticated Git operations.
 const auth={...process.env,GIT_CONFIG_COUNT:'1',GIT_CONFIG_KEY_0:'http.https://github.com/.extraheader',GIT_CONFIG_VALUE_0:`AUTHORIZATION: basic ${Buffer.from(`x-access-token:${process.env.GITHUB_TOKEN}`).toString('base64')}`};
-const inputs=[...files,'scripts/sync-races.mjs','scripts/sync','lib/races.js','lib/catalog.js','package.json','package-lock.json'];
+const inputs=[...files,'scripts/sync-races.mjs','scripts/sync','lib/races.js','lib/catalog.js','lib/municipalities.js','package.json','package-lock.json'];
 const pushArgs=['push','--porcelain','origin','HEAD:main'];
 for(let attempt=0;attempt<3;attempt++){
  const result=runGit(pushArgs,auth);

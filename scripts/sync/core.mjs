@@ -1,3 +1,4 @@
+import {provinceMunicipality} from '../../lib/municipalities.js';
 import { createHash } from 'node:crypto';
 import { normalize, distanceKm, oneYearAfter } from '../../lib/races.js';
 
@@ -71,7 +72,7 @@ export function candidateDecision(candidate, origin, today) {
   if (candidate.excluded || circuitPass(candidate.name) || notRunning(candidate.sport || candidate.name)) return 'Modalitat exclosa o abonament de circuit';
   if (candidate.cancelled) return 'Convocatòria cancel·lada';
   if (!candidate.town || !Number.isFinite(candidate.lat) || !Number.isFinite(candidate.lon)) return 'Població sense coordenades inequívoces';
-  if (distanceKm(origin,candidate) > 50) return 'Fora del radi';
+  if (origin.province === '46' ? !provinceMunicipality(candidate) : distanceKm(origin,candidate) > 50) return origin.province === '46' ? 'Fora de la província' : 'Fora del radi';
   if (!candidate.distances?.length) return 'Distància de carrera sense confirmar';
   return null;
 }
@@ -126,7 +127,7 @@ export function mergeCandidates(data, candidates, today, checkedAt) {
     }
     const reason=candidateDecision(candidate,next.origin,today);
     if(reason) {
-      if(!['Fora del període','Fora del radi','Modalitat exclosa o abonament de circuit'].includes(reason)) pending.push({name:candidate.name,reason,sources:[{label:candidate.sourceId,url:candidate.url}]});
+      if(!['Fora del període','Fora del radi','Fora de la província','Modalitat exclosa o abonament de circuit'].includes(reason)) pending.push({name:candidate.name,reason,sources:[{label:candidate.sourceId,url:candidate.url}]});
       // Only an explicit cancellation can remove an existing event. Missing/empty pages never do.
       if(existing && candidate.cancelled) { next.races=next.races.filter(r=>r.id!==existing.id); changes.push({kind:'cancelled',id:existing.id,source:candidate.sourceId}); }
       continue;

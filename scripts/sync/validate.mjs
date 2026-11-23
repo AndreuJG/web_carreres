@@ -1,3 +1,4 @@
+import {provinceMunicipality} from '../../lib/municipalities.js';
 import assert from 'node:assert/strict';
 import {distanceKm,TYPE_LABELS} from '../../lib/races.js';
 import {isRoute} from '../../lib/catalog.js';
@@ -16,7 +17,7 @@ export function validateCatalog(data){
   assert(race.time===null||/^([01]\d|2[0-3]):[0-5]\d$/.test(race.time),`Hora invàlida: ${race.id}`);
   assert(Object.hasOwn(TYPE_LABELS,race.type),`Tipus invàlid: ${race.id}`);
   assert(race.distances?.length&&race.distances.every(km=>Number.isFinite(km)&&km>0&&km<=300),`Distàncies invàlides: ${race.id}`);
-  assert(Number.isFinite(race.lat)&&Number.isFinite(race.lon)&&distanceKm(data.origin,race)<=50,`Coordenades fora del radi: ${race.id}`);
+  assert(Number.isFinite(race.lat)&&Number.isFinite(race.lon)&&(data.origin.province === '46' ? Boolean(provinceMunicipality(race)) : distanceKm(data.origin,race)<=50),`Coordenades fora del radi: ${race.id}`);
   assert(race.sourceIds?.length&&race.sourceIds.every(s=>sources.has(s)),`Font desconeguda: ${race.id}`);
   assert(race.sources?.length&&race.sources.every(s=>s.label),`Sense fonts: ${race.id}`);
   https(race.url);race.sources.forEach(s=>https(s.url));

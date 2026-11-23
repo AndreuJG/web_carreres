@@ -39,7 +39,7 @@ La primera consulta completa del **09/11/2026** ha llegit **101 fitxes en onze f
 
 - Mai s’esborra una carrera perquè una pàgina falle, torne 403, quede buida o desaparega d’una llista. Es conserva l’última versió bona. Una cancel·lació explícita sí que pot retirar-la.
 - Les noves cites necessiten dia, població resolta sense ambigüitat i almenys una distància de carrera. Les incompletes queden fora de l’agenda com a pendents.
-- Només entren dates posteriors a hui i fins a un any després, i poblacions a un màxim de 50 km entre centres aproximats. Els anys següents no s’extrapolen.
+- Només entren dates posteriors a hui i fins a un any després, i poblacions de la província de València, identificades amb el nomenclàtor municipal. Els anys següents no s’extrapolen.
 - Es distingixen dates de carrera i d’inscripció, caminades, dorsals zero, infantils i abonaments de circuit.
 - La primera lectura automàtica pren una referència dels valors publicats i conserva les correccions manuals de distància/horari. Els ajornaments es poden incorporar en la primera lectura; els canvis posteriors dels camps publicats s’actualitzen automàticament.
 - `scripts/sync/overrides.json` conté correccions condicionals, amb URL de reglament. La de Llíria només substituïx 11/21 per 11,3/20 mentre el calendari continue publicant exactament 11/21.
@@ -102,3 +102,5 @@ La variable secreta de producció GITHUB_DISPATCH_TOKEN necessita un token fine-
 La ruta /api/telegram-status mostra el dia de l’últim lliurament confirmat. Respon HTTP 503 si no es pot verificar, si hi ha un lliurament incert o si a partir de les 13.00 locals continua faltant el resum. Es pot connectar a un monitor HTTP. Esta ruta publica només l’estat i la data, sense tokens ni contingut dels missatges.
 
 Si la comprovació de Vercel retorna 202, GitHub ha acceptat el disparador. El lliurament es confirma després en telegram-state i en el registre del workflow. Un HTTP 202 no confirma l’enviament a Telegram.
+
+El catàleg provincial usa els 266 municipis de GeoNames (ADM3, província V), amb codis municipals i coordenades del nucli principal. La llista pública és lib/municipalities.js. La sincronització aplica este abast quan origin.province és 46. Les preferències de municipi i radi es guarden amb localStorage i es poden compartir en la URL. El canal públic de Telegram resumeix les novetats de tot el catàleg provincial.
