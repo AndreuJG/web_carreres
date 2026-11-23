@@ -17,7 +17,7 @@ $('#map-toggle').addEventListener('click', async () => {
     else {await raceMap.show(); mapActive = true;}
     button.setAttribute('aria-expanded', String(mapActive));
     button.textContent = mapActive ? 'Amagar mapa' : 'Carregar mapa';
-  } catch {raceMap.hide(); $('#map-status').textContent = 'No s’ha pogut obrir el mapa. Torna-ho a provar o consulta la llista.';}
+  } catch (error) {console.error('No s’ha pogut obrir el mapa:', error); raceMap.hide(); $('#map-status').textContent = 'No s’ha pogut obrir el mapa. Torna-ho a provar o consulta la llista.';}
   finally {button.disabled = false;}
 });
 let saved = [];
