@@ -1,3 +1,4 @@
+import {createRaceMap} from './lib/map.js';
 import {municipalities} from './lib/municipalities.js';
 import { selectRaces, madridToday, oneYearAfter, matchesDistance, formatDistance, escapeHtml as h, makeCalendar, TYPE_LABELS } from './lib/races.js';
 import { loadCatalog, LIVE_CATALOG_URL } from './lib/catalog.js';
@@ -6,6 +7,19 @@ const $ = selector => document.querySelector(selector);
 const form = $('#filters');
 const dialog = $('#info-dialog');
 let data, visible = [], savedOnly = false, toastTimer;
+const raceMap = createRaceMap({container: $('#race-map'), status: $('#map-status'), onSelect: id => raceDetails(id)});
+let mapActive = false;
+$('#map-toggle').addEventListener('click', async () => {
+  const button = $('#map-toggle');
+  button.disabled = true;
+  try {
+    if (mapActive) {raceMap.hide(); mapActive = false;}
+    else {await raceMap.show(); mapActive = true;}
+    button.setAttribute('aria-expanded', String(mapActive));
+    button.textContent = mapActive ? 'Amagar mapa' : 'Carregar mapa';
+  } catch {raceMap.hide(); $('#map-status').textContent = 'No s’ha pogut obrir el mapa. Torna-ho a provar o consulta la llista.';}
+  finally {button.disabled = false;}
+});
 let saved = [];
 try {
   const stored = JSON.parse(localStorage.getItem('correr-a-prop:saved') || '[]');
@@ -109,6 +123,7 @@ function render({ updateUrl = true } = {}) {
   $('#art-origin').textContent = origin.name + ' ↗';
   $('#sort').options[1].textContent = 'Més prop de ' + origin.name;
   try { localStorage.setItem('correr-a-prop:location', JSON.stringify({origin: origin.id, radius: $('#radius').value})); } catch {}
+  raceMap.update(visible, origin, $('#radius').value);
   if (updateUrl) syncUrl();
 }
 

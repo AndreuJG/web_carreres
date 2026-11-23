@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ca-ES-valencia">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacitat, analítica opcional i emmagatzematge de Córrer a prop.">
+  <title>Privacitat · Córrer a prop</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./privacy.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#privacitat">Anar al contingut</a>
+  <header class="site-header wrap"><a class="brand" href="./">córrer a prop.</a><nav aria-label="Navegació principal"><a href="./#agenda">Agenda</a><a href="./ajuda.html">Ajuda</a></nav></header>
+  <main class="wrap help-content" id="privacitat">
+    <h1>Privacitat i emmagatzematge</h1>
+    <p>Actualitzat el 23 de novembre de 2026. Responsable del projecte: <strong>Andreu Jiménez Garcia</strong>. Contacte: <a href="mailto:andreujimenez@gmail.com">andreujimenez@gmail.com</a>.</p>
+    <section><h2>Què guardem en el teu navegador?</h2>
+      <p>No necessites crear un compte. Les preferències es guarden amb <code>localStorage</code>, una tecnologia d’emmagatzematge local:</p>
+      <ul><li><code>correr-a-prop:location</code>: poble d’origen i radi de cerca.</li><li><code>correr-a-prop:saved</code>: identificadors de les carreres guardades.</li><li><code>correr-a-prop:catalog-v1</code>: última còpia del catàleg públic, per recuperar-la si la consulta falla.</li><li><code>correr-a-prop:consent-v1</code>: decisió sobre analítica i data de la decisió, vàlida durant 180 dies.</li></ul>
+      <p>Les tres primeres entrades es mantenen fins que les esborres o el navegador les elimine; la còpia del catàleg i les preferències se substituïxen en actualitzar-se. La decisió de consentiment es torna a demanar quan caduca. Pots esborrar totes estes dades des de la configuració del navegador. Si bloqueges l’emmagatzematge, l’agenda continua funcionant, però pot no recordar les teues opcions.</p>
+      <p>Les favorites i preferències locals no es guarden en un compte al nostre servidor. Els filtres compartits poden aparéixer en l’adreça de la pàgina. No hi introduïsques informació personal.</p>
+    </section>
+    <section><h2>Analítica de visites opcional</h2>
+      <p>En producció utilitzem Vercel Web Analytics només després d’una acceptació expressa. Rebutjar-la permet continuar utilitzant totes les funcions de l’agenda. La finalitat és conéixer l’ús de la web, sobre la base del teu consentiment.</p>
+      <p>Segons la <a href="https://vercel.com/docs/analytics/privacy-policy">documentació de Vercel</a>, proporciona estadístiques agregades, identifica visites amb un hash de la petició i descarta la sessió al cap de 24 hores. Pot registrar pàgina, procedència, navegador, dispositiu i ubicació aproximada. No enviem noms, correus ni esdeveniments personalitzats de favorites. El fet que una eina no use cookies de tercers no elimina per si mateix totes les obligacions de privacitat.</p>
+      <p>Pots canviar la decisió amb <strong>Configurar privacitat</strong>, al peu de qualsevol pàgina. En retirar el consentiment recarreguem la pàgina per aturar la biblioteca d’analítica; això no esborra les estadístiques ja recollides. En proves locals no s’activa esta analítica.</p>
+    </section>
+    <section id="mapa"><h2>Mapa opcional d’OpenStreetMap</h2>
+      <p>El mapa només connecta amb OpenStreetMap després de prémer <strong>Carregar mapa</strong>. La biblioteca Leaflet se servix des de la mateixa web. Les peticions de les imatges del mapa comuniquen al proveïdor la teua IP, dades tècniques de connexió, la procedència de la petició i l’àrea visualitzada. La teua activació sol·licita esta funcionalitat externa per a la sessió actual.</p>
+      <p>No demanem la ubicació GPS del dispositiu. El poble que selecciones i les coordenades de les carreres ja estan en el catàleg; els marcadors són centres aproximats de poblacions. Amagar el mapa evita noves interaccions; les peticions ja fetes no es poden retirar.</p>
+      <p>Consulta la <a href="https://osmfoundation.org/wiki/Privacy_Policy">política de privacitat d’OSMF</a> i la <a href="https://operations.osmfoundation.org/policies/tiles/">política d’ús de les imatges</a>. El mapa mostra l’atribució a OpenStreetMap. Les coordenades dels municipis provenen de <a href="https://www.geonames.org/about.html">GeoNames, CC BY 4.0</a>.</p>
+    </section>
+    <section><h2>Allotjament, catàleg i enllaços</h2>
+      <p>La web s’allotja en Vercel i consulta el catàleg públic en GitHub. Estos proveïdors reben les dades tècniques necessàries per atendre les peticions, amb la finalitat de prestar i protegir el servei. Pots consultar les polítiques de <a href="https://vercel.com/legal/privacy-policy">Vercel</a> i <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>, incloent-hi les condicions de conservació i transferències internacionals. Les dades tècniques del mapa es regixen per la política d’OSMF.</p>
+      <p>Els enllaços d’inscripció, Telegram i recorreguts obrin serveis de tercers amb les seues pròpies condicions. No integrem Instagram ni píxels publicitaris. Les consultes als calendaris de carreres les fa l’automatització del projecte, no cada visitant de la web.</p>
+    </section>
+    <section><h2>Contacte i drets</h2>
+      <p>Si ens escrius, tractarem el teu correu i el contingut per respondre la consulta, per interés legítim en atendre-la. Conservarem la correspondència mentre siga necessària per gestionar-la i atendre les responsabilitats que se’n deriven.</p>
+      <p>Pots contactar amb el responsable per exercir els drets d’accés, rectificació, supressió, oposició, limitació i portabilitat quan siguen aplicables, així com retirar el consentiment. També pots presentar una reclamació davant de l’<a href="https://www.aepd.es/">Agència Espanyola de Protecció de Dades</a>.</p>
+    </section>
+  </main>
+  <footer class="wrap"><a href="./">Tornar a l’agenda</a><a href="./ajuda.html">Ajuda</a><button type="button" data-privacy-settings>Configurar privacitat</button></footer>
+</body>
+</html>
