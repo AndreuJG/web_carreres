@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-23T13:52:24.974Z",
+  "checkedAt": "2026-11-23T13:56:54.481Z",
   "today": "2026-11-23",
   "status": "partial",
   "window": {
@@ -8,15 +8,7 @@
     "through": "2027-11-23",
     "radiusKm": 50
   },
-  "changes": [
-    {
-      "kind": "added",
-      "id": "auto-mychip-746386bf2b53",
-      "name": "XI Modúver trail, Xeresa, LMVS. 26/27",
-      "url": "https://www.mychip.es/e/xi-moduvert-trail-xeresa-lmvs-2627",
-      "source": "mychip"
-    }
-  ],
+  "changes": [],
   "pending": [
     {
       "name": "SAN SILVESTRE GILET 2026",
@@ -167,7 +159,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-23T13:52:24.974Z",
+      "checkedAt": "2026-11-23T13:56:54.481Z",
       "status": "ok",
       "catalogEntries": 15,
       "read": 19,
@@ -421,7 +413,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-23T13:52:24.974Z",
+      "checkedAt": "2026-11-23T13:56:54.481Z",
       "status": "ok",
       "catalogEntries": 22,
       "read": 18,
@@ -695,7 +687,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-23T13:52:24.974Z",
+      "checkedAt": "2026-11-23T13:56:54.481Z",
       "status": "ok",
       "catalogEntries": 13,
       "read": 13,
@@ -883,7 +875,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-23T13:52:24.974Z",
+      "checkedAt": "2026-11-23T13:56:54.481Z",
       "status": "partial",
       "catalogEntries": 13,
       "read": 15,
@@ -952,18 +944,6 @@
           "reason": "Fora del radi"
         },
         {
-          "url": "https://multiesport.es/event/2026-xx-san-silvestre-villenera-2026/",
-          "name": "2026- XX SAN SILVESTRE VILLENERA",
-          "date": "2026-12-26",
-          "town": "Villena",
-          "distances": [
-            6.87
-          ],
-          "time": "17:30",
-          "status": "excluded",
-          "reason": "Fora del radi"
-        },
-        {
           "url": "https://multiesport.es/event/2026-iv-sant-silvestre-canals/",
           "name": "2026 – IV SANT SILVESTRE CANALS",
           "date": "2026-12-26",
@@ -972,6 +952,18 @@
             3.3
           ],
           "time": "18:30",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://multiesport.es/event/2026-xx-san-silvestre-villenera-2026/",
+          "name": "2026- XX SAN SILVESTRE VILLENERA",
+          "date": "2026-12-26",
+          "town": "Villena",
+          "distances": [
+            6.87
+          ],
+          "time": "17:30",
           "status": "excluded",
           "reason": "Fora del radi"
         },
@@ -1073,7 +1065,7 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-23T13:52:24.974Z",
+      "checkedAt": "2026-11-23T13:56:54.481Z",
       "status": "ok",
       "catalogEntries": 20,
       "read": 18,
@@ -1280,7 +1272,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-23T13:52:24.974Z",
+      "checkedAt": "2026-11-23T13:56:54.481Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 2,
@@ -1315,7 +1307,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-23T13:52:24.974Z",
+      "checkedAt": "2026-11-23T13:56:54.481Z",
       "status": "ok",
       "catalogEntries": 7,
       "read": 7,
@@ -1414,7 +1406,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-23T13:52:24.974Z",
+      "checkedAt": "2026-11-23T13:56:54.481Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1572,7 +1564,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-23T13:52:24.974Z",
+      "checkedAt": "2026-11-23T13:56:54.481Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 3,
@@ -1618,7 +1610,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-23T13:52:24.974Z",
+      "checkedAt": "2026-11-23T13:56:54.481Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1653,7 +1645,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-23T13:52:24.974Z",
+      "checkedAt": "2026-11-23T13:56:54.481Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 5,
@@ -1709,18 +1701,6 @@
           "status": "eligible"
         },
         {
-          "url": "https://www.mychip.es/e/iii-trail-nocturno-cabeco-dor-busot",
-          "name": "III Trail Nocturno Cabeço D'Or, Busot",
-          "status": "excluded",
-          "reason": "Fora del radi"
-        },
-        {
-          "url": "https://www.mychip.es/e/sprint-trail-la-mola-calp-9e-circuit-trail-marina-2627",
-          "name": "XXII TRAIL SERRA D'OLTÀ ‐ CALP, 9e. Circuit Trail Marina 26/27",
-          "status": "excluded",
-          "reason": "Fora del radi"
-        },
-        {
           "url": "https://www.mychip.es/e/xi-moduvert-trail-xeresa-lmvs-2627",
           "name": "XI Modúver trail, Xeresa, LMVS. 26/27",
           "date": "2026-12-13",
@@ -1731,6 +1711,18 @@
           ],
           "time": "08:00",
           "status": "eligible"
+        },
+        {
+          "url": "https://www.mychip.es/e/iii-trail-nocturno-cabeco-dor-busot",
+          "name": "III Trail Nocturno Cabeço D'Or, Busot",
+          "status": "excluded",
+          "reason": "Fora del radi"
+        },
+        {
+          "url": "https://www.mychip.es/e/sprint-trail-la-mola-calp-9e-circuit-trail-marina-2627",
+          "name": "XXII TRAIL SERRA D'OLTÀ ‐ CALP, 9e. Circuit Trail Marina 26/27",
+          "status": "excluded",
+          "reason": "Fora del radi"
         }
       ]
     }
