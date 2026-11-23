@@ -11,7 +11,7 @@ const env = {...process.env, GITHUB_ACTIONS: 'true', GITHUB_TOKEN: 'local-test',
   GITHUB_REPOSITORY: 'AndreuJG/web_carreres', GITHUB_REF: 'refs/heads/main'};
 const git = (cwd, ...args) => execFileSync('git', args, {cwd, encoding: 'utf8', stdio: 'pipe'}).trim();
 
-for (const path of ['vercel.json', 'data/races.json']) {
+for (const path of ['vercel.json', 'lib/telegram-cron.js', 'lib/races.js', 'data/races.json']) {
   test(`publicació amb un canvi concurrent en ${path}`, t => {
     const root = mkdtempSync(join(tmpdir(), 'publish-races-'));
     t.after(() => rmSync(root, {recursive: true, force: true}));
@@ -24,6 +24,7 @@ for (const path of ['vercel.json', 'data/races.json']) {
       git(editor, '-c', 'user.name=Test', '-c', 'user.email=test@example.com', 'commit', '-m', message);
     };
     mkdirSync(join(editor, 'data'));
+    mkdirSync(join(editor, 'lib'));
     writeFileSync(join(editor, 'data/races.json'), 'baseline');
     writeFileSync(join(editor, 'data/sync-status.json'), 'baseline report');
     commit('baseline');
@@ -38,7 +39,7 @@ for (const path of ['vercel.json', 'data/races.json']) {
     const result = spawnSync(process.execPath, [script], {cwd: bot, env, encoding: 'utf8'});
     git(editor, 'fetch', 'origin');
     assert.equal(git(editor, 'show', `origin/main:${path}`), 'concurrent change');
-    if (path === 'data/races.json') {
+    if (path === 'data/races.json' || path === 'lib/races.js') {
       assert.equal(result.status, 1);
       assert.match(result.stderr, /Han canviat les dades o els lectors/);
       assert.equal(git(editor, 'show', 'origin/main:data/sync-status.json'), 'baseline report');
