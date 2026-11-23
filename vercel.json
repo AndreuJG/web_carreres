@@ -3,6 +3,10 @@
   "framework": null,
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "crons": [
+    { "path": "/api/cron-morning", "schedule": "0 9 * * *" },
+    { "path": "/api/cron-check", "schedule": "0 11 * * *" }
+  ],
   "redirects": [
     {
       "source": "/",

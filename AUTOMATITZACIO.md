@@ -92,3 +92,13 @@ Les fitxes poden tindre una llista opcional `routes` amb modalitat, edició, tip
 ## Canvi de repositori
 
 L’URL del catàleg viu en `lib/catalog.js` i les restriccions de repositori/branca del workflow i del publicador estan fixades a `AndreuJG/web_carreres`, branca `main`. En una còpia del projecte cal canviar-les deliberadament. Si el repositori es fa privat, l’URL pública deixa de ser una via vàlida i cal adaptar el lliurament de les dades.
+
+## Disparador independent de Vercel
+
+Vercel activa update-races.yml cada dia a les 09.00 UTC. Quan acaba, el workflow de Telegram publica el resum. A les 11.00 UTC, una segona tasca comprova la branca telegram-state i reactiva telegram.yml si encara falta el lliurament. En Hobby cada tasca pot començar dins de l’hora programada. A l’hivern correspon a les 10–11 i les 12–13 de València, i a l’estiu a les 11–12 i les 13–14.
+
+La variable secreta de producció GITHUB_DISPATCH_TOKEN necessita un token fine-grained amb accés exclusiu al repositori i permís Actions de lectura i escriptura. La clau CRON_SECRET autentica les peticions automàtiques. Cal redesplegar després de configurar estes variables. El token té caducitat i cal renovar-lo abans que expire.
+
+La ruta /api/telegram-status mostra el dia de l’últim lliurament confirmat. Respon HTTP 503 si no es pot verificar, si hi ha un lliurament incert o si a partir de les 13.00 locals continua faltant el resum. Es pot connectar a un monitor HTTP. Esta ruta publica només l’estat i la data, sense tokens ni contingut dels missatges.
+
+Si la comprovació de Vercel retorna 202, GitHub ha acceptat el disparador. El lliurament es confirma després en telegram-state i en el registre del workflow. Un HTTP 202 no confirma l’enviament a Telegram.
