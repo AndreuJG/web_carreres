@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-23T14:36:52.761Z",
+  "checkedAt": "2026-11-23T14:39:06.469Z",
   "today": "2026-11-23",
   "status": "partial",
   "window": {
@@ -18,6 +18,16 @@
         {
           "label": "sportmaniacs",
           "url": "https://sportmaniacs.com/es/races/san-silvestre-gilet-2026"
+        }
+      ]
+    },
+    {
+      "name": "Mongolia Trail Run",
+      "reason": "Població sense coordenades inequívoces",
+      "sources": [
+        {
+          "label": "runatica",
+          "url": "https://www.runatica.com/event/mongolia-trail-run-2027"
         }
       ]
     },
@@ -200,7 +210,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-23T14:36:52.761Z",
+      "checkedAt": "2026-11-23T14:39:06.469Z",
       "status": "ok",
       "catalogEntries": 15,
       "read": 19,
@@ -447,7 +457,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-23T14:36:52.761Z",
+      "checkedAt": "2026-11-23T14:39:06.469Z",
       "status": "ok",
       "catalogEntries": 22,
       "read": 16,
@@ -696,10 +706,10 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-23T14:36:52.761Z",
+      "checkedAt": "2026-11-23T14:39:06.469Z",
       "status": "ok",
-      "catalogEntries": 13,
-      "read": 13,
+      "catalogEntries": 14,
+      "read": 14,
       "eligible": 4,
       "errors": [],
       "decisions": [
@@ -877,13 +887,26 @@
           "time": "00:00",
           "status": "excluded",
           "reason": "Fora de la província"
+        },
+        {
+          "url": "https://www.runatica.com/event/mongolia-trail-run-2027",
+          "name": "Mongolia Trail Run",
+          "date": "2027-08-01",
+          "town": "Mongolia (Mongolia)",
+          "distances": [
+            90,
+            174
+          ],
+          "time": "08:00",
+          "status": "excluded",
+          "reason": "Població sense coordenades inequívoces"
         }
       ]
     },
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-23T14:36:52.761Z",
+      "checkedAt": "2026-11-23T14:39:06.469Z",
       "status": "partial",
       "catalogEntries": 13,
       "read": 15,
@@ -1069,7 +1092,7 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-23T14:36:52.761Z",
+      "checkedAt": "2026-11-23T14:39:06.469Z",
       "status": "ok",
       "catalogEntries": 20,
       "read": 18,
@@ -1276,7 +1299,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-23T14:36:52.761Z",
+      "checkedAt": "2026-11-23T14:39:06.469Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 2,
@@ -1311,7 +1334,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-23T14:36:52.761Z",
+      "checkedAt": "2026-11-23T14:39:06.469Z",
       "status": "ok",
       "catalogEntries": 7,
       "read": 7,
@@ -1410,7 +1433,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-23T14:36:52.761Z",
+      "checkedAt": "2026-11-23T14:39:06.469Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1568,7 +1591,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-23T14:36:52.761Z",
+      "checkedAt": "2026-11-23T14:39:06.469Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 3,
@@ -1614,7 +1637,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-23T14:36:52.761Z",
+      "checkedAt": "2026-11-23T14:39:06.469Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1649,7 +1672,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-23T14:36:52.761Z",
+      "checkedAt": "2026-11-23T14:39:06.469Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 5,
