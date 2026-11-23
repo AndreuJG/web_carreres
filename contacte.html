@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ca-ES-valencia">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacte · Córrer a prop</title>
+  <meta name="description" content="Contacta amb Córrer a prop per comunicar errors, suggerir carreres o fer una consulta.">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./privacy.js"></script>
+  <script type="module" src="./contacte.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contacte">Anar al formulari</a>
+  <header class="site-header wrap"><a class="brand" href="./">córrer a prop.</a><nav aria-label="Navegació principal"><a href="./#agenda">Agenda</a><a href="./ajuda.html">Ajuda</a></nav></header>
+  <main class="wrap help-content" id="contacte">
+    <h1>Parlem?</h1><p>Has vist alguna dada incorrecta, coneixes una carrera o tens un suggeriment? Escriu-nos.</p>
+    <form id="contact-form" class="contact-form">
+      <label for="contact-name">Nom (opcional)</label><input id="contact-name" name="name" maxlength="100" autocomplete="name">
+      <label for="contact-email">El teu correu, per poder respondre’t</label><input id="contact-email" name="email" type="email" required maxlength="254" autocomplete="email">
+      <label for="contact-message">Missatge</label><textarea id="contact-message" name="message" required minlength="10" maxlength="4000" rows="7"></textarea>
+      <div class="contact-trap" aria-hidden="true"><label for="contact-website">Deixa este camp buit</label><input id="contact-website" name="website" tabindex="-1" autocomplete="off"></div>
+      <p>Utilitzarem les dades només per atendre la consulta. Evita incloure dades sensibles o dades personals d’altres persones. <a href="./privacitat.html">Consulta la informació de privacitat</a>.</p>
+      <button class="primary-button" type="submit">Enviar missatge</button><p id="contact-status" role="status" aria-live="polite"></p>
+    </form>
+    <noscript><p>Activa JavaScript per enviar el formulari.</p></noscript>
+  </main>
+  <footer class="wrap"><a href="./">Tornar a l’agenda</a><a href="./privacitat.html">Privacitat</a><button type="button" data-privacy-settings>Configurar privacitat</button></footer>
+</body>
+</html>
