@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-24T09:27:16.251Z",
+  "checkedAt": "2026-11-24T14:31:53.303Z",
   "today": "2026-11-24",
   "status": "partial",
   "window": {
@@ -9,7 +9,15 @@
     "province": "46",
     "radiusKm": null
   },
-  "changes": [],
+  "changes": [
+    {
+      "kind": "added",
+      "id": "auto-sportmaniacs-784bb1320181",
+      "name": "Santa Ana Trail (Llosa de Ranes) 2027",
+      "url": "https://sportmaniacs.com/es/races/santa-ana-trail-llosa-de-ranes-2027",
+      "source": "sportmaniacs"
+    }
+  ],
   "pending": [
     {
       "name": "SAN SILVESTRE GILET 2026",
@@ -220,7 +228,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-24T09:27:16.251Z",
+      "checkedAt": "2026-11-24T14:31:53.303Z",
       "status": "ok",
       "catalogEntries": 15,
       "read": 19,
@@ -467,11 +475,11 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-24T09:27:16.251Z",
+      "checkedAt": "2026-11-24T14:31:53.303Z",
       "status": "ok",
-      "catalogEntries": 22,
-      "read": 16,
-      "eligible": 12,
+      "catalogEntries": 23,
+      "read": 17,
+      "eligible": 13,
       "errors": [],
       "decisions": [
         {
@@ -640,6 +648,19 @@
           "status": "eligible"
         },
         {
+          "url": "https://sportmaniacs.com/es/races/santa-ana-trail-llosa-de-ranes-2027",
+          "name": "Santa Ana Trail (Llosa de Ranes) 2027",
+          "date": "2027-02-07",
+          "town": "Llosa de Ranes",
+          "distances": [
+            13,
+            20,
+            40
+          ],
+          "time": "08:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://sportmaniacs.com/es/races/circuit-vall-de-sego-carreres-populars-2026",
           "name": "CIRCUIT VALL DE SEGO CARRERES POPULARS 2026",
           "status": "excluded",
@@ -716,7 +737,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-24T09:27:16.251Z",
+      "checkedAt": "2026-11-24T14:31:53.303Z",
       "status": "ok",
       "catalogEntries": 14,
       "read": 14,
@@ -916,7 +937,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-24T09:27:16.251Z",
+      "checkedAt": "2026-11-24T14:31:53.303Z",
       "status": "partial",
       "catalogEntries": 13,
       "read": 15,
@@ -1102,7 +1123,7 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-24T09:27:16.251Z",
+      "checkedAt": "2026-11-24T14:31:53.303Z",
       "status": "ok",
       "catalogEntries": 21,
       "read": 19,
@@ -1319,7 +1340,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-24T09:27:16.251Z",
+      "checkedAt": "2026-11-24T14:31:53.303Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 2,
@@ -1354,7 +1375,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-24T09:27:16.251Z",
+      "checkedAt": "2026-11-24T14:31:53.303Z",
       "status": "ok",
       "catalogEntries": 7,
       "read": 7,
@@ -1453,7 +1474,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-24T09:27:16.251Z",
+      "checkedAt": "2026-11-24T14:31:53.303Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1611,7 +1632,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-24T09:27:16.251Z",
+      "checkedAt": "2026-11-24T14:31:53.303Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 3,
@@ -1657,7 +1678,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-24T09:27:16.251Z",
+      "checkedAt": "2026-11-24T14:31:53.303Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1692,7 +1713,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-24T09:27:16.251Z",
+      "checkedAt": "2026-11-24T14:31:53.303Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 5,
