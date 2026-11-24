@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-23T17:45:50.495Z",
-  "today": "2026-11-23",
+  "checkedAt": "2026-11-24T09:27:16.251Z",
+  "today": "2026-11-24",
   "status": "partial",
   "window": {
-    "after": "2026-11-23",
-    "through": "2027-11-23",
+    "after": "2026-11-24",
+    "through": "2027-11-24",
     "province": "46",
     "radiusKm": null
   },
@@ -88,6 +88,16 @@
         {
           "label": "crono4sports",
           "url": "https://crono4sports.com/evento/xxiii-cursa-popular-penya-real"
+        }
+      ]
+    },
+    {
+      "name": "XIII Volta a peu a Daimús - Mem Fco. Javier Fuster Motos",
+      "reason": "Distància de carrera sense confirmar",
+      "sources": [
+        {
+          "label": "crono4sports",
+          "url": "https://crono4sports.com/evento/xiii-volta-a-peu-a-daimus-mem-fco-javier-fuster-motos"
         }
       ]
     },
@@ -210,7 +220,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-23T17:45:50.495Z",
+      "checkedAt": "2026-11-24T09:27:16.251Z",
       "status": "ok",
       "catalogEntries": 15,
       "read": 19,
@@ -457,7 +467,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-23T17:45:50.495Z",
+      "checkedAt": "2026-11-24T09:27:16.251Z",
       "status": "ok",
       "catalogEntries": 22,
       "read": 16,
@@ -706,7 +716,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-23T17:45:50.495Z",
+      "checkedAt": "2026-11-24T09:27:16.251Z",
       "status": "ok",
       "catalogEntries": 14,
       "read": 14,
@@ -906,7 +916,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-23T17:45:50.495Z",
+      "checkedAt": "2026-11-24T09:27:16.251Z",
       "status": "partial",
       "catalogEntries": 13,
       "read": 15,
@@ -1092,10 +1102,10 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-23T17:45:50.495Z",
+      "checkedAt": "2026-11-24T09:27:16.251Z",
       "status": "ok",
-      "catalogEntries": 20,
-      "read": 18,
+      "catalogEntries": 21,
+      "read": 19,
       "eligible": 2,
       "errors": [],
       "decisions": [
@@ -1177,6 +1187,16 @@
           "time": "09:15",
           "status": "excluded",
           "reason": "Modalitat exclosa o abonament de circuit"
+        },
+        {
+          "url": "https://crono4sports.com/evento/xiii-volta-a-peu-a-daimus-mem-fco-javier-fuster-motos",
+          "name": "XIII Volta a peu a Daimús - Mem Fco. Javier Fuster Motos",
+          "date": "2026-12-27",
+          "town": "Daimús",
+          "distances": [],
+          "time": "09:30",
+          "status": "excluded",
+          "reason": "Distància de carrera sense confirmar"
         },
         {
           "url": "https://crono4sports.com/evento/cnab-primer-bany-de-lany-solidari-2027",
@@ -1299,7 +1319,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-23T17:45:50.495Z",
+      "checkedAt": "2026-11-24T09:27:16.251Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 2,
@@ -1334,7 +1354,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-23T17:45:50.495Z",
+      "checkedAt": "2026-11-24T09:27:16.251Z",
       "status": "ok",
       "catalogEntries": 7,
       "read": 7,
@@ -1433,7 +1453,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-23T17:45:50.495Z",
+      "checkedAt": "2026-11-24T09:27:16.251Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1591,7 +1611,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-23T17:45:50.495Z",
+      "checkedAt": "2026-11-24T09:27:16.251Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 3,
@@ -1637,7 +1657,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-23T17:45:50.495Z",
+      "checkedAt": "2026-11-24T09:27:16.251Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1672,7 +1692,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-23T17:45:50.495Z",
+      "checkedAt": "2026-11-24T09:27:16.251Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 5,
