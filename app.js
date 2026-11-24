@@ -1,3 +1,5 @@
+import {language, locale, t, localize} from './lib/i18n.js';
+import {method as spanishMethod} from './lib/es-pages.js';
 import {createRaceMap} from './lib/map.js';
 import {municipalities} from './lib/municipalities.js';
 import { selectRaces, madridToday, oneYearAfter, matchesDistance, formatDistance, escapeHtml as h, makeCalendar, TYPE_LABELS } from './lib/races.js';
@@ -16,8 +18,8 @@ $('#map-toggle').addEventListener('click', async () => {
     if (mapActive) {raceMap.hide(); mapActive = false;}
     else {await raceMap.show(); mapActive = true;}
     button.setAttribute('aria-expanded', String(mapActive));
-    button.textContent = mapActive ? 'Amagar mapa' : 'Carregar mapa';
-  } catch (error) {console.error('No s’ha pogut obrir el mapa:', error); raceMap.hide(); $('#map-status').textContent = 'No s’ha pogut obrir el mapa. Torna-ho a provar o consulta la llista.';}
+    button.textContent = t(mapActive ? 'Amagar mapa' : 'Carregar mapa');
+  } catch (error) {console.error('No s’ha pogut obrir el mapa:', error); raceMap.hide(); $('#map-status').textContent = t('No s’ha pogut obrir el mapa. Torna-ho a provar o consulta la llista.');}
   finally {button.disabled = false;}
 });
 let saved = [];
@@ -26,13 +28,13 @@ try {
   if (Array.isArray(stored)) saved = stored.filter(id => typeof id === 'string');
 } catch { /* The agenda also works when browser storage is unavailable. */ }
 const date = day => new Date(`${day}T12:00:00Z`);
-const displayDate = (day, options) => date(day).toLocaleDateString('ca-ES', { timeZone: 'Europe/Madrid', ...options });
+const displayDate = (day, options) => date(day).toLocaleDateString(locale, { timeZone: 'Europe/Madrid', ...options });
 const longDate = day => displayDate(day, { day: 'numeric', month: 'long', year: 'numeric' });
-const checkedDate = timestamp => new Date(timestamp).toLocaleString('ca-ES', { timeZone: 'Europe/Madrid', dateStyle: 'short', timeStyle: 'short' });
+const checkedDate = timestamp => new Date(timestamp).toLocaleString(locale, { timeZone: 'Europe/Madrid', dateStyle: 'short', timeStyle: 'short' });
 
 function toast(message) {
   clearTimeout(toastTimer);
-  $('#toast').textContent = message;
+  $('#toast').textContent = t(message);
   $('#toast').classList.add('visible');
   toastTimer = setTimeout(() => $('#toast').classList.remove('visible'), 3500);
 }
@@ -50,6 +52,7 @@ function syncUrl() {
   params.set('radius', state.radius);
   if (state.sort !== 'date') params.set('sort', state.sort);
   if (savedOnly) params.set('saved', '1');
+  if (language === 'es') params.set('lang','es');
   for (const distance of new FormData(form).getAll('distance')) params.append('distance', distance);
   try { history.replaceState(null, '', `${location.pathname}${params.size ? `?${params}` : ''}${location.hash}`); } catch { /* A restrictive embedded preview must not prevent filtering. */ }
 }
@@ -80,8 +83,8 @@ function card(race) {
   const isSaved = saved.includes(race.id);
   return `<article class="race-card" aria-labelledby="title-${h(race.id)}">
     <time class="date-tile" datetime="${race.date}" aria-label="${h(longDate(race.date))}"><span class="weekday">${h(displayDate(race.date, { weekday: 'short' }).replace('.', ''))}</span><strong>${race.date.slice(8)}</strong><span class="month">${h(displayDate(race.date, { month: 'short' }).replace('.', ''))}</span></time>
-    <div><h3 style="margin:0"><button class="race-title" id="title-${h(race.id)}" data-detail="${h(race.id)}">${h(race.name)}</button></h3>
-      <div class="race-info"><span>⌖ ${h(race.town)}</span><span>~${formatDistance(race.proximity)} km de ${h(municipalities.find(town => town.id === $('#origin').value)?.name || 'Catarroja')}</span></div>
+    <div><h3 style="margin:0"><button class="race-title" translate="no" id="title-${h(race.id)}" data-detail="${h(race.id)}">${h(race.name)}</button></h3>
+      <div class="race-info" translate="no"><span>⌖ ${h(race.town)}</span><span>~${formatDistance(race.proximity)} km de ${h(municipalities.find(town => town.id === $('#origin').value)?.name || 'Catarroja')}</span></div>
       <div class="race-tags"><span class="tag tag-${race.type}">${TYPE_LABELS[race.type]}</span><span class="tag verified-tag">✓ Data publicada</span></div></div>
     <div class="race-right"><div class="race-distance">${distanceLabel(race)} <small>km</small></div><button class="detail-link" data-detail="${h(race.id)}" aria-label="Veure detalls de ${h(race.name)}">Veure carrera <span aria-hidden="true">↗</span></button></div>
     <button class="save-button" data-save="${h(race.id)}" aria-label="${isSaved ? 'Llevar de guardades' : 'Guardar'}: ${h(race.name)}" aria-pressed="${isSaved}"><span aria-hidden="true">${isSaved ? '♥' : '♡'}</span></button>
@@ -124,6 +127,7 @@ function render({ updateUrl = true } = {}) {
   $('#sort').options[1].textContent = 'Més prop de ' + origin.name;
   try { localStorage.setItem('correr-a-prop:location', JSON.stringify({origin: origin.id, radius: $('#radius').value})); } catch {}
   raceMap.update(visible, origin, $('#radius').value);
+  localize();
   if (updateUrl) syncUrl();
 }
 
@@ -154,6 +158,7 @@ function toggleSave(id) {
 
 function openDialog(content, raceId = '', show = true) {
   $('#dialog-content').innerHTML = content;
+  localize($('#dialog-content'));
   dialog.dataset.race = raceId;
   if (show && !dialog.open) dialog.showModal();
 }
@@ -179,10 +184,10 @@ function raceRoutes(race) {
 function raceDetails(id, show = true) {
   const race = data.races.find(item => item.id === id);
   if (!race) return;
-  openDialog(`<h2 id="dialog-title">${h(race.name)}</h2><span class="tag tag-${race.type}">${TYPE_LABELS[race.type]}</span>
+  openDialog(`<h2 id="dialog-title" translate="no">${h(race.name)}</h2><span class="tag tag-${race.type}">${TYPE_LABELS[race.type]}</span>
     <div class="dialog-detail-grid"><div><span>Data</span>${h(longDate(race.date))}</div><div><span>Distància</span>${distanceLabel(race)} km</div><div><span>Hora publicada</span>${race.time || 'Pendent de confirmar'}</div><div><span>Població</span>${h(race.town)}</div></div>
     ${raceRoutes(race)}
-    <p><b>Eixida:</b> ${h(race.location)}</p>${race.automaticNote ? `<p class="review-summary">${h(race.automaticNote)}</p>` : ''}<p>${h(race.note)}</p><h3>Fonts d’esta convocatòria</h3><ul>${race.sources.map(source => `<li><a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.label)} ↗</a></li>`).join('')}</ul><p>${race.verification === 'automatic' ? 'Incorporada automàticament' : 'Revisada manualment'} el ${h(longDate(race.verifiedAt))}.${race.automation?.checkedAt ? ` Última consulta automàtica: ${h(checkedDate(race.automation.checkedAt))}.` : ''} Confirma les condicions i els dorsals disponibles a la font.</p>
+    <p><b>Eixida:</b> ${h(race.location)}</p>${race.automaticNote ? `<p class="review-summary" translate="no">${h(race.automaticNote)}</p>` : ''}<p translate="no">${language === 'es' ? '<small>Notas del catálogo (idioma original):</small><br>' : ''}${h(race.note)}</p><h3>Fonts d’esta convocatòria</h3><ul>${race.sources.map(source => `<li><a href="${h(source.url)}" target="_blank" rel="noopener noreferrer">${h(source.label)} ↗</a></li>`).join('')}</ul><p>${race.verification === 'automatic' ? 'Incorporada automàticament' : 'Revisada manualment'} el ${h(longDate(race.verifiedAt))}.${race.automation?.checkedAt ? ` Última consulta automàtica: ${h(checkedDate(race.automation.checkedAt))}.` : ''} Confirma les condicions i els dorsals disponibles a la font.</p>
     <div class="dialog-actions"><a class="primary-button" href="${h(race.url)}" target="_blank" rel="noopener noreferrer">Consultar la convocatòria ↗</a><button class="secondary-button" data-calendar="${h(race.id)}">↓ Afegir al calendari</button><button class="secondary-button" data-save="${h(race.id)}" aria-pressed="${saved.includes(id)}">${saved.includes(id) ? '♥ Guardada' : '♡ Guardar'}</button></div><p style="font-size:10px">El fitxer de calendari guarda el dia complet; els horaris publicats apareixen en la descripció.</p>`, id, show);
 }
 
@@ -205,7 +210,7 @@ function showMethod() {
 
 function downloadCalendar(races) {
   if (!races.length) return;
-  const blob = new Blob([makeCalendar(races)], { type: 'text/calendar;charset=utf-8' });
+  const blob = new Blob([makeCalendar(races, new Date(), language)], { type: 'text/calendar;charset=utf-8' });
   const url = URL.createObjectURL(blob), link = document.createElement('a');
   link.href = url;
   link.download = races.length === 1 ? `${races[0].id}.ics` : 'carreres-catarroja.ics';
@@ -272,6 +277,7 @@ async function init() {
     $('#results-description').textContent = 'Error en carregar les dades';
     $('#race-list').innerHTML = '<div class="empty-state"><h3>No hem pogut preparar l’agenda</h3><p>Comprova la connexió i torna-ho a provar.</p><button class="primary-button" id="retry">Tornar a carregar</button></div>';
     $('#retry').addEventListener('click', () => location.reload());
+    localize();
   }
 }
 init();

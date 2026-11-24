@@ -1,5 +1,7 @@
+import {setupLanguage, localize} from './lib/i18n.js';
 import {CONSENT_KEY, readConsent} from './lib/consent.js';
 
+setupLanguage();
 let storage;
 try {storage = localStorage;} catch { /* Consent remains usable for this page. */ }
 let consent = readConsent(storage), analyticsLoaded = false;
@@ -7,6 +9,7 @@ const path = document.querySelector('meta[name="analytics-script"]')?.content;
 const panel = document.createElement('dialog');
 panel.className = 'privacy-dialog'; panel.setAttribute('aria-labelledby', 'privacy-title');
 panel.innerHTML = `<h2 id="privacy-title">La teua privacitat</h2><p>Guardem en este navegador el poble, el radi i les carreres que tries. L’analítica de visites és opcional: només la carreguem si l’acceptes. Pots usar tota l’agenda encara que la rebutges.</p><p><a href="./privacitat.html">Privacitat i emmagatzematge</a></p><div class="consent-actions"><button type="button" data-consent="false">Rebutjar analítica</button><button type="button" data-consent="true">Acceptar analítica</button></div><button type="button" class="privacy-close">Tancar sense canviar</button>`;
+localize(panel);
 document.body.append(panel);
 function loadAnalytics() {
   if (analyticsLoaded || !consent?.analytics || !/^\/(?:[\w-]+\/)+script\.js$/.test(path || '')) return;

@@ -11,12 +11,12 @@ test('analítica de producció: no hi ha peticions abans d’acceptar i retirar-
   const control = key => ({dataset:{consent:key}, addEventListener:(_,fn)=>handlers.set(key,fn)});
   const panel = {setAttribute(){}, querySelectorAll:()=>[control('false'),control('true')], querySelector:()=>control('close'), showModal(){}, close(){}};
   const context = {
-    CONSENT_KEY, readConsent, Date,
+    CONSENT_KEY, readConsent, Date, setupLanguage(){}, localize(){},
     localStorage:{getItem:key=>store.get(key),setItem:(key,value)=>store.set(key,value)},
     document:{createElement:tag=>tag==='dialog'?panel:{},querySelector:()=>({content:'/_vercel/insights/script.js'}),querySelectorAll:()=>[],body:{append(){}},head:{append:script=>scripts.push(script)}},
     window:{addEventListener(){}},location:{reload(){reloads++;}}
   };
-  const source=(await readFile(new URL('../privacy.js',import.meta.url),'utf8')).replace(/^import[^\n]+\n/,'');
+  const source=(await readFile(new URL('../privacy.js',import.meta.url),'utf8')).replace(/^import[^\n]+\n/gm,'');
   vm.runInNewContext(source,context);
   assert.equal(scripts.length,0);
   handlers.get('false')(); assert.equal(scripts.length,0);
