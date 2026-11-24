@@ -25,11 +25,12 @@ export default async function handler(req, res) {
   limit.count++; buckets.set(ip,limit);
   try {
     const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(recipient)}`, {
-      method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json',Referer:'https://carreresprop.vercel.app/contacte.html',Origin:'https://carreresprop.vercel.app'},
+      method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json','User-Agent':'CorrerAProp/1.0 (+https://carreresprop.vercel.app)',Referer:'https://carreresprop.vercel.app/contacte.html',Origin:'https://carreresprop.vercel.app'},
       body:JSON.stringify({name:body.name?.trim() || 'Visitant',email:body.email.trim(),message:body.message.trim(),_subject:'Contacte · Córrer a prop',_template:'table',_captcha:'false',_url:'https://carreresprop.vercel.app/contacte.html'}),
       signal:AbortSignal.timeout(15000)
     });
-    const result = await response.json();
+    let result;
+    try {result = await response.json();} catch {return res.status(502).json({error:'Delivery not confirmed',providerStatus:response.status});}
     if (!response.ok || ![true,'true'].includes(result.success)) console.error('Contact provider response', response.status, String(result.message || '').replace(/[^\s@]+@[^\s@]+/g, '[email]').slice(0,300));
     if (!response.ok || ![true,'true'].includes(result.success)) return res.status(502).json({error:'Delivery not confirmed'});
     return res.status(200).json({ok:true});
