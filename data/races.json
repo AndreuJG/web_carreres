@@ -777,7 +777,7 @@
       "verifiedAt": "2026-11-23",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "multiesport": {
             "date": "2026-11-28",
@@ -786,7 +786,7 @@
               20
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -818,7 +818,7 @@
       "verifiedAt": "2026-11-09",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "mychip": {
             "date": "2026-11-28",
@@ -827,7 +827,7 @@
               15
             ],
             "location": "Favara; consulta el punt d’eixida en la convocatòria",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       },
@@ -868,7 +868,7 @@
       "note": "Prova del Circuit Camp de Túria. Eixida i meta a l’avinguda de València.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "cronorunner": {
             "date": "2026-11-28",
@@ -877,7 +877,7 @@
               10
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -909,7 +909,7 @@
       "note": "Carreres de 8,5 i 15 km a les 09:30. La caminada de 5,5 km no es compta com a carrera.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "cronorunner": {
             "date": "2026-11-29",
@@ -919,7 +919,7 @@
               15
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -955,7 +955,7 @@
       "note": "Activitat prèvia al marató. Distància aproximada de 5 km.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "vcr": {
             "date": "2026-12-05",
@@ -964,7 +964,7 @@
               5
             ],
             "location": "Passeig de l&#039;Albereda",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           },
           "fdm": {
             "date": "2026-12-05",
@@ -973,7 +973,7 @@
               42.195
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1015,7 +1015,7 @@
       "note": "Proves infantils no competitives, amb distàncies de 300, 600 i 1.200 m segons edat. Eixides escalonades de les 11:00 a les 12:00; consulta la categoria.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "vcr": {
             "date": "2026-12-05",
@@ -1026,7 +1026,7 @@
               1.2
             ],
             "location": "Passeig de l&#039;Albereda 47a",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           },
           "fdm": {
             "date": "2026-12-05",
@@ -1037,7 +1037,7 @@
               1.2
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1071,7 +1071,7 @@
       "verifiedAt": "2026-11-16",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "mychip": {
             "date": "2026-12-06",
@@ -1082,7 +1082,7 @@
               61
             ],
             "location": "Calle del Doctor Nácher",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1122,7 +1122,7 @@
       "note": "La data està publicada. La disponibilitat de dorsals i les eixides per calaixos s’han de consultar amb l’organització.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "vcr": {
             "date": "2026-12-06",
@@ -1131,7 +1131,7 @@
               42.195
             ],
             "location": "Plaça de la Marató",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           },
           "fdm": {
             "date": "2026-12-06",
@@ -1140,7 +1140,7 @@
               42
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       },
@@ -1182,7 +1182,7 @@
       "note": "Carrera principal de 5 km a les 20:00. Les proves infantils comencen a les 17:00 amb distàncies segons edat.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "cronorunner": {
             "date": "2026-12-12",
@@ -1192,7 +1192,7 @@
               5
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       },
@@ -1224,7 +1224,7 @@
       "note": "Carrera de 8 km a les 18:30. L’opció reservada a participants del circuit és la mateixa prova, no una distància addicional.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "sportmaniacs": {
             "date": "2026-12-12",
@@ -1233,7 +1233,7 @@
               8
             ],
             "location": "Tous",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1266,7 +1266,7 @@
       "verifiedAt": "2026-11-23",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "mychip": {
             "date": "2026-12-13",
@@ -1276,7 +1276,7 @@
               21.64
             ],
             "location": "Calle Dr Miguel Vivó",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1308,7 +1308,7 @@
       "note": "Trail de 20 km i Sprint Trail d’11 km, amb eixida publicada a les 09:00.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "sportmaniacs": {
             "date": "2026-12-13",
@@ -1318,7 +1318,7 @@
               20
             ],
             "location": "Algar de Palancia",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1358,7 +1358,7 @@
       "note": "10 km homologats. El reglament deixa el punt exacte d’eixida pendent d’aprovació; consulta’l abans de desplaçar-te.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "vcr": {
             "date": "2026-12-13",
@@ -1367,7 +1367,7 @@
               10
             ],
             "location": "Carrer del Moll de la Duana",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           },
           "fdm": {
             "date": "2026-12-13",
@@ -1376,7 +1376,7 @@
               10
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1407,7 +1407,7 @@
       "note": "Prova de 10 km del Circuit Vall de Segó. L’abonament del circuit no es compta com una altra carrera.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "sportmaniacs": {
             "date": "2026-12-13",
@@ -1416,7 +1416,7 @@
               10
             ],
             "location": "Quart de les Valls",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1456,7 +1456,7 @@
       "note": "Carrera de 10 km. La marxa de 7,2 km és una modalitat diferenciada i no es compta com a carrera.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "sportmaniacs": {
             "date": "2026-12-13",
@@ -1465,7 +1465,7 @@
               10
             ],
             "location": "Picassent",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           },
           "runcancer": {
             "date": "2026-12-13",
@@ -1474,7 +1474,7 @@
               10
             ],
             "location": null,
-            "checkedAt": "2026-11-24T15:49:50.218Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1505,7 +1505,7 @@
       "note": "Carrera principal de 5 km a les 18:00. Infantils de 0,5 i 1 km a les 17:30.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "cronorunner": {
             "date": "2026-12-19",
@@ -1514,7 +1514,7 @@
               5
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1554,7 +1554,7 @@
       "note": "Prova principal de 5 km a les 18:30. Les categories infantils tenen distàncies i horaris propis.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "cronorunner": {
             "date": "2026-12-19",
@@ -1567,7 +1567,7 @@
               5
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1599,7 +1599,7 @@
       "note": "La fitxa publica les 09:30 i categories Quarta (etiquetada 10KM) i Mitja. Consulta la distància exacta de la Quarta i els horaris de cada modalitat amb l’organització.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "rockthesport": {
             "date": "2026-12-20",
@@ -1608,7 +1608,7 @@
               21.0975
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1640,7 +1640,7 @@
       "verifiedAt": "2026-11-25",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "cronorunner": {
             "date": "2026-12-20",
@@ -1649,7 +1649,7 @@
               4.21
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1681,7 +1681,7 @@
       "verifiedAt": "2026-11-23",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "cronorunner": {
             "date": "2026-12-20",
@@ -1690,7 +1690,7 @@
               11.6
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1721,7 +1721,7 @@
       "note": "10K a les 10:00. Les categories infantils i el dorsal zero són opcions diferenciades de la prova principal.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "cronorunner": {
             "date": "2026-12-20",
@@ -1732,7 +1732,7 @@
               10
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1767,7 +1767,7 @@
       "note": "La fitxa de Runática confirma 5 km i eixida a les 10:30.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "runatica": {
             "date": "2026-12-20",
@@ -1776,7 +1776,7 @@
               5
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1808,7 +1808,7 @@
       "verifiedAt": "2026-11-23",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "multiesport": {
             "date": "2026-12-26",
@@ -1817,7 +1817,7 @@
               3.3
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1857,7 +1857,7 @@
       "note": "Carrera de 10 km a les 09:00. La marxa de 3 km ix a les 10:00.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "sportmaniacs": {
             "date": "2026-12-27",
@@ -1866,7 +1866,7 @@
               10
             ],
             "location": "Alcàsser",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           },
           "runcancer": {
             "date": "2026-12-27",
@@ -1875,7 +1875,7 @@
               10
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1907,7 +1907,7 @@
       "note": "Carreres de 10 i 20 km a les 09:00. S’exclou la caminada de 10 km de les 09:02.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "sportmaniacs": {
             "date": "2026-12-27",
@@ -1917,7 +1917,7 @@
               20
             ],
             "location": "Barx; consulta el punt d’eixida en la convocatòria",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1949,7 +1949,7 @@
       "verifiedAt": "2026-11-13",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "sportmaniacs": {
             "date": "2026-12-28",
@@ -1958,7 +1958,7 @@
               5
             ],
             "location": "Albuixech",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -1990,7 +1990,7 @@
       "verifiedAt": "2026-11-19",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "toprun": {
             "date": "2026-12-28",
@@ -1999,7 +1999,7 @@
               5
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2031,7 +2031,7 @@
       "verifiedAt": "2026-11-11",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "cronorunner": {
             "date": "2026-12-29",
@@ -2040,7 +2040,7 @@
               3.08
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2100,7 +2100,7 @@
       "verifiedAt": "2026-11-13",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "runatica": {
             "date": "2026-12-31",
@@ -2111,7 +2111,7 @@
               6
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2143,7 +2143,7 @@
       "note": "Modalitats de 7 i 15 km a les 10:00. Xeraco es troba dins dels 50 km en línia recta des de Catarroja.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-24T15:49:50.218Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "crono4sports": {
             "date": "2027-01-06",
@@ -2153,7 +2153,7 @@
               15
             ],
             "location": null,
-            "checkedAt": "2026-11-24T15:49:50.218Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2187,7 +2187,7 @@
       "verifiedAt": "2026-11-23",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "sportmaniacs": {
             "date": "2027-01-10",
@@ -2198,7 +2198,7 @@
               44
             ],
             "location": "Canals; consulta el punt d’eixida en la convocatòria",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2231,7 +2231,7 @@
       "verifiedAt": "2026-11-23",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "sportmaniacs": {
             "date": "2027-01-10",
@@ -2241,7 +2241,7 @@
               10.6
             ],
             "location": "Sagunto/Sagunt",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2282,7 +2282,7 @@
       "note": "Horaris diferents: 5K a les 08:15 i 10K a les 09:30. El calendari descarregat inclou els dos horaris en la descripció.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "vcr": {
             "date": "2027-01-10",
@@ -2291,7 +2291,7 @@
               10
             ],
             "location": "Passeig de l&#039;Albereda",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           },
           "fdm": {
             "date": "2027-01-10",
@@ -2301,7 +2301,7 @@
               10
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       },
@@ -2343,7 +2343,7 @@
       "verifiedAt": "2026-11-13",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "cronorunner": {
             "date": "2027-01-16",
@@ -2352,7 +2352,7 @@
               5
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2385,7 +2385,7 @@
       "verifiedAt": "2026-11-17",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "cronorunner": {
             "date": "2027-01-17",
@@ -2395,7 +2395,7 @@
               5.8
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2427,7 +2427,7 @@
       "note": "Rodeno Sky de 25 km a les 09:00 i Arrels d’11 km a les 09:30.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "sportmaniacs": {
             "date": "2027-01-17",
@@ -2437,7 +2437,7 @@
               25
             ],
             "location": "Puçol",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       },
@@ -2482,7 +2482,7 @@
       "verifiedAt": "2026-11-13",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "cronorunner": {
             "date": "2027-01-24",
@@ -2494,7 +2494,7 @@
               28
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2525,7 +2525,7 @@
       "note": "XXVIII edició. La plataforma publica data, modalitat 21K i eixida a les 09:30.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "runatica": {
             "date": "2027-01-31",
@@ -2534,7 +2534,7 @@
               21
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2565,7 +2565,7 @@
       "note": "10 km amb eixida publicada a les 10:00.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "multiesport": {
             "date": "2027-01-31",
@@ -2574,7 +2574,7 @@
               10
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2608,7 +2608,7 @@
       "verifiedAt": "2026-11-24",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "sportmaniacs": {
             "date": "2027-02-07",
@@ -2619,7 +2619,7 @@
               40
             ],
             "location": "Llosa de Ranes (la)",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2651,7 +2651,7 @@
       "verifiedAt": "2026-11-23",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "multiesport": {
             "date": "2027-02-07",
@@ -2660,7 +2660,7 @@
               13.5
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2697,7 +2697,7 @@
       "note": "Trail de 21 km a les 09:00, Sprinttrail de 15 km a les 09:15 i iniciació de 10,5 km a les 09:30. S’exclou la marxa de 10,5 km. Consulta l’accés a la base i el reglament de l’edició.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "cronorunner": {
             "date": "2027-02-07",
@@ -2708,7 +2708,7 @@
               21
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2744,7 +2744,7 @@
       "note": "Carrera de categoria femenina amb 10 km homologats. L’edició de 2027 es trasllada al mes de febrer.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "sportmaniacs": {
             "date": "2027-02-21",
@@ -2753,7 +2753,7 @@
               10
             ],
             "location": "Valencia",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           },
           "fdm": {
             "date": "2027-02-21",
@@ -2762,7 +2762,7 @@
               10
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2798,7 +2798,7 @@
       "note": "Modalitats de 21 i 42 km, amb eixida publicada a les 07:00. Confirma els detalls de cada recorregut en el reglament.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "toprun": {
             "date": "2027-02-28",
@@ -2808,7 +2808,7 @@
               42
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2841,7 +2841,7 @@
       "verifiedAt": "2026-11-23",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "runatica": {
             "date": "2027-02-28",
@@ -2851,7 +2851,7 @@
               20
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2882,7 +2882,7 @@
       "note": "La fitxa publica 21.097 metres i eixida a les 10:00.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-24T15:49:50.218Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "crono4sports": {
             "date": "2027-02-28",
@@ -2891,7 +2891,7 @@
               21.097
             ],
             "location": null,
-            "checkedAt": "2026-11-24T15:49:50.218Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2923,7 +2923,7 @@
       "verifiedAt": "2026-11-23",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "multiesport": {
             "date": "2027-03-07",
@@ -2932,7 +2932,7 @@
               20.5
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -2969,7 +2969,7 @@
       "note": "Dos recorreguts publicats: 15 km homologats i 7,5 km.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "vcr": {
             "date": "2027-04-25",
@@ -2979,7 +2979,7 @@
               15
             ],
             "location": "Avinguda de I&#039;Enginyer Manuel Soto 14",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           },
           "fdm": {
             "date": "2027-04-25",
@@ -2989,7 +2989,7 @@
               15
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -3022,7 +3022,7 @@
       "verifiedAt": "2026-11-21",
       "verification": "automatic",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "sportmaniacs": {
             "date": "2027-05-01",
@@ -3032,7 +3032,7 @@
               10
             ],
             "location": "Museros",
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -3068,7 +3068,7 @@
       "note": "Modalitats de 5 i 10 km. Participació per equips d’empresa subjecta a les condicions de l’organització; consulta els requisits i l’eixida de 2027.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "fdm": {
             "date": "2027-05-02",
@@ -3078,7 +3078,7 @@
               10
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -3118,7 +3118,7 @@
       "note": "Data publicada per AIMS. Accés a dorsals amb període de fidelitat i sorteig. Hora pendent de verificar.",
       "verifiedAt": "2026-11-08",
       "automation": {
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "observations": {
           "fdm": {
             "date": "2027-10-24",
@@ -3127,7 +3127,7 @@
               21.0975
             ],
             "location": null,
-            "checkedAt": "2026-11-25T09:27:24.589Z"
+            "checkedAt": "2026-11-25T15:33:36.443Z"
           }
         }
       }
@@ -3161,7 +3161,7 @@
   },
   "manualReviewAt": "2026-11-08",
   "sync": {
-    "checkedAt": "2026-11-25T09:27:24.589Z",
+    "checkedAt": "2026-11-25T15:33:36.443Z",
     "status": "partial",
     "lastSuccessfulAt": "2026-11-14T12:08:39.749Z",
     "sources": [
@@ -3169,7 +3169,7 @@
         "id": "cronorunner",
         "name": "Cronorunner",
         "status": "ok",
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "read": 20,
         "eligible": 13,
         "errors": 0
@@ -3178,7 +3178,7 @@
         "id": "sportmaniacs",
         "name": "Sportmaniacs",
         "status": "ok",
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "read": 17,
         "eligible": 13,
         "errors": 0
@@ -3187,7 +3187,7 @@
         "id": "runatica",
         "name": "Runática",
         "status": "ok",
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "read": 14,
         "eligible": 4,
         "errors": 0
@@ -3196,7 +3196,7 @@
         "id": "multiesport",
         "name": "Multiesport",
         "status": "partial",
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "read": 15,
         "eligible": 5,
         "errors": 1
@@ -3204,17 +3204,17 @@
       {
         "id": "crono4sports",
         "name": "Crono4Sports",
-        "status": "error",
-        "checkedAt": "2026-11-25T09:27:24.589Z",
-        "read": 0,
-        "eligible": 0,
-        "errors": 3
+        "status": "ok",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
+        "read": 20,
+        "eligible": 2,
+        "errors": 0
       },
       {
         "id": "toprun",
         "name": "TopRun",
         "status": "ok",
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "read": 2,
         "eligible": 2,
         "errors": 0
@@ -3223,7 +3223,7 @@
         "id": "vcr",
         "name": "Valencia Ciudad del Running",
         "status": "ok",
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "read": 7,
         "eligible": 6,
         "errors": 0
@@ -3232,7 +3232,7 @@
         "id": "fdm",
         "name": "Fundació Esportiva Municipal",
         "status": "ok",
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "read": 13,
         "eligible": 9,
         "errors": 0
@@ -3240,17 +3240,17 @@
       {
         "id": "runcancer",
         "name": "RunCáncer",
-        "status": "partial",
-        "checkedAt": "2026-11-25T09:27:24.589Z",
-        "read": 1,
-        "eligible": 1,
-        "errors": 3
+        "status": "ok",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
+        "read": 3,
+        "eligible": 2,
+        "errors": 0
       },
       {
         "id": "rockthesport",
         "name": "RockTheSport",
         "status": "ok",
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "read": 2,
         "eligible": 1,
         "errors": 0
@@ -3259,14 +3259,14 @@
         "id": "mychip",
         "name": "Mychip",
         "status": "ok",
-        "checkedAt": "2026-11-25T09:27:24.589Z",
+        "checkedAt": "2026-11-25T15:33:36.443Z",
         "read": 5,
         "eligible": 3,
         "errors": 0
       }
     ],
-    "changes": 1,
-    "pending": 7
+    "changes": 0,
+    "pending": 13
   },
   "automaticPending": [
     {
@@ -3316,6 +3316,66 @@
         {
           "label": "multiesport",
           "url": "https://multiesport.es/event/backyard-borjas-extreme-xativa-2027/"
+        }
+      ]
+    },
+    {
+      "name": "XIX Volta a Peu L'Alqueria de la Comtessa",
+      "reason": "Població sense coordenades inequívoces",
+      "sources": [
+        {
+          "label": "crono4sports",
+          "url": "https://crono4sports.com/evento/xix-volta-a-peu-lalqueria-de-la-comtessa"
+        }
+      ]
+    },
+    {
+      "name": "XIV Cursa popular solidaria Beniarjo",
+      "reason": "Distància de carrera sense confirmar",
+      "sources": [
+        {
+          "label": "crono4sports",
+          "url": "https://crono4sports.com/evento/xiv-cursa-popular-solidaria-beniarjo"
+        }
+      ]
+    },
+    {
+      "name": "XXIII Cursa popular Penya Real",
+      "reason": "Població sense coordenades inequívoces",
+      "sources": [
+        {
+          "label": "crono4sports",
+          "url": "https://crono4sports.com/evento/xxiii-cursa-popular-penya-real"
+        }
+      ]
+    },
+    {
+      "name": "XIII Volta a peu a Daimús - Mem Fco. Javier Fuster Motos",
+      "reason": "Distància de carrera sense confirmar",
+      "sources": [
+        {
+          "label": "crono4sports",
+          "url": "https://crono4sports.com/evento/xiii-volta-a-peu-a-daimus-mem-fco-javier-fuster-motos"
+        }
+      ]
+    },
+    {
+      "name": "KM Vertical Gandia 2027",
+      "reason": "Distància de carrera sense confirmar",
+      "sources": [
+        {
+          "label": "crono4sports",
+          "url": "https://crono4sports.com/evento/km-vertical-gandia-2027"
+        }
+      ]
+    },
+    {
+      "name": "I Mitja Marató i 5K de les platges del sud",
+      "reason": "Distància de carrera sense confirmar",
+      "sources": [
+        {
+          "label": "crono4sports",
+          "url": "https://crono4sports.com/evento/i-mitja-marato-i-5k-de-les-platges-del-sud"
         }
       ]
     },
