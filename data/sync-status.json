@@ -1,15 +1,23 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-24T15:49:50.218Z",
-  "today": "2026-11-24",
+  "checkedAt": "2026-11-25T09:27:24.589Z",
+  "today": "2026-11-25",
   "status": "partial",
   "window": {
-    "after": "2026-11-24",
-    "through": "2027-11-24",
+    "after": "2026-11-25",
+    "through": "2027-11-25",
     "province": "46",
     "radiusKm": null
   },
-  "changes": [],
+  "changes": [
+    {
+      "kind": "added",
+      "id": "auto-cronorunner-26615409ae2d",
+      "name": "VI Sant Silvestre Ciutat de Xirivella",
+      "url": "https://inscripciones.cronorunner.com/evento/vi-sant-silvestre-ciutat-de-xirivella",
+      "source": "cronorunner"
+    }
+  ],
   "pending": [
     {
       "name": "SAN SILVESTRE GILET 2026",
@@ -62,66 +70,6 @@
       ]
     },
     {
-      "name": "XIX Volta a Peu L'Alqueria de la Comtessa",
-      "reason": "Població sense coordenades inequívoces",
-      "sources": [
-        {
-          "label": "crono4sports",
-          "url": "https://crono4sports.com/evento/xix-volta-a-peu-lalqueria-de-la-comtessa"
-        }
-      ]
-    },
-    {
-      "name": "XIV Cursa popular solidaria Beniarjo",
-      "reason": "Distància de carrera sense confirmar",
-      "sources": [
-        {
-          "label": "crono4sports",
-          "url": "https://crono4sports.com/evento/xiv-cursa-popular-solidaria-beniarjo"
-        }
-      ]
-    },
-    {
-      "name": "XXIII Cursa popular Penya Real",
-      "reason": "Població sense coordenades inequívoces",
-      "sources": [
-        {
-          "label": "crono4sports",
-          "url": "https://crono4sports.com/evento/xxiii-cursa-popular-penya-real"
-        }
-      ]
-    },
-    {
-      "name": "XIII Volta a peu a Daimús - Mem Fco. Javier Fuster Motos",
-      "reason": "Distància de carrera sense confirmar",
-      "sources": [
-        {
-          "label": "crono4sports",
-          "url": "https://crono4sports.com/evento/xiii-volta-a-peu-a-daimus-mem-fco-javier-fuster-motos"
-        }
-      ]
-    },
-    {
-      "name": "KM Vertical Gandia 2027",
-      "reason": "Distància de carrera sense confirmar",
-      "sources": [
-        {
-          "label": "crono4sports",
-          "url": "https://crono4sports.com/evento/km-vertical-gandia-2027"
-        }
-      ]
-    },
-    {
-      "name": "I Mitja Marató i 5K de les platges del sud",
-      "reason": "Distància de carrera sense confirmar",
-      "sources": [
-        {
-          "label": "crono4sports",
-          "url": "https://crono4sports.com/evento/i-mitja-marato-i-5k-de-les-platges-del-sud"
-        }
-      ]
-    },
-    {
       "name": "Meeting Maratón València 2027",
       "reason": "Distància de carrera sense confirmar",
       "sources": [
@@ -143,15 +91,6 @@
     }
   ],
   "routePending": [
-    {
-      "raceId": "xeraco-2027",
-      "name": "Volta a Peu Xeraco – Gran Fons Manolo Pardo",
-      "source": "crono4sports",
-      "url": "https://es.wikiloc.com/rutas-carrera/volta-a-peu-xeraco-2020-45219613",
-      "label": "",
-      "sourceUrl": "https://crono4sports.com/evento/xxvi-volta-a-peu-xeraco-gran-fons-manolo-pardo",
-      "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
-    },
     {
       "raceId": "auto-toprun-df6c17898415",
       "name": "XXVI San Silvestre a Rocafort",
@@ -220,11 +159,11 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-24T15:49:50.218Z",
+      "checkedAt": "2026-11-25T09:27:24.589Z",
       "status": "ok",
-      "catalogEntries": 15,
-      "read": 19,
-      "eligible": 12,
+      "catalogEntries": 16,
+      "read": 20,
+      "eligible": 13,
       "errors": [],
       "decisions": [
         {
@@ -437,6 +376,17 @@
           "status": "eligible"
         },
         {
+          "url": "https://inscripciones.cronorunner.com/evento/vi-sant-silvestre-ciutat-de-xirivella",
+          "name": "VI Sant Silvestre Ciutat de Xirivella",
+          "date": "2026-12-20",
+          "town": "Xirivella",
+          "distances": [
+            4.21
+          ],
+          "time": "10:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://inscripciones.cronorunner.com/evento/x-sant-silvestre-ciutat-de-carlet",
           "name": "X Sant Silvestre Ciutat de Carlet",
           "date": "2026-12-28",
@@ -467,7 +417,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-24T15:49:50.218Z",
+      "checkedAt": "2026-11-25T09:27:24.589Z",
       "status": "ok",
       "catalogEntries": 23,
       "read": 17,
@@ -729,7 +679,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-24T15:49:50.218Z",
+      "checkedAt": "2026-11-25T09:27:24.589Z",
       "status": "ok",
       "catalogEntries": 14,
       "read": 14,
@@ -806,7 +756,7 @@
             14,
             22
           ],
-          "time": "09:30",
+          "time": null,
           "status": "excluded",
           "reason": "Fora de la província"
         },
@@ -929,7 +879,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-24T15:49:50.218Z",
+      "checkedAt": "2026-11-25T09:27:24.589Z",
       "status": "partial",
       "catalogEntries": 13,
       "read": 15,
@@ -1115,224 +1065,31 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-24T15:49:50.218Z",
-      "status": "ok",
-      "catalogEntries": 21,
-      "read": 19,
-      "eligible": 2,
-      "errors": [],
-      "decisions": [
+      "checkedAt": "2026-11-25T09:27:24.589Z",
+      "status": "error",
+      "catalogEntries": 0,
+      "read": 0,
+      "eligible": 0,
+      "errors": [
+        {
+          "stage": "catalog",
+          "message": "fetch failed"
+        },
         {
           "url": "https://crono4sports.com/evento/xxvi-volta-a-peu-xeraco-gran-fons-manolo-pardo",
-          "name": "XXVI Volta a peu Xeraco \"GRAN FONS MANOLO PARDO\"",
-          "date": "2027-01-06",
-          "town": "Xeraco",
-          "distances": [
-            7,
-            15
-          ],
-          "time": "10:00",
-          "status": "eligible"
+          "message": "fetch failed"
         },
         {
           "url": "https://crono4sports.com/evento/xxii-media-maraton-de-xativa",
-          "name": "XXII Media maratón de Xàtiva",
-          "date": "2027-02-28",
-          "town": "Xàtiva",
-          "distances": [
-            21.097
-          ],
-          "time": "10:00",
-          "status": "eligible"
-        },
-        {
-          "url": "https://crono4sports.com/evento/xix-volta-a-peu-lalqueria-de-la-comtessa",
-          "name": "XIX Volta a Peu L'Alqueria de la Comtessa",
-          "date": "2026-12-06",
-          "town": "L’ Alqueria de la Comtessa, Valencia",
-          "distances": [],
-          "time": "09:30",
-          "status": "excluded",
-          "reason": "Població sense coordenades inequívoces"
-        },
-        {
-          "url": "https://crono4sports.com/evento/xiv-cursa-popular-solidaria-beniarjo",
-          "name": "XIV Cursa popular solidaria Beniarjo",
-          "date": "2026-12-08",
-          "town": "Beniarjó",
-          "distances": [],
-          "time": "09:30",
-          "status": "excluded",
-          "reason": "Distància de carrera sense confirmar"
-        },
-        {
-          "url": "https://crono4sports.com/evento/marsilvestre-solidaria-2026",
-          "name": "VII MARSILVESTRE SOLIDARIA",
-          "date": "2026-12-12",
-          "town": "Alboraya",
-          "distances": [],
-          "time": "10:30",
-          "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
-        },
-        {
-          "url": "https://crono4sports.com/evento/iv-medieval-xtrem-race-peniscola",
-          "name": "IV Medieval Xtrem Race Peñíscola",
-          "status": "excluded",
-          "reason": "Fora de la província"
-        },
-        {
-          "url": "https://crono4sports.com/evento/xxiii-cursa-popular-penya-real",
-          "name": "XXIII Cursa popular Penya Real",
-          "date": "2026-12-13",
-          "town": "El Real de Gandia, Valencia",
-          "distances": [],
-          "time": "09:30",
-          "status": "excluded",
-          "reason": "Població sense coordenades inequívoces"
-        },
-        {
-          "url": "https://crono4sports.com/evento/travesia-de-navidad-alicante-2026",
-          "name": "Travesía de Navidad Alicante 2026",
-          "date": "2026-12-20",
-          "town": "Alicante",
-          "distances": [],
-          "time": "09:15",
-          "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
-        },
-        {
-          "url": "https://crono4sports.com/evento/xiii-volta-a-peu-a-daimus-mem-fco-javier-fuster-motos",
-          "name": "XIII Volta a peu a Daimús - Mem Fco. Javier Fuster Motos",
-          "date": "2026-12-27",
-          "town": "Daimús",
-          "distances": [],
-          "time": "09:30",
-          "status": "excluded",
-          "reason": "Distància de carrera sense confirmar"
-        },
-        {
-          "url": "https://crono4sports.com/evento/cnab-primer-bany-de-lany-solidari-2027",
-          "name": "CNAB. Primer Bany de l'any solidari 2027",
-          "status": "excluded",
-          "reason": "Modalitat o abonament exclòs"
-        },
-        {
-          "url": "https://crono4sports.com/evento/xxv-travessia-dhivern-al-port-de-gandia",
-          "name": "XXV Travessia d'hivern al Port de Gandia",
-          "date": "2027-01-06",
-          "town": "Gandia",
-          "distances": [],
-          "time": "12:00",
-          "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
-        },
-        {
-          "url": "https://crono4sports.com/evento/km-vertical-gandia-2027",
-          "name": "KM Vertical Gandia 2027",
-          "date": "2027-01-10",
-          "town": "Gandia",
-          "distances": [],
-          "time": "08:45",
-          "status": "excluded",
-          "reason": "Distància de carrera sense confirmar"
-        },
-        {
-          "url": "https://crono4sports.com/evento/ix-medieval-xtrem-race-polop",
-          "name": "IX Medieval Xtrem Race Polop",
-          "date": "2027-02-21",
-          "town": "Polop",
-          "distances": [],
-          "time": "10:00",
-          "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
-        },
-        {
-          "url": "https://crono4sports.com/evento/i-mitja-marato-i-5k-de-les-platges-del-sud",
-          "name": "I Mitja Marató i 5K de les platges del sud",
-          "date": "2027-02-28",
-          "town": "Miramar",
-          "distances": [],
-          "time": "09:00",
-          "status": "excluded",
-          "reason": "Distància de carrera sense confirmar"
-        },
-        {
-          "url": "https://crono4sports.com/evento/talents-hybrid-games-26",
-          "name": "Talents Hybrid Games",
-          "date": "2027-03-13",
-          "town": "L'Olleria",
-          "distances": [],
-          "time": "17:00",
-          "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
-        },
-        {
-          "url": "https://crono4sports.com/evento/monster-race-60",
-          "name": "Monster Race 6.0",
-          "date": "2027-03-14",
-          "town": "Girona",
-          "distances": [],
-          "time": "09:30",
-          "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
-        },
-        {
-          "url": "https://crono4sports.com/evento/tarraco-hybrid-series",
-          "name": "Tarraco Hybrid Series",
-          "date": "2027-04-03",
-          "town": "Tarragona",
-          "distances": [],
-          "time": "08:00",
-          "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
-        },
-        {
-          "url": "https://crono4sports.com/evento/iii-medieval-xtrem-race-alginet",
-          "name": "III Medieval Xtrem Race Alginet",
-          "date": "2027-04-11",
-          "town": "Alginet",
-          "distances": [],
-          "time": "09:30",
-          "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
-        },
-        {
-          "url": "https://crono4sports.com/evento/valhalla-games",
-          "name": "Valhalla Games",
-          "date": "2027-04-17",
-          "town": "Vila-real",
-          "distances": [],
-          "time": "09:00",
-          "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
-        },
-        {
-          "url": "https://crono4sports.com/evento/olympus-race-andorra",
-          "name": "Olympus Race Andorra",
-          "date": "2027-05-01",
-          "town": "Andorra",
-          "distances": [],
-          "time": "09:00",
-          "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
-        },
-        {
-          "url": "https://crono4sports.com/evento/iv-qualis-games",
-          "name": "IV Qualis Games",
-          "date": "2027-09-04",
-          "town": "Novelda",
-          "distances": [],
-          "time": "16:30",
-          "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
+          "message": "fetch failed"
         }
-      ]
+      ],
+      "decisions": []
     },
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-24T15:49:50.218Z",
+      "checkedAt": "2026-11-25T09:27:24.589Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 2,
@@ -1367,7 +1124,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-24T15:49:50.218Z",
+      "checkedAt": "2026-11-25T09:27:24.589Z",
       "status": "ok",
       "catalogEntries": 7,
       "read": 7,
@@ -1466,7 +1223,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-24T15:49:50.218Z",
+      "checkedAt": "2026-11-25T09:27:24.589Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1624,36 +1381,26 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-24T15:49:50.218Z",
-      "status": "ok",
-      "catalogEntries": 2,
-      "read": 3,
-      "eligible": 2,
-      "errors": [],
-      "decisions": [
+      "checkedAt": "2026-11-25T09:27:24.589Z",
+      "status": "partial",
+      "catalogEntries": 0,
+      "read": 1,
+      "eligible": 1,
+      "errors": [
+        {
+          "stage": "catalog",
+          "message": "fetch failed"
+        },
         {
           "url": "https://runcancer.com/events/valencia-2026/",
-          "name": "Valencia",
-          "date": "2026-11-22",
-          "town": "València",
-          "distances": [
-            6
-          ],
-          "time": "08:30",
-          "status": "excluded",
-          "reason": "Fora del període"
+          "message": "fetch failed"
         },
         {
           "url": "https://runcancer.com/events/picassent-2026/",
-          "name": "Picassent",
-          "date": "2026-12-13",
-          "town": "Picassent",
-          "distances": [
-            10
-          ],
-          "time": "10:30",
-          "status": "eligible"
-        },
+          "message": "fetch failed"
+        }
+      ],
+      "decisions": [
         {
           "url": "https://runcancer.com/events/alcasser-2026/",
           "name": "Alcàsser",
@@ -1670,7 +1417,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-24T15:49:50.218Z",
+      "checkedAt": "2026-11-25T09:27:24.589Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1705,7 +1452,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-24T15:49:50.218Z",
+      "checkedAt": "2026-11-25T09:27:24.589Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 5,
