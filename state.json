@@ -1,13 +1,4 @@
 {
-  "catalog": "3e517f160c945cc8b6792f700bf36cc5ff5f3848",
-  "lastSentDay": "2026-11-24",
-  "pending": {
-    "catalog": "0e68fe04c27367b47f5114c16688804e855211ae",
-    "parts": [
-      {
-        "text": "<b>Novetats de Córrer a prop · 25/11/2026</b>\n\n<b>Nova carrera</b> · <a href=\"https://inscripciones.cronorunner.com/evento/vi-sant-silvestre-ciutat-de-xirivella\">VI Sant Silvestre Ciutat de Xirivella</a>\nXirivella · 20/12/2026 · 4,2 km\n\n<b>Nova carrera</b> · <a href=\"https://sportmaniacs.com/es/races/santa-ana-trail-llosa-de-ranes-2027\">Santa Ana Trail (Llosa de Ranes) 2027</a>\nLlosa de Ranes · 07/02/2027 · 13 / 20 / 40 km\n\n<b>Estat de l’actualització</b>\n\nConsulta parcial\n25/11/26 10:27 · hora de València\nFonts amb incidències · Multiesport, Crono4Sports, RunCáncer\n\n<a href=\"https://carreresprop.vercel.app/\">Consulta l’agenda</a>",
-        "messageId": 12
-      }
-    ]
-  }
+  "catalog": "0e68fe04c27367b47f5114c16688804e855211ae",
+  "lastSentDay": "2026-11-25"
 }
