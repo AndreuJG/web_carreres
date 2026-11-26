@@ -1,13 +1,4 @@
 {
-  "catalog": "0e68fe04c27367b47f5114c16688804e855211ae",
-  "lastSentDay": "2026-11-25",
-  "pending": {
-    "catalog": "6d274d7c13cf2add8ee2cc83b4fe28dc8fbf1a1a",
-    "parts": [
-      {
-        "text": "<b>Novetats de Córrer a prop · 26/11/2026</b>\n\n<b>Nova carrera</b> · <a href=\"https://inscripciones.cronorunner.com/evento/14-sant-silvestre-solidaria-alginet\">14ª Sant Silvestre Solidaria Alginet</a>\nAlginet · 31/12/2026 · 0 / 5 km\n\n<b>Estat de l’actualització</b>\n\nConsulta parcial\n26/11/26 10:27 · hora de València\nFonts amb incidències · Multiesport\n\n<a href=\"https://carreresprop.vercel.app/\">Consulta l’agenda</a>",
-        "inFlight": true
-      }
-    ]
-  }
+  "catalog": "6d274d7c13cf2add8ee2cc83b4fe28dc8fbf1a1a",
+  "lastSentDay": "2026-11-26"
 }
