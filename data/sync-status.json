@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-26T10:00:08.455Z",
+  "checkedAt": "2026-11-26T15:08:23.443Z",
   "today": "2026-11-26",
   "status": "ok",
   "window": {
@@ -230,7 +230,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-26T10:00:08.455Z",
+      "checkedAt": "2026-11-26T15:08:23.443Z",
       "status": "ok",
       "catalogEntries": 18,
       "read": 22,
@@ -513,11 +513,11 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-26T10:00:08.455Z",
+      "checkedAt": "2026-11-26T15:08:23.443Z",
       "status": "ok",
-      "catalogEntries": 24,
-      "read": 17,
-      "eligible": 13,
+      "catalogEntries": 25,
+      "read": 18,
+      "eligible": 14,
       "errors": [],
       "decisions": [
         {
@@ -715,6 +715,17 @@
           "reason": "Distància de carrera sense confirmar"
         },
         {
+          "url": "https://sportmaniacs.com/es/races/pas-ras-2026",
+          "name": "Pas Ras 2026",
+          "date": "2026-12-13",
+          "town": "València",
+          "distances": [
+            10
+          ],
+          "time": "09:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://sportmaniacs.com/es/races/san-silvestre-onda-2026",
           "name": "SAN SILVESTRE ONDA 2026",
           "status": "excluded",
@@ -781,7 +792,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-26T10:00:08.455Z",
+      "checkedAt": "2026-11-26T15:08:23.443Z",
       "status": "ok",
       "catalogEntries": 14,
       "read": 14,
@@ -981,7 +992,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-26T10:00:08.455Z",
+      "checkedAt": "2026-11-26T15:08:23.443Z",
       "status": "ok",
       "catalogEntries": 13,
       "read": 16,
@@ -1174,7 +1185,7 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-26T10:00:08.455Z",
+      "checkedAt": "2026-11-26T15:08:23.443Z",
       "status": "ok",
       "catalogEntries": 22,
       "read": 20,
@@ -1401,7 +1412,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-26T10:00:08.455Z",
+      "checkedAt": "2026-11-26T15:08:23.443Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 2,
@@ -1436,7 +1447,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-26T10:00:08.455Z",
+      "checkedAt": "2026-11-26T15:08:23.443Z",
       "status": "ok",
       "catalogEntries": 7,
       "read": 7,
@@ -1535,7 +1546,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-26T10:00:08.455Z",
+      "checkedAt": "2026-11-26T15:08:23.443Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1693,7 +1704,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-26T10:00:08.455Z",
+      "checkedAt": "2026-11-26T15:08:23.443Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 3,
@@ -1739,7 +1750,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-26T10:00:08.455Z",
+      "checkedAt": "2026-11-26T15:08:23.443Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1774,7 +1785,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-26T10:00:08.455Z",
+      "checkedAt": "2026-11-26T15:08:23.443Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 5,
