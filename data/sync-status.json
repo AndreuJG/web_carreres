@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-26T09:27:27.701Z",
+  "checkedAt": "2026-11-26T09:45:25.634Z",
   "today": "2026-11-26",
   "status": "partial",
   "window": {
@@ -9,15 +9,7 @@
     "province": "46",
     "radiusKm": null
   },
-  "changes": [
-    {
-      "kind": "added",
-      "id": "auto-cronorunner-5aa20cfd807f",
-      "name": "14ª Sant Silvestre Solidaria Alginet",
-      "url": "https://inscripciones.cronorunner.com/evento/14-sant-silvestre-solidaria-alginet",
-      "source": "cronorunner"
-    }
-  ],
+  "changes": [],
   "pending": [
     {
       "name": "VIII Trail Kids 3 Pics Vilamarxant",
@@ -238,7 +230,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-26T09:27:27.701Z",
+      "checkedAt": "2026-11-26T09:45:25.634Z",
       "status": "ok",
       "catalogEntries": 18,
       "read": 22,
@@ -416,6 +408,18 @@
           "status": "eligible"
         },
         {
+          "url": "https://inscripciones.cronorunner.com/evento/14-sant-silvestre-solidaria-alginet",
+          "name": "14ª Sant Silvestre Solidaria Alginet",
+          "date": "2026-12-31",
+          "town": "Alginet",
+          "distances": [
+            0.001,
+            5
+          ],
+          "time": "18:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://inscripciones.cronorunner.com/evento/sant-roquense-2027",
           "name": "Sant Roquense 2027",
           "date": "2027-01-16",
@@ -476,18 +480,6 @@
           "reason": "Modalitat exclosa o abonament de circuit"
         },
         {
-          "url": "https://inscripciones.cronorunner.com/evento/14-sant-silvestre-solidaria-alginet",
-          "name": "14ª Sant Silvestre Solidaria Alginet",
-          "date": "2026-12-31",
-          "town": "Alginet",
-          "distances": [
-            0.001,
-            5
-          ],
-          "time": "18:00",
-          "status": "eligible"
-        },
-        {
           "url": "https://inscripciones.cronorunner.com/evento/trailkids",
           "name": "VIII Trail Kids 3 Pics Vilamarxant",
           "date": "2027-01-23",
@@ -521,7 +513,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-26T09:27:27.701Z",
+      "checkedAt": "2026-11-26T09:45:25.634Z",
       "status": "ok",
       "catalogEntries": 24,
       "read": 17,
@@ -789,7 +781,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-26T09:27:27.701Z",
+      "checkedAt": "2026-11-26T09:45:25.634Z",
       "status": "ok",
       "catalogEntries": 14,
       "read": 14,
@@ -989,7 +981,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-26T09:27:27.701Z",
+      "checkedAt": "2026-11-26T09:45:25.634Z",
       "status": "partial",
       "catalogEntries": 13,
       "read": 15,
@@ -1175,7 +1167,7 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-26T09:27:27.701Z",
+      "checkedAt": "2026-11-26T09:45:25.634Z",
       "status": "ok",
       "catalogEntries": 22,
       "read": 20,
@@ -1402,7 +1394,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-26T09:27:27.701Z",
+      "checkedAt": "2026-11-26T09:45:25.634Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 2,
@@ -1437,7 +1429,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-26T09:27:27.701Z",
+      "checkedAt": "2026-11-26T09:45:25.634Z",
       "status": "ok",
       "catalogEntries": 7,
       "read": 7,
@@ -1536,7 +1528,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-26T09:27:27.701Z",
+      "checkedAt": "2026-11-26T09:45:25.634Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1694,7 +1686,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-26T09:27:27.701Z",
+      "checkedAt": "2026-11-26T09:45:25.634Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 3,
@@ -1740,7 +1732,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-26T09:27:27.701Z",
+      "checkedAt": "2026-11-26T09:45:25.634Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1775,7 +1767,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-26T09:27:27.701Z",
+      "checkedAt": "2026-11-26T09:45:25.634Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 5,
