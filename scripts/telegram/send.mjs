@@ -1,5 +1,6 @@
 import {execFileSync} from 'node:child_process';
-import {appendFileSync} from 'node:fs';
+import {appendFileSync, mkdirSync, writeFileSync} from 'node:fs';
+import {publishStateCommit} from './publish-state.mjs';
 import {madridToday} from '../../lib/races.js';
 import {dailyDeliveryDecision, dailyMessages, deliverDigest, raceNews, sendMessage} from './digest.mjs';
 
@@ -59,13 +60,19 @@ function report(message) {
 }
 
 function save(value) {
+  mkdirSync('reports', {recursive: true});
+  writeFileSync('reports/telegram-state.json', JSON.stringify(value, null, 2) + '\n');
   const blob = git(['hash-object', '-w', '--stdin'], {input: JSON.stringify(value, null, 2) + '\n'});
   const tree = git(['mktree'], {input: `100644 blob ${blob}\tstate.json\n`});
   const parents = stateCommit ? ['-p', stateCommit] : [];
   const commit = git(['-c', 'user.name=github-actions[bot]', '-c',
     'user.email=41898282+github-actions[bot]@users.noreply.github.com',
     'commit-tree', tree, ...parents, '-m', 'Update Telegram delivery state']);
-  remote(['push', 'origin', `${commit}:${branch}`]);
+  publishStateCommit({commit, parent:stateCommit || '',
+    push: id => remote(['push', 'origin', `${id}:${branch}`]),
+    readHead: () => remote(['ls-remote','origin',branch]).split(/\s/)[0],
+    sleep: ms => Atomics.wait(new Int32Array(new SharedArrayBuffer(4)),0,0,ms)
+  });
   stateCommit = commit;
 }
 
