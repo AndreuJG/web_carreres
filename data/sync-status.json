@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-26T09:45:25.634Z",
+  "checkedAt": "2026-11-26T10:00:08.455Z",
   "today": "2026-11-26",
-  "status": "partial",
+  "status": "ok",
   "window": {
     "after": "2026-11-26",
     "through": "2027-11-26",
@@ -230,7 +230,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-26T09:45:25.634Z",
+      "checkedAt": "2026-11-26T10:00:08.455Z",
       "status": "ok",
       "catalogEntries": 18,
       "read": 22,
@@ -513,7 +513,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-26T09:45:25.634Z",
+      "checkedAt": "2026-11-26T10:00:08.455Z",
       "status": "ok",
       "catalogEntries": 24,
       "read": 17,
@@ -781,7 +781,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-26T09:45:25.634Z",
+      "checkedAt": "2026-11-26T10:00:08.455Z",
       "status": "ok",
       "catalogEntries": 14,
       "read": 14,
@@ -981,17 +981,12 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-26T09:45:25.634Z",
-      "status": "partial",
+      "checkedAt": "2026-11-26T10:00:08.455Z",
+      "status": "ok",
       "catalogEntries": 13,
-      "read": 15,
+      "read": 16,
       "eligible": 5,
-      "errors": [
-        {
-          "url": "https://multiesport.es/event/2026-xxxx-pujada-al-castell-volta-a-peu-xativa/",
-          "message": "Resposta massa gran"
-        }
-      ],
+      "errors": [],
       "decisions": [
         {
           "url": "https://multiesport.es/event/2026-ii-5k-miguel-rubio/",
@@ -1002,6 +997,18 @@
             5
           ],
           "time": "09:30",
+          "status": "excluded",
+          "reason": "Fora del període"
+        },
+        {
+          "url": "https://multiesport.es/event/2026-xxxx-pujada-al-castell-volta-a-peu-xativa/",
+          "name": "2026 – XL PUJADA AL CASTELL (VOLTA A PEU XATIVA)",
+          "date": "2026-11-15",
+          "town": "Xàtiva",
+          "distances": [
+            10
+          ],
+          "time": "10:00",
           "status": "excluded",
           "reason": "Fora del període"
         },
@@ -1167,7 +1174,7 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-26T09:45:25.634Z",
+      "checkedAt": "2026-11-26T10:00:08.455Z",
       "status": "ok",
       "catalogEntries": 22,
       "read": 20,
@@ -1394,7 +1401,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-26T09:45:25.634Z",
+      "checkedAt": "2026-11-26T10:00:08.455Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 2,
@@ -1429,7 +1436,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-26T09:45:25.634Z",
+      "checkedAt": "2026-11-26T10:00:08.455Z",
       "status": "ok",
       "catalogEntries": 7,
       "read": 7,
@@ -1528,7 +1535,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-26T09:45:25.634Z",
+      "checkedAt": "2026-11-26T10:00:08.455Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1686,7 +1693,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-26T09:45:25.634Z",
+      "checkedAt": "2026-11-26T10:00:08.455Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 3,
@@ -1732,7 +1739,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-26T09:45:25.634Z",
+      "checkedAt": "2026-11-26T10:00:08.455Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1767,7 +1774,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-26T09:45:25.634Z",
+      "checkedAt": "2026-11-26T10:00:08.455Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 5,
