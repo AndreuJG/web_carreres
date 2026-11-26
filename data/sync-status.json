@@ -1,16 +1,34 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-25T15:33:36.443Z",
-  "today": "2026-11-25",
+  "checkedAt": "2026-11-26T09:27:27.701Z",
+  "today": "2026-11-26",
   "status": "partial",
   "window": {
-    "after": "2026-11-25",
-    "through": "2027-11-25",
+    "after": "2026-11-26",
+    "through": "2027-11-26",
     "province": "46",
     "radiusKm": null
   },
-  "changes": [],
+  "changes": [
+    {
+      "kind": "added",
+      "id": "auto-cronorunner-5aa20cfd807f",
+      "name": "14ª Sant Silvestre Solidaria Alginet",
+      "url": "https://inscripciones.cronorunner.com/evento/14-sant-silvestre-solidaria-alginet",
+      "source": "cronorunner"
+    }
+  ],
   "pending": [
+    {
+      "name": "VIII Trail Kids 3 Pics Vilamarxant",
+      "reason": "Població sense coordenades inequívoces",
+      "sources": [
+        {
+          "label": "cronorunner",
+          "url": "https://inscripciones.cronorunner.com/evento/trailkids"
+        }
+      ]
+    },
     {
       "name": "SAN SILVESTRE GILET 2026",
       "reason": "Distància de carrera sense confirmar",
@@ -220,11 +238,11 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-25T15:33:36.443Z",
+      "checkedAt": "2026-11-26T09:27:27.701Z",
       "status": "ok",
-      "catalogEntries": 16,
-      "read": 20,
-      "eligible": 13,
+      "catalogEntries": 18,
+      "read": 22,
+      "eligible": 14,
       "errors": [],
       "decisions": [
         {
@@ -458,6 +476,31 @@
           "reason": "Modalitat exclosa o abonament de circuit"
         },
         {
+          "url": "https://inscripciones.cronorunner.com/evento/14-sant-silvestre-solidaria-alginet",
+          "name": "14ª Sant Silvestre Solidaria Alginet",
+          "date": "2026-12-31",
+          "town": "Alginet",
+          "distances": [
+            0.001,
+            5
+          ],
+          "time": "18:00",
+          "status": "eligible"
+        },
+        {
+          "url": "https://inscripciones.cronorunner.com/evento/trailkids",
+          "name": "VIII Trail Kids 3 Pics Vilamarxant",
+          "date": "2027-01-23",
+          "town": "les rodanes",
+          "distances": [
+            0.15,
+            2
+          ],
+          "time": "16:00",
+          "status": "excluded",
+          "reason": "Població sense coordenades inequívoces"
+        },
+        {
           "url": "https://inscripciones.cronorunner.com/evento/ii-8k-sant-antoni-de-fortaleny",
           "name": "II 8K Sant Antoni de Fortaleny",
           "date": "2027-01-24",
@@ -478,7 +521,7 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-25T15:33:36.443Z",
+      "checkedAt": "2026-11-26T09:27:27.701Z",
       "status": "ok",
       "catalogEntries": 24,
       "read": 17,
@@ -746,7 +789,7 @@
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-25T15:33:36.443Z",
+      "checkedAt": "2026-11-26T09:27:27.701Z",
       "status": "ok",
       "catalogEntries": 14,
       "read": 14,
@@ -946,7 +989,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-25T15:33:36.443Z",
+      "checkedAt": "2026-11-26T09:27:27.701Z",
       "status": "partial",
       "catalogEntries": 13,
       "read": 15,
@@ -1132,7 +1175,7 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-25T15:33:36.443Z",
+      "checkedAt": "2026-11-26T09:27:27.701Z",
       "status": "ok",
       "catalogEntries": 22,
       "read": 20,
@@ -1255,6 +1298,16 @@
           "reason": "Distància de carrera sense confirmar"
         },
         {
+          "url": "https://crono4sports.com/evento/triple3-fitness",
+          "name": "Triple3 Fitness",
+          "date": "2027-02-13",
+          "town": "Onda",
+          "distances": [],
+          "time": "08:00",
+          "status": "excluded",
+          "reason": "Modalitat exclosa o abonament de circuit"
+        },
+        {
           "url": "https://crono4sports.com/evento/ix-medieval-xtrem-race-polop",
           "name": "IX Medieval Xtrem Race Polop",
           "date": "2027-02-21",
@@ -1335,16 +1388,6 @@
           "reason": "Modalitat exclosa o abonament de circuit"
         },
         {
-          "url": "https://crono4sports.com/evento/invader-race",
-          "name": "Invader race",
-          "date": "2027-06-12",
-          "town": "Sant Pere de Riudebitlles",
-          "distances": [],
-          "time": "08:30",
-          "status": "excluded",
-          "reason": "Modalitat exclosa o abonament de circuit"
-        },
-        {
           "url": "https://crono4sports.com/evento/iv-qualis-games",
           "name": "IV Qualis Games",
           "date": "2027-09-04",
@@ -1359,7 +1402,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-25T15:33:36.443Z",
+      "checkedAt": "2026-11-26T09:27:27.701Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 2,
@@ -1394,7 +1437,7 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-25T15:33:36.443Z",
+      "checkedAt": "2026-11-26T09:27:27.701Z",
       "status": "ok",
       "catalogEntries": 7,
       "read": 7,
@@ -1493,7 +1536,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-25T15:33:36.443Z",
+      "checkedAt": "2026-11-26T09:27:27.701Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1651,7 +1694,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-25T15:33:36.443Z",
+      "checkedAt": "2026-11-26T09:27:27.701Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 3,
@@ -1697,7 +1740,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-25T15:33:36.443Z",
+      "checkedAt": "2026-11-26T09:27:27.701Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1732,7 +1775,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-25T15:33:36.443Z",
+      "checkedAt": "2026-11-26T09:27:27.701Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 5,
