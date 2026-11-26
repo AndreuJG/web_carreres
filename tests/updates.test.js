@@ -30,6 +30,8 @@ test('el resum diari confirma els dies sense novetats i indica consultes parcial
   const [partial] = dailyMessages([], date, {...sync, status: 'partial', sources: [{name: 'Multiesport', status: 'partial'}]});
   assert.match(partial, /Consulta parcial/);
   assert.match(partial, /Multiesport/);
+  const [detail] = dailyMessages([], date, {...sync,status:'partial',sources:[{name:'Multiesport',status:'partial',errors:1,read:15}]});
+  assert.match(detail,/Multiesport \(1 incidència; 15 fitxes llegides\)/);
   assert.match(dailyMessages([], '2026-11-14', sync)[0], /Pendent d’una consulta de hui/);
   assert.match(dailyMessages([], date, undefined)[0], /Estat de consulta desconegut/);
 });

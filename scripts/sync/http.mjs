@@ -9,6 +9,8 @@ export function createClient({fetchImpl=fetch,timeout=20000,retries=2}={}) {
     const key=`${options.method||'GET'} ${url.href} ${options.body||''}`;
     if(cache.has(key))return cache.get(key);
     const promise=(async()=>{
+      // Some Multiesport event pages embed more than 6 MB of page-builder data.
+      const maxBytes = url.hostname === 'multiesport.es' ? 8000000 : 6000000;
       for(let attempt=0;attempt<=retries;attempt++){
         try {
           const response=await fetchImpl(url,{...options,redirect:'manual',headers:{'User-Agent':'CorrerAProp/1.0 (+https://github.com/AndreuJG/web_carreres)','Accept':'text/html,application/json;q=0.9',...(jars.has(url.origin)?{Cookie:jars.get(url.origin)}:{}),...options.headers},signal:AbortSignal.timeout(timeout)});
@@ -22,12 +24,23 @@ export function createClient({fetchImpl=fetch,timeout=20000,retries=2}={}) {
           }
           if(!response.ok)throw Error(`HTTP ${response.status} en ${url.hostname}${url.pathname}`);
           const length=Number(response.headers.get('content-length')||0);
-          if(length>6000000)throw Error('Resposta massa gran');
-          const text=await response.text();
-          if(text.length>6000000)throw Error('Resposta massa gran');
+          if(length>maxBytes) {await response.body?.cancel();throw Error('Resposta massa gran');}
+          let text;
+          if(response.body?.getReader){
+            const reader=response.body.getReader(),decoder=new TextDecoder(),chunks=[];
+            let bytes=0;
+            while(true){
+              const {done,value}=await reader.read();if(done)break;
+              bytes+=value.byteLength;
+              if(bytes>maxBytes){await reader.cancel();throw Error('Resposta massa gran');}
+              chunks.push(decoder.decode(value,{stream:true}));
+            }
+            text=chunks.join('')+decoder.decode();
+          }else text=await response.text();
+          if(Buffer.byteLength(text,'utf8')>maxBytes)throw Error('Resposta massa gran');
           return {text,url:response.url||url.href,json:()=>JSON.parse(text)};
         }catch(error){
-          if(attempt===retries || /HTTP 4(?!29)/.test(error.message))throw error;
+          if(attempt===retries || /HTTP 4(?!29)|Resposta massa gran/.test(error.message))throw error;
           await new Promise(resolve=>setTimeout(resolve,500*(attempt+1)));
         }
       }

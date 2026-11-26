@@ -77,7 +77,10 @@ export function dailyMessages(news, today, sync) {
     timeZone: 'Europe/Madrid', dateStyle: 'short', timeStyle: 'short'
   }).format(checked) + ' · hora de València');
   if (!current) details.push('Pendent d’una consulta de hui.');
-  const failures = (sync?.sources || []).filter(source => source.status !== 'ok').map(source => source.name);
+  const failures = (sync?.sources || []).filter(source => source.status !== 'ok').map(source =>
+    Number.isInteger(source.errors) && source.errors > 0
+      ? `${source.name} (${source.errors} ${source.errors === 1 ? 'incidència' : 'incidències'}${Number.isInteger(source.read) ? `; ${source.read} fitxes llegides` : ''})`
+      : source.name);
   if (failures.length) details.push('Fonts amb incidències · ' + failures.join(', '));
   const heading = messages.length ? '<b>Estat de l’actualització</b>'
     : `<b>Resum diari de Córrer a prop · ${dayLabel(today)}</b>\n\nHui no hi ha novetats detectades en l’agenda.`;
