@@ -1,15 +1,23 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-26T15:08:23.443Z",
-  "today": "2026-11-26",
+  "checkedAt": "2026-11-27T09:27:16.430Z",
+  "today": "2026-11-27",
   "status": "ok",
   "window": {
-    "after": "2026-11-26",
-    "through": "2027-11-26",
+    "after": "2026-11-27",
+    "through": "2027-11-27",
     "province": "46",
     "radiusKm": null
   },
-  "changes": [],
+  "changes": [
+    {
+      "kind": "added",
+      "id": "auto-sportmaniacs-afccd9b61991",
+      "name": "ADT TRAIL ALBALAT DELS TARONGERS 2027",
+      "url": "https://sportmaniacs.com/es/races/adt-trail-albalat-dels-tarongers-2027",
+      "source": "sportmaniacs"
+    }
+  ],
   "pending": [
     {
       "name": "VIII Trail Kids 3 Pics Vilamarxant",
@@ -38,16 +46,6 @@
         {
           "label": "runatica",
           "url": "https://www.runatica.com/event/mongolia-trail-run-2027"
-        }
-      ]
-    },
-    {
-      "name": "GALA FINAL CIRCUIT VALL ALBAIDA 2026",
-      "reason": "Distància de carrera sense confirmar",
-      "sources": [
-        {
-          "label": "multiesport",
-          "url": "https://multiesport.es/event/gala-final-circuit-vall-albaida-2026/"
         }
       ]
     },
@@ -128,6 +126,26 @@
         {
           "label": "crono4sports",
           "url": "https://crono4sports.com/evento/i-mitja-marato-i-5k-de-les-platges-del-sud"
+        }
+      ]
+    },
+    {
+      "name": "San Silvestre Solidaria Carpesa",
+      "reason": "Distància de carrera sense confirmar",
+      "sources": [
+        {
+          "label": "vcr",
+          "url": "https://www.valenciaciudaddelrunning.com/evento/san-silvestre-solidaria-carpesa/"
+        }
+      ]
+    },
+    {
+      "name": "San Silvestre Valencia 2026",
+      "reason": "Distància de carrera sense confirmar",
+      "sources": [
+        {
+          "label": "vcr",
+          "url": "https://www.valenciaciudaddelrunning.com/evento/san-silvestre-valencia/"
         }
       ]
     },
@@ -220,8 +238,8 @@
       "raceId": "mini-marato-2026",
       "name": "Mini Marató València MSC",
       "source": "vcr",
-      "url": "https://www.valenciaciudaddelrunning.com/maraton/recorrido-maraton/",
-      "label": "consulta el circuito",
+      "url": "https://www.valenciaciudaddelrunning.com/segmento-zalando-ultimo-impulso-maraton-valencia-llegar-meta/",
+      "label": "<img loading=\"lazy\" width=\"300\" height=\"212\" src=\"https://cdn1.valenciaciudaddelrunning.com/wp-content/uploads/2026/11/af_plano-zona-zalando-300x212.jpg\" class=\"attachment-medium size-medium wp-image-241978\" alt=\"Segmento Zalando Maratón Valencia\" decoding=\"async\" srcset=\"https://cdn1.valenciaciudaddelrunning.com/wp-content/uploads/2026/11/af_plano-zona-zalando-300x212.jpg 300w, https://cdn1.valenciaciudaddelrunning.com/wp-content/uploads/2026/11/af_plano-zona-zalando-1024x724.jpg 1024w, https://cdn1.valenciaciudaddelrunning.com/wp-content/uploads/2026/11/af_plano-zona-zalando-768x543.jpg 768w, https://cdn1.valenciaciudaddelrunning.com/wp-content/uploads/2026/11/af_plano-zona-zalando-scaled.jpg 2048w\" sizes=\"100vw\" />",
       "sourceUrl": "https://www.valenciaciudaddelrunning.com/maraton/maraton/",
       "reason": "Cal confirmar l’edició, la modalitat o el tipus de recorregut"
     }
@@ -230,7 +248,7 @@
     {
       "id": "cronorunner",
       "name": "Cronorunner",
-      "checkedAt": "2026-11-26T15:08:23.443Z",
+      "checkedAt": "2026-11-27T09:27:16.430Z",
       "status": "ok",
       "catalogEntries": 18,
       "read": 22,
@@ -513,11 +531,11 @@
     {
       "id": "sportmaniacs",
       "name": "Sportmaniacs",
-      "checkedAt": "2026-11-26T15:08:23.443Z",
+      "checkedAt": "2026-11-27T09:27:16.430Z",
       "status": "ok",
-      "catalogEntries": 25,
-      "read": 18,
-      "eligible": 14,
+      "catalogEntries": 27,
+      "read": 19,
+      "eligible": 15,
       "errors": [],
       "decisions": [
         {
@@ -565,6 +583,17 @@
           "distances": [
             11,
             20
+          ],
+          "time": "09:00",
+          "status": "eligible"
+        },
+        {
+          "url": "https://sportmaniacs.com/es/races/pas-ras-2026",
+          "name": "Pas Ras 2026",
+          "date": "2026-12-13",
+          "town": "València",
+          "distances": [
+            10
           ],
           "time": "09:00",
           "status": "eligible"
@@ -699,6 +728,18 @@
           "status": "eligible"
         },
         {
+          "url": "https://sportmaniacs.com/es/races/adt-trail-albalat-dels-tarongers-2027",
+          "name": "ADT TRAIL ALBALAT DELS TARONGERS 2027",
+          "date": "2027-01-31",
+          "town": "Albalat dels Tarongers",
+          "distances": [
+            11,
+            21
+          ],
+          "time": "09:00",
+          "status": "eligible"
+        },
+        {
           "url": "https://sportmaniacs.com/es/races/circuit-vall-de-sego-carreres-populars-2026",
           "name": "CIRCUIT VALL DE SEGO CARRERES POPULARS 2026",
           "status": "excluded",
@@ -713,17 +754,6 @@
           "time": null,
           "status": "excluded",
           "reason": "Distància de carrera sense confirmar"
-        },
-        {
-          "url": "https://sportmaniacs.com/es/races/pas-ras-2026",
-          "name": "Pas Ras 2026",
-          "date": "2026-12-13",
-          "town": "València",
-          "distances": [
-            10
-          ],
-          "time": "09:00",
-          "status": "eligible"
         },
         {
           "url": "https://sportmaniacs.com/es/races/san-silvestre-onda-2026",
@@ -786,13 +816,19 @@
           "name": "XXI VOLTA A PEU LA VALL D'ALBA (3 PUJADES A L'ERMITA)",
           "status": "excluded",
           "reason": "Fora de la província"
+        },
+        {
+          "url": "https://sportmaniacs.com/es/races/iv-duatln-escolar-castelln",
+          "name": "IV DUATLÓN ESCOLAR CASTELLÓN",
+          "status": "excluded",
+          "reason": "Modalitat o abonament exclòs"
         }
       ]
     },
     {
       "id": "runatica",
       "name": "Runática",
-      "checkedAt": "2026-11-26T15:08:23.443Z",
+      "checkedAt": "2026-11-27T09:27:16.430Z",
       "status": "ok",
       "catalogEntries": 14,
       "read": 14,
@@ -992,7 +1028,7 @@
     {
       "id": "multiesport",
       "name": "Multiesport",
-      "checkedAt": "2026-11-26T15:08:23.443Z",
+      "checkedAt": "2026-11-27T09:27:16.430Z",
       "status": "ok",
       "catalogEntries": 13,
       "read": 16,
@@ -1099,7 +1135,7 @@
           "distances": [],
           "time": "19:30",
           "status": "excluded",
-          "reason": "Distància de carrera sense confirmar"
+          "reason": "Fora del període"
         },
         {
           "url": "https://multiesport.es/event/ix-carrera-de-papa-noel-asociacion-de-comerciantes-la-florida/",
@@ -1185,10 +1221,10 @@
     {
       "id": "crono4sports",
       "name": "Crono4Sports",
-      "checkedAt": "2026-11-26T15:08:23.443Z",
+      "checkedAt": "2026-11-27T09:27:16.430Z",
       "status": "ok",
-      "catalogEntries": 22,
-      "read": 20,
+      "catalogEntries": 23,
+      "read": 21,
       "eligible": 2,
       "errors": [],
       "decisions": [
@@ -1398,6 +1434,16 @@
           "reason": "Modalitat exclosa o abonament de circuit"
         },
         {
+          "url": "https://crono4sports.com/evento/invader-race",
+          "name": "Invader race",
+          "date": "2027-06-12",
+          "town": "Sant Pere de Riudebitlles",
+          "distances": [],
+          "time": "08:30",
+          "status": "excluded",
+          "reason": "Modalitat exclosa o abonament de circuit"
+        },
+        {
           "url": "https://crono4sports.com/evento/iv-qualis-games",
           "name": "IV Qualis Games",
           "date": "2027-09-04",
@@ -1412,7 +1458,7 @@
     {
       "id": "toprun",
       "name": "TopRun",
-      "checkedAt": "2026-11-26T15:08:23.443Z",
+      "checkedAt": "2026-11-27T09:27:16.430Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 2,
@@ -1447,10 +1493,10 @@
     {
       "id": "vcr",
       "name": "Valencia Ciudad del Running",
-      "checkedAt": "2026-11-26T15:08:23.443Z",
+      "checkedAt": "2026-11-27T09:27:16.430Z",
       "status": "ok",
-      "catalogEntries": 7,
-      "read": 7,
+      "catalogEntries": 9,
+      "read": 9,
       "eligible": 6,
       "errors": [],
       "decisions": [
@@ -1536,6 +1582,26 @@
           "status": "eligible"
         },
         {
+          "url": "https://www.valenciaciudaddelrunning.com/evento/san-silvestre-solidaria-carpesa/",
+          "name": "San Silvestre Solidaria Carpesa",
+          "date": "2026-12-27",
+          "town": "Carpesa",
+          "distances": [],
+          "time": "10:00",
+          "status": "excluded",
+          "reason": "Distància de carrera sense confirmar"
+        },
+        {
+          "url": "https://www.valenciaciudaddelrunning.com/evento/san-silvestre-valencia/",
+          "name": "San Silvestre Valencia 2026",
+          "date": "2026-12-30",
+          "town": "València",
+          "distances": [],
+          "time": "20:00",
+          "status": "excluded",
+          "reason": "Distància de carrera sense confirmar"
+        },
+        {
           "url": "https://www.valenciaciudaddelrunning.com/evento/ironman-valencia/",
           "name": "IRONMAN 70.3 Valencia 2027",
           "status": "excluded",
@@ -1546,7 +1612,7 @@
     {
       "id": "fdm",
       "name": "Fundació Esportiva Municipal",
-      "checkedAt": "2026-11-26T15:08:23.443Z",
+      "checkedAt": "2026-11-27T09:27:16.430Z",
       "status": "ok",
       "catalogEntries": 12,
       "read": 13,
@@ -1704,7 +1770,7 @@
     {
       "id": "runcancer",
       "name": "RunCáncer",
-      "checkedAt": "2026-11-26T15:08:23.443Z",
+      "checkedAt": "2026-11-27T09:27:16.430Z",
       "status": "ok",
       "catalogEntries": 2,
       "read": 3,
@@ -1750,7 +1816,7 @@
     {
       "id": "rockthesport",
       "name": "RockTheSport",
-      "checkedAt": "2026-11-26T15:08:23.443Z",
+      "checkedAt": "2026-11-27T09:27:16.430Z",
       "status": "ok",
       "catalogEntries": 0,
       "read": 2,
@@ -1785,7 +1851,7 @@
     {
       "id": "mychip",
       "name": "Mychip",
-      "checkedAt": "2026-11-26T15:08:23.443Z",
+      "checkedAt": "2026-11-27T09:27:16.430Z",
       "status": "ok",
       "catalogEntries": 5,
       "read": 5,
