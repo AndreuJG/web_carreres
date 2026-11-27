@@ -1,4 +1,12 @@
 {
   "catalog": "6d274d7c13cf2add8ee2cc83b4fe28dc8fbf1a1a",
-  "lastSentDay": "2026-11-26"
+  "lastSentDay": "2026-11-26",
+  "pending": {
+    "catalog": "28e9e8002c7d6a5919c3afadf4897d3117553ef7",
+    "parts": [
+      {
+        "text": "<b>Novetats de Córrer a prop · 27/11/2026</b>\n\n<b>Nova carrera</b> · <a href=\"https://sportmaniacs.com/es/races/adt-trail-albalat-dels-tarongers-2027\">ADT TRAIL ALBALAT DELS TARONGERS 2027</a>\nAlbalat dels Tarongers · 31/01/2027 · 11 / 21 km\n\n<b>Estat de l’actualització</b>\n\nConsulta completada\n27/11/26 10:27 · hora de València\n\n<a href=\"https://carreresprop.vercel.app/\">Consulta l’agenda</a>"
+      }
+    ]
+  }
 }
