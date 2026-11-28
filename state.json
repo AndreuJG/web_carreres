@@ -1,4 +1,12 @@
 {
   "catalog": "28e9e8002c7d6a5919c3afadf4897d3117553ef7",
-  "lastSentDay": "2026-11-27"
+  "lastSentDay": "2026-11-27",
+  "pending": {
+    "catalog": "a2a30dd538da7a89a8cc883edeb2046479320cf2",
+    "parts": [
+      {
+        "text": "<b>Resum diari de Córrer a prop · 28/11/2026</b>\n\nHui no hi ha novetats detectades en l’agenda.\n\nConsulta completada\n28/11/26 10:27 · hora de València\n\n<a href=\"https://carreresprop.vercel.app/\">Consulta l’agenda</a>"
+      }
+    ]
+  }
 }
